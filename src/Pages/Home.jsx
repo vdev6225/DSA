@@ -14,7 +14,7 @@ import NewsletterSection from "../Components/Home/NewsletterSection/NewsletterSe
 import PodcastSection from "../Components/Home/PodcastSection/PodcastSection";
 import ServiceSection from "../Components/Home/ServiceSection/ServiceSection";
 import TestimonialSection from "../Components/Home/TestimonialSection/TestimonialSection";
-import MainNavbar from "../Components/MainNavbar/MainNavbar";
+// import MainNavbar from "../Components/MainNavbar/MainNavbar";
 
 export default function Home() {
     return (
