@@ -1,0 +1,31 @@
+.group-company-section .company-card{
+    display: flex;
+    margin-top: 2rem;
+}
+.group-company-section .company-card img{
+    width: 25%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--black-color);
+    transition: .5s;
+    cursor: pointer;
+}
+.group-company-section .company-card img:nth-child(1),
+.group-company-section .company-card img:nth-child(2){
+    margin-right: -50px;
+}
+.group-company-section .company-card img:nth-child(4),
+.group-company-section .company-card img:nth-child(5){
+    margin-left: -50px;
+}
+.group-company-section .company-card img:nth-child(5){
+    z-index: -1;
+}
+.group-company-section .company-card img:nth-child(3){
+    z-index: 1;
+}
+.group-company-section .company-card img:hover{
+    z-index: 9;
+    transform: scale(1.1);
+}

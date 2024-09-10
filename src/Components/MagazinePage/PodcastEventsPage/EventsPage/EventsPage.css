@@ -1,0 +1,33 @@
+.events-section .swiper-slide {
+    height: calc((100% - 30px) / 2) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.events-section .event-card {
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    aspect-ratio: 1/1;
+}
+
+.events-section .event-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.events-section .event-card .content {
+    padding: 10px;
+}
+
+.events-section .event-card .content h4 {
+    text-transform: uppercase;
+    color: var(--font-light);
+    font-family: "headingbold" !important;
+}

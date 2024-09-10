@@ -1,0 +1,87 @@
+.badges-section .heading {
+    margin-bottom: 2rem;
+    font-family: "headingbold" !important;
+    text-align: center;
+}
+
+.badges-section .badge-category ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin-bottom: 2rem !important;
+}
+.badges-section .badge-category ul p{
+    cursor: pointer;
+}
+
+.badges-section .badge-card-box {
+    padding: 2rem;
+    border: 1px solid var(--main-color-one);
+    border-radius: 20px;
+}
+
+.badges-section .badge-card-box .top-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.badges-section .badge-card-box .top-section .top-card {
+    padding: 1rem;
+    background: var(--main-color-one);
+    width: 22%;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.badges-section .badge-card-box .top-section .top-card h3 {
+    font-family: "headingbold" !important;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.badges-section .badge-card-box .badge-card {
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--main-color-one);
+    margin-bottom: 1rem;
+}
+.badges-section .badge-card-box .badge-card:last-child{
+    margin-bottom: 0;
+}
+
+.badges-section .badge-card-box .badge-card div {
+    width: 25%;
+}
+
+.badges-section .badge-card-box .badge-card .image {
+    width: 25%;
+    overflow: hidden;
+    margin-right: 1rem;
+    border-radius: 15px;
+}
+
+.badges-section .badge-card-box .badge-card .image img {
+    width: 100%;
+    aspect-ratio: 1/.5;
+}
+
+
+.badges-section .badge-card-box .badge-card h4 {
+    font-family: "headingbold" !important;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.badges-section .badge-card-box .badge-card p {
+    padding-left: 1rem;
+    padding-right: 5px;
+    font-size: .8rem;
+    text-align: justify;
+    line-height: 1.4;
+}

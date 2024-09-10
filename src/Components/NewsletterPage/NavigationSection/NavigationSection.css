@@ -1,0 +1,40 @@
+.magazine-navigation h1 {
+    font-size: 5.1rem;
+    text-align: center;
+}
+
+.magazine-navigation .navigation-bar .name{
+    font-size: 1.2rem;
+}
+.magazine-navigation .navigation-bar {
+    background: var(--main-color-one);
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.magazine-navigation .navigation-bar .inner-links {
+    display: flex;
+    border-bottom: 1px solid var(--black-color);
+    margin-left: 8px !important;
+    margin-bottom: 10px !important;
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+}
+
+.magazine-navigation .navigation-bar .sm-links ul {
+    display: flex;
+}
+.magazine-navigation .navigation-bar .sm-links ul li a {
+    background: var(--main-color-two);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+}

@@ -1,0 +1,91 @@
+.home-banner .count-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.home-banner .count-card:last-child {
+    margin-bottom: 0;
+}
+
+.home-banner .count-card p {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    font-family: "heading" !important;
+}
+
+.home-banner .count-card span {
+    font-size: 2rem;
+    text-decoration: underline;
+    /* text-decoration-color: #636669; */
+    text-underline-offset: 10px;
+    color: #636669;
+    font-weight: bolder;
+}
+
+.home-banner .banner-section {
+    position: relative;
+    /* height: 100%; */
+}
+
+.home-banner .banner-section .mySwiper {
+    height: 100%;
+}
+
+.home-banner .banner-section .mySwiper img {
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.home-banner .banner-section .mySwiper .swiper-pagination-bullet-active {
+    background-color: var(--white-color) !important;
+}
+
+.home-banner .banner-section .banner-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    padding: 20px;
+    padding-bottom: 25px;
+    padding-left: 0;
+    border-radius: 0 0 20px 0;
+    background: var(--white-color);
+}
+
+.home-banner .banner-section .banner-btn a {
+    padding: 10px 15px !important;
+    background-color: var(--main-color-two);
+    text-transform: uppercase;
+    font-family: "bodyfontbold" !important;
+    border-radius: 20px !important;
+}
+
+.home-banner .banner-section .banner-btn a svg {
+    transform: rotate(-40deg) translateY(-3px);
+    font-weight: normal;
+}
+
+.home-banner .banner-section .bottom-three-circle {
+    position: absolute;
+    bottom: -36px;
+    right: 2rem;
+    /* transform: translateY(50%); */
+    z-index: 9;
+    display: flex;
+    gap: 0 1rem;
+}
+
+.home-banner .banner-section .bottom-three-circle p {
+    height: 72px;
+    width: 72px;
+    font-weight: 600;
+    font-size: .9rem;
+    background-color: var(--main-color-two);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

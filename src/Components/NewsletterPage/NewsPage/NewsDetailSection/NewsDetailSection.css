@@ -1,0 +1,32 @@
+.news-detail-section img {
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.news-detail-section h2 {
+    text-transform: uppercase;
+    font-family: "headingbold" !important;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--black-color);
+}
+
+.news-detail-section .box {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.news-detail-section .box ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.news-detail-section h1 {
+    font-family: "headingbold" !important;
+    margin-bottom: 2rem;
+}
+
+.news-detail-section p {
+    margin-bottom: 1rem !important;
+}

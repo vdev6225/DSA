@@ -1,0 +1,28 @@
+.ceo-section .ceo-card {
+    background-color: var(--main-color-one);
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.ceo-section .ceo-card img {
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.ceo-section .ceo-card .name {
+    font-size: 2rem;
+    font-family: "bodyfontbold" !important;
+    text-transform: uppercase;
+}
+
+.ceo-section .ceo-card .name span {
+    color: #636669;
+}
+.ceo-section .ceo-card > span{
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    display: inline-block;
+}

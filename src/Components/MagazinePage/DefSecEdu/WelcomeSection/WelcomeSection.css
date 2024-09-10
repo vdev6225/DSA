@@ -1,0 +1,54 @@
+.welcome-section>img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70%;
+}
+
+.welcome-section h2 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: "headingbold" !important;
+}
+
+.welcome-section b {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.welcome-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem !important;
+    text-transform: uppercase;
+}
+
+.welcome-section .welcome-card-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome-section .welcome-card-box .welcome-card {
+    width: 30%;
+    aspect-ratio: 1/1;
+    padding: 1rem;
+    background: var(--main-color-one);
+    cursor: pointer;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.welcome-section .welcome-card-box .welcome-card svg {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.welcome-section .welcome-card-box .welcome-card.active {
+    background: #414141;
+    color: var(--white-color) !important;
+}

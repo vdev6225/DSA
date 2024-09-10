@@ -1,0 +1,39 @@
+.awards-page .category-tab {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.awards-page .category-tab p {
+    font-size: 1.4rem;
+}
+
+.awards-page .category-tab ul {
+    display: flex;
+}
+
+.awards-page .category-tab ul li {
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+
+.awards-page .main-heading h2{
+    text-align: center;
+    font-size: 3rem;
+    font-family: "headingbold" !important;
+    margin-bottom: 3rem;
+}
+
+.awards-page .image-section img {
+    width: 100%;
+    border-radius: 20px;
+}
+.awards-page b{
+    font-size: 1.3rem;
+    font-family: "bodyfontbold" !important;
+}
+.awards-page p b{
+    font-size: 1rem;
+    font-family: "bodyfont" !important;
+}

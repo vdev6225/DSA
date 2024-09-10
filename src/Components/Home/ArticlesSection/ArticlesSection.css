@@ -1,0 +1,198 @@
+.articles-section .left-swiper-box {
+    /* position: relative; */
+    /* left: 0; */
+    /* top: 0; */
+    /* right: 0; */
+    /* width: 100%; */
+    border-radius: 20px;
+    overflow: hidden;
+    /* transform: translateX(calc(-1.5rem* .5)); */
+}
+
+.articles-section .left-swiper-box .article-left-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 700px;
+    background: var(--main-color-two);
+}
+
+.articles-section .left-swiper-box .article-left-card .right-content-box {
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    left: 80%;
+    transform: translate(-80%, -50%);
+}
+
+.articles-section .left-swiper-box .article-left-card .right-content-box .top-section {
+    transform: translateX(-80px);
+}
+
+.articles-section .left-swiper-box .article-left-card .right-content-box .top-section h3 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+.articles-section .left-swiper-box .article-left-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 60%;
+    height: 100%;
+    background: var(--main-color-one);
+}
+
+.articles-section .left-swiper-box .article-left-card .image {
+    width: 300px;
+    aspect-ratio: 1/1;
+    background-color: var(--main-color-one);
+    padding: 10px;
+    /* transform: tr; */
+}
+
+.articles-section .left-swiper-box .article-left-card .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.articles-section .left-swiper-box .article-left-card .content {
+    margin-top: 2rem;
+}
+
+.articles-section .left-swiper-box .article-left-card .content span {
+    font-size: .9rem;
+    color: #636669;
+    margin-bottom: 6px;
+    display: inline-block;
+}
+
+.articles-section .left-swiper-box .article-left-card .content a {
+    text-decoration: underline !important;
+    text-underline-offset: 4px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.articles-section .left-swiper-box .swiper-pagination-bullet-active {
+    background-color: var(--white-color) !important;
+}
+
+.articles-section .right-section {
+    border-radius: 20px;
+    overflow: hidden;
+    /* transform: translateX(calc(1.5rem* .5)); */
+    width: 100%;
+    height: 90%;
+    position: relative;
+    display: flex;
+}
+
+.articles-section .right-section .heading {
+    width: 100px;
+    background-color: var(--main-color-one);
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    /* text-align: right; */
+    /* position: relative; */
+}
+
+.articles-section .right-section .heading h2 {
+    /* margin-bottom: 8rem; */
+    font-size: 3rem;
+    font-weight: bolder;
+    transform: rotate(-90deg) translateX(160px);
+    margin-bottom: 0;
+}
+
+.articles-section .right-section .cards-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    gap: 1rem 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.articles-section .right-section .cards-box .top-section {
+    width: 92%;
+    height: 50%;
+    position: relative;
+    right: 0;
+    border-radius: 0 20px 20px 20px;
+    margin-left: auto;
+    overflow: hidden;
+    z-index: 9;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.articles-section .right-section .cards-box .bottom-section {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    z-index: -1;
+    padding: 1rem;
+    padding-left: 120px;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.articles-section .right-section .cards-box img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.articles-section .right-section .cards-box .content {
+    width: 60%;
+    padding: 1rem;
+}
+
+.articles-section .right-section .cards-box .content span {
+    font-size: .9rem;
+    color: #636669;
+}
+
+.articles-section .right-section .cards-box .content p {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.articles-section .view-event-btn {
+    margin-left: calc(1.5rem* .5);
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.articles-section .view-event-btn a {
+    padding: 10px 30px;
+    background: var(--main-color-two);
+    border-radius: 25px;
+    font-size: 1.5rem;
+    line-height: 1;
+}

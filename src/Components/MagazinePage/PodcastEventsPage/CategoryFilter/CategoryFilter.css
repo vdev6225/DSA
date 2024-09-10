@@ -1,0 +1,19 @@
+.category-filter .category-tab {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.category-filter .category-tab p {
+    font-size: 1.4rem;
+}
+
+.category-filter .category-tab ul {
+    display: flex;
+}
+
+.category-filter .category-tab ul li {
+    cursor: pointer;
+    margin-left: 1.5rem;
+}

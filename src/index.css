@@ -1,0 +1,91 @@
+:root {
+  --main-color-one: #D9D9D9;
+  --main-color-two: #e3e3e3;
+  --black-color: #000;
+  --white-color: #fff;
+  --border-color: #000;
+  --font-dark: #414141;
+  --font-light: #A6A6A6;
+}
+
+@font-face {
+  font-family: bodyfontbold;
+  src: url(./assets/fonts/body/HelveticaNeueLTStd-Hv.otf);
+}
+@font-face {
+  font-family: bodyfont;
+  src: url(./assets/fonts/body/HelveticaNeueLTStd-Lt.otf);
+}
+
+@font-face {
+  font-family: heading;
+  src: url(./assets/fonts/heading/BaseNeueTrial-Regular.ttf);
+}
+
+@font-face {
+  font-family: headingbold;
+  src: url(./assets/fonts/heading/BaseNeueTrial-Bold.ttf);
+}
+
+body {
+  font-family: "bodyfont" !important;
+  color: var(--font-light);
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: var(--black-color) !important;
+}
+
+ul {
+  padding-left: 0 !important;
+  list-style: none !important;
+  margin-bottom: 0 !important;
+}
+
+.section-spacing {
+  padding: 50px;
+}
+
+/* .bg-section-spacing{
+  padding-left: 0;
+  padding-right: 0;
+  margin: 20px 0;
+} */
+.bg-theme {
+  background: var(--main-color-two);
+}
+
+.bg-theme-dark {
+  background-color: var(--main-color-two);
+}
+.bg-theme-light {
+  background-color: var(--main-color-one);
+}
+
+
+
+.main-heading span {
+  color: #636669;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5.h6 {
+  font-family: "heading" !important;
+  color: var(--font-dark);
+}
+
+.heading-text {
+  color: var(--font-light);
+}
+.main-heading {
+  font-family: "headingbold" !important;
+  text-transform: uppercase;
+}

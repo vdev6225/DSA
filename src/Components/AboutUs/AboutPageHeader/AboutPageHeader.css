@@ -1,0 +1,30 @@
+.about-page-header{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 70vh;
+    background: url(../../../assets/img/no-image.jpg) center;
+    background-size: cover;
+    margin-bottom: 150px;
+}
+
+.about-page-header .content{
+    position: relative;
+    width: 35%;
+    height: 100%;
+    transform: translateY(120px);
+}
+.about-page-header .content h1{
+    text-transform: uppercase;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%,-1.5rem);
+    color: var(--white-color);
+    font-size: 3rem;
+}
+.about-page-header .content img{
+    width: 100%;
+    border-radius: 20px;
+}

@@ -1,0 +1,34 @@
+.indian-army-section .main-heading h2 {
+    font-size: 3rem;
+    font-family: "headingbold" !important;
+}
+
+.indian-army-section .left-section .image {
+    padding: 1rem;
+    border-radius: 20px;
+    background: var(--main-color-one);
+}
+
+.indian-army-section .left-section .image img {
+    border-radius: 15px;
+}
+
+.indian-army-section .right-section b {
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.indian-army-section .right-section img {
+    width: 40%;
+    margin-bottom: 1rem;
+}
+.indian-army-section .right-section ul p {
+   padding-left: 10px; 
+}
+
+/* .indian-army-section .right-section p {
+    margin-bottom: 1rem !important;
+}
+.indian-army-section .right-section ul p {
+    margin-bottom: 0 !important;
+} */

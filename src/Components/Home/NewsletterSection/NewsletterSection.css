@@ -1,0 +1,29 @@
+.newsletter-section {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 20px;
+}
+.newsletter-section .newsletter-card {
+    display: flex;
+    background: var(--white-color);
+}
+
+.newsletter-section .newsletter-card .image {
+    width: 40%;
+    aspect-ratio: 1/1;
+}
+
+.newsletter-section .newsletter-card .image img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.newsletter-section .newsletter-card .content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+.newsletter-section .newsletter-card .content h5{
+    font-weight: bolder;
+}
