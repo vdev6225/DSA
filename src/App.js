@@ -12,6 +12,8 @@ import DefSecEduPage from './Components/MagazinePage/DefSecEdu/DefSecEduPage';
 import NewsletterPage from './Components/NewsletterPage/NewsletterPage';
 import NewsPage from './Components/NewsletterPage/NewsPage/NewsPage';
 import ArticlePage from './Components/NewsletterPage/ArticlePage/ArticlePage';
+import AlertPage from './Components/NewsletterPage/AlertPage/AlertPage';
+import DefSecWivesPage from './Components/NewsletterPage/DefSecWivesPage/DefSecWivesPage';
 
 function App() {
   // const location = useLocation();
@@ -30,6 +32,8 @@ function App() {
         <Route path="/newsletter" element={<NewsletterPage />} />
         <Route path="/newsletter-news" element={<NewsPage />} />
         <Route path="/newsletter-article-page" element={<ArticlePage />} />
+        <Route path="/newsletter-alert-page" element={<AlertPage />} />
+        <Route path="/newsletter-def-page" element={<DefSecWivesPage />} />
       </Routes>
       {window.location.pathname === '/' ? "" : <TestimonialSection />}
       {window.location.pathname === '/' ? "" : <GroupWebsites />}

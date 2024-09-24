@@ -1,0 +1,55 @@
+.newsletter-welcome-section>img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70%;
+}
+
+.newsletter-welcome-section h2 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: "headingbold" !important;
+}
+
+.newsletter-welcome-section b {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.newsletter-welcome-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem !important;
+    text-transform: uppercase;
+}
+
+.newsletter-welcome-section .newsletter-welcome-box {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.newsletter-welcome-section .newsletter-welcome-box .newsletter-welcome-card {
+    width: 30%;
+    aspect-ratio: 1/1;
+    padding: 1rem;
+    background: var(--main-color-one);
+    cursor: pointer;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: center;
+}
+
+.newsletter-welcome-section .newsletter-welcome-box .newsletter-welcome-card svg {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter-welcome-section .newsletter-welcome-box .newsletter-welcome-card.active {
+    background: #414141;
+    color: var(--white-color) !important;
+}
