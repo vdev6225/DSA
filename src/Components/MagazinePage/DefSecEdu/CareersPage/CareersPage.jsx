@@ -1,7 +1,7 @@
 import { Collapse } from 'antd';
 import NoImg from "../../../../assets/img/no-image.jpg";
 import "./CareersPage.css";
-import { FaYoutube } from 'react-icons/fa';
+// import { FaYoutube } from 'react-icons/fa';
 export default function CareersPage() {
     const text = <div className='bottom-content'><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p></div>;
     const items = [

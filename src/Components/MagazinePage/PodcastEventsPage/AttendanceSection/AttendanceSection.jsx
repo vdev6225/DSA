@@ -7,7 +7,7 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
 // import required modules
-import { FreeMode, Pagination } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 import NoImg from "../../../../assets/img/no-image.jpg";
 import "./AttendanceSection.css";
 export default function AttendanceSection() {

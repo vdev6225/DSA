@@ -50,7 +50,7 @@ export default function MainNavbar() {
                                                 items
                                             }}
                                     >
-                                        <a onClick={(e) => e.preventDefault()}>
+                                        <a href='/' onClick={(e) => e.preventDefault()}>
                                             <Space>
                                                 <FaUser />
                                             </Space>

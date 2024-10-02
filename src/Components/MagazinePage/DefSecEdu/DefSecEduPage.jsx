@@ -1,8 +1,8 @@
 import NavigationSection from "../NavigationSection/NavigationSection";
-import AwardsCategoryPage from "./AwardsCategoryFilter/AwardsCategoryPage";
-import BadgesSection from "./BadgesSection/BadgesSection";
+// import AwardsCategoryPage from "./AwardsCategoryFilter/AwardsCategoryPage";
+// import BadgesSection from "./BadgesSection/BadgesSection";
 import CareersPage from "./CareersPage/CareersPage";
-import IndianArmySection from "./IndianArmySection/IndianArmySection";
+// import IndianArmySection from "./IndianArmySection/IndianArmySection";
 import TopSection from "./TopSection/TopSection";
 import WelcomeSection from "./WelcomeSection/WelcomeSection";
 

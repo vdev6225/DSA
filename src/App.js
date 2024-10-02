@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
 import MainNavbar from './Components/MainNavbar/MainNavbar';
 import AboutUs from './Pages/AbouUs';

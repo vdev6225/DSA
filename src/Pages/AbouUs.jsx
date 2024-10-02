@@ -4,9 +4,9 @@ import DsaUps from "../Components/AboutUs/DsaUps/DsaUps";
 import FounderSection from "../Components/AboutUs/FounderSection/FounderSection";
 import JourneySection from "../Components/AboutUs/JourneySection/JourneySection";
 import VisionSection from "../Components/AboutUs/VisionSection/VisionSection";
-import GroupWebsites from "../Components/Home/GroupWebsites/GroupWebsites";
+// import GroupWebsites from "../Components/Home/GroupWebsites/GroupWebsites";
 import MilestoneSection from "../Components/Home/MilestoneSection/MilestoneSection";
-import TestimonialSection from "../Components/Home/TestimonialSection/TestimonialSection";
+// import TestimonialSection from "../Components/Home/TestimonialSection/TestimonialSection";
 
 
 export default function AboutUs() {
