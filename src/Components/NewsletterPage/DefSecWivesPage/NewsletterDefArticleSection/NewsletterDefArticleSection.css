@@ -1,0 +1,27 @@
+.newsletter-def-article-section .main-heading h2 {
+    font-size: 3rem;
+    font-family: "headingbold" !important;
+}
+
+.newsletter-def-article-section .newsletter-artice-card {
+    text-align: center;
+}
+
+.newsletter-def-article-section .newsletter-artice-card h2 {
+    font-family: "headingbold" !important;
+    text-transform: uppercase;
+    color: var(--font-light);
+    margin-top: 1.5rem;
+}
+
+.newsletter-def-article-section img{
+    width: 100%;
+}
+.newsletter-def-article-section .newsletter-artice-card a {
+    padding: 8px 20px;
+    border: 1px solid var(--main-color-one);
+    margin-top: 2rem;
+    border-radius: 20px;
+    display: inline-block;
+    width: fit-content;
+}

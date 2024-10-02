@@ -1,24 +1,24 @@
-.news-categories-section .category-tab {
+.alert-page .category-tab {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     margin-bottom: 30px;
 }
 
-.news-categories-section .category-tab p {
+.alert-page .category-tab p {
     font-size: 1.4rem;
 }
 
-.news-categories-section .category-tab ul {
+.alert-page .category-tab ul {
     display: flex;
 }
 
-.news-categories-section .category-tab ul li {
+.alert-page .category-tab ul li {
     cursor: pointer;
     margin-left: 1.5rem;
 }
 
-.news-categories-section .main-heading h2 {
+.alert-page .main-heading h2 {
     text-align: center;
     font-size: 3rem;
     font-family: "headingbold" !important;
@@ -27,7 +27,7 @@
 
 
 
-.news-categories-section .careers-category ul {
+.alert-page .careers-category ul {
     display: flex;
     justify-content: space-between;
     font-size: 1.3rem;
@@ -35,38 +35,38 @@
     margin-bottom: 2rem !important;
 }
 
-.news-categories-section .careers-category ul p {
+.alert-page .careers-category ul p {
     cursor: pointer;
 }
 
-.news-categories-section .news-categorie-card {
+.alert-page .alert-news-card {
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
 }
 
-.news-categories-section .news-categorie-card:nth-child(even) {
+.alert-page .alert-news-card:nth-child(even) {
     flex-direction: row-reverse;
 }
 
-.news-categories-section .news-categorie-card:nth-child(even) .content {
+.alert-page .alert-news-card:nth-child(even) .content {
     text-align: right;
 }
-.news-categories-section .news-categorie-card:last-child{
+.alert-page .alert-news-card:last-child{
     margin-bottom: 0;
 }
 
-.news-categories-section .news-categorie-card .image {
+.alert-page .alert-news-card .image {
     width: 40%;
 }
 
-.news-categories-section .news-categorie-card .image img {
+.alert-page .alert-news-card .image img {
     border-radius: 20px;
-    height: 300px;
+    height: 100%;
     width: 100%;
 }
 
-.news-categories-section .news-categorie-card .content {
+.alert-page .alert-news-card .content {
     width: 60%;
     background: var(--main-color-one);
     border-radius: 20px;
@@ -75,12 +75,12 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.news-categories-section .news-categorie-card .content h3{
+.alert-page .alert-news-card .content h3{
     font-family: "bodyfontbold" !important;
     margin-bottom: 1rem !important;
     text-transform: uppercase;
 }
-.news-categories-section .news-categorie-card .content a{
+.alert-page .alert-news-card .content a{
     padding: 5px 20px;
     border: 1px solid var(--black-color);
     border-radius: 20px;
