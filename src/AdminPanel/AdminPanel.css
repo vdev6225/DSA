@@ -1,0 +1,247 @@
+.admin-logo{
+    width: 100px;
+}
+
+/* Styling for the login container with a background image */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/img/left-banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Login form styling */
+.login-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 16px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: var(--theme-color);
+}
+
+/* Login button styling */
+.login-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: var(--theme-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: var(--theme-color);
+}
+
+/* Login form title */
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Container for the banner upload section */
+.banner-upload-container {
+    background-color: white;
+    /* White background for the upload container */
+    border-radius: 15px;
+    /* Rounded corners */
+    padding: 30px;
+    /* Padding around the content */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Light shadow for depth */
+    max-width: 600px;
+    /* Maximum width for the container */
+    margin: 50px 1rem;
+    /* Center the container in the middle of the page */
+}
+
+/* Tab content styling */
+.tab-content {
+    display: flex;
+    /* Flexbox for layout */
+    flex-direction: column;
+    /* Stack items vertically */
+}
+
+.banner-upload-container .ant-upload.ant-upload-select {
+    width: 100% !important;
+    /* height: 100% !important; */
+    margin: 2rem 0;
+}
+.banner-upload-container .upload-placeholder{
+    margin-top: 1rem;
+}
+
+/* Header styling */
+.tab-content h2 {
+    margin: 0;
+    /* Remove default margin */
+    color: #333;
+    /* Dark color for text */
+    font-weight: bold;
+    /* Bold font */
+    font-size: 24px;
+    /* Increased font size for visibility */
+    margin-bottom: 20px;
+    /* Space below the header */
+}
+
+/* Status and Link Toggle */
+.status-switch,
+.link-toggle {
+    display: flex;
+    /* Flexbox layout */
+    align-items: center;
+    /* Align items vertically */
+    font-size: 16px;
+    /* Font size */
+    margin: 20px 0;
+    /* Equal space above and below each toggle */
+}
+
+.status-switch span,
+.link-toggle span {
+    margin-right: 10px;
+    /* Space between label and switch */
+    color: #555;
+    /* Darker color for label */
+}
+
+/* Upload Placeholder Styles */
+.upload-placeholder {
+    font-size: 16px;
+    /* Font size */
+    color: #555;
+    /* Text color */
+    border: 1px dashed #ccc;
+    /* Dashed border */
+    border-radius: 10px;
+    /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Slightly transparent white */
+    padding: 20px;
+    /* Padding */
+    text-align: center;
+    /* Center text */
+    cursor: pointer;
+    /* Pointer cursor */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    /* Smooth transition for hover effects */
+    margin-bottom: 20px;
+    /* Space below the placeholder */
+}
+
+.upload-placeholder:hover {
+    background-color: rgba(240, 240, 240, 0.8);
+    /* Lighter background on hover */
+    border-color: #999;
+    /* Darker border on hover */
+}
+
+/* Banner Preview Section */
+.banner-preview {
+    text-align: center;
+    /* Center align for preview section */
+    margin-top: 20px;
+    /* Margin above the preview */
+}
+
+/* Image Styles */
+.banner-image {
+    max-width: 100%;
+    /* Responsive width */
+    max-height: 300px;
+    /* Limit height */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* Light shadow for the image */
+}
+
+/* Remove Button Styles */
+.banner-upload-container .ant-btn-dangerous {
+    margin-top: 10px;
+    /* Space above the button */
+    border-color: #ff4d4f;
+    /* Red color for the delete button */
+    background-color: #ff4d4f;
+    /* Red background */
+    color: white;
+    /* White text */
+}
+
+.banner-upload-container .ant-btn-dangerous:hover {
+    background-color: #ff7875;
+    /* Lighter red on hover */
+    border-color: #ff7875;
+    /* Border matches button */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .banner-upload-container {
+        padding: 20px;
+        /* Reduce padding on smaller screens */
+    }
+
+    .tab-content h2 {
+        font-size: 20px;
+        /* Smaller font size for mobile */
+    }
+
+    .upload-placeholder {
+        font-size: 14px;
+        /* Smaller font size for mobile */
+        padding: 15px;
+        /* Adjust padding for mobile */
+    }
+}

@@ -19,24 +19,24 @@ import GetApiCall from "../Helpers/Api/GetApi";
 // import MainNavbar from "../Components/MainNavbar/MainNavbar";
 
 export default function Home() {
-    useEffect(()=>{
-        getBanners();
-    },[])
-    const getBanners = ()=>{
-        GetApiCall.getRequest("AuthenticateUser"
-          ).then((results) => {
-            results.json().then((obj) => {
-              if (results.status === 200 || results.status === 201) {
+    // useEffect(()=>{
+    //     getBanners();
+    // },[])
+    // const getBanners = ()=>{
+    //     GetApiCall.getRequest("AuthenticateUser"
+    //       ).then((results) => {
+    //         results.json().then((obj) => {
+    //           if (results.status === 200 || results.status === 201) {
                 
-              } else {
-                // notification.error({
-                //   message: `Notification error`,
-                //   description: obj.data,
-                // });
-              }
-            });
-          });
-    }
+    //           } else {
+    //             // notification.error({
+    //             //   message: `Notification error`,
+    //             //   description: obj.data,
+    //             // });
+    //           }
+    //         });
+    //       });
+    // }
     return (
         <>
             {/* <MainNavbar /> */}

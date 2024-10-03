@@ -1,4 +1,5 @@
 :root {
+  --theme-color: #800000;
   --main-color-one: #D9D9D9;
   --main-color-two: #e3e3e3;
   --black-color: #000;
@@ -12,6 +13,7 @@
   font-family: bodyfontbold;
   src: url(./assets/fonts/body/HelveticaNeueLTStd-Hv.otf);
 }
+
 @font-face {
   font-family: bodyfont;
   src: url(./assets/fonts/body/HelveticaNeueLTStd-Lt.otf);
@@ -63,6 +65,7 @@ ul {
 .bg-theme-dark {
   background-color: var(--main-color-two);
 }
+
 .bg-theme-light {
   background-color: var(--main-color-one);
 }
@@ -85,6 +88,7 @@ h5.h6 {
 .heading-text {
   color: var(--font-light);
 }
+
 .main-heading {
   font-family: "headingbold" !important;
   text-transform: uppercase;
