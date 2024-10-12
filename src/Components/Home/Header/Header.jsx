@@ -23,6 +23,7 @@ export default function Header() {
                                 <p className="name">
                                     Security Alert
                                 </p>
+                                
                             </div>
                         </div>
                         <div className="right-sm-links">
