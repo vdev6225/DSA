@@ -15,7 +15,8 @@ import "./HomeBanner.css";
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
 
-export default function HomeBanner() {
+export default function HomeBanner({banners}) {
+    console.log(banners,"banners")
 
     return (
         <section className="section-spacing home-banner">
@@ -52,15 +53,13 @@ export default function HomeBanner() {
                             <Swiper pagination={{
                                 clickable: true,
                             }} modules={[Pagination]} className="mySwiper">
-                                <SwiperSlide>
-                                    <img src={NoImg} className='img-fluid' alt="" />
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <img src={NoImg} className='img-fluid' alt="" />
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <img src={NoImg} className='img-fluid' alt="" />
-                                </SwiperSlide>
+
+                            {
+                                banners.map((item,id)=> {return (<SwiperSlide>
+                                    <img src={item?.fld_desktop_image} className='img-fluid' alt={item?.fld_alt} />
+                                </SwiperSlide>)})
+                            }
+                             
                             </Swiper>
                             <div className="banner-btn">
                                 <Link to="">Advertise with dsa <FaArrowRight /></Link>

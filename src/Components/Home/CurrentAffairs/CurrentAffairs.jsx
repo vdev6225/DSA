@@ -3,7 +3,8 @@ import NoImg from "../../../assets/img/no-image.jpg";
 import NoVideo from "../../../assets/img/no-video.png";
 import "./CurrentAffairs.css";
 import { FaArrowRight, FaBullhorn } from "react-icons/fa";
-export default function CurrentAffairs() {
+export default function CurrentAffairs({banners}) {
+    console.log(banners, "current affairs")
     return (
         <section className="section-spacing current-affairs-section">
             <div className="container-fluid">
@@ -20,14 +21,13 @@ export default function CurrentAffairs() {
                     </div>
                     <div className="col-lg-4">
                         <div className="left-box">
-                            <img src={NoImg} alt="" className="img-fluid" />
+                            <img src={banners[0]?.fld_image} alt={banners[0]?.fld_alt} className="img-fluid" />
                             <div className="bottom-text">
                                 <span>
-                                    On June 8, 2024
+                                   {banners[0]?.fld_createdon}
                                 </span>
                                 <p>
-                                    Simply Dummy text <br />
-                                    Of The Printing Setting
+                                    {banners[0]?.fld_short_desc}
                                 </p>
                             </div>
                         </div>
@@ -35,10 +35,10 @@ export default function CurrentAffairs() {
                     <div className="col-lg-5">
                         <div className="center-box">
                             <div className="top-section">
-                                <img src={NoImg} className="img-fluid" alt="" />
+                                <img src={banners[1]?.fld_image} className="img-fluid" alt={banners[1]?.fld_alt} />
                                 <div className="content">
                                     <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ullam, iusto quaerat amet iusto quaerat amet?
+                                    {banners[1]?.fld_short_desc}
                                     </p>
                                     <div className="btn-box">
                                         <Link to="">
@@ -48,18 +48,18 @@ export default function CurrentAffairs() {
                                 </div>
                             </div>
                             <div className="bottom-vido-section">
-                                <img src={NoVideo} className="img-fluid" alt="" />
+                                <img src={banners[2]?.fld_image} className="img-fluid" alt={banners[2]?.fld_alt}/>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-3">
                         <div className="right-box">
                             <div className="top-section">
-                                <img src={NoImg} className="img-fluid" alt="" />
+                                <img src={banners[3]?.fld_image} className="img-fluid" alt={banners[3]?.fld_alt} />
                                 <div className="content">
-                                    <span>On June 8, 2024</span>
+                                    <span>{banners[3]?.fld_createdon}</span>
                                     <p>
-                                        It has survived not only five centuries, but also the leap into electronic typesetting
+                                        {banners[1]?.fld_short_desc}
                                     </p>
                                 </div>
                             </div>

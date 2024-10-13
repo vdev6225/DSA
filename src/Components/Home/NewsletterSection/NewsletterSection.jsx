@@ -11,7 +11,8 @@ import 'swiper/css/pagination';
 import { FreeMode, Pagination } from 'swiper/modules';
 import NoImg from "../../../assets/img/no-image.jpg";
 import "./NewsletterSection.css";
-export default function NewsletterSection() {
+export default function NewsletterSection({banners}) {
+    console.log(banners,"banners")
     return (
         <section className="section-spacing bg-theme newsletter-section">
             <div className="container-fluid">
@@ -25,7 +26,26 @@ export default function NewsletterSection() {
                             modules={[FreeMode, Pagination]}
                             className="mySwiper"
                         >
-                            <SwiperSlide>
+                            {
+                                banners.map((item,id)=>{
+                                    return (
+                                        <SwiperSlide>
+                                        <div className="newsletter-card">
+                                            <div className="image">
+                                            <img src={item?.fld_image} className='img-fluid' alt={item?.fld_alt} />
+                                            </div>
+                                            <div className="content">
+                                                <h5>{item?.fld_short_desc}</h5>
+                                                <span className="date">
+                                                   {item?.fld_createdon}
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                    )
+                                } )
+                            }
+                            {/* <SwiperSlide>
                                 <div className="newsletter-card">
                                     <div className="image">
                                         <img src={NoImg} className='img-fluid' alt="" />
@@ -102,7 +122,7 @@ export default function NewsletterSection() {
                                         </span>
                                     </div>
                                 </div>
-                            </SwiperSlide>
+                            </SwiperSlide> */}
                         </Swiper>
                     </div>
                 </div>

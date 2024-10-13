@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import NoImg from "../../../assets/img/no-image.jpg";
 import "./PodcastSection.css";
-export default function PodcastSection() {
+export default function PodcastSection({banners}) {
     return (
         <section className="section-spacing px-0 podcast-section">
             <div className="container-fluid">
@@ -40,9 +40,9 @@ export default function PodcastSection() {
                     </div>
                     <div className="col-lg-5">
                         <div className="right-card">
-                            <img src={NoImg} alt="" className="img-fluid" />
-                            <span>on June 8, 2020</span>
-                            <p>simply dummy text of the printing setting</p>
+                            <img src={banners[0]?.fld_image} alt="" className="img-fluid" />
+                            <span>{banners[0]?.fld_created_by}</span>
+                            <p>{banners[0]?.fld_short_desc}</p>
                         </div>
                     </div>
                 </div>
