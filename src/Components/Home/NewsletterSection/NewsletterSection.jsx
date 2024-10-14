@@ -12,7 +12,7 @@ import { FreeMode, Pagination } from 'swiper/modules';
 import NoImg from "../../../assets/img/no-image.jpg";
 import "./NewsletterSection.css";
 export default function NewsletterSection({banners}) {
-    console.log(banners,"banners")
+
     return (
         <section className="section-spacing bg-theme newsletter-section">
             <div className="container-fluid">
@@ -27,7 +27,7 @@ export default function NewsletterSection({banners}) {
                             className="mySwiper"
                         >
                             {
-                                banners.map((item,id)=>{
+                                banners?.map((item,id)=>{
                                     return (
                                         <SwiperSlide>
                                         <div className="newsletter-card">

@@ -5,7 +5,37 @@ import NavigationSection from "../NavigationSection/NavigationSection";
 import RegionSection from "./RegionSection/RegionSection";
 import "./NewsPage.css";
 import CategoriesSection from "./CategoriesSection/CategoriesSection";
+
+import { useEffect, useState } from "react";
+import GetApiCall from "../../../Helpers/Api/GetApi";
+
 export default function NewsPage() {
+    const [newsLetterPageData, setNewsLetterPageData] = useState([])
+
+    const getNewsLetterPageData = () => {
+        GetApiCall.getRequest("GetNews").then((results)=> {
+          results.json().then((obj) => {
+            if (results.status === 200 || results.status === 201) {
+              setNewsLetterPageData(obj.data); 
+          }else {
+            // notification.error({
+            //   message: `Notification error`,
+            //   description: obj.data,
+            // });
+            }
+          })
+        })
+      }
+
+
+    useEffect(()=>{
+        getNewsLetterPageData()
+    },[])
+
+      console.log(newsLetterPageData,"newsLetterPageData")
+
+
+
     return (
         <div className="newsletter-news-page">
             <NavigationSection />
@@ -13,7 +43,7 @@ export default function NewsPage() {
             <NewsletterSection />
             <BrandParttern />
             <RegionSection />
-            <CategoriesSection />
+            <CategoriesSection data = {newsLetterPageData}/>
         </div>
     )
 }

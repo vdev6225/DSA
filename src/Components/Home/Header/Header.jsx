@@ -1,6 +1,6 @@
 import MainNavbar from "../../MainNavbar/MainNavbar";
 import "./Header.css";
-import Logo from "../../../assets/img/logo/DSA-transparent-logo.png"
+import Logo from "../../../assets/img/logo/DSA-transparent-logo.png";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 export default function Header() {
@@ -23,6 +23,7 @@ export default function Header() {
                                 <p className="name">
                                     Security Alert
                                 </p>
+                                
                             </div>
                         </div>
                         <div className="right-sm-links">
