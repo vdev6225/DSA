@@ -14,10 +14,11 @@ import NoImg from "../../../assets/img/no-image.jpg";
 import "./HomeBanner.css";
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
-
+import BgShape from "../../../assets/img/bg-shapes/1.png";
+import Army from "../../../assets/img/home/home-banner/army.png";
+import Navy from "../../../assets/img/home/home-banner/navy.png";
+import AirForce from "../../../assets/img/home/home-banner/air-force.png";
 export default function HomeBanner({banners}) {
-    console.log(banners,"banners")
-
     return (
         <section className="section-spacing home-banner">
             <div className="container-fluid">
@@ -62,12 +63,15 @@ export default function HomeBanner({banners}) {
                              
                             </Swiper>
                             <div className="banner-btn">
-                                <Link to="">Advertise with dsa <FaArrowRight /></Link>
+                                <div className='position-relative'>
+                                    <img src={BgShape} className='img-fluid' alt="" />
+                                    <Link to="">Associate with DSA <FaArrowRight /></Link>
+                                </div>
                             </div>
                             <div className="bottom-three-circle">
-                                <p>Army</p>
-                                <p>Navy</p>
-                                <p>Air Force</p>
+                                <p><img src={Army} className='img-fluid' alt="" /></p>
+                                <p><img src={Navy} className='img-fluid' alt="" /></p>
+                                <p><img src={AirForce} className='img-fluid' alt="" /></p>
                             </div>
                         </div>
                     </div>

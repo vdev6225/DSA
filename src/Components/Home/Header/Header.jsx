@@ -1,7 +1,7 @@
 import MainNavbar from "../../MainNavbar/MainNavbar";
 import "./Header.css";
-import Logo from "../../../assets/img/logo/DSA-transparent-logo.png";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import Flag from "../../../assets/img/indian-flag.jpg";
+import { FaFacebookF, FaInstagramSquare , FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 export default function Header() {
     return (
@@ -16,19 +16,18 @@ export default function Header() {
                                     Defence and</p>
                                 <h1>Commited to Defence <br /> and Security Worlwide</h1>
                             </div>
-                            <div className="d-flex align-items-end">
+                            <div className="d-flex align-items-center">
                                 <div className="logo">
-                                    <img src={Logo} className="img-fluid" alt="DSA logo" />
+                                    <img src={Flag} className="img-fluid" alt="Indian Flag" />
                                 </div>
                                 <p className="name">
                                     Security Alert
                                 </p>
-                                
                             </div>
                         </div>
                         <div className="right-sm-links">
                             <ul>
-                                <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></li>
+                                <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaInstagramSquare  /></a></li>
                                 <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a></li>
                                 <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a></li>
                                 <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a></li>

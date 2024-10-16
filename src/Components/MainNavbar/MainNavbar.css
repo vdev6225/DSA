@@ -1,24 +1,39 @@
-.main-navbar-box{
+.main-navbar-box {
     background-color: var(--main-color-one);
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+
 .main-navbar {
     text-transform: uppercase;
 }
-.main-navbar a{
+
+.main-navbar a {
     font-family: "heading" !important;
     font-weight: 600 !important;
+    transition: .3s all;
+}
+.main-navbar a:hover{
+    color: var(--theme-color) !important;
+    text-decoration: underline !important;
 }
 
-.main-navbar .side-drawer{
+.main-navbar .navbar-brand {
+    width: 100px;
+    margin-right: 7rem;
+}
+
+.main-navbar .side-drawer {
     font-size: 1.5rem;
     margin-top: -5px;
 }
+
 .main-navbar .theme-btn {
     padding: 0px 8px !important;
-    border: 1px solid var(--border-color) !important;
+    border: 1px solid var(--theme-color) !important;
+    color: var(--theme-color) !important;
     border-radius: 20px !important;
+    transition: .3s;
 }
 
 
@@ -32,4 +47,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .3s;
+}
+.main-navbar .theme-btn:hover,
+.main-navbar .login-dropdown .ant-space-item:hover {
+    background: var(--theme-color) !important;
+    color: var(--white-color) !important;
 }
