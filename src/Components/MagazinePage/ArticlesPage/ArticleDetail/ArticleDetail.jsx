@@ -1,4 +1,4 @@
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaInstagramSquare , FaLinkedinIn } from "react-icons/fa";
 import NoImg from "../../../../assets/img/no-image.jpg";
 import "./ArticleDetail.css";
 import { FaXTwitter } from "react-icons/fa6";
@@ -38,7 +38,7 @@ export default function ArticleDetail() {
                                     Share
                                 </p>
                                 <ul>
-                                    <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></li>
+                                    <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaInstagramSquare  /></a></li>
                                     <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a></li>
                                     <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a></li>
                                     <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a></li>

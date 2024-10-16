@@ -12,7 +12,7 @@ import { FreeMode, Pagination } from 'swiper/modules';
 import "./BrandParttern.css";
 export default function BrandParttern() {
     return (
-        <section className="bg-theme-dark brand-parttern-section">
+        <section className="brand-parttern-section">
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-12">

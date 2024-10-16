@@ -4,6 +4,8 @@
 .current-affairs-section .right-box .top-section {
     position: relative;
     height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 .current-affairs-section .main-headin-box p {
@@ -38,19 +40,25 @@
 .current-affairs-section .left-box .bottom-text {
     position: absolute;
     left: 0;
+    right: 0;
     bottom: 0;
-    background: var(--white-color);
-    padding: 5px 20px 10px 0;
-    border-radius: 0 20px 0 0;
+    background: var(--theme-color-gradiant);
+    padding: 1rem;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
 }
+
 .current-affairs-section .right-box .top-section .content span,
 .current-affairs-section .left-box .bottom-text span {
-    font-size: .9rem;
-    color: #636669;
+    font-size: .8rem;
+    color: var(--white-color);
 }
 
 .current-affairs-section .left-box .bottom-text p {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     font-weight: 500;
 }
 
@@ -60,7 +68,7 @@
     height: 400px;
 }
 
-.current-affairs-section .center-box .top-section::before{
+/* .current-affairs-section .center-box .top-section::before{
     content: "";
     position: absolute;
     bottom: 3.5rem;
@@ -68,77 +76,134 @@
     width: 100%;
     height: 2px;
     background: #636669;
-}
+} */
 .current-affairs-section .center-box .top-section p {
     /* position: absolute;
     top: 2rem; */
     /* left: 0; */
-    margin-top: 2rem;
-    padding: 10px;
-    font-size: 1.3rem;
-    padding-right: 5px;
+    /* margin-top: 2rem; */
+    /* padding: 10px; */
+    /* font-size: 1.3rem; */
+    /* padding-right: 5px; */
+    width: 70%;
     font-weight: 500;
 }
 
 .current-affairs-section .center-box .top-section .content {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
+    background: var(--theme-color-gradiant);
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-end;
+    color: var(--white-color);
+}
+
+.current-affairs-section .center-box .top-section .content span {
+    font-size: .7rem;
 }
 
 .current-affairs-section .center-box .top-section .btn-box {
-    background-color: var(--white-color);
-    padding: 10px;
-    border-radius: 0 0 0 20px;
-    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+}
+
+.current-affairs-section .center-box .top-section .btn-box img.bg-shape {
+    width: 80px;
+    object-fit: contain;
+    height: auto;
+    margin-top: -5px;
+    transform: translateX(1px);
 }
 
 .current-affairs-section .center-box .top-section .btn-box a {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    /* transform: rotate(-30deg); */
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.7rem;
-    color: var(--white-color) !important;
-    background-color: var(--main-color-two);
-    padding: 10px;
+    background-color: var(--theme-color);
+    padding: 3px;
     border-radius: 50%;
-    transform: rotate(-30deg);
 }
-.current-affairs-section .center-box .bottom-vido-section{
+
+.current-affairs-section .center-box .top-section .btn-box a img {
+    width: 40px;
+    height: auto;
+}
+
+.current-affairs-section .center-box .bottom-vido-section {
     background-color: var(--main-color-two);
     border-radius: 20px;
     overflow: hidden;
     margin-top: 1.5rem;
+    position: relative;
 }
+
+.current-affairs-section .center-box .bottom-vido-section img {
+    width: 100%;
+    height: 300px;
+}
+
+.current-affairs-section .center-box .bottom-vido-section svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--theme-color);
+    font-size: 5rem;
+    cursor: pointer;
+}
+
 .current-affairs-section .right-box {
     height: 100%;
 }
-.current-affairs-section .right-box .top-section{
-    height: 85%;
+
+.current-affairs-section .right-box .top-section {
+    height: 80%;
 }
-.current-affairs-section .right-box .top-section img{
+
+.current-affairs-section .right-box .top-section img {
     width: 100%;
     height: 100%;
     border-radius: 20px;
 }
-.current-affairs-section .right-box .top-section .content{
+
+.current-affairs-section .right-box .top-section .content {
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
     padding: 1rem;
+    color: var(--white-color);
+    background: var(--theme-color-gradiant);
 }
 
-.current-affairs-section .right-box .view-all-btn{
+.current-affairs-section .right-box .view-all-btn {
     padding: 15px 20px;
-    background: var(--main-color-two);
+    background: var(--theme-color);
     border-radius: 30px;
     margin-top: 1.5rem;
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 1.8rem;
+    /* text-align: center; */
+}
+
+.current-affairs-section .right-box .view-all-btn a {
+    display: flex;
+    align-items: center;
+    color: var(--white-color) !important;
+    gap: 10px;
+}
+
+.current-affairs-section .right-box .view-all-btn a svg {
+    font-size: 5rem;
 }
