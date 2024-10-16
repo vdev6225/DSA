@@ -7,7 +7,7 @@ import { FaArrowRight, FaBullhorn, FaPlay } from "react-icons/fa";
 import BgShape from "../../../assets/img/bg-shapes/2.png";
 import Horn from "../../../assets/img/icons/Megaphone.png";
 import { GoArrowRight } from "react-icons/go";
-export default function CurrentAffairs({banners}) {
+export default function CurrentAffairs({ banners }) {
     return (
         <section className="section-spacing current-affairs-section">
             <div className="container-fluid">
@@ -27,7 +27,7 @@ export default function CurrentAffairs({banners}) {
                             <img src={banners[0]?.fld_image} alt={banners[0]?.fld_alt} className="img-fluid" />
                             <div className="bottom-text">
                                 <span>
-                                   {banners[0]?.fld_createdon}
+                                    {banners[0]?.fld_createdon}
                                 </span>
                                 <p>
                                     {banners[0]?.fld_short_desc}
@@ -38,33 +38,28 @@ export default function CurrentAffairs({banners}) {
                     <div className="col-lg-5">
                         <div className="center-box">
                             <div className="top-section">
-                                <img src={banners[1]?.fld_image} className="img-fluid" alt={banners[1]?.fld_alt} />
-                                <div className="content">
-                                    <p>
-                                    {banners[1]?.fld_short_desc}
-                                    </p>
-                                <div className="btn-box">
-                                    <div className="position-relative">
-                                        <img src={BgShape} className="img-fluid bg-shape" alt="" />
-                                        <Link to="">
-                                        <img src={Horn} className="img-fluid" alt="" />
-                                        </Link>
+                                    <div className="btn-box">
+                                        <div className="position-relative">
+                                            <img src={BgShape} className="img-fluid bg-shape" alt="" />
+                                            <Link to="">
+                                                <img src={Horn} className="img-fluid" alt="" />
+                                            </Link>
+                                        </div>
                                     </div>
-                                </div>
-                                <img src={Img} className="img-fluid" alt="" />
-                                <div className="content">
-                                    <p>
-                                    not simply random text. It has roots in a piece of classical Latin literature from 45 BC
-                                    </p>
-                                    <span>On June 8, 2024</span>
-
-                                </div>
+                                    <img src={banners[1]?.fld_image} className="img-fluid" alt={banners[1]?.fld_alt} />
+                                    <div className="content">
+                                        <p>
+                                            {banners[1]?.fld_short_desc}
+                                        </p>
+                                        <span>On June 8, 2024</span>
+                                    </div>
                             </div>
                             <div className="bottom-vido-section">
-                                <img src={banners[2]?.fld_image} className="img-fluid" alt={banners[2]?.fld_alt}/>
-                                <FaPlay
+                                <img src={banners[2]?.fld_image} className="img-fluid" alt={banners[2]?.fld_alt} />
+                                <FaPlay />
                             </div>
                         </div>
+
                     </div>
                     <div className="col-lg-3">
                         <div className="right-box">
