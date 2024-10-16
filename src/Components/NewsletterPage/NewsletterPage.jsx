@@ -6,7 +6,10 @@ import DsaAlertsSection from "./DsaAlertsSection/DsaAlertsSection";
 import DsaArticlesSection from "./DsaArticlesSection/DsaArticlesSection";
 import NavigationSection from "./NavigationSection/NavigationSection";
 import "./NewsletterPage.css";
+
+
 export default function NewsletterPage() {
+
     return (
         <div className="newsletter-page">
             <NavigationSection />

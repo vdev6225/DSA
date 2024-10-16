@@ -2,7 +2,29 @@ import { Link } from "react-router-dom";
 import NoImg from "../../../../assets/img/no-image.jpg";
 import "./CategoriesSection.css";
 import NewsDetailSection from "../NewsDetailSection/NewsDetailSection";
-export default function CategoriesSection() {
+
+import React, { useState, useEffect } from 'react';
+
+export default function CategoriesSection({data}) {
+    
+    const [filteredData, setFilteredData] = useState(data);
+    // const [selectedNews, setSelectedNews] = useState(null);
+
+    useEffect(() => {
+        setFilteredData(data);
+    }, [data]);
+
+    const getFilteredData = (category) => {
+        if(category === ""){
+            setFilteredData(data);
+        }else{
+            const filtered = data.filter(item => item.fld_category === category);
+            setFilteredData(filtered);
+        }
+    }
+
+  
+
     return (
         <section className="section-spacing py-0 news-categories-section">
             <div className="container-fluid">
@@ -13,32 +35,56 @@ export default function CategoriesSection() {
                                 Categories
                             </p>
                             <ul>
-                                <li>
+                                <li onClick={() => getFilteredData('Defence')}>
                                     Defence
                                 </li>
-                                <li>
+                                <li onClick={() => getFilteredData('Security')}>
                                     Security
                                 </li>
-                                <li>
+                                <li onClick={() => getFilteredData('Worldwide Affairs')}>
                                     Worldwide Affairs
                                 </li>
-                                <li>
+                                <li onClick={() => getFilteredData('Border Conflicts')}>
                                     Border Conflicts
                                 </li>
-                                <li>
+                                <li onClick={() => getFilteredData('Emerging tech')}>
                                     Emerging tech
                                 </li>
-                                <li>
+                                <li onClick={() => getFilteredData('')}>
                                     All
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <NewsDetailSection />
+                {/* <NewsDetailSection /> */}
+              
                 <div className="row">
                     <div className="col-12">
-                        <div className="news-categorie-card">
+                        {
+                            filteredData?.map((item,id)=>{
+                                return  <div className="news-categorie-card" key={item.fld_id}>
+                                <div className="image">
+                                    <img src={item?.fld_image} className="img-fluid" alt={item?.fld_alt} />
+                                </div>
+                                <div className="content">
+                                    <div>
+                                        <h3>
+                                            {item?.fld_title}
+                                        </h3>
+                                        <p dangerouslySetInnerHTML={{ __html: item?.fld_short_desc }} />
+                                          
+                                    </div>
+                                    <div className="d-flex justify-content-between mt-4">
+                                    <span>Date - {item?.fld_date || "Not available"}</span>
+                                        <Link to={`/news/${item.fld_id}`}>
+                                            Full news</Link>
+                                    </div>
+                                </div>
+                            </div>
+                            })
+                        }
+                        {/* <div className="news-categorie-card">
                             <div className="image">
                                 <img src={NoImg} className="img-fluid" alt="" />
                             </div>
@@ -129,7 +175,7 @@ export default function CategoriesSection() {
                                         Full news</Link>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

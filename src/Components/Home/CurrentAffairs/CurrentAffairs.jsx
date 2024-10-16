@@ -7,7 +7,7 @@ import { FaArrowRight, FaBullhorn, FaPlay } from "react-icons/fa";
 import BgShape from "../../../assets/img/bg-shapes/2.png";
 import Horn from "../../../assets/img/icons/Megaphone.png";
 import { GoArrowRight } from "react-icons/go";
-export default function CurrentAffairs() {
+export default function CurrentAffairs({banners}) {
     return (
         <section className="section-spacing current-affairs-section">
             <div className="container-fluid">
@@ -24,14 +24,13 @@ export default function CurrentAffairs() {
                     </div>
                     <div className="col-lg-4">
                         <div className="left-box">
-                            <img src={NoImg} alt="" className="img-fluid" />
+                            <img src={banners[0]?.fld_image} alt={banners[0]?.fld_alt} className="img-fluid" />
                             <div className="bottom-text">
-                                <span className="text-end">
-                                    On <br />June 8, 2024
+                                <span>
+                                   {banners[0]?.fld_createdon}
                                 </span>
                                 <p>
-                                    Simply Dummy Text <br />
-                                    Of The Printing Setting
+                                    {banners[0]?.fld_short_desc}
                                 </p>
                             </div>
                         </div>
@@ -39,6 +38,11 @@ export default function CurrentAffairs() {
                     <div className="col-lg-5">
                         <div className="center-box">
                             <div className="top-section">
+                                <img src={banners[1]?.fld_image} className="img-fluid" alt={banners[1]?.fld_alt} />
+                                <div className="content">
+                                    <p>
+                                    {banners[1]?.fld_short_desc}
+                                    </p>
                                 <div className="btn-box">
                                     <div className="position-relative">
                                         <img src={BgShape} className="img-fluid bg-shape" alt="" />
@@ -57,19 +61,19 @@ export default function CurrentAffairs() {
                                 </div>
                             </div>
                             <div className="bottom-vido-section">
-                                <img src={NoImg} className="img-fluid" alt="" />
-                                <FaPlay/> 
+                                <img src={banners[2]?.fld_image} className="img-fluid" alt={banners[2]?.fld_alt}/>
+                                <FaPlay
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-3">
                         <div className="right-box">
                             <div className="top-section">
-                                <img src={NoImg} className="img-fluid" alt="" />
+                                <img src={banners[3]?.fld_image} className="img-fluid" alt={banners[3]?.fld_alt} />
                                 <div className="content">
-                                    <span>On June 8, 2024</span>
+                                    <span>{banners[3]?.fld_createdon}</span>
                                     <p>
-                                    It has survived not only five centuries
+                                        {banners[1]?.fld_short_desc}
                                     </p>
                                 </div>
                             </div>

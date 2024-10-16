@@ -15,7 +15,7 @@ import 'swiper/css/thumbs';
 import { FreeMode, Pagination, Thumbs } from 'swiper/modules';
 import NoImg from "../../../assets/img/no-image.jpg";
 import BgShape from "../../../assets/img/bg-shapes/3.png";
-export default function AbouUsSection() {
+export default function AbouUsSection({banners}) {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
     return (
@@ -23,7 +23,7 @@ export default function AbouUsSection() {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-lg-7 left-section">
-                        <img alt="" src={NoImg} className="img-fluid" />
+                        <img alt={banners[0]?.fld_alt} src={banners[0]?.fld_desktop_image} className="img-fluid" />
                         <div className="content">
                             <img src={BgShape} className="img-fluid" alt="" />
                             <div className="inner-content">

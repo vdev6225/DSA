@@ -2,7 +2,42 @@ import { FaFacebookF, FaInstagramSquare , FaLinkedinIn, FaYoutube } from "react-
 import { FaXTwitter } from "react-icons/fa6";
 import NoImg from "../../../../assets/img/no-image.jpg";
 import "./NewsDetailSection.css";
+import { useParams } from "react-router-dom";
+
+import { useEffect, useState } from "react";
+import GetApiCall from "../../../../Helpers/Api/GetApi";
+
 export default function NewsDetailSection() {
+
+    const { id } = useParams();
+
+
+const [newsLetterPageData, setNewsLetterPageData] = useState([])
+
+const getNewsLetterPageData = () => {
+    GetApiCall.getRequest("GetNews").then((results)=> {
+      results.json().then((obj) => {
+        if (results.status === 200 || results.status === 201) {
+          setNewsLetterPageData(obj.data); 
+      }else {
+        // notification.error({
+        //   message: `Notification error`,
+        //   description: obj.data,
+        // });
+        }
+      })
+    })
+  }
+
+  const newsItem = newsLetterPageData?.find(item => item.fld_id === parseInt(id)); 
+
+    useEffect(()=>{
+        getNewsLetterPageData()
+    },[])
+
+
+  
+
     return (
         // <section className="section-spacing pt-4 news-detail-section">
         //     <div className="container-fluid">

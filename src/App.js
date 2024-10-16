@@ -10,6 +10,7 @@ import ArticlesPage from './Components/MagazinePage/ArticlesPage/ArticlesPage';
 import PodcastEventsPage from './Components/MagazinePage/PodcastEventsPage/PodcastEventsPage';
 import DefSecEduPage from './Components/MagazinePage/DefSecEdu/DefSecEduPage';
 import NewsletterPage from './Components/NewsletterPage/NewsletterPage';
+import NewsDetailSection from './Components/NewsletterPage/NewsPage/NewsDetailSection/NewsDetailSection';
 import NewsPage from './Components/NewsletterPage/NewsPage/NewsPage';
 import ArticlePage from './Components/NewsletterPage/ArticlePage/ArticlePage';
 import AlertPage from './Components/NewsletterPage/AlertPage/AlertPage';
@@ -53,6 +54,7 @@ function App() {
           <Route path="newsletter-article-page" element={<ArticlePage />} />
           <Route path="newsletter-alert-page" element={<AlertPage />} />
           <Route path="newsletter-def-page" element={<DefSecWivesPage />} />
+          <Route path="news/:id" element={<NewsDetailSection />} />
         </Route>
         {/* Admin Panel */}
         <Route path="/admin" element={<AdminLayout />} >

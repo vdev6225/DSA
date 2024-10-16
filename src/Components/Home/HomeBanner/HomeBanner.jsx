@@ -18,8 +18,7 @@ import BgShape from "../../../assets/img/bg-shapes/1.png";
 import Army from "../../../assets/img/home/home-banner/army.png";
 import Navy from "../../../assets/img/home/home-banner/navy.png";
 import AirForce from "../../../assets/img/home/home-banner/air-force.png";
-export default function HomeBanner() {
-
+export default function HomeBanner({banners}) {
     return (
         <section className="section-spacing home-banner">
             <div className="container-fluid">
@@ -55,15 +54,13 @@ export default function HomeBanner() {
                             <Swiper pagination={{
                                 clickable: true,
                             }} modules={[Pagination]} className="mySwiper">
-                                <SwiperSlide>
-                                    <img src={NoImg} className='img-fluid' alt="" />
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <img src={NoImg} className='img-fluid' alt="" />
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <img src={NoImg} className='img-fluid' alt="" />
-                                </SwiperSlide>
+
+                            {
+                                banners.map((item,id)=> {return (<SwiperSlide>
+                                    <img src={item?.fld_desktop_image} className='img-fluid' alt={item?.fld_alt} />
+                                </SwiperSlide>)})
+                            }
+                             
                             </Swiper>
                             <div className="banner-btn">
                                 <div className='position-relative'>
