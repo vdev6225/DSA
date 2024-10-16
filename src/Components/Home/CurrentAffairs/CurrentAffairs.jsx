@@ -9,6 +9,7 @@ import Horn from "../../../assets/img/icons/Megaphone.png";
 import { GoArrowRight } from "react-icons/go";
 export default function CurrentAffairs({banners}) {
     return (
+        
         <section className="section-spacing current-affairs-section">
             <div className="container-fluid">
                 <div className="row">
