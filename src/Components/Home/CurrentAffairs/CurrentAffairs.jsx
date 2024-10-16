@@ -62,7 +62,7 @@ export default function CurrentAffairs({banners}) {
                             </div>
                             <div className="bottom-vido-section">
                                 <img src={banners[2]?.fld_image} className="img-fluid" alt={banners[2]?.fld_alt}/>
-                                <FaPlay
+                                <FaPlay/>
                             </div>
                         </div>
                     </div>
@@ -82,6 +82,7 @@ export default function CurrentAffairs({banners}) {
                             </div>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </section>
