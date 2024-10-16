@@ -35,6 +35,7 @@ export default function CurrentAffairs({ banners }) {
                             </div>
                         </div>
                     </div>
+                    
                     <div className="col-lg-5">
                         <div className="center-box">
                             <div className="top-section">
