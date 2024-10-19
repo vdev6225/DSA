@@ -4,19 +4,27 @@
 .dsa-ups-section .mySwiper .swiper-pagination-bullet-active{
     background-color: var(--black-color) !important;
 }
+.dsa-ups-section .mySwiper .swiper-slide{
+    height: auto;
+}
 .dsa-ups-section .dsa-card {
     padding: 1rem;
     border-radius: 20px;
     background: var(--main-color-two);
     display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: justify;
+    height: 100%;
 }
 
 .dsa-ups-section .dsa-card .image {
     border-radius: 15px;
     overflow: hidden;
-    width: 45%;
+    /* width: 45%; */
     aspect-ratio: 1/1;
-    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .dsa-ups-section .dsa-card .image img {
@@ -26,9 +34,14 @@
 }
 
 .dsa-ups-section .dsa-card .content {
-    width: 55%;
+    /* width: 55%; */
+    font-size: .8rem;
 }
 .dsa-ups-section .dsa-card .content .name {
+    font-size: .9rem;
     font-weight: 500;
-    margin-bottom: 10px !important;
+    font-family: "bodyfontbold" !important;
+    margin-bottom: 6px !important;
+    color: var(--theme-color);
+    text-align-last: center;
 }
