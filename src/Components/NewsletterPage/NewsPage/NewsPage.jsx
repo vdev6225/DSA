@@ -7,13 +7,13 @@ import "./NewsPage.css";
 import CategoriesSection from "./CategoriesSection/CategoriesSection";
 
 import { useEffect, useState } from "react";
-import GetApiCall from "../../../Helpers/Api/GetApi";
+import PostApiCall from "../../../Helpers/Api/PostApi";
 
 export default function NewsPage() {
     const [newsLetterPageData, setNewsLetterPageData] = useState([])
 
     const getNewsLetterPageData = () => {
-        GetApiCall.getRequest("GetNews").then((results)=> {
+        PostApiCall.postRequest({whereClause:""},"GetNews").then((results)=> {
           results.json().then((obj) => {
             if (results.status === 200 || results.status === 201) {
               setNewsLetterPageData(obj.data); 

@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-import NoImg from "../../../../assets/img/no-image.jpg";
 import "./CategoriesSection.css";
-import NewsDetailSection from "../NewsDetailSection/NewsDetailSection";
+// import NewsDetailSection from "../NewsDetailSection/NewsDetailSection";
 
 import React, { useState, useEffect } from 'react';
 

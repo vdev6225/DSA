@@ -10,7 +10,6 @@ import 'swiper/css/pagination';
 // import required modules
 import { Pagination } from 'swiper/modules';
 
-import NoImg from "../../../assets/img/no-image.jpg";
 import "./HomeBanner.css";
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';

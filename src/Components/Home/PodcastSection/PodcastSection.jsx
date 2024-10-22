@@ -1,4 +1,3 @@
-import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import NoImg from "../../../assets/img/no-image.jpg";
 import Arrow from "../../../assets/img/icons/Vector.png";
