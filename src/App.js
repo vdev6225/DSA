@@ -20,6 +20,7 @@ import LoginPage from './AdminPanel/LoginPage';
 import AdminNav from './AdminPanel/AdminNav';
 import ContactUs from './Components/ContactUs/ContactUs';
 import MainFooter from './Components/MainFooter/MainFooter';
+import Provider from './Helpers/Store/Store';
 
 function App() {
   // const location = useLocation();
