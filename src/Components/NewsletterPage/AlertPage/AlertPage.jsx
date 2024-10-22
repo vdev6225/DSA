@@ -2,7 +2,36 @@ import { Link } from "react-router-dom";
 import NoImg from "../../../assets/img/no-image.jpg";
 import "./AlertPage.css";
 import NavigationSection from "../NavigationSection/NavigationSection";
+
+import {useState, useEffect} from 'react';
+import GetApiCall from "../../../Helpers/Api/GetApi";
+
 export default function AlertPage() {
+
+    const [newsLetterAlertData, setNewsLetterAlertData] = useState([]);
+
+    const getNewsLetterAlertData = () => {
+        GetApiCall.getRequest("GetNewsAlert").then((results)=> {
+          results.json().then((obj) => {
+            if (results.status === 200 || results.status === 201) {
+                setNewsLetterAlertData(obj.data); 
+          }else {
+            // notification.error({
+            //   message: `Notification error`,
+            //   description: obj.data,
+            // });
+            }
+          })
+        })
+      }
+
+      useEffect(()=>{
+        getNewsLetterAlertData();
+      },[])
+
+      console.log(newsLetterAlertData,"newsLetterAlertData")
+
+
     return (
         <>
             <NavigationSection />
@@ -30,7 +59,33 @@ export default function AlertPage() {
                     </div>
                     <div className="row">
                         <div className="col-12">
-                            <div className="alert-news-card">
+                            {
+                                newsLetterAlertData?.map((item,id)=>{
+                                    return  <div className="alert-news-card">
+                                    <div className="image">
+                                        <img src={item?.fld_image} className="img-fluid" alt={item?.fld_alt} />
+                                    </div>
+                                    <div className="content">
+                                        <div>
+                                            <h3>
+                                            {item?.fld_title}
+                                            </h3>
+                                            <p dangerouslySetInnerHTML={{ __html: item?.fld_short_desc }}/>
+                                                
+                                        </div>
+                                        <div className="d-flex justify-content-between mt-4">
+                                            <span>
+                                                Date -  {item?.fld_date || "Not available"}
+                                            </span>
+                                            <Link to="">
+                                                Full news</Link>
+                                        </div>
+                                    </div>
+                                </div>
+                                })
+                            }
+                           
+                            {/* <div className="alert-news-card">
                                 <div className="image">
                                     <img src={NoImg} className="img-fluid" alt="" />
                                 </div>
@@ -98,30 +153,7 @@ export default function AlertPage() {
                                             Full news</Link>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="alert-news-card">
-                                <div className="image">
-                                    <img src={NoImg} className="img-fluid" alt="" />
-                                </div>
-                                <div className="content">
-                                    <div>
-                                        <h3>
-                                            Heading of the news
-                                        </h3>
-                                        <p>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                        </p>
-                                    </div>
-                                    <div className="d-flex justify-content-between mt-4">
-                                        <span>
-                                            Date -
-                                        </span>
-                                        <Link to="">
-                                            Full news</Link>
-                                    </div>
-                                </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

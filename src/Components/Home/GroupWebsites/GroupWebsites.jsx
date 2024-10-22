@@ -1,5 +1,9 @@
 import "./GroupWebsites.css";
-import NoImg from "../../../assets/img/no-image.jpg";
+import Img1 from "../../../assets/img/group-websites/ocean-books-logo.jpg";
+import Img2 from "../../../assets/img/group-websites/ocian-media.png";
+import Img3 from "../../../assets/img/group-websites/prabhat-exam-logo-blue.png";
+import Img4 from "../../../assets/img/group-websites/prabhatprakashan.png";
+import Img5 from "../../../assets/img/group-websites/sahityaamtrit.png";
 export default function GroupWebsites() {
     return (
         <section className="section-spacing pt-0 group-company-section">
@@ -11,11 +15,11 @@ export default function GroupWebsites() {
                         </h2>
                     </div>
                     <div className="col-12 company-card">
-                        <img src={NoImg} className="img-fluid" alt="" />
-                        <img src={NoImg} className="img-fluid" alt="" />
-                        <img src={NoImg} className="img-fluid" alt="" />
-                        <img src={NoImg} className="img-fluid" alt="" />
-                        <img src={NoImg} className="img-fluid" alt="" />
+                        <img src={Img3} className="img-fluid" alt="" />
+                        <img src={Img2} className="img-fluid" alt="" />
+                        <img src={Img1} className="img-fluid" alt="" />
+                        <img src={Img4} className="img-fluid" alt="" />
+                        <img src={Img5} className="img-fluid" alt="" />
                     </div>
                 </div>
             </div>

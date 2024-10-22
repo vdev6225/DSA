@@ -1,7 +1,9 @@
 import "./NewsletterDefArticleSection.css";
 import NoImg from "../../../../assets/img/no-image.jpg";
 import { Link } from "react-router-dom";
+
 export default function NewsletterDefArticleSection() {
+    
     return (
         <section className="section-spacing py-0 newsletter-def-article-section">
             <div className="container-fluid">

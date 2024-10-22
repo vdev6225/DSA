@@ -15,15 +15,15 @@ export default function VisionSection() {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-lg-6 left-section">
-                        <img src={NoImg} className="img-fluid w-100 mb-4" alt="" />
+                        <img src='https://manmeetawsbucket.s3.eu-north-1.amazonaws.com/3.jpg' className="img-fluid w-100 mb-4" alt="" />
                         <h2 className="main-heading">
                             dsa <span>vision</span>
                         </h2>
                         <p>
-                            defence and security alert magazine
+                        The Mumbai attacks (2008)   
                         </p>
                         <p>
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable
+                        The Mumbai attacks (2008) intrigue us to establish Defence and Security Alert (DSA), a pivotal initiative aimed at addressing issues pertained to defence, security, and world affairs, originally designed to inform decision and policymakers in India. But as Global landscape drastically changed within few years, DSA quickly adapted to these shifts in the genre, expanding its vision to encompass international issues.
                         </p>
                     </div>
                     <div className="col-lg-6 right-section">
