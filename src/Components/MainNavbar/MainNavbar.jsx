@@ -7,15 +7,17 @@ import Logo from "../../assets/img/logo/DSA-transparent-logo.png";
 
 import "./MainNavbar.css"
 import LoginModal from '../Login/LoginModal';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { store } from '../../Helpers/Store/Store';
 export default function MainNavbar() {
-    const [showModal,setShowModal] = useState(false)
+    const {setShow,setModalType} = useContext(store)
     const items = [
         {
             key: '1',
             label: (
                 <div onClick={()=>{
-                    setShowModal(true)
+                    setShow(true)
+                    setModalType("Login")
                 }}>
                     Login
                 </div>
@@ -25,17 +27,17 @@ export default function MainNavbar() {
             key: '2',
             label: (
                 <div onClick={()=>{
-                    setShowModal(true)
+                    setShow(true)
+                    setModalType("Register")
                 }}>
                     Register now
                 </div>
             ),
         }
     ]
-    console.log(showModal)
     return (
         <div className='px-lg-3 main-navbar-box'>
-            <LoginModal showModal={showModal}/>
+            <LoginModal/>
             <Navbar collapseOnSelect expand="lg" className='main-navbar'>
                 <Container fluid>
                     <div className="side-drawer">
