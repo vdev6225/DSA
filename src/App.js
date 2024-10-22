@@ -26,8 +26,8 @@ function App() {
     <div>
       {window.location.pathname === '/' ? " " : <MainNavbar />}
       <Outlet />
-      {window.location.pathname === '/' ? " " : <TestimonialSection />}
-      {window.location.pathname === '/' ? " " : <GroupWebsites />}
+      {/* {window.location.pathname === '/' ? " " : <TestimonialSection />}
+      {window.location.pathname === '/' ? " " : <GroupWebsites />} */}
     </div>
   );
 
