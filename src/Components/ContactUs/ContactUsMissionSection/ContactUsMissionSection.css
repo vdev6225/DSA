@@ -1,0 +1,46 @@
+.contact-us-mission-section {
+    position: relative;
+}
+
+.contact-us-mission-section .main-heading h2,
+.contact-us-mission-section .left-section .main-heading h4 {
+    font-family: "headingbold" !important;
+}
+
+.contact-us-mission-section .left-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    border-radius: 20px;
+    background: var(--main-color-two);
+    z-index: -1;
+}
+
+.contact-us-mission-section b {
+    font-family: "bodyfontbold" !important;
+    text-transform: capitalize;
+}
+
+.contact-us-mission-section .left-section .left-content {
+    width: 60%;
+    padding-right: 2rem;
+}
+
+.contact-us-mission-section .left-section .right-img {
+    width: 40%;
+    /* height: 500px; */
+}
+
+.contact-us-mission-section .right-section{
+    font-size: 1.2rem;
+}
+.contact-us-mission-section a {
+    padding: 10px 20px;
+    background: var(--main-color-one);
+    border-radius: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+}

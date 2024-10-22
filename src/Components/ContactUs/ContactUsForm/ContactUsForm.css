@@ -1,0 +1,84 @@
+.contact-us-form .main-heading h2 {
+    font-family: "headingbold" !important;
+}
+
+.contact-us-form b {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-family: "bodyfontbold" !important;
+}
+
+.contact-us-form .contact-links {
+    border-right: 2px solid var(--black-color);
+}
+
+.contact-us-form .contact-links .box {
+    margin-bottom: 1rem;
+}
+
+.contact-us-form .contact-links .box p {
+    font-size: 1.4rem;
+    font-family: "bodyfontbold" !important;
+    /* margin-bottom: 1rem !important; */
+    text-transform: uppercase;
+}
+
+.contact-us-form .conact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us-form .conact-form input {
+    height: 50px;
+}
+
+.contact-us-form .conact-form input,
+.contact-us-form .conact-form textarea {
+    border: none;
+    outline: none;
+    margin-bottom: 1rem;
+    padding: 10px;
+    /* padding: 1.5rem 1rem 10px; */
+    background: var(--main-color-two);
+    position: relative;
+}
+
+
+.contact-us-form .conact-form input::placeholder,
+.contact-us-form .conact-form textarea::placeholder {
+    color: var(--black-color);
+    position: absolute;
+    bottom: 10px;
+    font-weight: bolder;
+}
+
+.contact-us-form .conact-form button {
+    padding: 8px 25px;
+    background: var(--main-color-two);
+    border-radius: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    display: inline-block;
+    width: auto;
+    border: none;
+    outline: none;
+}
+
+
+
+.contact-call-section {
+    background: var(--main-color-one);
+}
+
+.contact-call-section a {
+    padding: 8px 30px;
+    background: var(--main-color-two);
+    border-radius: 40px;
+    text-transform: capitalize;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.contact-call-section p {
+    font-size: 2rem;
+}

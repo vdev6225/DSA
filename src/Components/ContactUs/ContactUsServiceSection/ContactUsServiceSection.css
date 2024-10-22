@@ -1,0 +1,118 @@
+
+.contact-us-service-section{
+    position: relative;
+}
+.contact-us-service-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background: var(--main-color-one);
+    z-index: -1;
+    border-radius: 20px;
+}
+.contact-us-service-section .main-heading h2{
+    font-family: "headingbold" !important;
+}
+.contact-us-service-section .top-content b{
+    margin-bottom: 10px;
+    display: inline-block;
+    text-transform: capitalize;
+    font-family: "bodyfontbold" !important;
+}
+.contact-us-service-section .top-content p{
+    font-size: 1.3rem;
+}
+.contact-us-service-section .top-content a{
+    padding: 8px 25px;
+    background: var(--main-color-two);
+    border-radius: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    display: inline-block;
+}
+.contact-us-service-section .contact-service-card {
+    display: flex;
+    background: var(--main-color-two);
+    border-radius: 20px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.contact-us-service-section .contact-service-card .image {
+    border-radius: 15px;
+    overflow: hidden;
+    width: 20%;
+}
+
+.contact-us-service-section .contact-service-card .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-us-service-section .contact-service-card .content {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    /* color: var(--white-color); */
+    /* align-items: center; */
+}
+
+.contact-us-service-section .contact-service-card .content .text {
+    padding: 0 1rem;
+}
+
+.contact-us-service-section .contact-service-card .content .name {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 0px !important;
+    font-family: "bodyfontbold" !important;
+}
+
+.contact-us-service-section .contact-service-card .content .des {
+    font-size: .9rem;
+    /* line-height: 1 !important; */
+}
+
+.contact-us-service-section .contact-service-card .content .arrow-btn {
+    align-self: center;
+}
+
+.contact-us-service-section .contact-service-card .content .arrow-btn a {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    /* padding: 10px; */
+    border-radius: 50%;
+    /* background: var(--main-color-two); */
+    border: 2px solid var(--white-color);
+    transform: rotate(-30deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s all;
+}
+
+.contact-us-service-section .contact-service-card .content .arrow-btn a svg {
+    color: var(--white-color);
+}
+
+.contact-us-service-section .contact-service-card .content .arrow-btn a:hover {
+    background: var(--white-color);
+}
+
+.contact-us-service-section .contact-service-card .content .arrow-btn a:hover svg {
+    color: var(--theme-color);
+}
+.contact-us-service-section .bottom-img{
+    padding: 1rem;
+    border-radius: 20px;
+    border: 4px solid var(--main-color-two);
+}
+.contact-us-service-section .bottom-img img{
+    border-radius: 15px;
+    width: 100%;
+    height: 300px;
+}
