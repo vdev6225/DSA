@@ -17,13 +17,19 @@ export default function ArticlesSection() {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-lg-6 pe-lg-0">
-                        <div className="section-spacing pt-0 pb-4 mb-2 pe-0">
+                        <div className="section-spacing pt-0 pb-2 heading-box mb-2 pe-0">
                             <h2 className="main-heading">
                                 Articles
                             </h2>
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
                             </p>
+                            <div className="text-end mt-4">
+                                <Link to="">
+                                    View All
+                                    <FaArrowRight />
+                                </Link>
+                            </div>
                         </div>
                         <div className="left-swiper-box">
                             <Swiper
@@ -141,7 +147,7 @@ export default function ArticlesSection() {
                             </div>
                         </div>
                         <div className="view-event-btn">
-                            <Link to="" >View our events <FaArrowRight /></Link>
+                            <Link to="" >Stay Updated With Us  <FaArrowRight /></Link>
                         </div>
                     </div>
                 </div>

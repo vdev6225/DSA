@@ -9,8 +9,8 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { FreeMode, Pagination } from 'swiper/modules';
-import NoImg from "../../../assets/img/no-image.jpg";
 import "./NewsletterSection.css";
+import moment from 'moment';
 export default function NewsletterSection({banners}) {
 
     return (
@@ -37,7 +37,7 @@ export default function NewsletterSection({banners}) {
                                             <div className="content">
                                                 <h5>{item?.fld_short_desc}</h5>
                                                 <span className="date">
-                                                   {item?.fld_createdon}
+                                                   {moment(item?.fld_createdon).format('MMMM D, YYYY')}
                                                 </span>
                                             </div>
                                         </div>
@@ -45,84 +45,6 @@ export default function NewsletterSection({banners}) {
                                     )
                                 } )
                             }
-                            {/* <SwiperSlide>
-                                <div className="newsletter-card">
-                                    <div className="image">
-                                        <img src={NoImg} className='img-fluid' alt="" />
-                                    </div>
-                                    <div className="content">
-                                        <h5>COVID- 19: THE RUTHLESS ENEMY</h5>
-                                        <span className="date">
-                                            June 8, 2020
-                                        </span>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="newsletter-card">
-                                    <div className="image">
-                                        <img src={NoImg} className='img-fluid' alt="" />
-                                    </div>
-                                    <div className="content">
-                                        <h5>COVID- 19: THE RUTHLESS ENEMY</h5>
-                                        <span className="date">
-                                            June 8, 2020
-                                        </span>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="newsletter-card">
-                                    <div className="image">
-                                        <img src={NoImg} className='img-fluid' alt="" />
-                                    </div>
-                                    <div className="content">
-                                        <h5>COVID- 19: THE RUTHLESS ENEMY</h5>
-                                        <span className="date">
-                                            June 8, 2020
-                                        </span>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="newsletter-card">
-                                    <div className="image">
-                                        <img src={NoImg} className='img-fluid' alt="" />
-                                    </div>
-                                    <div className="content">
-                                        <h5>COVID- 19: THE RUTHLESS ENEMY</h5>
-                                        <span className="date">
-                                            June 8, 2020
-                                        </span>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="newsletter-card">
-                                    <div className="image">
-                                        <img src={NoImg} className='img-fluid' alt="" />
-                                    </div>
-                                    <div className="content">
-                                        <h5>COVID- 19: THE RUTHLESS ENEMY</h5>
-                                        <span className="date">
-                                            June 8, 2020
-                                        </span>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="newsletter-card">
-                                    <div className="image">
-                                        <img src={NoImg} className='img-fluid' alt="" />
-                                    </div>
-                                    <div className="content">
-                                        <h5>COVID- 19: THE RUTHLESS ENEMY</h5>
-                                        <span className="date">
-                                            June 8, 2020
-                                        </span>
-                                    </div>
-                                </div>
-                            </SwiperSlide> */}
                         </Swiper>
                     </div>
                 </div>

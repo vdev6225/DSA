@@ -1,7 +1,8 @@
 :root {
   --theme-color: #800000;
+  --theme-color-gradiant: #800000A8;
   --main-color-one: #D9D9D9;
-  --main-color-two: #e3e3e3;
+  --main-color-two: #BCBCBC;
   --black-color: #000;
   --white-color: #fff;
   --border-color: #000;
@@ -71,6 +72,10 @@ ul {
 }
 
 
+
+.main-heading {
+  color: var(--theme-color);
+}
 
 .main-heading span {
   color: #636669;

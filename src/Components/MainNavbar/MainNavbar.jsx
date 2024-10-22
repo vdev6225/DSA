@@ -3,6 +3,8 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { FaUser } from 'react-icons/fa';
 import { IoSearch } from 'react-icons/io5';
 import { VscListSelection } from 'react-icons/vsc';
+import Logo from "../../assets/img/logo/DSA-transparent-logo.png";
+
 import "./MainNavbar.css"
 export default function MainNavbar() {
     const items = [
@@ -41,6 +43,9 @@ export default function MainNavbar() {
                                     <IoSearch />
                                 </div>
                             </div>
+                            <Navbar.Brand href='/'>
+                                <img src={Logo} className="img-fluid" alt="DSA Logo" />
+                            </Navbar.Brand>
                             <div className="d-flex align-items-center">
                                 <Nav.Link href="/" className='theme-btn me-3'>Subscribe</Nav.Link>
                                 <div className="login-dropdown">

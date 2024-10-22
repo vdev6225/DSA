@@ -8,21 +8,22 @@
     display: flex;
 }
 
-.deg-sec-wives-section .top-section .main-heading {
-    position: absolute;
+.deg-sec-wives-section .main-heading {
+    /* position: absolute;
     left: 50%;
-    transform: translateX(-50%);
-    top: -30px;
-    background: var(--main-color-one);
-    padding: 10px;
-    border-radius: 0 0 20px 20px;
-    width: 80%;
-    text-align: center;
-    z-index: 1;
+    transform: translateX(-50%); */
+    /* top: -30px; */
+    /* background: var(--main-color-one); */
+    /* padding: 10px; */
+    /* border-radius: 0 0 20px 20px; */
+    /* width: 80%; */
+    /* text-align: center; */
+    /* z-index: 1; */
 }
 
-.deg-sec-wives-section .top-section .main-heading h2 {
+.deg-sec-wives-section .main-heading h2 {
     font-size: 3rem;
+    margin-bottom: 2rem;
     font-family: "headingbold" !important;
 }
 
@@ -30,14 +31,23 @@
     width: 50%;
     margin-bottom: 2rem;
     position: relative;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
-.deg-sec-wives-section .top-section .image h5 {
+.deg-sec-wives-section .top-section .image .bottom-text{
     position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--theme-color-gradiant);
+    padding: 1rem;
+    text-align: center;
+    color: var(--white-color);
+}
+.deg-sec-wives-section .top-section .image h5 {
     text-transform: uppercase;
+    margin-bottom: 0;
     font-family: "bodyfontbold" !important;
 }
 
@@ -50,6 +60,8 @@
     margin-top: 2rem;
     position: relative;
     height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 .deg-sec-wives-section .bottom-section .content {
@@ -57,6 +69,8 @@
     left: 0;
     bottom: 0;
     padding: 1rem;
+    background: var(--theme-color-gradiant);
+    color: var(--white-color);
 }
 
 .deg-sec-wives-section .bottom-section img {
@@ -73,6 +87,7 @@
 .deg-sec-wives-section .top-heading h3 {
     text-transform: uppercase;
     font-family: "bodyfontbold" !important;
+    color: var(--theme-color);
 }
 
 .deg-sec-wives-section .personal-card {
@@ -92,10 +107,22 @@
 .deg-sec-wives-section .personal-card .image img {
     width: 100%;
     border-radius: 20px;
-    height: 200px;
+    height: 150px;
+    border: 2px solid var(--theme-color);
 }
 
 .deg-sec-wives-section .personal-card .content h4 {
     text-transform: uppercase;
     font-family: "bodyfontbold" !important;
+    color: var(--theme-color);
+}
+.deg-sec-wives-section .theme-btn{
+    padding: 8px 30px;
+    border: 2px solid var(--theme-color);
+    color: var(--theme-color) !important;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    transition: .3s all;
+    display: inline-block;
+    font-weight: bolder;
 }

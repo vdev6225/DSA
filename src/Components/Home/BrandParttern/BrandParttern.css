@@ -1,5 +1,6 @@
 .brand-parttern-section{
     padding: 20px 0;
+    background: var(--theme-color);
 }
 .brand-parttern-section p{
     color: var(--white-color);
