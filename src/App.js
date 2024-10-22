@@ -18,6 +18,7 @@ import DefSecWivesPage from './Components/NewsletterPage/DefSecWivesPage/DefSecW
 import HomeMaster from './AdminPanel/HomeMaster';
 import LoginPage from './AdminPanel/LoginPage';
 import AdminNav from './AdminPanel/AdminNav';
+import ContactUs from './Components/ContactUs/ContactUs';
 
 function App() {
   // const location = useLocation();
@@ -44,6 +45,7 @@ function App() {
         <Route path="/" element={<WebsiteLayout />}>
           <Route index element={<Home />} />
           <Route path="about-us" element={<AboutUs />} />
+          <Route path="contact-us" element={<ContactUs />} />
           <Route path="editions" element={<EditionsPage />} />
           <Route path="articles" element={<ArticlesPage />} />
           <Route path="podcast-and-events" element={<PodcastEventsPage />} />
