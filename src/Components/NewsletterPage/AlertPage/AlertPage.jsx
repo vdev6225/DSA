@@ -1,17 +1,16 @@
 import { Link } from "react-router-dom";
-import NoImg from "../../../assets/img/no-image.jpg";
 import "./AlertPage.css";
 import NavigationSection from "../NavigationSection/NavigationSection";
 
 import {useState, useEffect} from 'react';
-import GetApiCall from "../../../Helpers/Api/GetApi";
+import PostApiCall from "../../../Helpers/Api/PostApi";
 
 export default function AlertPage() {
 
     const [newsLetterAlertData, setNewsLetterAlertData] = useState([]);
 
     const getNewsLetterAlertData = () => {
-        GetApiCall.getRequest("GetNewsAlert").then((results)=> {
+        PostApiCall.postRequest({whereClause:""},"GetNewsAlert").then((results)=> {
           results.json().then((obj) => {
             if (results.status === 200 || results.status === 201) {
                 setNewsLetterAlertData(obj.data); 
@@ -28,8 +27,6 @@ export default function AlertPage() {
       useEffect(()=>{
         getNewsLetterAlertData();
       },[])
-
-      console.log(newsLetterAlertData,"newsLetterAlertData")
 
 
     return (

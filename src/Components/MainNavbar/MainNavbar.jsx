@@ -6,12 +6,17 @@ import { VscListSelection } from 'react-icons/vsc';
 import Logo from "../../assets/img/logo/DSA-transparent-logo.png";
 
 import "./MainNavbar.css"
+import LoginModal from '../Login/LoginModal';
+import { useState } from 'react';
 export default function MainNavbar() {
+    const [showModal,setShowModal] = useState(false)
     const items = [
         {
             key: '1',
             label: (
-                <div>
+                <div onClick={()=>{
+                    setShowModal(true)
+                }}>
                     Login
                 </div>
             ),
@@ -19,14 +24,18 @@ export default function MainNavbar() {
         {
             key: '2',
             label: (
-                <div>
-                    register now
+                <div onClick={()=>{
+                    setShowModal(true)
+                }}>
+                    Register now
                 </div>
             ),
         }
     ]
+    console.log(showModal)
     return (
         <div className='px-lg-3 main-navbar-box'>
+            <LoginModal showModal={showModal}/>
             <Navbar collapseOnSelect expand="lg" className='main-navbar'>
                 <Container fluid>
                     <div className="side-drawer">
