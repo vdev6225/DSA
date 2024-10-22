@@ -16,6 +16,7 @@ import PodcastSection from "../Components/Home/PodcastSection/PodcastSection";
 import ServiceSection from "../Components/Home/ServiceSection/ServiceSection";
 import TestimonialSection from "../Components/Home/TestimonialSection/TestimonialSection";
 import GetApiCall from "../Helpers/Api/GetApi";
+import MainFooter from "../Components/MainFooter/MainFooter";
 // import MainNavbar from "../Components/MainNavbar/MainNavbar";
 
 export default function Home() {
@@ -93,6 +94,7 @@ export default function Home() {
             <GroupWebsites />
             <InstagramFeed />
             <DsaUpsSection />
+            <MainFooter />
         </>
     )
 }

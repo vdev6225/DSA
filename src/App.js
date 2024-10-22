@@ -19,6 +19,7 @@ import HomeMaster from './AdminPanel/HomeMaster';
 import LoginPage from './AdminPanel/LoginPage';
 import AdminNav from './AdminPanel/AdminNav';
 import ContactUs from './Components/ContactUs/ContactUs';
+import MainFooter from './Components/MainFooter/MainFooter';
 
 function App() {
   // const location = useLocation();
@@ -26,6 +27,7 @@ function App() {
     <div>
       {window.location.pathname === '/' ? " " : <MainNavbar />}
       <Outlet />
+      {window.location.pathname === '/' ? " " : <MainFooter />}
       {/* {window.location.pathname === '/' ? " " : <TestimonialSection />}
       {window.location.pathname === '/' ? " " : <GroupWebsites />} */}
     </div>

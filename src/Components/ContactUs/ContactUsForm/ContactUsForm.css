@@ -68,6 +68,7 @@
 
 .contact-call-section {
     background: var(--main-color-one);
+    margin-bottom: 6rem;
 }
 
 .contact-call-section a {
@@ -81,4 +82,5 @@
 
 .contact-call-section p {
     font-size: 2rem;
+    font-style: italic;
 }
