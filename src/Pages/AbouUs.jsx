@@ -13,7 +13,7 @@ export default function AboutUs() {
     return (
         <>
             <AboutPageHeader />
-            <MilestoneSection HeadingText={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"} />
+            <MilestoneSection HeadingText={"15 years Journey so far through the key milestones that have defined DSA’s growth and impact in defence journalism. From our inception to becoming a globally recognized research based publication, see how we’ve evolved over the years."} />
             <VisionSection />
             <DsaUps />
             <FounderSection />
