@@ -11,6 +11,7 @@ import 'swiper/css/pagination';
 import { FreeMode, Pagination } from 'swiper/modules';
 import "./NewsletterSection.css";
 import moment from 'moment';
+
 export default function NewsletterSection({banners}) {
 
     return (
