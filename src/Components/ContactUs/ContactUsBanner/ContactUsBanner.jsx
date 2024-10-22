@@ -1,10 +1,10 @@
-import NoImg from "../../../assets/img/no-image.jpg";
+import Banner from "../../../assets/img/contact-banner.png";
 import "./ContactUsBanner.css";
 export default function ContactUsBanner() {
     return (
         <>
             <section className="section-spacing px-lg-4 contact-us-page-banner">
-                <img src={NoImg} className="img-fluid" alt="" />
+                <img src={Banner} className="img-fluid" alt="" />
                 <div className="container-fluid">
                     <div className="row h-100">
                         <div className="col-12">
