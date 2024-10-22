@@ -19,6 +19,7 @@ import HomeMaster from "./AdminPanel/HomeMaster";
 import LoginPage from "./AdminPanel/LoginPage";
 import AdminNav from "./AdminPanel/AdminNav";
 import Provider from "./Helpers/Store/Store";
+import ContactUs from "./Components/ContactUs/ContactUs";
 
 function App() {
   // const location = useLocation();
@@ -26,8 +27,8 @@ function App() {
     <div>
       {window.location.pathname === "/" ? " " : <MainNavbar />}
       <Outlet />
-      {window.location.pathname === "/" ? " " : <TestimonialSection />}
-      {window.location.pathname === "/" ? " " : <GroupWebsites />}
+      {/* {window.location.pathname === '/' ? " " : <TestimonialSection />}
+      {window.location.pathname === '/' ? " " : <GroupWebsites />} */}
     </div>
   );
 
@@ -45,6 +46,7 @@ function App() {
           <Route path="/" element={<WebsiteLayout />}>
             <Route index element={<Home />} />
             <Route path="about-us" element={<AboutUs />} />
+            <Route path="contact-us" element={<ContactUs />} />
             <Route path="editions" element={<EditionsPage />} />
             <Route path="articles" element={<ArticlesPage />} />
             <Route path="podcast-and-events" element={<PodcastEventsPage />} />
