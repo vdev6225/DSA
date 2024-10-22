@@ -25,7 +25,7 @@ function App() {
   // const location = useLocation();
   const WebsiteLayout = () => (
     <div>
-      {window.location.pathname === '/' ? " " : <MainNavbar />}
+      {window.location.pathname === "/" ? " " : <MainNavbar />}
       <Outlet />
       {window.location.pathname === '/' ? " " : <MainFooter />}
       {/* {window.location.pathname === '/' ? " " : <TestimonialSection />}
@@ -35,40 +35,39 @@ function App() {
 
   const AdminLayout = () => (
     <div>
-
-      {window.location.pathname === '/admin' ? " " : <AdminNav />}
+      {window.location.pathname === "/admin" ? " " : <AdminNav />}
       <Outlet />
     </div>
   );
   return (
-    <BrowserRouter>
-      <Routes>
-        {/* Website */}
-        <Route path="/" element={<WebsiteLayout />}>
-          <Route index element={<Home />} />
-          <Route path="about-us" element={<AboutUs />} />
-          <Route path="contact-us" element={<ContactUs />} />
-          <Route path="editions" element={<EditionsPage />} />
-          <Route path="articles" element={<ArticlesPage />} />
-          <Route path="podcast-and-events" element={<PodcastEventsPage />} />
-          <Route path="def-sec-edu" element={<DefSecEduPage />} />
+    <Provider>
+      <BrowserRouter>
+        <Routes>
+          {/* Website */}
+          <Route path="/" element={<WebsiteLayout />}>
+            <Route index element={<Home />} />
+            <Route path="about-us" element={<AboutUs />} />
+            <Route path="contact-us" element={<ContactUs />} />
+            <Route path="editions" element={<EditionsPage />} />
+            <Route path="articles" element={<ArticlesPage />} />
+            <Route path="podcast-and-events" element={<PodcastEventsPage />} />
+            <Route path="def-sec-edu" element={<DefSecEduPage />} />
 
-          <Route path="newsletter" element={<NewsletterPage />} />
-          <Route path="newsletter-news" element={<NewsPage />} />
-          <Route path="newsletter-article-page" element={<ArticlePage />} />
-          <Route path="newsletter-alert-page" element={<AlertPage />} />
-          <Route path="newsletter-def-page" element={<DefSecWivesPage />} />
-          <Route path="news/:id" element={<NewsDetailSection />} />
-        </Route>
-        {/* Admin Panel */}
-        <Route path="/admin" element={<AdminLayout />} >
-          <Route index element={<LoginPage />} />
-          <Route path="home-master" element={<HomeMaster />} />
-
-        </Route>
-      </Routes>
-
-    </BrowserRouter>
+            <Route path="newsletter" element={<NewsletterPage />} />
+            <Route path="newsletter-news" element={<NewsPage />} />
+            <Route path="newsletter-article-page" element={<ArticlePage />} />
+            <Route path="newsletter-alert-page" element={<AlertPage />} />
+            <Route path="newsletter-def-page" element={<DefSecWivesPage />} />
+            <Route path="news/:id" element={<NewsDetailSection />} />
+          </Route>
+          {/* Admin Panel */}
+          <Route path="/admin" element={<AdminLayout />}>
+            <Route index element={<LoginPage />} />
+            <Route path="home-master" element={<HomeMaster />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </Provider>
   );
 }
 
