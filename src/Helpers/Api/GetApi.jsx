@@ -4,7 +4,7 @@ var access = sessionStorage.getItem("access");
 const GetApiCall = {
   getRequest(url) {
     return fetch(urlString + url, {
-      method: "GET",
+      method: "POST",
       headers: {
         Accept: "application/json",
         "Access-Control-Allow-Origin": "*",
