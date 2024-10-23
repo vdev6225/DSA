@@ -1,6 +1,7 @@
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import NoImg from "../../../assets/img/no-image.jpg";
+import Image from "../../../assets/img/contact-news.png";
 import "./ContactUsServiceSection.css";
 export default function ContactUsServiceSection() {
     return (
@@ -77,7 +78,7 @@ export default function ContactUsServiceSection() {
                             </div>
                         </div>
                         <div className="bottom-img">
-                            <img src={NoImg} className="img-fluid" alt="" />
+                            <img src={Image} className="img-fluid" alt="" />
                         </div>
                     </div>
                 </div>

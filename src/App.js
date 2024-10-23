@@ -1,25 +1,26 @@
-import "./App.css";
-import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
-import Home from "./Pages/Home";
-import MainNavbar from "./Components/MainNavbar/MainNavbar";
-import AboutUs from "./Pages/AbouUs";
-import TestimonialSection from "./Components/Home/TestimonialSection/TestimonialSection";
-import GroupWebsites from "./Components/Home/GroupWebsites/GroupWebsites";
-import EditionsPage from "./Components/MagazinePage/EditionsPage/EditionsPage";
-import ArticlesPage from "./Components/MagazinePage/ArticlesPage/ArticlesPage";
-import PodcastEventsPage from "./Components/MagazinePage/PodcastEventsPage/PodcastEventsPage";
-import DefSecEduPage from "./Components/MagazinePage/DefSecEdu/DefSecEduPage";
-import NewsletterPage from "./Components/NewsletterPage/NewsletterPage";
-import NewsDetailSection from "./Components/NewsletterPage/NewsPage/NewsDetailSection/NewsDetailSection";
-import NewsPage from "./Components/NewsletterPage/NewsPage/NewsPage";
-import ArticlePage from "./Components/NewsletterPage/ArticlePage/ArticlePage";
-import AlertPage from "./Components/NewsletterPage/AlertPage/AlertPage";
-import DefSecWivesPage from "./Components/NewsletterPage/DefSecWivesPage/DefSecWivesPage";
-import HomeMaster from "./AdminPanel/HomeMaster";
-import LoginPage from "./AdminPanel/LoginPage";
-import AdminNav from "./AdminPanel/AdminNav";
-import Provider from "./Helpers/Store/Store";
-import ContactUs from "./Components/ContactUs/ContactUs";
+import './App.css';
+import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
+import Home from './Pages/Home';
+import MainNavbar from './Components/MainNavbar/MainNavbar';
+import AboutUs from './Pages/AbouUs';
+import TestimonialSection from './Components/Home/TestimonialSection/TestimonialSection';
+import GroupWebsites from './Components/Home/GroupWebsites/GroupWebsites';
+import EditionsPage from './Components/MagazinePage/EditionsPage/EditionsPage';
+import ArticlesPage from './Components/MagazinePage/ArticlesPage/ArticlesPage';
+import PodcastEventsPage from './Components/MagazinePage/PodcastEventsPage/PodcastEventsPage';
+import DefSecEduPage from './Components/MagazinePage/DefSecEdu/DefSecEduPage';
+import NewsletterPage from './Components/NewsletterPage/NewsletterPage';
+import NewsDetailSection from './Components/NewsletterPage/NewsPage/NewsDetailSection/NewsDetailSection';
+import NewsPage from './Components/NewsletterPage/NewsPage/NewsPage';
+import ArticlePage from './Components/NewsletterPage/ArticlePage/ArticlePage';
+import AlertPage from './Components/NewsletterPage/AlertPage/AlertPage';
+import DefSecWivesPage from './Components/NewsletterPage/DefSecWivesPage/DefSecWivesPage';
+import HomeMaster from './AdminPanel/HomeMaster';
+import LoginPage from './AdminPanel/LoginPage';
+import AdminNav from './AdminPanel/AdminNav';
+import ContactUs from './Components/ContactUs/ContactUs';
+import MainFooter from './Components/MainFooter/MainFooter';
+import Provider from './Helpers/Store/Store';
 
 function App() {
   // const location = useLocation();
@@ -27,6 +28,7 @@ function App() {
     <div>
       {window.location.pathname === "/" ? " " : <MainNavbar />}
       <Outlet />
+      {window.location.pathname === '/' ? " " : <MainFooter />}
       {/* {window.location.pathname === '/' ? " " : <TestimonialSection />}
       {window.location.pathname === '/' ? " " : <GroupWebsites />} */}
     </div>
