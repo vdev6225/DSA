@@ -15,16 +15,16 @@ export default function NavigationSection() {
                             </p>
                             <ul className="inner-links">
                                 <li>
-                                    <Link to="">Editions</Link>
+                                    <Link to="/editions">Editions</Link>
                                 </li>
                                 <li>
-                                    <Link to="">Articles</Link>
+                                    <Link to="/articles">Articles</Link>
                                 </li>
                                 <li>
-                                    <Link to="">Podcast</Link>
+                                    <Link to="/podcast-and-events">Podcast</Link>
                                 </li>
                                 <li>
-                                    <Link to="">Def-Sec Edu</Link>
+                                    <Link to="/def-sec-edu">Def-Sec Edu</Link>
                                 </li>
                             </ul>
                             <div className="sm-links">

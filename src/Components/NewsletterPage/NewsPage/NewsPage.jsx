@@ -32,8 +32,6 @@ export default function NewsPage() {
         getNewsLetterPageData()
     },[])
 
-      console.log(newsLetterPageData,"newsLetterPageData")
-
 
 
     return (

@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import NoImg from "../../../../assets/img/no-image.jpg";
 import "./AboutEventSection.css";
-export default function AboutEventSection() {
+import moment from "moment";
+export default function AboutEventSection({eventdata}) {
     return (
         <section className="section-spacing py-0 about-event-section">
             <div className="container-fuid">
@@ -11,36 +12,42 @@ export default function AboutEventSection() {
                             About the event
                         </h2>
                         <p>
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+                        {eventdata[1]?.fld_short_desc}
                         </p>
                         <div className="d-flex gap-5">
                             <div className="box">
                                 <p>
                                     Date-
                                 </p>
-                                <p></p>
+                                <p>{moment(eventdata[1]?.fld_createdon).format('MMMM D, YYYY')}</p>
                             </div>
                             <div className="box">
                                 <p>
                                     Time-
                                 </p>
-                                <p></p>
+                                <p>{moment(eventdata[1]?.fld_createdon).format('HH:mm:ss')}</p>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-9">
                         <div className="right-section">
                             <div className="left-three-img">
-                                <img src={NoImg} className="img-fluid" alt="" />
-                                <img src={NoImg} className="img-fluid" alt="" />
-                                <img src={NoImg} className="img-fluid" alt="" />
+                            {eventdata[1]?.fld_all_images ? JSON.parse(eventdata[1]?.fld_all_images)?.slice(0,3).map((dat)=>{
+                                return(
+                                    <img src={dat} className="img-fluid" alt="" />
+                                )
+                            }):""}
                             </div>
                             <div className="right-img">
                                 <div className="text-lg-end">
                                     <Link to="">
                                         View our events</Link>
                                 </div>
-                                <img src={NoImg} className="img-fluid" alt="" />
+                                {eventdata[1]?.fld_all_images ? JSON.parse(eventdata[1]?.fld_all_images)?.slice(3,4).map((dat)=>{
+                                return(
+                                    <img src={dat} className="img-fluid" alt="" />
+                                )
+                            }):""}
                             </div>
                         </div>
                     </div>

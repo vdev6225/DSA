@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { FreeMode, Grid, Pagination } from 'swiper/modules';
-export default function EventsPage() {
+export default function EventsPage({eventdata}) {
     return (
         <section className="section-spacing events-section">
             <div className="container-flid">
@@ -31,118 +31,23 @@ export default function EventsPage() {
                             modules={[FreeMode,Grid, Pagination]}
                             className="mySwiper pb-5"
                         >
-                            <SwiperSlide>
-                                <div className="event-card">
-                                    <img src={NoImg} className="img-fluid" alt="" />
-                                    <div className="content">
-                                        <h4>
-                                            Event topic 1
-                                        </h4>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority </p>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="event-card">
-                                    <img src={NoImg} className="img-fluid" alt="" />
-                                    <div className="content">
-                                        <h4>
-                                            Event topic 1
-                                        </h4>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority </p>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="event-card">
-                                    <img src={NoImg} className="img-fluid" alt="" />
-                                    <div className="content">
-                                        <h4>
-                                            Event topic 1
-                                        </h4>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority </p>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="event-card">
-                                    <img src={NoImg} className="img-fluid" alt="" />
-                                    <div className="content">
-                                        <h4>
-                                            Event topic 1
-                                        </h4>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority </p>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="event-card">
-                                    <img src={NoImg} className="img-fluid" alt="" />
-                                    <div className="content">
-                                        <h4>
-                                            Event topic 1
-                                        </h4>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority </p>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="event-card">
-                                    <img src={NoImg} className="img-fluid" alt="" />
-                                    <div className="content">
-                                        <h4>
-                                            Event topic 1
-                                        </h4>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority </p>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="event-card">
-                                    <img src={NoImg} className="img-fluid" alt="" />
-                                    <div className="content">
-                                        <h4>
-                                            Event topic 1
-                                        </h4>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority </p>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="event-card">
-                                    <img src={NoImg} className="img-fluid" alt="" />
-                                    <div className="content">
-                                        <h4>
-                                            Event topic 1
-                                        </h4>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority </p>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="event-card">
-                                    <img src={NoImg} className="img-fluid" alt="" />
-                                    <div className="content">
-                                        <h4>
-                                            Event topic 1
-                                        </h4>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority </p>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="event-card">
-                                    <img src={NoImg} className="img-fluid" alt="" />
-                                    <div className="content">
-                                        <h4>
-                                            Event topic 1
-                                        </h4>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority </p>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
+                            {eventdata?.map((data)=>{
+                                return(
+                                    <SwiperSlide>
+                                        <div className="event-card">
+                                            {console.log(data)}
+                                            <img src={data.fld_image} className="img-fluid" alt="" />
+                                            <div className="content">
+                                                <h4>
+                                                    {data.fld_heading}
+                                                </h4>
+                                                <p>{data.fld_short_desc}</p>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                )
+                            })}
                         </Swiper>
-                        
                     </div>
                 </div>
             </div>
