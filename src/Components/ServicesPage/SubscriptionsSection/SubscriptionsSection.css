@@ -1,0 +1,183 @@
+.subscriptions-section .top-section .main-heading h2 {
+  font-family: "headingbold" !important;
+  font-size: 3rem;
+}
+
+.subscriptions-section .main-heading h2 {
+  font-family: "headingbold" !important;
+}
+
+.subscriptions-section .sub-btn {
+  font-size: 2rem;
+  font-family: "headingbold" !important;
+  padding: 5px 20px;
+  cursor: pointer;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  color: var(--font-dark);
+  border-radius: 10px;
+  background: var(--main-color-one);
+}
+
+.subscriptions-section .divider {
+  border-bottom: 2px solid var(--black-color);
+  text-align: right;
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+
+
+/* Subscription Cards Styling */
+.subscriptions-section .subscription-card {
+  /* width: 464px;
+  height: 503px; */
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.subscriptions-section .subscription-card-title {
+  font-family: "headingbold" !important;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.subscriptions-section .subscription-card-price {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0;
+}
+
+.subscriptions-section .subscription-card-year {
+  font-size: 16px;
+  color: #666;
+}
+
+.subscriptions-section .subscription-card-text {
+  /* font-size: 14px; */
+  margin-bottom: 20px !important;
+  color: #666;
+  font-style: italic;
+}
+
+.subscriptions-section .features-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 30px;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 0;
+}
+
+.features-list li {
+  /* margin-bottom: 10px; */
+  position: relative;
+  display: flex;
+  padding: 10px 5px;
+  border-bottom: 1px solid var(--black-color);
+}
+
+.features-list li::before {
+  content: "✔";
+  background: var(--black-color);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  color: var(--white-color);
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.subscriptions-section .proceed-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.subscriptions-section .proceed-btn:hover {
+  background-color: #555;
+}
+
+
+
+/* General container and section styling */
+.subscriptions-section .subscription-container {
+  /* background-color: #e0e0e0; */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.subscriptions-section .subscription-section {
+  background-color: #cfcfcf;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.subscriptions-section .subscription-section h4 {
+  font-family: "headingbold" !important;
+  margin-bottom: 15px;
+}
+
+/* Table styling */
+.subscriptions-section .subscription-table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  background-color: #b3b3b3;
+  border: none !important;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.subscriptions-section .subscription-table th,
+.subscriptions-section .subscription-table td {
+  padding: 10px;
+  /* border: 1px solid #ffffff; */
+  /* background-color: #b3b3b3; */
+  color: #fff;
+}
+
+.subscriptions-section .subscription-table th {
+  /* background-color: #999999; */
+  border-right: 1px solid var(--black-color);
+  border-bottom: 1px solid var(--black-color);
+}
+
+.subscriptions-section .subscription-table td {
+  border-right: 1px solid var(--black-color);
+  /* background-color: #b3b3b3; */
+}
+
+/* General text formatting */
+.subscriptions-section .subscription-table td,
+.subscriptions-section .subscription-table th {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.subscriptions-section .subscription-table td:last-child,
+.subscriptions-section .subscription-table th:last-child {
+  border-right: 0;
+}
+
+.subscriptions-section .subscription-table tr:first-child th {
+  /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+}
+
+.subscriptions-section .subscription-table tr:last-child td {
+  /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+}
