@@ -21,6 +21,7 @@ import AdminNav from './AdminPanel/AdminNav';
 import ContactUs from './Components/ContactUs/ContactUs';
 import MainFooter from './Components/MainFooter/MainFooter';
 import Provider from './Helpers/Store/Store';
+import MagazinePage from './Components/MagazinePage/MagazinePage';
 
 function App() {
   // const location = useLocation();
@@ -49,6 +50,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="about-us" element={<AboutUs />} />
             <Route path="contact-us" element={<ContactUs />} />
+            <Route path="magazine" element={<MagazinePage />} />
             <Route path="editions" element={<EditionsPage />} />
             <Route path="articles" element={<ArticlesPage />} />
             <Route path="podcast-and-events" element={<PodcastEventsPage />} />

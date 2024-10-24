@@ -1,6 +1,9 @@
+
 import Image1 from "../../../../assets/img/podcast/international-podcast-day-poster-template-design.jpg";
 import Image2 from "../../../../assets/img/podcast/professional-microphone-sound-studio-with-purple-backdrop.jpg";
 import Image3 from "../../../../assets/img/podcast/close-up-podcast-microphone.jpg";
+import { Link } from "react-router-dom";
+import NoImg from "../../../../assets/img/no-image.jpg";
 import "./DsaAuditSection.css";
 export default function DsaAuditSection() {
     return (
@@ -48,6 +51,7 @@ export default function DsaAuditSection() {
                                     <p>12:00</p>
                                 </div>
                             </div>
+                                <Link to="" className="magazine-btn d-none">categories</Link>
                         </div>
                     </div>
                 </div>
