@@ -22,6 +22,7 @@ import ContactUs from './Components/ContactUs/ContactUs';
 import MainFooter from './Components/MainFooter/MainFooter';
 import Provider from './Helpers/Store/Store';
 import MagazinePage from './Components/MagazinePage/MagazinePage';
+import Services from './Pages/Services';
 
 function App() {
   // const location = useLocation();
@@ -55,6 +56,7 @@ function App() {
             <Route path="articles" element={<ArticlesPage />} />
             <Route path="podcast-and-events" element={<PodcastEventsPage />} />
             <Route path="def-sec-edu" element={<DefSecEduPage />} />
+            <Route path="services" element={<Services />} />
 
             <Route path="newsletter" element={<NewsletterPage />} />
             <Route path="newsletter-news" element={<NewsPage />} />
