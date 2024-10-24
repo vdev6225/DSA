@@ -17,15 +17,15 @@ export default function NavigationSection() {
                                 <li>
                                     <Link to="/newsletter-news">News</Link>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Link to="/newsletter-article-page">Articles</Link>
-                                </li>
+                                </li> */}
                                 <li>
                                     <Link to="/newsletter-alert-page">Alert</Link>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Link to="/newsletter-def-page">Def-Sec Wives</Link>
-                                </li>
+                                </li> */}
                             </ul>
                             <div className="sm-links">
                                 <ul>

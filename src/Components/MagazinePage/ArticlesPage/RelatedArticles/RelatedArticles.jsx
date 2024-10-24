@@ -23,9 +23,9 @@ export default function RelatedArticles({data}) {
                                     </div>
                                     <h2> {item?.fld_short_desc}</h2> 
                                     {/* not sure if its the correct key */}
-                                    <p>
+                                    {/* <p>
                                         {item?.fld_long_desc}
-                                    </p>
+                                    </p> */}
                                 </div>
                             </div>)
                         })
