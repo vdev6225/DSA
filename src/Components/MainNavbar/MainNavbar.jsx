@@ -47,8 +47,8 @@ export default function MainNavbar() {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="d-flex align-items-center justify-content-between w-100">
                             <div className="d-flex align-items-center">
-                                <Nav.Link href="/">Megazine</Nav.Link>
-                                <Nav.Link href="/">Newsletters</Nav.Link>
+                                <Nav.Link href="/editions">Megazine</Nav.Link>
+                                <Nav.Link href="/newsletter">Newsletters</Nav.Link>
                                 <Nav.Link href="/">Alerts</Nav.Link>
                                 <div className="search-btn ms-2">
                                     <IoSearch />

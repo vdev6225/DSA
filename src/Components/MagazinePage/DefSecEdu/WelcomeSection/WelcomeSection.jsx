@@ -3,10 +3,21 @@ import NoImg from "../../../../assets/img/no-image.jpg";
 import "./WelcomeSection.css";
 import { FaTrophy } from "react-icons/fa";
 import { MdCastForEducation } from "react-icons/md";
+import { useContext } from "react";
+import { store } from "../../../../Helpers/Store/Store";
 export default function WelcomeSection() {
+    const {defSecEduType,setDefSecEduType,defSecEduData, setDefSecEduData,defSecEduFilteredData, setDefSecEduFilteredData} = useContext(store)
+    const getFilteredData = (category) => {
+        if(category === ""){
+            setDefSecEduFilteredData(defSecEduData);
+        }else{
+            const filtered = defSecEduData.filter(item => item.fld_type === category);
+            setDefSecEduFilteredData(filtered);
+        }
+    }
     return (
         <section className="section-spacing welcome-section position-relative">
-            <img src={NoImg} className="img-fluid" alt="" />
+            {/* <img src={NoImg} className="img-fluid" alt="" /> */}
             <div className="container-flid position-relative">
                 <div className="row">
                     <div className="col-lg-8 mx-auto text-center">
@@ -22,16 +33,22 @@ export default function WelcomeSection() {
                     </div>
                     <div className="col-lg-7 mx-auto">
                         <div className="welcome-card-box">
-                            <div className="welcome-card active">
+                            <div className={defSecEduType === "Insignia" ? "welcome-card active" : "welcome-card"} onClick={()=>{setDefSecEduType("Insignia")
+                                getFilteredData("Insignia")
+                            }}>
                                 <LuMedal />
 
                                 <h3>Insignia</h3>
                             </div>
-                            <div className="welcome-card">
+                            <div className={defSecEduType === "Awards" ? "welcome-card active" : "welcome-card"} onClick={()=>{setDefSecEduType("Awards")
+                                getFilteredData("Awards")
+                            }}>
                                 <FaTrophy />
                                 <h3>Awards</h3>
                             </div>
-                            <div className="welcome-card">
+                            <div className={defSecEduType === "Careers" ? "welcome-card active" : "welcome-card"} onClick={()=>{setDefSecEduType("Careers")
+                                getFilteredData("Careers")
+                            }}>
                                 <MdCastForEducation />
                                 <h3>Careers</h3>
                             </div>

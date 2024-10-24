@@ -56,8 +56,7 @@ export default function AlertPage() {
                     </div>
                     <div className="row">
                         <div className="col-12">
-                            {
-                                newsLetterAlertData?.map((item,id)=>{
+                            {newsLetterAlertData?.map((item,id)=>{
                                     return  <div className="alert-news-card">
                                     <div className="image">
                                         <img src={item?.fld_image} className="img-fluid" alt={item?.fld_alt} />

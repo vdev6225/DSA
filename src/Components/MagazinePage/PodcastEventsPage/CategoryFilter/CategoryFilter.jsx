@@ -1,5 +1,8 @@
+import { useContext } from "react";
 import "./CategoryFilter.css";
+import { store } from "../../../../Helpers/Store/Store";
 export default function CategoryFilter() {
+    const {setMagazineType} = useContext(store)
     return (
         <section className="section-spacing pt-0 pb-4 category-filter">
             <div className="container-flid">
@@ -10,13 +13,13 @@ export default function CategoryFilter() {
                                 Categories
                             </p>
                             <ul>
-                                <li>
+                                <li onClick={()=>{setMagazineType("Podcast")}}>
                                     Podcasts
                                 </li>
-                                <li>
+                                <li onClick={()=>{setMagazineType("Events")}}>
                                     Events
                                 </li>
-                                <li>All</li>
+                                {/* <li>All</li> */}
                             </ul>
                         </div>
                     </div>
