@@ -1,18 +1,21 @@
 import NoImg from "../../../../assets/img/no-image.jpg";
 import "./NewArticlesSection.css";
-export default function NewArticlesSection() {
+export default function NewArticlesSection({data}) {
+
+    console.log(data,"new")
+
     return (
         <section className="section-spacing pt-0 new-articles-section">
             <div className="container-fuid">
                 <div className="row">
                     <div className="col-lg-4">
                         <h2 className="main-heading">
-                            new article topic
+                            {data[0]?.fld_heading}
                         </h2>
                     </div>
                     <div className="col-lg-8">
                         <p>
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        {data[0]?.fld_short_desc}
                         </p>
                         <div className="d-flex gap-5 text-capitalize mt-4">
 
@@ -27,7 +30,7 @@ export default function NewArticlesSection() {
                         </div>
                     </div>
                     <div className="col-12">
-                        <img src={NoImg} className="img-fluid" alt="" />
+                        <img src={data?.fld_image} className="img-fluid" alt={data?.fld_alt} />
                     </div>
                 </div>
             </div>

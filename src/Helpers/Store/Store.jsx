@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 
 export const store = createContext();
 
-const Provider = ({ children }) => {
+const Provider = ({  children }) => {
   const [show,setShow] = useState(false);
   const [modalType,setModalType] = useState("Login");
   const [magazineType,setMagazineType] = useState("Podcast");
