@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import NoImg from "../../../../assets/img/no-image.jpg";
 import "./DsaAuditSection.css";
 export default function DsaAuditSection() {
@@ -46,6 +47,7 @@ export default function DsaAuditSection() {
                                     <p></p>
                                 </div>
                             </div>
+                                <Link to="" className="magazine-btn d-none">categories</Link>
                         </div>
                     </div>
                 </div>

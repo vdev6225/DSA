@@ -1,0 +1,46 @@
+.magazine-page-top-section {
+    background: var(--main-color-one);
+}
+
+.magazine-page-top-section .left-img {
+    position: absolute;
+    left: 3rem;
+    bottom: 2rem;
+    width: 280px;
+}
+
+.magazine-page-top-section .content-box {
+    width: 35%;
+    aspect-ratio: 1/1;
+    position: absolute;
+    right: 0;
+    bottom: 4rem;
+    background: var(--main-color-two);
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.magazine-page-top-section .content-box h2 {
+    font-size: 2.5rem;
+    font-family: "headingbold" !important;
+}
+
+.magazine-page-top-section .content-box b{
+    font-family: "bodyfontbold" !important;
+    font-size: 1.2rem;
+}
+.magazine-page-top-section .content-box p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.magazine-page-top-section .content-box a {
+    padding: 8px 30px;
+    background: var(--black-color);
+    color: var(--white-color) !important;
+    border-radius: 40px;
+    text-transform: capitalize;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 2rem;
+}
