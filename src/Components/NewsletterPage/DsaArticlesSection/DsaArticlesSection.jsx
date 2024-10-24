@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./DsaArticlesSection.css";
 import NoImg from "../../../assets/img/no-image.jpg";
+import RightImg from "../../../assets/img/self.png";
 export default function DsaArticlesSection() {
     return (
         <section className="section-spacing dsa-articles-section">
@@ -33,7 +34,7 @@ export default function DsaArticlesSection() {
                     </div>
                     <div className="col-lg-7">
                         <div className="image">
-                            <img src={NoImg} className="img-fluid" alt="" />
+                            <img src={RightImg} className="img-fluid" alt="" />
                         </div>
                     </div>
                 </div>
