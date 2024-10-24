@@ -10,8 +10,6 @@ import PostApiCall from "../../../Helpers/Api/PostApi";
 export default function EditionsPage() {
 
     const [magazinesEditionData, setMagazinesEditionData] = useState([]);
-  
-
 
     const latestData = magazinesEditionData?.filter((item) => item?.fld_status === "new" || item?.fld_status === "Upcoming")
  

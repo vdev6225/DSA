@@ -2,7 +2,7 @@ import { FaFacebookF, FaInstagramSquare , FaLinkedinIn } from "react-icons/fa";
 import NoImg from "../../../../assets/img/no-image.jpg";
 import "./ArticleDetail.css";
 import { FaXTwitter } from "react-icons/fa6";
-export default function ArticleDetail() {
+export default function ArticleDetail({data}) {
     return (
         <section className="section-spacing pt-0 article-detail-section">
             <div className="container-fuid">
@@ -10,10 +10,10 @@ export default function ArticleDetail() {
                     <div className="col-lg-4 pe-lg-5">
                         <div className="article-card">
                             <div className="image">
-                                <img src={NoImg} className="img-fluid" alt="" />
+                                <img src={data[0]?.fld_image} className="img-fluid" alt={data[0]?.fld_alt} />
                             </div>
                             <h2 className="name">
-                                name of the author
+                                {data[0]?.fld_published_by}
                             </h2>
                         </div>
                         <div className="date">
@@ -30,7 +30,7 @@ export default function ArticleDetail() {
                                     read time
                                 </p>
                                 <p>
-                                    2 mins
+                                    {data[0]?.fld_read_time}
                                 </p>
                             </div>
                             <div className="box">
@@ -48,10 +48,10 @@ export default function ArticleDetail() {
                     </div>
                     <div className="col-lg-8">
                         <b className="mb-4 d-block">
-                            Imagine There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words  you could
+                          {data[0]?.fld_short_desc}
                         </b>
                         <p>
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form
+                            {data[0]?.fld_long_desc}
                         </p>
                     </div>
                 </div>

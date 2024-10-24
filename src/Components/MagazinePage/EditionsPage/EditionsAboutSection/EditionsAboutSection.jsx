@@ -10,7 +10,7 @@ export default function EditionsAboutSection({data}) {
             <div className="container-fuid">
                 {data?.map((item, id)=> {
                     return (
-                        <div className="row">
+                        <div className="row" key={id}>
                         <div className="col-lg-7">
                             <h2 className="main-heading">
                             {item?.fld_heading}
