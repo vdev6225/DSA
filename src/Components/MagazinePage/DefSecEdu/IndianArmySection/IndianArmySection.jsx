@@ -2,20 +2,21 @@ import LeftBanner from "../../../../assets/img/left-banner.png";
 import "./IndianArmySection.css";
 import Flag from "../../../../assets/img/flag.png";
 import { useEffect, useState } from "react";
-export default function IndianArmySection({data}) {
-    const [filteredData, setFilteredData] = useState(data);
-    useEffect(() => {
-        setFilteredData(data);
-    }, [data]);
 
+export default function IndianArmySection({data}) {
+
+    const [filteredData, setFilteredData] = useState(data);
+  
     const getFilteredData = (category) => {
-        if(category === ""){
-            setFilteredData(data);
-        }else{
             const filtered = data.filter(item => item.fld_category === category);
             setFilteredData(filtered);
-        }
     }
+
+    useEffect(() => {
+        const defaultData = data.filter(item => item?.fld_category === "Indian Army")
+        setFilteredData(defaultData);
+    }, [data]);
+
     return (
         <>
             <section className="section-spacing pt-0 pb-4 category-filter">
@@ -42,7 +43,61 @@ export default function IndianArmySection({data}) {
             </section>
             <section className="section-spacing indian-army-section pt-0">
                 <div className="container-flid">
-                    <div className="row">
+                    {
+                        filteredData?.map((item,id)=>{
+                            return( <div className="row" key={id}>
+                        <div className="col-12">
+                            <div className="main-heading text-center pb-4 pb-lg-5">
+                                <h2>
+                                    {item?.fld_category}
+                                </h2>
+                            </div>
+                        </div>
+                        <div className="col-lg-5 left-section">
+                            <div className="image">
+                                <img src={LeftBanner} className="img-fluid" alt={item?.fld_alt} />
+                            </div>
+                        </div>
+                        <div className="col-lg-7 right-section">
+                            {/* <b>{item?.fld_heading}</b>
+                            <div className="d-lg-flex gap-lg-4">
+                                <img src={item?.fld_image} className="img-fluid" alt={item?.fld_alt} />
+                                <p>
+                                    {item?.fld_short_desc}
+                                </p>
+                            </div> */}
+                            <p dangerouslySetInnerHTML={{__html :item?.fld_long_desc }}>
+                            
+                            </p>
+                            {/* NOTE: no key available for this in b/e */}
+                            {/* <p className="mt-4">
+                                The Indian Army Ranks reflect the ranks of Western militaries, especially, the British and Commonwealth Militaries. At present, the Indian Army Ranks are classified into three categories:
+                            </p>
+                            <ul>
+                                <li>
+                                    <p>
+                                        1. Commissioned Officers
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        2. Junior Commissioned Officers
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        3. Other Ranks (Non-Commissioned Officers and Soldiers)
+                                    </p>
+                                </li>
+                            </ul>
+                            <p className="mt-4">
+                                Let us look at the Indian Army Ranks under each of the three categories.
+                            </p> */}
+                        </div>
+                    </div>)
+                        })
+                    }
+                    {/* <div className="row">
                         <div className="col-12">
                             <div className="main-heading text-center pb-4 pb-lg-5">
                                 <h2>
@@ -90,7 +145,7 @@ export default function IndianArmySection({data}) {
                                 Let us look at the Indian Army Ranks under each of the three categories.
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </section>
         </>

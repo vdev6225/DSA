@@ -2,7 +2,28 @@ import { Collapse } from 'antd';
 import NoImg from "../../../../assets/img/no-image.jpg";
 import "./CareersPage.css";
 // import { FaYoutube } from 'react-icons/fa';
-export default function CareersPage() {
+
+import React, {useState, useEffect} from "react";
+
+export default function CareersPage({data}) {
+
+    const [filteredData, setFilteredData] = useState(data);
+    const [badgeType, setBadgeType] = useState("")
+  
+    useEffect(() => {
+        const defaultData = data.filter(item => item?.fld_badge_type === "Indian Army")
+        setFilteredData(defaultData);
+    }, [data]);
+
+
+    const getFilteredData = (category) => {
+            setBadgeType(category)
+            const filtered = data.filter(item => item.fld_category === category);
+            setFilteredData(filtered);
+    }
+
+    console.log(data,"cdata")
+
     const text = <div className='bottom-content'><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p></div>;
     const items = [
         {
@@ -67,10 +88,10 @@ export default function CareersPage() {
                                 Categories
                             </p>
                             <ul>
-                                <li>
+                                <li onClick={()=> getFilteredData("Defence Forces")}>
                                     Defence Forces
-                                </li>
-                                <li>
+                                </li >
+                                <li onClick={()=> getFilteredData("Security forces")}>
                                     Security forces
                                 </li>
                             </ul>
@@ -78,7 +99,7 @@ export default function CareersPage() {
                     </div>
                     <div className="col-lg-8 mx-auto">
                         <div className="main-heading">
-                            <h2>Defence <span>forces</span></h2>
+                            <h2>{badgeType ? badgeType : "Defence Forces"}</h2>
                         </div>
                         <div className="careers-category">
                             <ul>

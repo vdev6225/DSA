@@ -42,6 +42,8 @@ export default function DefSecEduPage() {
       const insignia = defSecEduData?.filter((item)=> item?.fld_type === "Insignia")
       const awards = defSecEduData?.filter((item)=> item?.fld_type === "Awards")
       const careers = defSecEduData?.filter((item)=> item?.fld_type === "Careers")
+
+      console.log(insignia,"insignia")
           
     return (
         <>
@@ -53,7 +55,7 @@ export default function DefSecEduPage() {
             {defSecEduType === "Insignia" &&
             <>
             <IndianArmySection data={insignia} />
-            <BadgesSection />
+            <BadgesSection data = {insignia}/>
             </>
             }
             {/* Awards Page */}
