@@ -9,9 +9,9 @@
 
 .dsa-audit-section .center-heading {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
     z-index: 9;
 }
 
@@ -21,17 +21,23 @@
     font-style: italic;
     color: var(--font-light);
     text-transform: uppercase;
+    font-weight: bolder;
 }
 
 .dsa-audit-section .center-heading h2 {
     font-size: 3rem;
     font-family: "headingbold" !important;
     text-transform: uppercase;
+    color: #636669;
 }
 
 .dsa-audit-section img {
     width: 100%;
     border-radius: 20px;
+    filter: grayscale(1) contrast(1) brightness(1);
+    /* mix-blend-mode: multiply; */
+    object-fit: cover;
+    object-position: left;
 }
 
 .dsa-audit-section .position-relative img {
@@ -45,6 +51,7 @@
     position: absolute;
     bottom: -50px;
     right: 0;
+    /* filter: grayscale(1) contrast(1) brightness(3); */
 }
 
 .dsa-audit-section .name {
@@ -52,4 +59,14 @@
     text-transform: capitalize;
     margin: 10px 0 !important;
     font-size: 1.2rem;
+}
+
+.dsa-audit-section .bottom-date .box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.dsa-audit-section .bottom-date .box p:last-child{
+    font-size: .8rem;
+    margin: 0;
 }

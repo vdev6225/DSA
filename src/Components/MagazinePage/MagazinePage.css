@@ -1,10 +1,5 @@
 .magazine-page .magazine-btn {
-    padding: 8px 30px;
-    background: var(--black-color);
-    color: var(--white-color) !important;
-    border-radius: 40px;
-    text-transform: capitalize;
-    font-weight: bold;
     display: inline-block !important;
     margin-top: 2rem;
+    text-transform: capitalize;
 }

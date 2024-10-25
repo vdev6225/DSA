@@ -13,14 +13,17 @@
 }
 
 .contact-us-form .contact-links .box {
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 .contact-us-form .contact-links .box p {
-    font-size: 1.4rem;
+    font-size: 2.5rem;
     font-family: "bodyfontbold" !important;
     /* margin-bottom: 1rem !important; */
     text-transform: uppercase;
+}
+.contact-us-form .contact-links .box a{
+    font-size: 1.4rem;
 }
 
 .contact-us-form .conact-form {
@@ -36,10 +39,10 @@
 .contact-us-form .conact-form textarea {
     border: none;
     outline: none;
-    margin-bottom: 1rem;
-    padding: 10px;
+    margin-bottom: 2rem;
+    padding: 1rem;
     /* padding: 1.5rem 1rem 10px; */
-    background: var(--main-color-two);
+    background: var(--main-color-one);
     position: relative;
 }
 
@@ -50,10 +53,11 @@
     position: absolute;
     bottom: 10px;
     font-weight: bolder;
+    letter-spacing: 2px;
 }
 
 .contact-us-form .conact-form button {
-    padding: 8px 25px;
+    /* padding: 8px 25px;
     background: var(--main-color-two);
     border-radius: 20px;
     text-transform: capitalize;
@@ -61,7 +65,7 @@
     display: inline-block;
     width: auto;
     border: none;
-    outline: none;
+    outline: none; */
 }
 
 

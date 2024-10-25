@@ -51,7 +51,7 @@ export default function EditionsCategories({data}) {
                     </div>
                     {
                         filteredData?.map((item,id)=> {
-                            return(<div className="col-lg-4 edition-card" key={id}>
+                            return(<div className="col-lg-3 edition-card" key={id}>
                                 <div className="box">
                                     <div className="date">
                                         <p>{item?.fld_month + " "}{item?.fld_year}</p>

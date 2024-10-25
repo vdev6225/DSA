@@ -55,6 +55,8 @@
 
 .service-section .service-card .content .des {
     font-size: 1.1rem;
+    width: 80%;
+    display: inline-block;
 }
 
 .service-section .service-card .content .arrow-btn {

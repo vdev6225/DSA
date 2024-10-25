@@ -1,10 +1,10 @@
 export default function MagazinePageContentSection() {
     return (
-        <section className="section-spacing">
+        <section className="section-spacing mt-4 pb-5">
             <div className="container">
                 <div className="row">
                     <div className="col-12 text-center">
-                        <p className="fs-2 fw-bolder mb-4">
+                        <p className="fs-2 fw-bolder mb-4 lh-base">
                             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words...
                         </p>
                     </div>

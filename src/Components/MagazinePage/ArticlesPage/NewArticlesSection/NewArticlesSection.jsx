@@ -14,7 +14,7 @@ export default function NewArticlesSection({data}) {
                         <p>
                         {data[0]?.fld_short_desc}
                         </p>
-                        <div className="d-flex gap-5 text-capitalize mt-4">
+                        <div className="d-flex gap-5 text-capitalize mt-3 mb-2">
 
 
                             <b>

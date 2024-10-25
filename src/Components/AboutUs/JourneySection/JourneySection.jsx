@@ -1,19 +1,35 @@
-import NoImg from "../../../assets/img/Frame1.png";
+import NoImg from "../../../assets/img/Journey so far.png";
+import gallery from "../../../assets/img/gallery.png";
 import "./JourneySection.css";
 export default function JourneySection() {
     return (
-        // <section className="section-spacing journey-section">
-        <section>
-            <div className="container-fluid">
+        <>
+            <section className="p-0 journey-section">
+                {/* // <section> */}
+                {/* <div className="container-fluid">
                 <div className="row">
                     <div className="col-12 d-flex position-relative">
-                        <h2 className="main-heading">
+                        <h2 className="main-heading"> */}
+                {/* Journey <span>so far</span> */}
+                {/* </h2> */}
+                <img src={NoImg} className="img-fluid" alt="" />
+                {/* </div>
+                </div>
+            </div> */}
+            </section>
+            <section className="section-spacing journey-section mt-5">
+                {/* // <section> */}
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12 d-flex position-relative">
+                            {/* <h2 className="main-heading"> */}
                             {/* Journey <span>so far</span> */}
-                        </h2>
-                        <img src={NoImg} className="img-fluid" alt="" />
+                            {/* </h2> */}
+                            <img src={gallery} className="img-fluid" alt="" />
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </>
     )
 }

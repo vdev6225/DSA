@@ -4,7 +4,7 @@ import NoImg from "../../../assets/img/no-image.jpg";
 import RightImg from "../../../assets/img/self.png";
 export default function DsaArticlesSection() {
     return (
-        <section className="section-spacing dsa-articles-section">
+        <section className="section-spacing dsa-articles-section mb-4">
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-lg-5">
@@ -12,12 +12,12 @@ export default function DsaArticlesSection() {
                             <div className="top-section">
                                 <div className="main-heading">
                                     <h2>
-                                        DSA <span>Articles</span>
+                                        <i>DSA</i> <span>Articles</span>
                                     </h2>
                                 </div>
                                 <b>About our Articles</b>
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't</p>
-                                <Link to="">Categories</Link>
+                                <Link to="" className="theme-btn mt-4">Categories</Link>
                             </div>
                             <div className="bottom-section">
                                 <h2>
@@ -28,7 +28,7 @@ export default function DsaArticlesSection() {
                                     on June 8, 2020
                                 </span>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                                <Link to="">Read more</Link>
+                                <Link to="" className="theme-btn mt-5">Read more</Link>
                             </div>
                         </div>
                     </div>

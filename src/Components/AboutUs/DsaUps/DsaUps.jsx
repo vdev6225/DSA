@@ -6,12 +6,12 @@ import Three from "../../../assets/img/icons/3.png";
 import Four from "../../../assets/img/icons/4.png";
 export default function DsaUps() {
     return (
-        <section className="section-spacing about-dsa-section pt-0">
+        <section className="section-spacing about-dsa-section mb-5 pt-0">
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-12 mb-3">
                         <h2 className="main-heading text-center mb-4">
-                            <span>DSA</span> UPS’s
+                            <span><i>DSA</i></span> UPS’s
                         </h2>
                     </div>
                     <div className="col-md-6 col-lg-3">

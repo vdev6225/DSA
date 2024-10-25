@@ -1,6 +1,6 @@
 .journey-section {
   /* position: relative; */
-  background-color: var(--main-color-one);
+  /* background-color: var(--main-color-one); */
 }
 
 .journey-section .main-heading {
@@ -20,8 +20,8 @@
 }
 
 .journey-section img {
-  height: 400px;
+  /* height: 400px; */
   width: 100%;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   /* margin-left: 60px; */
 }
