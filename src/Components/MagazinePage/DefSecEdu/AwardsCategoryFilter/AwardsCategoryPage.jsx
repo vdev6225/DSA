@@ -2,19 +2,24 @@ import "./AwardsCategoryPage.css";
 import NoImg from "../../../../assets/img/no-image.jpg";
 import { useEffect, useState } from "react";
 export default function AwardsCategoryPage({data}) {
+
     const [filteredData, setFilteredData] = useState(data);
-    useEffect(() => {
-        setFilteredData(data);
-    }, [data]);
+    const [categoryHeading, setCategoryHeading] = useState("")
+
 
     const getFilteredData = (category) => {
-        if(category === ""){
-            setFilteredData(data);
-        }else{
+            setCategoryHeading(category)
             const filtered = data.filter(item => item.fld_category === category);
             setFilteredData(filtered);
-        }
     }
+
+    useEffect(() => {
+        const defaultData = data.filter(item => item?.fld_category === "Peace Time")
+        setFilteredData(defaultData);
+    }, [data]);
+
+    console.log(filteredData, "khfkjh uhf io")
+
     return (
         <section className="section-spacing pb-0 pt-0 awards-page">
             <div className="container-flid">
@@ -36,7 +41,7 @@ export default function AwardsCategoryPage({data}) {
                     </div>
                     <div className="col-12">
                         <div className="main-heading">
-                            <h2>peace <span>time</span></h2>
+                            <h2>{categoryHeading ? categoryHeading : "Peace Time"}</h2>
                         </div>
                     </div>
                 </div>
