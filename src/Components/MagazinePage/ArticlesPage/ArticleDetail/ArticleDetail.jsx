@@ -2,7 +2,9 @@ import { FaFacebookF, FaInstagramSquare , FaLinkedinIn } from "react-icons/fa";
 import NoImg from "../../../../assets/img/no-image.jpg";
 import "./ArticleDetail.css";
 import { FaXTwitter } from "react-icons/fa6";
+import moment from "moment";
 export default function ArticleDetail({data}) {
+    console.log(data)
     return (
         <section className="section-spacing pt-0 article-detail-section">
             <div className="container-fuid">
@@ -22,7 +24,7 @@ export default function ArticleDetail({data}) {
                                     Date
                                 </p>
                                 <p>
-                                    14 Sept, 2024
+                                {moment(data[0]?.fld_createdon).format('MMMM D, YYYY')}
                                 </p>
                             </div>
                             <div className="box">

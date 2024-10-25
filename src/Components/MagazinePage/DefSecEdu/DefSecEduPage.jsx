@@ -38,9 +38,11 @@ export default function DefSecEduPage() {
         getDefSecEduData();
       },[])
 
-      
-console.log(defSecEduFilteredData,"hibkcbdijbcdb")
-    
+
+      const insignia = defSecEduData?.filter((item)=> item?.fld_type === "Insignia")
+      const awards = defSecEduData?.filter((item)=> item?.fld_type === "Awards")
+      const careers = defSecEduData?.filter((item)=> item?.fld_type === "Careers")
+          
     return (
         <>
             <NavigationSection />
@@ -50,17 +52,17 @@ console.log(defSecEduFilteredData,"hibkcbdijbcdb")
             {/* Insignia page */}
             {defSecEduType === "Insignia" &&
             <>
-            <IndianArmySection />
+            <IndianArmySection data={insignia} />
             <BadgesSection />
             </>
             }
             {/* Awards Page */}
             {defSecEduType === "Awards" &&
-            <AwardsCategoryPage />
+            <AwardsCategoryPage data={awards} />
             }
             {/* Careers Page */}
             {defSecEduType === "Careers" &&
-            <CareersPage />
+            <CareersPage data={careers} />
             }
         </>
     )

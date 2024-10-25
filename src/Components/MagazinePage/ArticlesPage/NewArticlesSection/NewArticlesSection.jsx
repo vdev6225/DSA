@@ -1,9 +1,6 @@
-import NoImg from "../../../../assets/img/no-image.jpg";
+import moment from "moment";
 import "./NewArticlesSection.css";
 export default function NewArticlesSection({data}) {
-
-    console.log(data,"new")
-
     return (
         <section className="section-spacing pt-0 new-articles-section">
             <div className="container-fuid">
@@ -21,12 +18,12 @@ export default function NewArticlesSection({data}) {
 
 
                             <b>
-                                published by
+                                published by - {data[0]?.fld_published_by}
                             </b>
                             <b>
-                                Date
+                                Date - {moment(data[0]?.fld_createdon).format('MMMM D, YYYY')}
                             </b>
-                            <b>Time</b>
+                            <b>Time - {moment(data[0]?.fld_createdon).format('HH:mm:ss')}</b>
                         </div>
                     </div>
                     <div className="col-12">
