@@ -5,6 +5,7 @@
 .contact-us-mission-section .main-heading h2,
 .contact-us-mission-section .left-section .main-heading h4 {
     font-family: "headingbold" !important;
+    letter-spacing: 2px;
 }
 
 .contact-us-mission-section .left-section::before {
@@ -15,7 +16,7 @@
     bottom: 0;
     width: 50%;
     border-radius: 20px;
-    background: var(--main-color-two);
+    background: var(--main-color-one);
     z-index: -1;
 }
 
@@ -28,6 +29,9 @@
     width: 60%;
     padding-right: 2rem;
 }
+.contact-us-mission-section .left-section .left-content p{
+    font-size: .8rem;
+}
 
 .contact-us-mission-section .left-section .right-img {
     width: 40%;
@@ -36,6 +40,9 @@
 
 .contact-us-mission-section .right-section{
     font-size: 1.2rem;
+}
+.contact-us-mission-section .right-section p{
+    line-height: 1.5;
 }
 .contact-us-mission-section a {
     padding: 10px 20px;

@@ -1,14 +1,20 @@
 .magazine-navigation h1 {
     font-size: 5.1rem;
     text-align: center;
+    color: var(--font-dark);
+}
+.magazine-navigation h1 span{
+    color: var(--font-dark);
+    font-family: "bodyfontbold" !important;
 }
 
 .magazine-navigation .navigation-bar .name{
     font-size: 1.2rem;
+    font-family: "bodyfontbold" !important;
 }
 .magazine-navigation .navigation-bar {
     background: var(--main-color-one);
-    padding: 10px;
+    padding: 10px 2rem !important;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -22,6 +28,7 @@
     width: 100%;
     justify-content: space-evenly;
     font-size: 1.2rem;
+    letter-spacing: 2px;
 }
 
 .magazine-navigation .navigation-bar .sm-links ul {

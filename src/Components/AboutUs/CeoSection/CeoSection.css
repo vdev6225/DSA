@@ -8,7 +8,12 @@
 .ceo-section .ceo-card img {
     border-radius: 15px;
     width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
     margin-bottom: 1rem;
+    object-position: top;
+    filter: grayscale(1) contrast(1) brightness(1.3);
+    mix-blend-mode: multiply;
 }
 
 .ceo-section .ceo-card .name {
@@ -25,4 +30,8 @@
     font-style: italic;
     margin-bottom: 1rem;
     display: inline-block;
+}
+
+.ceo-section .ceo-card .text-end{
+    font-size: .8rem;
 }

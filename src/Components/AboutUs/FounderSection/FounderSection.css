@@ -1,29 +1,66 @@
 .founder-section .left-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
+    padding-top: 1rem;
 }
 
 .founder-section .left-section h2 {
     font-size: 3rem;
 }
-.founder-section .left-section p:first-child{
+
+.founder-section .left-section p {
+    font-size: 1.1rem;
+}
+
+.founder-section .left-section .sub {
+    color: #636669;
+    font-size: 1.5rem;
     font-family: "bodyfontbold" !important;
 }
 
 .founder-section .left-section a {
-    padding: 10px 40px;
-    background-color: var(--main-color-one);
-    border-radius: 20px;
-    margin-top: 3rem;
+    padding: 8px 30px;
+    border: 2px solid var(--theme-color);
+    color: var(--theme-color) !important;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    transition: .3s all;
+    margin-top: 4rem;
+    font-weight: bolder;
     display: inline-block;
     width: fit-content;
+}
+
+.founder-section .left-section a:hover {
+    background: var(--theme-color);
+    color: var(--white-color) !important;
 }
 
 .founder-section .right-section img {
     width: 100%;
     height: 500px;
-    border-radius: 20px 0 0 20px;
+    border-radius: 20px 0 0;
+    filter: grayscale(1) contrast(1) brightness(1);
+    mix-blend-mode: multiply;
+}
+
+.founder-section .right-section .main-heading {
+    color: var(--black-color);
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+.founder-section .right-section .main-heading h2{
+    font-family: "headingbold" !important;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
 }
 
 .comittesd-section {

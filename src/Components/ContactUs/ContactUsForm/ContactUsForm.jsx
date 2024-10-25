@@ -3,10 +3,10 @@ import "./ContactUsForm.css";
 export default function ContactUsForm() {
     return (
         <>
-            <section className="section-spacing mb-4 contact-us-form">
+            <section className="section-spacing mb-4 mt-5 contact-us-form">
                 <div className="container">
                     <div className="row justify-content-lg-between">
-                        <div className="col-12 text-center mb-4">
+                        <div className="col-12 text-center mb-5 pb-4">
                             <div className="main-heading">
                                 <h2>Stay updated <span>with us</span></h2>
                             </div>
@@ -46,9 +46,9 @@ export default function ContactUsForm() {
                             <input type="text" placeholder="Name" />
                             <input type="text" placeholder="Phone" />
                             <input type="email" placeholder="Email" />
-                            <textarea placeholder="TYPE YOUR CONCERN" rows="10"></textarea>
-                            <div>
-                                <button type="submit"> Submit</button>
+                            <textarea placeholder="TYPE YOUR CONCERN" rows="5"></textarea>
+                            <div className="mt-3">
+                                <button type="submit" className="theme-btn mt-4"> Submit</button>
                             </div>
                         </div>
                     </div>
@@ -58,7 +58,7 @@ export default function ContactUsForm() {
                 <div className="container-fluid">
                     <div className="row align-items-center">
                         <div className="col-lg-6">
-                            <div className="d-flex align-items-center gap-3 fs-3">
+                            <div className="d-flex align-items-center gap-3 fs-2">
                                 <span><HiOutlineChevronDoubleLeft /> </span>
                                 <a href="tel:+">
                                     Schedule a call

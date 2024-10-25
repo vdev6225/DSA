@@ -16,7 +16,7 @@ import Three from "../../../assets/img/icons/3.png";
 import Four from "../../../assets/img/icons/4.png";
 export default function DsaUpsSection() {
     return (
-        <section className="section-spacing dsa-ups-section pt-0">
+        <section className="section-spacing dsa-ups-section">
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-12">

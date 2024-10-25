@@ -1,8 +1,11 @@
 .editions-about-section img {
     border-radius: 20px;
-    width: 100%;
+    /* width: 75%; */
 }
 .editions-about-section h2{
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 1.2rem;
+}
+.editions-about-section p{
+    font-size: 1.3rem;
 }

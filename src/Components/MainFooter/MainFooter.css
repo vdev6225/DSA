@@ -8,6 +8,9 @@
 .main-footer .font-size {
   font-size: 0.8rem;
 }
+.main-footer .font-size img{
+  margin-left: -15px;
+}
 .main-footer .top-img {
   position: absolute;
   top: 0;
