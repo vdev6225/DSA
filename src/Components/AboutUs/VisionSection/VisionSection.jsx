@@ -6,6 +6,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
+import Image1 from "../../../assets/img/Editions/April 2024.jpg";
+import Image2 from "../../../assets/img/Editions/February 2024.jpg";
+import Image3 from "../../../assets/img/Editions/January 2024.jpg";
 
 // import required modules
 import { FreeMode, Pagination } from 'swiper/modules';
@@ -39,7 +42,7 @@ export default function VisionSection() {
                             <SwiperSlide>
                                 <div className="magazine-card">
                                     <div className="image">
-                                        <img src={NoImg} className="img-fluid" alt="" />
+                                        <img src={Image1} className="img-fluid" alt="" />
                                     </div>
                                     <div className="content">
                                         <span>
@@ -53,7 +56,7 @@ export default function VisionSection() {
                                 </div>
                                 <div className="magazine-card">
                                     <div className="image">
-                                        <img src={NoImg} className="img-fluid" alt="" />
+                                        <img src={Image2} className="img-fluid" alt="" />
                                     </div>
                                     <div className="content">
                                         <span>
@@ -67,7 +70,7 @@ export default function VisionSection() {
                                 </div>
                                 <div className="magazine-card">
                                     <div className="image">
-                                        <img src={NoImg} className="img-fluid" alt="" />
+                                        <img src={Image3} className="img-fluid" alt="" />
                                     </div>
                                     <div className="content">
                                         <span>

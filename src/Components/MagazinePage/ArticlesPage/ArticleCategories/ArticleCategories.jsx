@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import NoImg from "../../../../assets/img/no-image.jpg";
 import "./ArticleCategories.css";
-export default function ArticleCategories() {
+export default function ArticleCategories({data}) {
     return (
         <section className="section-spacing py-0 article-category-section">
             <div className="container-fuid">

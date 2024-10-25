@@ -1,5 +1,10 @@
 import { Link } from "react-router-dom";
-import NoImg from "../../../assets/img/no-image.jpg";
+import Image1 from "../../../assets/img/defsecwives/18.webp";
+import Image2 from "../../../assets/img/defsecwives/19.jpg";
+import Image3 from "../../../assets/img/defsecwives/20.webp";
+import Image4 from "../../../assets/img/defsecwives/21.jpg";
+import Image5 from "../../../assets/img/defsecwives/22.jpg";
+import Image6 from "../../../assets/img/defsecwives/23.webp";
 import "./DegSecWivesSection.css";
 export default function DegSecWivesSection() {
     return (
@@ -18,7 +23,7 @@ export default function DegSecWivesSection() {
                             <div className="image-section">
 
                                 <div className="image">
-                                    <img src={NoImg} className="img-fluid" alt="" />
+                                    <img src={Image2} className="img-fluid" alt="" />
                                     <div className="bottom-text">
                                         <h5>
                                             creativity
@@ -26,7 +31,7 @@ export default function DegSecWivesSection() {
                                     </div>
                                 </div>
                                 <div className="image">
-                                    <img src={NoImg} className="img-fluid" alt="" />
+                                    <img src={Image3} className="img-fluid" alt="" />
                                     <div className="bottom-text">
                                         <h5>
                                             creativity
@@ -39,7 +44,7 @@ export default function DegSecWivesSection() {
                             </p>
                         </div>
                         <div className="bottom-section">
-                            <img src={NoImg} className="img-fluid" alt="" />
+                            <img src={Image1} className="img-fluid" alt="" />
                             <div className="content">
                                 <h4>
                                     hobbies
@@ -59,7 +64,7 @@ export default function DegSecWivesSection() {
                                 </div>
                                 <div className="personal-card">
                                     <div className="image">
-                                        <img src={NoImg} className="img-fluid" alt="" />
+                                        <img src={Image5} className="img-fluid" alt="" />
                                     </div>
                                     <div className="content">
                                         <h4>
@@ -70,7 +75,7 @@ export default function DegSecWivesSection() {
                                 </div>
                                 <div className="personal-card">
                                     <div className="image">
-                                        <img src={NoImg} className="img-fluid" alt="" />
+                                        <img src={Image6} className="img-fluid" alt="" />
                                     </div>
                                     <div className="content">
                                         <h4>
@@ -81,7 +86,7 @@ export default function DegSecWivesSection() {
                                 </div>
                                 <div className="personal-card">
                                     <div className="image">
-                                        <img src={NoImg} className="img-fluid" alt="" />
+                                        <img src={Image4} className="img-fluid" alt="" />
                                     </div>
                                     <div className="content">
                                         <h4>

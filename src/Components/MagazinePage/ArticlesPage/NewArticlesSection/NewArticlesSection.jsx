@@ -30,7 +30,7 @@ export default function NewArticlesSection({data}) {
                         </div>
                     </div>
                     <div className="col-12">
-                        <img src={data?.fld_image} className="img-fluid" alt={data?.fld_alt} />
+                        <img src={data[0]?.fld_image} className="img-fluid" alt={data[0]?.fld_alt} />
                     </div>
                 </div>
             </div>
