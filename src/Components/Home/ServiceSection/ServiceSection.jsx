@@ -26,10 +26,10 @@ export default function ServiceSection() {
                             <div className="content">
                                 <div className="text">
                                     <p className="name">
-                                        Service Name
+                                    Subscription
                                     </p>
                                     <span className="des">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci laudantium doloremque quis eligendi, omnis cumque. Ad ab perferendis commodi harum odit maiores illum, cumque eius maxime unde omnis quaerat nisi.
+                                    Stay ahead with our in-depth defence and security worldwide insights! Subscribe now for exclusive online access to expert analysis and the latest updates. access to expert analysis and the latest updates.
                                     </span>
                                 </div>
                                 <div className="arrow-btn">
@@ -48,10 +48,10 @@ export default function ServiceSection() {
                             <div className="content">
                                 <div className="text">
                                     <p className="name">
-                                        Service Name
+                                    Associate with DSA
                                     </p>
                                     <span className="des">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci laudantium doloremque quis eligendi, omnis cumque. Ad ab perferendis commodi harum odit maiores illum, cumque eius maxime unde omnis quaerat nisi.
+                                    Defence and Security Alert (DSA) is a premier publication committed to creating an intellectually stimulating platform for disseminating critical information on defence internal, external security and world affairs.
                                     </span>
                                 </div>
                                 <div className="arrow-btn">

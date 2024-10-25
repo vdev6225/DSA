@@ -1,27 +1,27 @@
 .journey-section {
-    /* position: relative; */
-    background-color: var(--main-color-one);
+  /* position: relative; */
+  background-color: var(--main-color-one);
 }
 
 .journey-section .main-heading {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    top: 0;
-    text-align: center;
-    transform: rotate(180deg);
-    /* height: 100px; */
-    /* display: flex; */
-    /* line-height: 1; */
-    writing-mode: vertical-lr;
-    font-size: 2.7rem;
-    margin: 0;
-    margin-left: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  text-align: center;
+  transform: rotate(180deg);
+  /* height: 100px; */
+  /* display: flex; */
+  /* line-height: 1; */
+  writing-mode: vertical-lr;
+  font-size: 2.7rem;
+  margin: 0;
+  margin-left: 4px;
 }
 
 .journey-section img {
-    height: 400px;
-    width: 100%;
-    border-radius: 20px;
-    margin-left: 60px;
+  height: 400px;
+  width: 100%;
+  border-radius: 20px;
+  /* margin-left: 60px; */
 }

@@ -1,7 +1,24 @@
 import { Link } from "react-router-dom";
 import NoImg from "../../../../assets/img/no-image.jpg";
 import "./ArticleCategories.css";
-export default function ArticleCategories() {
+import { useEffect, useState } from "react";
+import moment from "moment";
+export default function ArticleCategories({data}) {
+    const [filteredData, setFilteredData] = useState(data);
+    // const [selectedNews, setSelectedNews] = useState(null);
+
+    useEffect(() => {
+        setFilteredData(data);
+    }, [data]);
+
+    const getFilteredData = (category) => {
+        if(category === ""){
+            setFilteredData(data);
+        }else{
+            const filtered = data.filter(item => item.fld_category === category);
+            setFilteredData(filtered);
+        }
+    }
     return (
         <section className="section-spacing py-0 article-category-section">
             <div className="container-fuid">
@@ -12,22 +29,22 @@ export default function ArticleCategories() {
                                 Categories
                             </p>
                             <ul>
-                                <li>
+                                <li onClick={() => getFilteredData('Defence')}>
                                     Defence
                                 </li>
-                                <li>
+                                <li onClick={() => getFilteredData('Security')}>
                                     Security
                                 </li>
-                                <li>
+                                <li onClick={() => getFilteredData('Worldwide Affairs')}>
                                     Worldwide Affairs
                                 </li>
-                                <li>
+                                <li onClick={() => getFilteredData('Border Conflicts')}>
                                     Border Conflicts
                                 </li>
-                                <li>
+                                <li onClick={() => getFilteredData('Emerging tech')}>
                                     Emerging tech
                                 </li>
-                                <li>All</li>
+                                <li onClick={() => getFilteredData('')}>All</li>
                             </ul>
                         </div>
                     </div>
@@ -35,10 +52,12 @@ export default function ArticleCategories() {
                 <div className="row">
                     <div className="col-lg-9">
                         <div className="row">
-                            <div className="col-12">
-                                <div className="article-card">
+                        {filteredData?.map((item,id)=>{
+                                return (
+                                <div className="col-12">
+                                <div className="article-card" key={item.fld_id}>
                                     <div className="image">
-                                        <img src={NoImg} className="img-fluid" alt="" />
+                                        <img src={item?.fld_image} className="img-fluid" alt="" />
                                     </div>
                                     <div className="content">
                                         <h2 className="main-heading">
@@ -48,145 +67,32 @@ export default function ArticleCategories() {
                                         </h2>
                                         <p className="mb-1">
                                             <b>
-                                                Imagine if you could
+                                            {item?.fld_heading}
                                             </b>
                                         </p>
                                         <p>
-                                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words
+                                            {item?.fld_short_desc}
                                         </p>
                                         <div className="d-flex justify-content-between mt-3">
                                             <ul className="d-flex justify-content-between gap-5">
                                                 <li>
-                                                    By-
+                                                    By- {item?.fld_published_by}
                                                 </li>
                                                 <li>
-                                                    Date-
+                                                    Date- {moment(item?.fld_createdon).format('MMMM D, YYYY')}
                                                 </li>
                                                 <li>
-                                                    Time-
+                                                    Time- {moment(item?.fld_createdon).format('HH:mm:ss')}
                                                 </li>
                                             </ul>
-                                            <Link to="">
+                                            <Link to={`/article/${item?.fld_id}`}>
                                                 full article
                                             </Link>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12">
-                                <div className="article-card">
-                                    <div className="image">
-                                        <img src={NoImg} className="img-fluid" alt="" />
-                                    </div>
-                                    <div className="content">
-                                        <h2 className="main-heading">
-                                            dsa <span>
-                                                mission
-                                            </span>
-                                        </h2>
-                                        <p className="mb-1">
-                                            <b>
-                                                Imagine if you could
-                                            </b>
-                                        </p>
-                                        <p>
-                                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words
-                                        </p>
-                                        <div className="d-flex justify-content-between mt-3">
-                                            <ul className="d-flex justify-content-between gap-5">
-                                                <li>
-                                                    By-
-                                                </li>
-                                                <li>
-                                                    Date-
-                                                </li>
-                                                <li>
-                                                    Time-
-                                                </li>
-                                            </ul>
-                                            <Link to="">
-                                                full article
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-12">
-                                <div className="article-card">
-                                    <div className="image">
-                                        <img src={NoImg} className="img-fluid" alt="" />
-                                    </div>
-                                    <div className="content">
-                                        <h2 className="main-heading">
-                                            dsa <span>
-                                                mission
-                                            </span>
-                                        </h2>
-                                        <p className="mb-1">
-                                            <b>
-                                                Imagine if you could
-                                            </b>
-                                        </p>
-                                        <p>
-                                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words
-                                        </p>
-                                        <div className="d-flex justify-content-between mt-3">
-                                            <ul className="d-flex justify-content-between gap-5">
-                                                <li>
-                                                    By-
-                                                </li>
-                                                <li>
-                                                    Date-
-                                                </li>
-                                                <li>
-                                                    Time-
-                                                </li>
-                                            </ul>
-                                            <Link to="">
-                                                full article
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-12">
-                                <div className="article-card">
-                                    <div className="image">
-                                        <img src={NoImg} className="img-fluid" alt="" />
-                                    </div>
-                                    <div className="content">
-                                        <h2 className="main-heading">
-                                            dsa <span>
-                                                mission
-                                            </span>
-                                        </h2>
-                                        <p className="mb-1">
-                                            <b>
-                                                Imagine if you could
-                                            </b>
-                                        </p>
-                                        <p>
-                                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words
-                                        </p>
-                                        <div className="d-flex justify-content-between mt-3">
-                                            <ul className="d-flex justify-content-between gap-5">
-                                                <li>
-                                                    By-
-                                                </li>
-                                                <li>
-                                                    Date-
-                                                </li>
-                                                <li>
-                                                    Time-
-                                                </li>
-                                            </ul>
-                                            <Link to="">
-                                                full article
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            )})}
                             <div className="col-12">
                                 <div className="article-card">
                                     <div className="image">

@@ -9,7 +9,9 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { FreeMode, Pagination } from 'swiper/modules';
-import NoImg from "../../../assets/img/no-image.jpg";
+import Image1 from "../../../assets/img/self.png";
+import Image2 from "../../../assets/img/16.jpg";
+import Image3 from "../../../assets/img/17.jpg";
 import { FaArrowRight } from "react-icons/fa";
 export default function ArticlesSection() {
     return (
@@ -25,7 +27,7 @@ export default function ArticlesSection() {
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
                             </p>
                             <div className="text-end mt-4">
-                                <Link to="">
+                                <Link to="/articles">
                                     View All
                                     <FaArrowRight />
                                 </Link>
@@ -52,7 +54,7 @@ export default function ArticlesSection() {
                                                     acceptance.
                                                 </h3>
                                                 <div className="image">
-                                                    <img src={NoImg} className="img-fluid" alt="" />
+                                                    <img src={Image1} className="img-fluid" alt="" />
                                                 </div>
                                             </div>
                                             <div className="content">
@@ -76,7 +78,7 @@ export default function ArticlesSection() {
                                                     acceptance.
                                                 </h3>
                                                 <div className="image">
-                                                    <img src={NoImg} className="img-fluid" alt="" />
+                                                    <img src={Image1} className="img-fluid" alt="" />
                                                 </div>
                                             </div>
                                             <div className="content">
@@ -100,7 +102,7 @@ export default function ArticlesSection() {
                                                     acceptance.
                                                 </h3>
                                                 <div className="image">
-                                                    <img src={NoImg} className="img-fluid" alt="" />
+                                                    <img src={Image1} className="img-fluid" alt="" />
                                                 </div>
                                             </div>
                                             <div className="content">
@@ -127,7 +129,7 @@ export default function ArticlesSection() {
                             </div>
                             <div className="cards-box">
                                 <div className="top-section">
-                                    <img src={NoImg} className="img-fluid" alt="" />
+                                    <img src={Image2} className="img-fluid" alt="" />
                                     <div className="content">
                                         <span>
                                             on June 8, 2020
@@ -136,7 +138,7 @@ export default function ArticlesSection() {
                                     </div>
                                 </div>
                                 <div className="bottom-section">
-                                    <img src={NoImg} className="img-fluid" alt="" />
+                                    <img src={Image3} className="img-fluid" alt="" />
                                     <div className="content">
                                         <span>
                                             on June 8, 2020
@@ -147,7 +149,7 @@ export default function ArticlesSection() {
                             </div>
                         </div>
                         <div className="view-event-btn">
-                            <Link to="" >Stay Updated With Us  <FaArrowRight /></Link>
+                            <Link to="/def-sec-edu" >Stay Updated With Us  <FaArrowRight /></Link>
                         </div>
                     </div>
                 </div>

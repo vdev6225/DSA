@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import NoImg from "../../../assets/img/no-image.jpg";
+import Image1 from "../../../assets/img/podcast/24.jpg";
+import Image2 from "../../../assets/img/podcast/25.webp";
 import Arrow from "../../../assets/img/icons/Vector.png";
 import "./PodcastSection.css";
 export default function PodcastSection({ banners }) {
@@ -23,20 +24,20 @@ export default function PodcastSection({ banners }) {
                                     <img src={Arrow} className="img-fluid" alt="" />
                                 </div>
                                 <div className="youtube-btn">
-                                    <Link to="">youtube channel</Link>
+                                    <Link to="https://www.youtube.com/">youtube channel</Link>
                                 </div>
                             </div>
                         </div>
                         <div className="bottom-two-cards">
                             <div className="b-card">
-                                <img src={NoImg} className="img-fluid" alt="" />
+                                <img src={Image1} className="img-fluid" alt="" />
                                 <div>
                                     <span>on June 8, 2020</span>
                                     <p>#Loremipsum</p>
                                 </div>
                             </div>
                             <div className="b-card">
-                                <img src={NoImg} className="img-fluid" alt="" />
+                                <img src={Image2} className="img-fluid" alt="" />
                                 <div>
                                     <span>on June 8, 2020</span>
                                     <p>#Loremipsum</p>

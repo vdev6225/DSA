@@ -1,8 +1,6 @@
 import NavigationSection from "../NavigationSection/NavigationSection";
-// import ArticleCategories from "./ArticleCategories/ArticleCategories";
-import ArticleDetail from "./ArticleDetail/ArticleDetail";
+import ArticleCategories from "./ArticleCategories/ArticleCategories";
 import NewArticlesSection from "./NewArticlesSection/NewArticlesSection";
-import RelatedArticles from "./RelatedArticles/RelatedArticles";
 import {useState, useEffect} from 'react';
 import PostApiCall from "../../../Helpers/Api/PostApi";
 
@@ -30,7 +28,6 @@ export default function ArticlesPage() {
         getMagazinesArticleData();
       },[])
 
-      console.log(data, "data")
 
       const activeArticle = data?.filter((item)=> item?.fld_status === "Active")
       const latestArticle = data?.filter((item)=> item?.fld_status === "NEW" || item?.fld_status === "Upcoming")
@@ -41,9 +38,7 @@ export default function ArticlesPage() {
         <>
             <NavigationSection />
             <NewArticlesSection data = {latestArticle}/>
-            <ArticleDetail data ={latestArticle} />
-            <RelatedArticles data={activeArticle}/>
-            {/* <ArticleCategories /> */}
+            <ArticleCategories data={activeArticle} />
         </>
     )
 }

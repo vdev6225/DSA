@@ -1,7 +1,21 @@
 import LeftBanner from "../../../../assets/img/left-banner.png";
 import "./IndianArmySection.css";
 import Flag from "../../../../assets/img/flag.png";
-export default function IndianArmySection() {
+import { useEffect, useState } from "react";
+export default function IndianArmySection({data}) {
+    const [filteredData, setFilteredData] = useState(data);
+    useEffect(() => {
+        setFilteredData(data);
+    }, [data]);
+
+    const getFilteredData = (category) => {
+        if(category === ""){
+            setFilteredData(data);
+        }else{
+            const filtered = data.filter(item => item.fld_category === category);
+            setFilteredData(filtered);
+        }
+    }
     return (
         <>
             <section className="section-spacing pt-0 pb-4 category-filter">
@@ -13,13 +27,13 @@ export default function IndianArmySection() {
                                     Categories
                                 </p>
                                 <ul>
-                                    <li>
+                                    <li onClick={() => getFilteredData('Indian Army')}>
                                         Indian Army
                                     </li>
-                                    <li>
+                                    <li onClick={() => getFilteredData('Indian Navy')}>
                                         Indian Navy
                                     </li>
-                                    <li>Indian Air Force</li>
+                                    <li onClick={() => getFilteredData('Indian Air Force')}>Indian Air Force</li>
                                 </ul>
                             </div>
                         </div>
