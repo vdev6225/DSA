@@ -2,12 +2,14 @@ import "./BadgesSection.css";
 import NoImg from "../../../../assets/img/no-image.jpg";
 import React, {useState, useEffect} from "react";
 
-export default function BadgesSection({data}) {
+export default function BadgesSection({data, defenceForceType}) {
+
+    
 
     const [filteredData, setFilteredData] = useState(data);
   
-    const getFilteredData = (category) => {
-            const filtered = data?.filter(item => item.fld_badge_type === category);
+    const getFilteredData = (badgeType) => {
+            const filtered = data?.filter(item => item.fld_badge_type === badgeType);
             const allBadges = filtered?.flatMap(item => JSON.parse(item?.badges));
             setFilteredData(allBadges);
     }
@@ -17,6 +19,8 @@ export default function BadgesSection({data}) {
         const allBadges = defaultData?.flatMap(item => JSON.parse(item?.badges));
         setFilteredData(allBadges);
     }, [data]);
+
+    console.log(defenceForceType,filteredData, "defenceForceType")
 
     return (
         <section className="section-spacing badges-section py-0">
