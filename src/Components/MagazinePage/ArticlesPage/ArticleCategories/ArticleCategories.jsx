@@ -61,7 +61,7 @@ export default function ArticleCategories({data}) {
                                     </div>
                                     <div className="content">
                                         <h2 className="main-heading">
-                                            dsa <span>
+                                            <i>dsa</i> <span>
                                                 mission
                                             </span>
                                         </h2>
@@ -73,8 +73,8 @@ export default function ArticleCategories({data}) {
                                         <p>
                                             {item?.fld_short_desc}
                                         </p>
-                                        <div className="d-flex justify-content-between mt-3">
-                                            <ul className="d-flex justify-content-between gap-5">
+                                        <div className="d-flex justify-content-between align-item-end mt-3">
+                                            <ul className="d-flex justify-content-between gap-3 article-date">
                                                 <li>
                                                     By- {item?.fld_published_by}
                                                 </li>
@@ -100,7 +100,7 @@ export default function ArticleCategories({data}) {
                                     </div>
                                     <div className="content">
                                         <h2 className="main-heading">
-                                            dsa <span>
+                                            <i>dsa</i> <span>
                                                 mission
                                             </span>
                                         </h2>

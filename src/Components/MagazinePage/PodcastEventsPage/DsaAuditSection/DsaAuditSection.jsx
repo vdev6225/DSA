@@ -18,7 +18,7 @@ export default function DsaAuditSection() {
                 <div className="row">
                     <div className="col-lg-6">
                         <h2 className="main-heading">
-                            DSA <span>Audit</span>
+                            <i>DSA</i> <span>Audit</span>
                         </h2>
                         <div className="position-relative">
                             <img src={Image3} className="img-fluid" alt="" />
@@ -31,7 +31,7 @@ export default function DsaAuditSection() {
                             <p className="name">
                                 about events
                             </p>
-                            <div className="d-flex gap-5">
+                            <div className="d-flex gap-5 bottom-date">
                                 <div className="box">
                                     <p>
                                         By- 
@@ -51,7 +51,7 @@ export default function DsaAuditSection() {
                                     <p>12:00</p>
                                 </div>
                             </div>
-                                <Link to="" className="magazine-btn d-none">categories</Link>
+                                <Link to="" className="magazine-btn theme-btn d-none">categories</Link>
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 .magazine-deg-sec-wives-section {
     background: var(--main-color-one);
-    margin-bottom: 8rem;
+    margin-bottom: -6rem;
+    padding-bottom: 4rem !important;
 }
 
 .magazine-deg-sec-wives-section .top-section .image-section {
@@ -33,7 +34,7 @@
     position: relative;
 }
 .magazine-deg-sec-wives-section .top-section .image img{
-    aspect-ratio: 1/1.5;
+    aspect-ratio: 1/1;
 }
 
 .magazine-deg-sec-wives-section .top-section .image h5 {
@@ -63,7 +64,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    padding: 1rem;
+    padding: 2rem;
 }
 .magazine-deg-sec-wives-section .bottom-section .content h3{
     font-family: "headingbold" !important;
@@ -89,7 +90,7 @@
 .magazine-deg-sec-wives-section .personal-card {
     display: flex;
     gap: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 .magazine-deg-sec-wives-section .personal-card:last-child {
@@ -97,13 +98,13 @@
 }
 
 .magazine-deg-sec-wives-section .personal-card .image {
-    width: 65%;
+    width: 45%;
 }
 
 .magazine-deg-sec-wives-section .personal-card .image img {
     width: 100%;
     border-radius: 20px;
-    height: 200px;
+    height: 150px;
 }
 
 .magazine-deg-sec-wives-section .personal-card .content h4 {
@@ -112,12 +113,12 @@
 }
 
 .magazine-deg-sec-wives-section .theme-btn {
-    padding: 8px 30px;
+    /* padding: 8px 30px;
     background: var(--black-color);
     color: var(--white-color) !important;
     border-radius: 40px;
     text-transform: capitalize;
     font-weight: bold;
-    display: inline-block;
-    margin-top: 2rem;
+    display: inline-block; */
+    margin-top: 4rem;
 }

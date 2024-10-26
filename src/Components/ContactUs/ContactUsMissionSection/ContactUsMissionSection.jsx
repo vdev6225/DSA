@@ -49,7 +49,7 @@ export default function ContactUsMissionSection() {
                             <b>Imagine if you could</b>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
                             <div className="mt-4">
-                                <Link to="">Learn about Us</Link>
+                                <Link to="" className="theme-btn">Learn about Us</Link>
                             </div>
 
                         </div>

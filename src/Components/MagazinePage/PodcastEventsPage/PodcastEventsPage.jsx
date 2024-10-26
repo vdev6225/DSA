@@ -39,6 +39,7 @@ export default function PodcastEventsPage() {
         getPodCastData();
       },[])
 
+      
     const filteredpodcast = podCastData?.filter((item) => item?.fld_type === "Podcast")
     const filteredevents = podCastData?.filter((item) => item?.fld_type === "Event")
     const filteredeventsfeatured = podCastData?.filter((item) => item?.fld_type === "Event" && item?.fld_featured === "Yes")

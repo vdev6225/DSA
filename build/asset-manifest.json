@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.55373f7d.css",
-    "main.js": "/static/js/main.174b25c9.js",
+    "main.css": "/static/css/main.5dfef911.css",
+    "main.js": "/static/js/main.f8ed4fb4.js",
     "static/js/787.db33642e.chunk.js": "/static/js/787.db33642e.chunk.js",
     "static/media/contact-news.png": "/static/media/contact-news.bcf0f2f6d434728e0a8a.png",
     "static/media/img.png": "/static/media/img.5ec4c1c283687ce6601c.png",
-    "static/media/Frame1.png": "/static/media/Frame1.7851ccf835f8f397de46.png",
+    "static/media/Journey so far.png": "/static/media/Journey so far.f7c7a0739eb82f25290c.png",
     "static/media/close-up-podcast-microphone.jpg": "/static/media/close-up-podcast-microphone.258245596cf66729cd3b.jpg",
+    "static/media/gallery.png": "/static/media/gallery.c9537192445809d667d6.png",
     "static/media/sub.png": "/static/media/sub.33d09e5f0aa35b0526e2.png",
-    "static/media/professional-microphone-sound-studio-with-purple-backdrop.jpg": "/static/media/professional-microphone-sound-studio-with-purple-backdrop.b9efb071823ea5cc3121.jpg",
     "static/media/left-banner.png": "/static/media/left-banner.d39bc162e43eefe90f23.png",
+    "static/media/professional-microphone-sound-studio-with-purple-backdrop.jpg": "/static/media/professional-microphone-sound-studio-with-purple-backdrop.083ea79e009a657443ac.jpg",
     "static/media/international-podcast-day-poster-template-design.jpg": "/static/media/international-podcast-day-poster-template-design.ddf52e0656294627d2bd.jpg",
-    "static/media/contact-mission.png": "/static/media/contact-mission.d021dd3383866de7d720.png",
     "static/media/self.png": "/static/media/self.6d2391e20402b736ad84.png",
+    "static/media/contact-mission.png": "/static/media/contact-mission.9c87ad9b2ae1de537313.png",
     "static/media/Rectangle.png": "/static/media/Rectangle.a1a99ae1f8a5bcddd451.png",
     "static/media/magazine-mockup.png": "/static/media/magazine-mockup.3dbdbd67a895faae5230.png",
     "static/media/25.webp": "/static/media/25.f5575aaa2df9834aaa8c.webp",
@@ -22,6 +23,7 @@
     "static/media/January 2024.jpg": "/static/media/January 2024.bb0c1585017463d5dd29.jpg",
     "static/media/March 2024.jpg": "/static/media/March 2024.0776cce926def707337e.jpg",
     "static/media/February 2024.jpg": "/static/media/February 2024.1099ffd93fc3343abe8c.jpg",
+    "static/media/Pawan-Agrawal.webp": "/static/media/Pawan-Agrawal.31f48154a642473c157d.webp",
     "static/media/20.webp": "/static/media/20.526f5ac4e6f3a79db70a.webp",
     "static/media/DSA-transparent-logo.png": "/static/media/DSA-transparent-logo.52082f3abc99ba8ce4cf.png",
     "static/media/16.jpg": "/static/media/16.db2211e5a873a4c05b6d.jpg",
@@ -39,6 +41,7 @@
     "static/media/24.jpg": "/static/media/24.cacb43325591fd55d1af.jpg",
     "static/media/HelveticaNeueLTStd-Hv.otf": "/static/media/HelveticaNeueLTStd-Hv.445dd7580219e4571d20.otf",
     "static/media/HelveticaNeueLTStd-Lt.otf": "/static/media/HelveticaNeueLTStd-Lt.da5178806f429d6756c3.otf",
+    "static/media/man.jpg": "/static/media/man.698c2b5c45851bc3b650.jpg",
     "static/media/BaseNeueTrial-Regular.ttf": "/static/media/BaseNeueTrial-Regular.77085077bdd6b7b5e01c.ttf",
     "static/media/23.webp": "/static/media/23.ea33cf3f00fce71f5728.webp",
     "static/media/ocian-media.png": "/static/media/ocian-media.d8a7aa074301d380c255.png",
@@ -46,12 +49,12 @@
     "static/media/BaseNeueTrial-Bold.ttf": "/static/media/BaseNeueTrial-Bold.ee6159fe7d20317d3d8d.ttf",
     "static/media/19.jpg": "/static/media/19.fb4b6c00b9de95f4fe22.jpg",
     "index.html": "/index.html",
-    "main.55373f7d.css.map": "/static/css/main.55373f7d.css.map",
-    "main.174b25c9.js.map": "/static/js/main.174b25c9.js.map",
+    "main.5dfef911.css.map": "/static/css/main.5dfef911.css.map",
+    "main.f8ed4fb4.js.map": "/static/js/main.f8ed4fb4.js.map",
     "787.db33642e.chunk.js.map": "/static/js/787.db33642e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.55373f7d.css",
-    "static/js/main.174b25c9.js"
+    "static/css/main.5dfef911.css",
+    "static/js/main.f8ed4fb4.js"
   ]
 }

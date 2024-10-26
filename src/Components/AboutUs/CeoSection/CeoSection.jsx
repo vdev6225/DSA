@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
-import NoImg from "../../../assets/img/no-image.jpg";
+import Left from "../../../assets/img/man.jpg";
+import Right from "../../../assets/img/Pawan-Agrawal.webp";
 import "./CeoSection.css";
 export default function CeoSection() {
     return (
-        <section className="section-spacing ceo-section">
+        <section className="section-spacing ceo-section my-5">
             <div className="container-fluid">
-                <div className="row">
-                    <div className="col-lg-6 pe-lg-4">
+                <div className="row justify-content-center">
+                    <div className="col-lg-5 pe-lg-5">
                         <div className="ceo-card">
-                            <img src={NoImg} className="img-fluid" alt="" />
+                            <img src={Left} className="img-fluid" alt="" />
                             <p className="name">
                                 Manvendra <span>Singh</span>
                             </p>
@@ -20,9 +21,9 @@ export default function CeoSection() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6 ps-lg-4">
+                    <div className="col-lg-5 ps-lg-5">
                         <div className="ceo-card">
-                            <img src={NoImg} className="img-fluid" alt="" />
+                            <img src={Right} className="img-fluid" alt="" />
                             <p className="name">
                                 Pawan <span>agarwal</span>
                             </p>

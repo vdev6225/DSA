@@ -12,10 +12,10 @@ export default function ContactUsBanner() {
 
                                 <div className="d-flex justify-content-between">
                                     <p>
-                                        Journey so far
+                                        Nationalism
                                     </p>
                                     <p>
-                                        Journey so far
+                                        Awareness
                                     </p>
                                 </div>
                                 <div className="text-center">
@@ -25,10 +25,10 @@ export default function ContactUsBanner() {
                                 </div>
                                 <div className="d-flex justify-content-between">
                                     <p>
-                                        Journey so far
+                                        Resilience
                                     </p>
                                     <p>
-                                        Journey so far
+                                        Patriotism
                                     </p>
                                 </div>
                             </div>
@@ -36,7 +36,7 @@ export default function ContactUsBanner() {
                     </div>
                 </div>
             </section>
-            <section className="section-spacing  contact-us-page-banner-bottom-text">
+            <section className="section-spacing mb-5 contact-us-page-banner-bottom-text">
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-12">

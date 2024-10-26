@@ -6,12 +6,12 @@ export default function MagazineDegSecWivesSection() {
         <section className="section-spacing magazine-deg-sec-wives-section">
             <div className="contain-fluid mt-lg-4">
                 <div className="row">
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 pe-lg-5">
                         <div className="top-section">
                             <div className="image-section">
                                 <div className="main-heading">
                                     <h2>
-                                        Def-sec <span>wives</span>
+                                        Def-sec <span>edu</span>
                                     </h2>
                                 </div>
                                 <div className="image">
@@ -49,10 +49,10 @@ export default function MagazineDegSecWivesSection() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 ps-lg-5">
                         <div className="top-heading">
                             <h3>Stay updated with us</h3>
-                            <p>learn career opportunities with DSA learn career opportunities with DSA learn career opportunities with DSA</p>
+                            <p className="w-75 mx-auto">learn career opportunities with DSA learn career opportunities with DSA learn career opportunities with DSA</p>
                         </div>
                         <div className="personal-card">
                             <div className="image">
