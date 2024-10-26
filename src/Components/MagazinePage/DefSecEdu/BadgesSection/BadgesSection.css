@@ -2,6 +2,7 @@
   margin-bottom: 2rem;
   font-family: "headingbold" !important;
   text-align: center;
+  color: var(--font-dark);
 }
 
 .badges-section .badge-category ul {
@@ -40,6 +41,7 @@
   font-family: "headingbold" !important;
   font-weight: bolder;
   margin-bottom: 0;
+  color: var(--font-dark);
 }
 
 .badges-section .badge-card-box .badge-card {
@@ -64,6 +66,7 @@
   overflow: hidden;
   margin-right: 1rem;
   border-radius: 15px;
+  text-align: center;
 }
 
 .badges-section .badge-card-box .badge-card .image img {
@@ -74,13 +77,16 @@
 .badges-section .badge-card-box .badge-card h4 {
   font-family: "headingbold" !important;
   text-transform: uppercase;
-  text-align: center;
+  /* text-align: center; */
+  padding-left: 1rem;
+  color: var(--font-dark);
 }
 
 .badges-section .badge-card-box .badge-card p {
   padding-left: 1rem;
   padding-right: 5px;
-  font-size: 0.8rem;
-  text-align: justify;
+  font-size: 0.9rem;
+  /* text-align: justify; */
+  padding-left: 2.5rem;
   line-height: 1.4;
 }

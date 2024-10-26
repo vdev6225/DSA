@@ -1,17 +1,17 @@
 import "./BadgesSection.css";
 import NoImg from "../../../../assets/img/no-image.jpg";
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 
-export default function BadgesSection({data, defenceForceType}) {
+export default function BadgesSection({ data, defenceForceType }) {
 
-    
+
 
     const [filteredData, setFilteredData] = useState(data);
-  
+
     const getFilteredData = (badgeType) => {
-            const filtered = data?.filter(item => item.fld_badge_type === badgeType);
-            const allBadges = filtered?.flatMap(item => JSON.parse(item?.badges));
-            setFilteredData(allBadges);
+        const filtered = data?.filter(item => item.fld_badge_type === badgeType);
+        const allBadges = filtered?.flatMap(item => JSON.parse(item?.badges));
+        setFilteredData(allBadges);
     }
 
     useEffect(() => {
@@ -20,25 +20,28 @@ export default function BadgesSection({data, defenceForceType}) {
         setFilteredData(allBadges);
     }, [data]);
 
-    console.log(defenceForceType,filteredData, "defenceForceType")
+    console.log(defenceForceType, filteredData, "defenceForceType")
 
     return (
-        <section className="section-spacing badges-section py-0">
+        <section className="section-spacing badges-section pt-0">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-8 mx-auto">
-                        <h4 className="heading">
+                    <div className="col-lg-10 mx-auto">
+                        <h2 className="heading">
                             All Badges of the Indian Army and Their Meaning
-                        </h4>
+                        </h2>
+                    </div>
+                    <div className="col-lg-7 mb-4 mx-auto">
+
                         <div className="badge-category">
                             <ul>
-                                <li onClick={()=> getFilteredData("Commissioned")}>
+                                <li onClick={() => getFilteredData("Commissioned")}>
                                     <p>Commissioned</p>
                                 </li>
-                                <li onClick={()=> getFilteredData("Junior Commissioned")}>
+                                <li onClick={() => getFilteredData("Junior Commissioned")}>
                                     <p>Junior Commissioned</p>
                                 </li>
-                                <li onClick={()=> getFilteredData("Non- Commissioned")}>
+                                <li onClick={() => getFilteredData("Non- Commissioned")}>
                                     <p>Non-Commissioned</p>
                                 </li>
                             </ul>
@@ -66,8 +69,8 @@ export default function BadgesSection({data, defenceForceType}) {
                                 </div>
                             </div>
                             {
-                                filteredData?.map((item, id)=> {
-                                    return ( <div className="badge-card" key={id}>
+                                filteredData?.map((item, id) => {
+                                    return (<div className="badge-card" key={id}>
                                         <div className="image">
                                             <img src={item?.badge_image} className="img-fluid" alt={item?.badge_alt} />
                                         </div>

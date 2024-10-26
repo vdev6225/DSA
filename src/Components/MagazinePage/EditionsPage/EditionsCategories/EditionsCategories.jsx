@@ -61,7 +61,7 @@ export default function EditionsCategories({data}) {
                                         <img src={item?.fld_image} className="img-fluid" alt={item?.fld_alt} />
                                     </div>
                                     <h2>{item?.fld_long_desc}</h2>
-                                    <p>
+                                    <p className="des">
                                     {item?.fld_short_desc}
                                     </p>
                                 </div>

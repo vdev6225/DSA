@@ -16,7 +16,7 @@ export default function WelcomeSection() {
         }
     }
     return (
-        <section className="section-spacing welcome-section position-relative">
+        <section className="section-spacing mb-5 welcome-section position-relative">
             {/* <img src={NoImg} className="img-fluid" alt="" /> */}
             <div className="container-flid position-relative">
                 <div className="row">
