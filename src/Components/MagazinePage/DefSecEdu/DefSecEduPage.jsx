@@ -13,7 +13,7 @@ import { store } from "../../../Helpers/Store/Store";
 export default function DefSecEduPage() {
 
     const {defSecEduData, defSecEduType, setDefSecEduData, defSecEduFilteredData} = useContext(store);
-    const [defenceForceType, setDefenceForceType] = useState('')
+    const [type, setType] = useState({defenceForceType: "Indian Army", badgeType : ""})
 
     const getDefSecEduData = () => {
         PostApiCall.postRequest(
@@ -53,8 +53,8 @@ export default function DefSecEduPage() {
             {/* Insignia page */}
             {defSecEduType === "Insignia" &&
             <>
-            <IndianArmySection data={insignia} setDefenceForceType = {setDefenceForceType} />
-            <BadgesSection data = {insignia} defenceForceType = {defenceForceType}/>
+            <IndianArmySection data={insignia} setDefenceForceType = {setType} />
+            <BadgesSection data = {insignia} type = {type} setType = {setType}/>
             </>
             }
             {/* Awards Page */}
