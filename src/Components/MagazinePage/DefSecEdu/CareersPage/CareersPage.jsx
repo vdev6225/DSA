@@ -1,97 +1,71 @@
 import { Collapse } from 'antd';
 import NoImg from "../../../../assets/img/no-image.jpg";
 import "./CareersPage.css";
-// import { FaYoutube } from 'react-icons/fa';
+import React, { useState, useEffect } from "react";
 
-import React, {useState, useEffect} from "react";
-
-export default function CareersPage({data}) {
-
+export default function CareersPage({ data }) {
     const [filteredData, setFilteredData] = useState(data);
-    const [badgeType, setBadgeType] = useState("")
-  
-    useEffect(() => {
-        const defaultData = data.filter(item => item?.fld_badge_type === "Indian Army")
-        setFilteredData(defaultData);
-    }, [data]);
-
+    const [type, setType] = useState({ categoryType: "Defence Forces", badgeType: "" });
 
     const getFilteredData = (category) => {
-            setBadgeType(category)
-            const filtered = data.filter(item => item.fld_category === category);
-            setFilteredData(filtered);
-    }
+        setType((prevState) => ({
+            ...prevState,
+            categoryType: category,
+            badgeType: "", 
+        }));
+        
+        const filteredCategory = data?.filter(item => item.fld_category === category);
+        setFilteredData(filteredCategory);
+    };
 
-    console.log(data,"cdata")
+    const getBadgeFilteredData = (badgeType) => {
+        setType((prevState) => ({
+            ...prevState,
+            badgeType: badgeType
+        }));
 
-    const text = <div className='bottom-content'><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p></div>;
-    const items = [
-        {
-            key: '1',
-            label: <div className='careers-card'>
+        const filterBadges = data?.filter(item => 
+            item.fld_badge_type === badgeType && 
+            item.fld_category === type.categoryType
+        );
+
+        console.log(filterBadges, "filterBadges");
+        setFilteredData(filterBadges);
+    };
+
+    useEffect(() => {
+        const filteredCategory = data?.filter(item => item.fld_category === "Defence Forces");
+        setFilteredData(filteredCategory);
+    }, [data]);
+
+    const items = filteredData.map((item, id) => ({
+        key: id,
+        label: (
+            <div className='careers-card'>
                 <div className="image">
-                    <img src={NoImg} className='img-fluid' alt="" />
+                    <img src={item?.fld_image} className='img-fluid' alt={item?.fld_alt} />
                 </div>
                 <div className="content">
-                    <h2>
-                        topic one
-                    </h2>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
+                    <h2>{item?.fld_heading}</h2>
+                    <p>{item?.fld_short_desc}</p>
                 </div>
-            </div>,
-            children: <div className='bottom-content'>{text}</div>,
-        },
-        {
-            key: '2',
-            label: <div className='careers-card'>
-                <div className="image">
-                    <img src={NoImg} className='img-fluid' alt="" />
-                </div>
-                <div className="content">
-                    <h2>
-                        topic one
-                    </h2>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-                </div>
-            </div>,
-            children: <div className='bottom-content'>{text}</div>,
-        },
-        {
-            key: '3',
-            label: <div className='careers-card'>
-                <div className="image">
-                    <img src={NoImg} className='img-fluid' alt="" />
-                </div>
-                <div className="content">
-                    <h2>
-                        topic one
-                    </h2>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-                </div>
-            </div>,
-            children: <div className='bottom-content'>{text}</div>,
-        },
-    ];
+            </div>
+        ),
+        children: <div className='bottom-content'>{item?.fld_short_desc}</div>,
+    }));
+
     return (
         <section className="section-spacing pb-0 careers-page">
-            <div className="container-flid">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="col-12 section-spacing-y">
                         <div className="category-tab">
-                            <p>
-                                Categories
-                            </p>
+                            <p>Categories</p>
                             <ul>
-                                <li onClick={()=> getFilteredData("Defence Forces")}>
+                                <li onClick={() => getFilteredData("Defence Forces")}>
                                     Defence Forces
-                                </li >
-                                <li onClick={()=> getFilteredData("Security forces")}>
+                                </li>
+                                <li onClick={() => getFilteredData("Security forces")}>
                                     Security forces
                                 </li>
                             </ul>
@@ -99,27 +73,27 @@ export default function CareersPage({data}) {
                     </div>
                     <div className="col-lg-8 mx-auto">
                         <div className="main-heading">
-                            <h2>{badgeType ? badgeType : "Defence Forces"}</h2>
+                            <h2>{type.categoryType ? type.categoryType : "Defence Forces"}</h2>
                         </div>
                         <div className="careers-category">
                             <ul>
-                                <li>
+                                <li onClick={() => getBadgeFilteredData("Indian Army")}>
                                     <p>Indian Army</p>
                                 </li>
-                                <li>
+                                <li onClick={() => getBadgeFilteredData("Indian Navy")}>
                                     <p>Indian Navy</p>
                                 </li>
-                                <li>
+                                <li onClick={() => getBadgeFilteredData("Indian Air Force")}>
                                     <p>Indian Air Force</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div className="col-12">
-                        <Collapse accordion items={items} bordered={false} defaultActiveKey={['1']} />
+                        <Collapse accordion items={items} bordered={false} />
                     </div>
                 </div>
             </div>
         </section>
-    )
+    );
 }

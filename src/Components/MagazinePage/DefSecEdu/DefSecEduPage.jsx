@@ -11,8 +11,9 @@ import PostApiCall from "../../../Helpers/Api/PostApi";
 import { store } from "../../../Helpers/Store/Store";
 
 export default function DefSecEduPage() {
-    const {defSecEduData,defSecEduType, setDefSecEduData,defSecEduFilteredData} = useContext(store);
-    
+
+    const {defSecEduData, defSecEduType, setDefSecEduData, defSecEduFilteredData} = useContext(store);
+    const [defenceForceType, setDefenceForceType] = useState('')
 
     const getDefSecEduData = () => {
         PostApiCall.postRequest(
@@ -34,16 +35,14 @@ export default function DefSecEduPage() {
         })
       }
 
-      useEffect(()=>{
-        getDefSecEduData();
-      },[])
-
-
       const insignia = defSecEduData?.filter((item)=> item?.fld_type === "Insignia")
       const awards = defSecEduData?.filter((item)=> item?.fld_type === "Awards")
       const careers = defSecEduData?.filter((item)=> item?.fld_type === "Careers")
 
-      console.log(insignia,"insignia")
+      useEffect(()=>{
+        getDefSecEduData();
+      },[])
+
           
     return (
         <>
@@ -54,8 +53,8 @@ export default function DefSecEduPage() {
             {/* Insignia page */}
             {defSecEduType === "Insignia" &&
             <>
-            <IndianArmySection data={insignia} />
-            <BadgesSection data = {insignia}/>
+            <IndianArmySection data={insignia} setDefenceForceType = {setDefenceForceType} />
+            <BadgesSection data = {insignia} defenceForceType = {defenceForceType}/>
             </>
             }
             {/* Awards Page */}
