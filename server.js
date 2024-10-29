@@ -38,5 +38,20 @@ app.get("/services", function (req, res) {
 app.get("/newsletter", function (req, res) {
   res.sendFile(path.join(__dirname, "build", "index.html"));
 });
+app.get("/newsletter-news", function (req, res) {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
+});
+app.get("/newsletter-article-page", function (req, res) {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
+});
+app.get("/newsletter-alert-page", function (req, res) {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
+});
+app.get("/newsletter-def-page", function (req, res) {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
+});
+app.get("/news/:id", function (req, res) {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
+});
 
 app.listen(4000);
