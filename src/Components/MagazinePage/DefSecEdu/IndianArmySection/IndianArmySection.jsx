@@ -5,25 +5,25 @@ import { useEffect, useState } from "react";
 
 export default function IndianArmySection({data, setDefenceForceType}) {
 
-    const [filteredData, setFilteredData] = useState(data);
+    const [filteredData, setFilteredData] = useState([]);
+    const [currentCategory, setCurrentCategory] = useState("Indian Army");
    
   
     const getFilteredData = (defenceForceType) => {
-            setDefenceForceType(defenceForceType)
-            const filtered = data?.filter(item => item?.fld_category === defenceForceType);
-            console.log(filtered, "hi")
-            setFilteredData(filtered);
+            setDefenceForceType((prevState)=>({
+                ...prevState,
+                defenceForceType : defenceForceType,
+                badgeType : ""
+            }))
+            setCurrentCategory(defenceForceType);
     }
 
     useEffect(() => {
-        const defaultData = data?.filter(item => item?.fld_category === "Indian Army")
+        const defaultData = data?.filter(item => item?.fld_category === currentCategory)
         setFilteredData(defaultData);
-    }, [data]);
+    }, [data, currentCategory]);
 
-    console.log(filteredData,"filteredData")
-    // console.log(data, "data")
-    
-
+      
     return (
         <>
             <section className="section-spacing pt-0 pb-4 category-filter">

@@ -2,25 +2,30 @@ import "./BadgesSection.css";
 import NoImg from "../../../../assets/img/no-image.jpg";
 import React, { useState, useEffect } from "react";
 
-export default function BadgesSection({ data, defenceForceType }) {
+export default function BadgesSection({data, type, setType}) {
+
+    console.log(data, type.defenceForceType, "ccccccc")
 
 
-
-    const [filteredData, setFilteredData] = useState(data);
-
+    const [filteredData, setFilteredData] = useState([]);
+  
     const getFilteredData = (badgeType) => {
-        const filtered = data?.filter(item => item.fld_badge_type === badgeType);
-        const allBadges = filtered?.flatMap(item => JSON.parse(item?.badges));
-        setFilteredData(allBadges);
+
+            console.log(type.defenceForceType, "hioio")              
+            const filtered = data?.filter(item => item?.fld_badge_type === badgeType && item?.fld_category === type.defenceForceType);
+            console.log(filtered,"check")
+            const allBadges = filtered?.flatMap(item => JSON.parse(item?.badges));
+            console.log(allBadges,"allBadges")
+            const filteredBadges = allBadges?.filter(item => item.badge_type === badgeType)
+            console.log(filtered,"hiiiiiiiiiiiiiiiiiiiii")
+            setFilteredData(filteredBadges);
     }
 
     useEffect(() => {
-        const defaultData = data?.filter(item => item?.fld_badge_type === "Commissioned")
+        const defaultData = data?.filter(item => item?.fld_badge_type === "Commissioned" && item?.fld_category === "Indian Army")
         const allBadges = defaultData?.flatMap(item => JSON.parse(item?.badges));
         setFilteredData(allBadges);
     }, [data]);
-
-    console.log(defenceForceType, filteredData, "defenceForceType")
 
     return (
         <section className="section-spacing badges-section pt-0">

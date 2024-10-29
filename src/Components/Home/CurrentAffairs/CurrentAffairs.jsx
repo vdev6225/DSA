@@ -16,10 +16,13 @@ export default function CurrentAffairs({ banners }) {
                     <div className="col-12">
                         <div className="d-flex main-headin-box pb-3 justify-content-between mb-4">
                             <h2 className="main-heading">
-                                Current <span>Affairs</span>
+                            Current<span> Affairs</span> 
                             </h2>
                             <p className="text-lg-end">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo iure sequi tempora aliquid sapiente nisi. Itaque obcaecati cum temporibus similique
+                            Defence and Security Alert (DSA) is committed to extend a supportive hand to
+Yyouth, students, professionals to stay updated and aware on the defence, security
+and international affairs worldwide.
+
                             </p>
                         </div>
                     </div>
