@@ -1,3 +1,8 @@
+.testimonial-section .bg-img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 .testimonial-section .heading-box a {
     padding: 10px 20px;
     /* background: var(--white-two); */

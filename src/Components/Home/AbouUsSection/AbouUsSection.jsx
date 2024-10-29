@@ -23,7 +23,7 @@ export default function AbouUsSection({banners}) {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
     return (
-        <section className="section-spacing pb-4 about-section">
+        <section className="section-spacing pb-4 about-section position-relative">
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-lg-7 left-section">
@@ -43,7 +43,7 @@ export default function AbouUsSection({banners}) {
                         </div>
                     </div>
                     <div className="col-lg-5 about-section-swiper">
-                        <h2 className="main-heading text-center mb-0">
+                        <h2 className="main-heading text-center mb-0 mt-4">
                             <i>dsa</i> <span>editions</span>
                         </h2>
                         <p>

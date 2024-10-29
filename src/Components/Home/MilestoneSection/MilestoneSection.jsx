@@ -7,19 +7,21 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { FreeMode, Pagination } from 'swiper/modules';
+import bgImg from "../../../assets/img/milestones-bg.png";
 import "./MilestoneSection.css";
 export default function MilestoneSection({HeadingText}) {
     return (
         <section className="section-spacing px-0 pt-0 milestone-section">
-            <div className="container py-lg-4">
+            <div className="container py-lg-4 position-relative">
+                <img src={bgImg} className='img-fluid bg-img' alt="" />
                 <div className="row">
                     <div className="col-12">
-                        <h2 className="main-heading text-center">
+                        {/* <h2 className="main-heading text-center">
                             <span><i>dsa</i></span> milestones
-                        </h2>
+                        </h2> */}
                         <p className='text-center w-75 mb-5 mx-auto heading-text'>{HeadingText}</p>
                         <Swiper
-                            spaceBetween={40}
+                            spaceBetween={20}
                             slidesPerView={6}
                             freeMode={true}
                             loop={true}

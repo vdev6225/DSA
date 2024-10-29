@@ -4,8 +4,14 @@
     margin-top: 20px;
     background: var(--main-color-one);
 }
+
+.newsletter-section .swiper-slide {
+    height: auto !important;
+}
+
 .newsletter-section .newsletter-card {
     display: flex;
+    height: 100%;
     background: var(--white-color);
 }
 
@@ -17,6 +23,8 @@
 .newsletter-section .newsletter-card .image img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
+    padding: 1rem;
 }
 
 .newsletter-section .newsletter-card .content {
@@ -24,8 +32,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-} 
-.newsletter-section .newsletter-card .content h5{
+}
+
+.newsletter-section .newsletter-card .content h5 {
     font-weight: bolder;
     color: var(--theme-color);
 }

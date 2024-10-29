@@ -23,7 +23,7 @@ export default function PodcastSection({ banners }) {
                                     </p>
                                     <img src={Arrow} className="img-fluid" alt="" />
                                 </div>
-                                <div className="youtube-btn">
+                                <div className="youtube-btn mt-5">
                                     <Link to="https://www.youtube.com/">youtube channel</Link>
                                 </div>
                             </div>
