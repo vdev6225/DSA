@@ -24,7 +24,7 @@ export default function ArticlesSection() {
                                 Articles
                             </h2>
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                            DSA’s articles are crafted by leading subject experts, providing authoritative insights and in-depth research- based analysis on defence, security and International affairs. We cover a diverse range of topics with a unique blend of global and India-specific perspectives, making them a valuable resource for informed decision-making.
                             </p>
                             <div className="text-end mt-4">
                                 <Link to="/articles">

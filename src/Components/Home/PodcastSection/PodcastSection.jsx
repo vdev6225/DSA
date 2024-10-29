@@ -19,7 +19,7 @@ export default function PodcastSection({ banners }) {
                                         that will inspire <br /> you to grow
                                     </h2>
                                     <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                    Our Podcasts deliver expert insights and stories to empower our generations, brings awareness in the society. These podcasts fuel personal and professional growth, aligning with DSA’s vision to keep you ahead in the defence, security and international affairs genre.
                                     </p>
                                     <img src={Arrow} className="img-fluid" alt="" />
                                 </div>

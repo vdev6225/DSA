@@ -32,64 +32,94 @@ export default function MilestoneSection({HeadingText}) {
                             <SwiperSlide>
                                 <div className="milestone-card">
                                     <p className="count">
-                                        300+
+                                        8 yrs   
                                     </p>
                                     <span className="content">
-                                        Magazines
+                                        On IAF Intranet 
                                     </span>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="milestone-card">
                                     <p className="count">
-                                        2K+
+                                        90+
                                     </p>
                                     <span className="content">
-                                        Testimonials
+                                        High-Profile Interviews
                                     </span>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="milestone-card">
                                     <p className="count">
-                                        100+
+                                        180
                                     </p>
                                     <span className="content">
-                                        Our Client
+                                        Editions Published so far
                                     </span>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="milestone-card">
                                     <p className="count">
-                                        178
+                                        50+
                                     </p>
                                     <span className="content">
-                                        Magazines Editions
+                                        Areas covered
                                     </span>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="milestone-card">
                                     <p className="count">
-                                        178
+                                        1000+
                                     </p>
                                     <span className="content">
-                                        Authors
+                                        Contributors
                                     </span>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="milestone-card">
                                     <p className="count">
-                                        16
+                                        90+
                                     </p>
                                     <span className="content">
-                                        Interview Published
+                                        Media Partners 
                                     </span>
                                 </div>
                             </SwiperSlide>
 
+                            <SwiperSlide>
+                                <div className="milestone-card">
+                                    <p className="count">
+                                        30+
+                                    </p>
+                                    <span className="content">
+                                    High Profile Recognition 
+                                    </span>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="milestone-card">
+                                    <p className="count">
+                                        60000+
+                                    </p>
+                                    <span className="content">
+                                    Online Outreach 
+                                    </span>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="milestone-card">
+                                    <p className="count">
+                                        25000+
+                                    </p>
+                                    <span className="content">
+                                    Print Outreach 
+                                    </span>
+                                </div>
+                            </SwiperSlide>
                         </Swiper>
                     </div>
                 </div>
