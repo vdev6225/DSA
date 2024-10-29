@@ -1,5 +1,5 @@
 
-import Image1 from "../../../../assets/img/podcast/international-podcast-day-poster-template-design.jpg";
+import Image1 from "../../../../assets/img/podcast/right.png";
 import Image2 from "../../../../assets/img/podcast/professional-microphone-sound-studio-with-purple-backdrop.jpg";
 import Image3 from "../../../../assets/img/podcast/close-up-podcast-microphone.jpg";
 import { Link } from "react-router-dom";
@@ -26,8 +26,8 @@ export default function DsaAuditSection() {
                         </div>
                     </div>
                     <div className="col-lg-6">
-                        <img src={Image3} className="img-fluid" alt="" />
-                        <div className="d-flex flex-column align-items-end">
+                        <img src={Image1} className="img-fluid" alt="" />
+                        <div className="d-flex mt-3 flex-column align-items-end">
                             <p className="name">
                                 about events
                             </p>

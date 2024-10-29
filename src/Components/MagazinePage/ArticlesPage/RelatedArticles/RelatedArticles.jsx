@@ -1,9 +1,10 @@
 import "./RelatedArticles.css";
 import NoImg from "../../../../assets/img/no-image.jpg";
+import { Link } from "react-router-dom";
 export default function RelatedArticles({data}) {
     console.log(data, "article")
     return (
-        <section className="section-spacing py-0 related-articles-section">
+        <section className="section-spacing pt-0 related-articles-section">
             <div className="container-fuid">
                 <div className="row">
                     <h2 className="main-heading">
@@ -30,6 +31,9 @@ export default function RelatedArticles({data}) {
                             </div>)
                         })
                     }
+                    <div className="col-12 text-center mt-5">
+                        <Link to="" className="theme-btn">Back to Categories</Link>
+                    </div>
                 </div>
             </div>
         </section>

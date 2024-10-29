@@ -12,7 +12,7 @@ import 'swiper/css/pagination';
 import { FreeMode, Grid, Pagination } from 'swiper/modules';
 export default function EventsPage({eventdata}) {
     return (
-        <section className="section-spacing events-section">
+        <section className="section-spacing my-5 events-section">
             <div className="container-flid">
                 <div className="row">
                     <div className="col-12">

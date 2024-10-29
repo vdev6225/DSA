@@ -18,22 +18,27 @@
 .article-detail-section .article-card .name {
     text-transform: uppercase;
     font-weight: bolder;
-    font-size: 2.4rem;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: var(--font-dark);
 }
 
 .article-detail-section .date .box {
     display: flex;
     margin-bottom: 1rem;
 }
-.article-detail-section .date .box .left{
+
+.article-detail-section .date .box .left {
     width: 50%;
     font-family: "bodyfontbold" !important;
     text-transform: capitalize;
 }
-.article-detail-section .date .box ul{
+
+.article-detail-section .date .box ul {
     display: flex;
     gap: 0 10px;
 }
-.article-detail-section b.d-block{
+
+.article-detail-section b.d-block {
     text-transform: capitalize;
 }

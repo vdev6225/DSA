@@ -148,9 +148,9 @@ export default function MainFooter() {
                 <div className="container-fluid position-relative">
                     <div className="row">
                         <div className="col-lg-6">
-                            Copyright © 2020 DSA - Defence and Security Alert Magazine
+                            Copyright © 2024 DSA - Defence and Security Alert Magazine
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 text-lg-end">
                             Brought by <a href="https://www.oceanmedia.in/" target="_blank" rel="noopener noreferrer">Ocean Media Pvt. Ltd.</a> ( A Group company of Prabhat Prakashan Pvt. Ltd.)
                         </div>
                     </div>
