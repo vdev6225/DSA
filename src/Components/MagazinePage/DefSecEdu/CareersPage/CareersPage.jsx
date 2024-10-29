@@ -71,9 +71,9 @@ export default function CareersPage({ data }) {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-lg-8 mx-auto">
-                        <div className="main-heading">
-                            <h2>{type.categoryType ? type.categoryType : "Defence Forces"}</h2>
+                    <div className="col-lg-8 mx-auto mb-4">
+                        <div className="main-heading mt-4">
+                            <h2 className='mb-4'>{type.categoryType ? type.categoryType : "Defence Forces"}</h2>
                         </div>
                         <div className="careers-category">
                             <ul>

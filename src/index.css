@@ -89,6 +89,7 @@ h4,
 h5.h6 {
   font-family: "heading" !important;
   color: var(--font-dark);
+  letter-spacing: 2px;
 }
 
 .heading-text {

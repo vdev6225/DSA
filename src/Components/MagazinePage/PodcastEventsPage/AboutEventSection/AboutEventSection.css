@@ -8,7 +8,7 @@
 .about-event-section .right-section .left-three-img {
     padding: 1rem;
     border-radius: 20px;
-    background: var(--main-color-two);
+    background: var(--main-color-one);
     width: 40%;
 }
 
@@ -17,6 +17,7 @@
     width: 100%;
     height: 160px;
     margin-bottom: 1rem;
+    object-fit: cover;
 }
 
 .about-event-section .right-section .left-three-img img:last-child {
@@ -25,20 +26,23 @@
 
 .about-event-section .right-section .right-img {
     width: 60%;
+    object-fit: cover;
 }
 .about-event-section .right-section .right-img a {
     
-    display: inline-block;
+    /* display: inline-block;
     border-radius: 20px;
     padding: 8px 30px;
     text-align: center;
     background-color: var(--main-color-two);
-    text-transform: capitalize;
-    margin-bottom: 1rem;
-    font-weight: bolder;
+    text-transform: capitalize; */
+    margin-bottom: 2rem;
+    /* font-weight: bolder; */
 }
 
 .about-event-section .right-section .right-img img {
     border-radius: 20px;
     width: 100%;
+    height: 84%;
+    object-fit: cover;
 }

@@ -2,8 +2,9 @@
     font-size: 2rem;
 }
 .new-articles-section img{
-    border-radius: 20px;
-    height: 600px;
+    border-radius: 10px;
+    height: 400px;
+    object-fit: cover;
     width: 100%;
     margin-top: 1rem;
 }

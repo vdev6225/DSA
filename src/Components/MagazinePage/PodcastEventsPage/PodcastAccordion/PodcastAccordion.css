@@ -13,8 +13,21 @@
 }
 
 .podcast-detail-section .podcast-card .content .heading h4 {
-  font-family: "bodyfontbold" !important;
+  font-family: "headingbold" !important;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  color: var(--font-dark);
   /* font-weight: bolder !important; */
+}
+
+.podcast-detail-section .podcast-card .content .heading p {
+  font-family: "bodyfont" !important;
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+
+.podcast-detail-section .podcast-card .content .date .box {
+  display: flex;
 }
 
 .podcast-detail-section .podcast-card .content {
@@ -57,7 +70,8 @@
   right: 1rem;
   width: 40px;
   height: 40px !important;
-  background: var(--main-color-two);
+  background: var(--theme-color);
+  color: var(--white-color) !important;
   border-radius: 50%;
   display: flex !important;
   align-items: center !important;
@@ -76,10 +90,11 @@
 }
 
 .podcast-detail-section .bottom-content .content {
-  margin-top: -100px;
+  margin-top: -120px;
+  margin-left: .8rem;
   padding-right: 1rem;
   /* transform: translateY(-100px); */
-  width: 80% !important;
+  width: 70% !important;
 }
 
 .podcast-detail-section .bottom-content .content a {

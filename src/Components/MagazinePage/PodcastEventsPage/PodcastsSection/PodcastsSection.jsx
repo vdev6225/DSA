@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import NoImg from "../../../../assets/img/no-image.jpg";
 import "./PodcastsSection.css";
-import Image1 from "../../../../assets/img/podcast/international-podcast-day-poster-template-design.jpg";
+import Image1 from "../../../../assets/img/podcast/left.png";
 import Image2 from "../../../../assets/img/podcast/professional-microphone-sound-studio-with-purple-backdrop.jpg";
 import Image3 from "../../../../assets/img/podcast/close-up-podcast-microphone.jpg";
 export default function PodcastsSection() {
     return (
-        <section className="section-spacing podcast-event-page-podcast-section">
+        <section className="section-spacing podcast-event-page-podcast-section mb-5">
             <div className="container-flid">
                 <div className="row">
                     <div className="col-lg-6 mx-auto text-center top-section">
@@ -22,7 +22,7 @@ export default function PodcastsSection() {
                             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words
                         </p>
                         <div className="text-enter">
-                            <Link to="https://www.youtube.com/">
+                            <Link to="https://www.youtube.com/" className="theme-btn">
                                 YouTube channel
                             </Link>
                         </div>
@@ -43,7 +43,7 @@ export default function PodcastsSection() {
                 </div>
                 <div className="row">
                     <div className="col-lg-6 mx-auto text-center">
-                        <p><b>About our experts</b></p>
+                        <p><b className="fs-4">About our experts</b></p>
                         <p>
                             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words
                         </p>
