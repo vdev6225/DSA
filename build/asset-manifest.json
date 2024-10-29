@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5dfef911.css",
-    "main.js": "/static/js/main.f8ed4fb4.js",
+    "main.css": "/static/css/main.3aeadd8e.css",
+    "main.js": "/static/js/main.8313189a.js",
     "static/js/787.db33642e.chunk.js": "/static/js/787.db33642e.chunk.js",
     "static/media/contact-news.png": "/static/media/contact-news.bcf0f2f6d434728e0a8a.png",
     "static/media/img.png": "/static/media/img.5ec4c1c283687ce6601c.png",
@@ -9,9 +9,10 @@
     "static/media/close-up-podcast-microphone.jpg": "/static/media/close-up-podcast-microphone.258245596cf66729cd3b.jpg",
     "static/media/gallery.png": "/static/media/gallery.c9537192445809d667d6.png",
     "static/media/sub.png": "/static/media/sub.33d09e5f0aa35b0526e2.png",
-    "static/media/left-banner.png": "/static/media/left-banner.d39bc162e43eefe90f23.png",
+    "static/media/right.png": "/static/media/right.16073fa57a6804df9c67.png",
+    "static/media/left.png": "/static/media/left.be0ec9883ed6fb3bea74.png",
     "static/media/professional-microphone-sound-studio-with-purple-backdrop.jpg": "/static/media/professional-microphone-sound-studio-with-purple-backdrop.083ea79e009a657443ac.jpg",
-    "static/media/international-podcast-day-poster-template-design.jpg": "/static/media/international-podcast-day-poster-template-design.ddf52e0656294627d2bd.jpg",
+    "static/media/left-banner.png": "/static/media/left-banner.56dbe1147308f3da6d36.png",
     "static/media/self.png": "/static/media/self.6d2391e20402b736ad84.png",
     "static/media/contact-mission.png": "/static/media/contact-mission.9c87ad9b2ae1de537313.png",
     "static/media/Rectangle.png": "/static/media/Rectangle.a1a99ae1f8a5bcddd451.png",
@@ -49,12 +50,12 @@
     "static/media/BaseNeueTrial-Bold.ttf": "/static/media/BaseNeueTrial-Bold.ee6159fe7d20317d3d8d.ttf",
     "static/media/19.jpg": "/static/media/19.fb4b6c00b9de95f4fe22.jpg",
     "index.html": "/index.html",
-    "main.5dfef911.css.map": "/static/css/main.5dfef911.css.map",
-    "main.f8ed4fb4.js.map": "/static/js/main.f8ed4fb4.js.map",
+    "main.3aeadd8e.css.map": "/static/css/main.3aeadd8e.css.map",
+    "main.8313189a.js.map": "/static/js/main.8313189a.js.map",
     "787.db33642e.chunk.js.map": "/static/js/787.db33642e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5dfef911.css",
-    "static/js/main.f8ed4fb4.js"
+    "static/css/main.3aeadd8e.css",
+    "static/js/main.8313189a.js"
   ]
 }
