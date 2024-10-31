@@ -1,0 +1,11 @@
+{
+    "apps": [
+      {
+        "name": "Dsa-Website",
+        "script": "./server.js",
+        "interpreter": "node", 
+        "watch": true
+      }
+    ]
+  }
+  
