@@ -1,0 +1,23 @@
+.about-gallery-section .top-heading p{
+    font-family: "Beau Rivage", cursive !important;
+    font-size: 2rem;
+    color: var(--black-color);
+    text-transform: capitalize;
+}
+
+.about-gallery-section .main-heading h2{
+    font-family: "headingbold" !important;
+    font-size: 3rem;
+    color: var(--theme-color);
+}
+.about-gallery-section .main-heading p{
+    text-transform: initial !important;
+    width: 50%;
+    margin: 0 auto;
+}
+.about-gallery-section .mySwiper img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+}

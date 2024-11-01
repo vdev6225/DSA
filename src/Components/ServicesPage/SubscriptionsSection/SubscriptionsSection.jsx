@@ -2,6 +2,7 @@ import { MdExpandCircleDown } from "react-icons/md";
 import DigitalIcon from "../../../assets/img/icons/digital.png";
 import PrintIcon from "../../../assets/img/icons/print.png";
 import "./SubscriptionsSection.css";
+import ServiceContactForm from "../ServiceContactForm/ServiceContactForm";
 export default function SubscriptionsSection() {
     return (
         <section className="section-spacing subscriptions-section">
@@ -9,9 +10,9 @@ export default function SubscriptionsSection() {
                 <div className="row">
                     <div className="col-12 top-section">
                         <div className="main-heading">
-                            <h2>A. DSA <span>subscriptions</span></h2>
+                            <h2>A. <i>DSA</i> <span>subscriptions</span></h2>
                         </div>
-                        <div className="d-flex gap-5">
+                        <div className="d-flex gap-5 mt-5">
                             <div className="sub-btn">
                                 <img src={DigitalIcon} alt="" /> Digital
                             </div>
@@ -23,7 +24,7 @@ export default function SubscriptionsSection() {
                             <MdExpandCircleDown />
                         </div>
                     </div>
-                    <div className="col-12">
+                    <div className="col-12 my-5">
                         <div className="main-heading mt-4">
                             <h2>1. Digital <span>subscription</span></h2>
                         </div>
@@ -33,10 +34,10 @@ export default function SubscriptionsSection() {
                                 <h5 className="subscription-card-title">CURRENT ANNUAL Edition</h5>
                                 <h3 className="subscription-card-price">USD 15 <span className="subscription-card-year">Per Year</span></h3>
                                 <p className="mb-3">Subscriptions</p>
-                                <p className="subscription-card-text">Access Both The DSA's Website And Digital Magazine.</p>
+                                <p className="subscription-card-text">Access Both The <i>DSA's</i> Website And Digital Magazine.</p>
                                 <ul className="features-list">
-                                    <li>The DSA Website</li>
-                                    <li>The DSA Magazine Latest Editions</li>
+                                    <li>The <i>DSA</i> Website</li>
+                                    <li>The <i>DSA</i> Magazine Latest Editions</li>
                                     <li>Newsletters</li>
                                     <li>No Third-Part Advertising</li>
                                     <li>Subscription Validity One Year</li>
@@ -49,10 +50,10 @@ export default function SubscriptionsSection() {
                                 <h5 className="subscription-card-title">EDITIONS</h5>
                                 <h3 className="subscription-card-price">USD 1.25 <span className="subscription-card-year">Per Edition</span></h3>
                                 <p className="mb-3">Subscriptions</p>
-                                <p className="subscription-card-text">Access Both The DSA's Website And Digital Magazine.</p>
+                                <p className="subscription-card-text">Access Both The <i>DSA's</i> Website And Digital Magazine.</p>
                                 <ul className="features-list">
-                                    <li>The DSA Website</li>
-                                    <li>The DSA Magazine Editions</li>
+                                    <li>The <i>DSA</i> Website</li>
+                                    <li>The <i>DSA</i> Magazine Editions</li>
                                     <li>Newsletters</li>
                                     <li>No Third-Part Advertising</li>
                                     <li>Choose Your Edition</li>
@@ -64,7 +65,7 @@ export default function SubscriptionsSection() {
 
                         </div>
                     </div>
-                    <div className="col-12">
+                    <div className="col-12 mb-5">
                         <div className="main-heading mt-4">
                             <h2>2. print <span>subscription</span></h2>
                         </div>
@@ -146,6 +147,80 @@ export default function SubscriptionsSection() {
                                 </table>
                             </div>
                         </div>
+                    </div>
+
+                </div>
+                <div className="py-5 my-5 contact-form-bg">
+                    <div className="col-lg-8 mx-auto ">
+                        <ServiceContactForm />
+                    </div>
+                </div>
+                <div className="row my-5">
+                    <div className="col-12 mt-5 top-section">
+                        <div className="main-heading">
+                            <h2>B. Associate <span>with <i>DSA</i></span></h2>
+                        </div>
+                        <p className="bottom-p">Explore opportunities to partner with us, whether as a contributor, advertiser, or collaborator. Let's work together to advance the defense and security dialogue.</p>
+                        <div className="d-flex gap-5 mt-5">
+                            <div className="sub-btn">
+                                Partnership Opportunities
+                            </div>
+                            <div className="sub-btn">
+                                Advertising Package
+                            </div>
+                            <div className="sub-btn">
+                                Sponsorship
+                            </div>
+                        </div>
+                        <div className="divider">
+                            <MdExpandCircleDown />
+                        </div>
+                    </div>
+                    <div className="col-12 my-5">
+                        <div className="d-flex mt-5">
+                            <div className="no">
+                                1.
+                            </div>
+                            <div>
+                                <div className="main-heading">
+                                    <h2>
+                                        Partnership <span>opportunities</span>
+                                    </h2>
+                                </div>
+                                <p className="bottom-p">Collaborate with <i>DSA</i> to amplify your brand's and products reach in the defense and security sector. Partner with us to engage with a dedicated audience and enhance your impact.</p>
+                            </div>
+                        </div>
+                        <div className="d-flex mt-5">
+                            <div className="no">
+                                2.
+                            </div>
+                            <div>
+                                <div className="main-heading">
+                                    <h2>
+                                        Advertising <span>packages</span>
+                                    </h2>
+                                </div>
+                                <p className="bottom-p">Maximize your visibility through our tailored advertising packages, designed to connect your brand with key decision-makers and professionals in the defense industry.</p>
+                            </div>
+                        </div>
+                        <div className="d-flex mt-5">
+                            <div className="no">
+                                3.
+                            </div>
+                            <div>
+                                <div className="main-heading">
+                                    <h2>
+                                        Sponsorship <span>Collaborations</span>
+                                    </h2>
+                                </div>
+                                <p className="bottom-p">Support <i>DSA's</i> initiatives through sponsorship and gain exclusive recognition across our platforms, aligning your brand with excellence in defense journalism.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="py-5 mt-5 bottom-contact-form">
+                    <div className="col-lg-8 contact-form-bg mx-auto">
+                        <ServiceContactForm />
                     </div>
                 </div>
             </div>

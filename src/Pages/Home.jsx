@@ -19,83 +19,91 @@ import GetApiCall from "../Helpers/Api/GetApi";
 import MainFooter from "../Components/MainFooter/MainFooter";
 // import MainNavbar from "../Components/MainNavbar/MainNavbar";
 import SubImg from "../assets/img/sub.png"
+import { Link } from "react-router-dom";
 export default function Home() {
 
   const [bannersData, setBannersData] = useState([]);
   const [newsLetterData, setNewsLetterData] = useState([]);
 
-  useEffect(()=>{
-        getBanners();
-        getNewsLetter();
-    },[])
+  useEffect(() => {
+    getBanners();
+    getNewsLetter();
+  }, [])
 
-    const getBanners = ()=>{
-        GetApiCall.getRequest("GetBanners"
-          ).then((results) => {
-            results.json().then((obj) => {
-              if (results.status === 200 || results.status === 201) {
-                setBannersData(obj.data);               
-              } else {
-                // notification.error({
-                //   message: `Notification error`,
-                //   description: obj.data,
-                // });
-              }
-            });
-          });
-    }
-
-    const getNewsLetter = () => {
-      GetApiCall.getRequest("GetNewsLetter").then((results)=> {
-        results.json().then((obj) => {
-          if (results.status === 200 || results.status === 201) {
-            setNewsLetterData(obj.data); 
-        }else {
+  const getBanners = () => {
+    GetApiCall.getRequest("GetBanners"
+    ).then((results) => {
+      results.json().then((obj) => {
+        if (results.status === 200 || results.status === 201) {
+          setBannersData(obj.data);
+        } else {
           // notification.error({
           //   message: `Notification error`,
           //   description: obj.data,
           // });
-          }
-        })
+        }
+      });
+    });
+  }
+
+  const getNewsLetter = () => {
+    GetApiCall.getRequest("GetNewsLetter").then((results) => {
+      results.json().then((obj) => {
+        if (results.status === 200 || results.status === 201) {
+          setNewsLetterData(obj.data);
+        } else {
+          // notification.error({
+          //   message: `Notification error`,
+          //   description: obj.data,
+          // });
+        }
       })
-    }
+    })
+  }
 
-    console.log(newsLetterData,"hkhkj")
-
-
-
-    const filteredHomeBanners = bannersData?.filter((item)=> item?.fld_pagename === "Home" && item?.fld_location === "Main")
-    const fliteredAboutUsBanners = bannersData?.filter((item)=> item?.fld_pagename === "Home" && item?.fld_location === "AboutUs")
-    const fliteredTestimonialsBanners = bannersData?.filter((item)=> item?.fld_pagename === "Home" && item?.fld_location === "TestiMonials")
-
-    const filteredNewsletterSectionBanners = newsLetterData?.filter((item) => item?.fld_type === "MainNews")
-
-    const filteredPodcastSectionBanners = newsLetterData?.filter((item) => item?.fld_type === "PodCast")
-    const filteredCurrentAffairsBanners = newsLetterData?.filter((item) => item?.fld_type === "CurrentAffairs")
-    
+  console.log(newsLetterData, "hkhkj")
 
 
-    return (
-        <>
-            {/* <MainNavbar /> */}
-            <Header />
-            <HomeBanner banners = {filteredHomeBanners} />
-            <NewsletterSection banners = {filteredNewsletterSectionBanners}/>
-            <BrandParttern />
-            <CurrentAffairs banners = {filteredCurrentAffairsBanners}/>
-            <AbouUsSection banners = {fliteredAboutUsBanners} />
-            <MilestoneSection />
-            <ServiceSection />
-            <ArticlesSection />
-            <DegSecWivesSection />
-            <AddBanner banners = {fliteredTestimonialsBanners}/>
-            <PodcastSection banners = {filteredPodcastSectionBanners}/>
-            <TestimonialSection/>
-            <GroupWebsites />
-            <InstagramFeed />
-            <DsaUpsSection />
-            <img src={SubImg} className="img-fluid sub-img" alt="" />
-            <MainFooter />
-        </>
-    )
+
+  const filteredHomeBanners = bannersData?.filter((item) => item?.fld_pagename === "Home" && item?.fld_location === "Main")
+  const fliteredAboutUsBanners = bannersData?.filter((item) => item?.fld_pagename === "Home" && item?.fld_location === "AboutUs")
+  const fliteredTestimonialsBanners = bannersData?.filter((item) => item?.fld_pagename === "Home" && item?.fld_location === "TestiMonials")
+
+  const filteredNewsletterSectionBanners = newsLetterData?.filter((item) => item?.fld_type === "MainNews")
+
+  const filteredPodcastSectionBanners = newsLetterData?.filter((item) => item?.fld_type === "PodCast")
+  const filteredCurrentAffairsBanners = newsLetterData?.filter((item) => item?.fld_type === "CurrentAffairs")
+
+
+
+  return (
+    <>
+      {/* <MainNavbar /> */}
+      <Header />
+      <HomeBanner banners={filteredHomeBanners} />
+      <NewsletterSection banners={filteredNewsletterSectionBanners} />
+      <BrandParttern />
+      <CurrentAffairs banners={filteredCurrentAffairsBanners} />
+      <AbouUsSection banners={fliteredAboutUsBanners} />
+      <MilestoneSection />
+      <ServiceSection />
+      <ArticlesSection />
+      <DegSecWivesSection />
+      <AddBanner banners={fliteredTestimonialsBanners} />
+      <PodcastSection banners={filteredPodcastSectionBanners} />
+      <TestimonialSection />
+      <GroupWebsites />
+      <InstagramFeed />
+      <DsaUpsSection />
+      <section className="home-subscribe-section">
+        <img src={SubImg} className="img-fluid sub-img" alt="" />
+        <div className="content">
+          <h2>SUBSCRIBE OUR MAGAZINE AND STAY UPDATED</h2>
+          <p>There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+          <Link to="" className="theme-btn">SUBSCRIBE</Link>
+        </div>
+      </section>
+      <MainFooter />
+    </>
+  )
 }

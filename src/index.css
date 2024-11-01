@@ -10,6 +10,8 @@
   --font-light: #A6A6A6;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+
 @font-face {
   font-family: bodyfontbold;
   src: url(./assets/fonts/body/HelveticaNeueLTStd-Hv.otf);
@@ -101,11 +103,10 @@ h5.h6 {
   text-transform: uppercase;
 }
 
-.sub-img {
-  margin-bottom: -10rem;
+/* .sub-img {
   object-position: center;
   cursor: pointer;
-}
+  } */
 
 .theme-btn {
   padding: 8px 30px;
@@ -123,4 +124,49 @@ h5.h6 {
 .theme-btn:hover {
   background: var(--theme-color) !important;
   color: var(--white-color) !important;
+}
+
+.theme-btn-bg {
+  background: var(--theme-color) !important;
+  color: var(--white-color) !important;
+}
+
+.theme-btn-bg:hover {
+  color: var(--theme-color) !important;
+  background: transparent !important;
+}
+
+.home-subscribe-section {
+  position: relative;
+  margin-bottom: -10rem;
+}
+
+.home-subscribe-section .content {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -30%);
+  text-align: center;
+  padding: 1rem;
+}
+
+.home-subscribe-section img {
+  width: 100%;
+}
+
+.home-subscribe-section .content h2 {
+  font-family: "headingbold" !important;
+  margin-bottom: 2rem;
+}
+
+.home-subscribe-section .content p {
+  margin: 0 auto;
+  margin-bottom: 2rem !important;
+  width: 60%;
+}
+
+.and-font {
+  color: var(--font-dark);
+  font-family: "bodyfontbold" !important;
 }

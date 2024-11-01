@@ -11,7 +11,7 @@ import "./RegionSection.css";
 import NoImg from "../../../../assets/img/no-image.jpg";
 export default function RegionSection() {
     return (
-        <section className="section-spacing px-0 region-section">
+        <section className="section-spacing px-0 my-5 region-section">
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-12">

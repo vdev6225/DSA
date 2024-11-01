@@ -29,8 +29,9 @@
 }
 
 .service-conact-form button {
-    padding: 8px 25px;
-    background: var(--main-color-two);
+    padding: 8px 45px;
+    background: var(--theme-color);
+    color: var(--white-color);
     border-radius: 20px;
     text-transform: capitalize;
     font-weight: bold;
@@ -38,4 +39,9 @@
     width: auto;
     border: none;
     outline: none;
+}
+
+.bottom-contact-form input,
+.bottom-contact-form textarea {
+    border-radius: 10px;
 }

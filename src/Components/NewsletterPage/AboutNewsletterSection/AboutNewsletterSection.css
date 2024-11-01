@@ -1,6 +1,9 @@
 .about-newsletter-section {
     background: var(--main-color-one);
 }
+.about-newsletter-section img{
+    object-fit: cover;
+}
 
 .about-newsletter-section .left-section .image img {
     height: 400px;
@@ -19,7 +22,7 @@
     padding: 1rem;
     margin-bottom: 1rem;
     background: var(--main-color-two);
-    height: 50%;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,7 +44,7 @@
 }
 
 .about-newsletter-section .right-section .image{
-    height: 370px;
+    height: 400px;
 }
 .about-newsletter-section .right-section img {
     border-radius: 20px;
@@ -50,9 +53,9 @@
 }
 
 .about-newsletter-section .right-section a {
-    padding: 8px 30px;
+    /* padding: 8px 30px;
     border-radius: 20px;
     text-align: center;
     background-color: var(--black-color);
-    color: var(--white-color) !important;
+    color: var(--white-color) !important; */
 }
