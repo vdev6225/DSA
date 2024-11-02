@@ -1,67 +1,122 @@
-import React, { useState } from 'react';
-import FlipPage from 'react-flip-page';
-import './FlipBook.css'; // Import your CSS file
-import cover from "../../assets/img/contact-banner.png"; // Cover image
-import page1 from "../../assets/img/16.jpg"; // First page image
-import page2 from "../../assets/img/contact-mission.png"; // Second page image
-import page3 from "../../assets/img/contact-news.png"; // Third page image
+import React, { useEffect, useState, useRef } from 'react';
+import PageFlip from 'react-pageflip';
+import { getDocument, GlobalWorkerOptions } from 'pdfjs-dist/webpack';
+import pdfFile from '../../assets/img/DSA_Edition.pdf';
+import './FlipBook.css';
+
+GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.worker.min.js`;
 
 const Flipbook = () => {
-    // Adjust the array to include two pages for each spread
-    const pages = [
-        cover,  // Cover page
-        page1,  // Page 1
-        page2,  // Page 2
-        page3,  // Page 3
-        cover,  // Back cover
-    ];
+    const [pages, setPages] = useState([]);
+    const [pageAspectRatio, setPageAspectRatio] = useState(1); // Default aspect ratio of 1:1 for safety
+    const pageFlipRef = useRef(null);
+    const [currentPage, setCurrentPage] = useState(0);
 
-    const [currentPage, setCurrentPage] = useState(0); // Current page state
+    const loadPDF = async () => {
+        const loadingTask = getDocument(pdfFile);
+        const pdf = await loadingTask.promise;
+        const numPages = pdf.numPages;
 
-    const handlePageChange = (page) => {
-        setCurrentPage(page);
+        const imgPromises = [];
+        for (let i = 1; i <= numPages; i++) {
+            imgPromises.push(renderPageToImage(pdf, i));
+        }
+        const imgUrls = await Promise.all(imgPromises);
+
+        if (imgUrls.length % 2 !== 0) {
+            imgUrls.push(null); // Adds a blank page if pages are odd
+        }
+
+        setPages(imgUrls);
+    };
+
+    const renderPageToImage = async (pdf, pageNum) => {
+        const page = await pdf.getPage(pageNum);
+        const viewport = page.getViewport({ scale: 1 }); // Get the actual aspect ratio
+
+        if (pageNum === 1) {
+            setPageAspectRatio(viewport.height / viewport.width); // Set the aspect ratio based on the first page
+        }
+
+        const canvas = document.createElement('canvas');
+        const context = canvas.getContext('2d');
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        const renderContext = {
+            canvasContext: context,
+            viewport: viewport,
+        };
+
+        await page.render(renderContext).promise;
+        return canvas.toDataURL();
     };
 
     const handleNext = () => {
-        if (currentPage < pages.length - 2) { // Ensure there's a next spread
-            setCurrentPage(currentPage + 2); // Increment by 2 to show the next spread
+        if (pageFlipRef.current) {
+            pageFlipRef.current.pageFlip().flipNext();
         }
     };
 
     const handlePrev = () => {
-        if (currentPage > 0) {
-            setCurrentPage(currentPage - 2); // Decrement by 2 to show the previous spread
+        if (pageFlipRef.current) {
+            pageFlipRef.current.pageFlip().flipPrev();
         }
     };
 
+    const onFlip = (e) => {
+        const newPage = e.data;
+        if (newPage !== currentPage) {
+            setCurrentPage(newPage);
+        }
+    };
+
+    useEffect(() => {
+        loadPDF();
+    }, []);
+
+    const flipbookHeight = Math.min(window.innerWidth * pageAspectRatio, window.innerHeight * 0.9); // Limit height to 90% of viewport
+
     return (
         <section className="section-spacing">
-            <div className="container-fluid">
+            <div className="container">
                 <div className="row">
                     <div className="col-12">
-                        <div className="flipbook-container">
-                            <FlipPage
-                                page={currentPage} // Controlled page
-                                onPageChange={handlePageChange} // Update page on change
-                                showSwipeHint={true}
-                                showTouchHint={true}
-                                orientation="horizontal" // Ensure horizontal flipping
+                        <div className="full-screen-container" >
+                            <PageFlip
+                                ref={pageFlipRef}
+                                width={window.innerWidth}
+                                height={window.innerHeight}
+                                size="fixed"
+                                style={{ cursor: "pointer" }}
+                                onFlip={onFlip}
                             >
-                                {pages.map((page, index) => (
-                                    <div key={index} className="page">
-                                        <img src={page} alt={`Page ${index + 1}`} />
-                                    </div>
-                                ))}
-                            </FlipPage>
+                                {pages.reduce((pairs, page, index) => {
+                                    if (index % 2 === 0) {
+                                        const pairedPages = (
+                                            <div className="page-pair" key={index}>
+                                                <div className="left-page">
+                                                    {page ? <img src={page} alt={`Page ${index + 1}`} /> : <div className="page-placeholder" />}
+                                                </div>
+                                                <div className="right-page">
+                                                    {pages[index + 1] ? <img src={pages[index + 1]} alt={`Page ${index + 2}`} /> : <div className="page-placeholder" />}
+                                                </div>
+                                            </div>
+                                        );
+                                        pairs.push(pairedPages);
+                                    }
+                                    return pairs;
+                                }, [])}
+                            </PageFlip>
 
-                            <div className="pagination">
-                                <button className="nav-button" onClick={handlePrev} disabled={currentPage === 0}>
+                            <div className="pagination align-items-center">
+                                <button className="theme-btn theme-btn-bg" onClick={handlePrev} disabled={currentPage === 0}>
                                     Previous
                                 </button>
                                 <span className="current-page">
-                                    Page {Math.floor(currentPage / 2) + 1} of {Math.ceil(pages.length / 2)} {/* Displaying the correct page count */}
+                                    Page {currentPage + 1} of {pages.length}
                                 </span>
-                                <button className="nav-button" onClick={handleNext} disabled={currentPage >= pages.length - 2}>
+                                <button className="theme-btn theme-btn-bg" onClick={handleNext} disabled={currentPage === pages.length - 1}>
                                     Next
                                 </button>
                             </div>
