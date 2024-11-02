@@ -1,88 +1,68 @@
-.flipbook-container {
-    margin: auto;
+.full-screen-container {
+    /* position: relative; */
+    width: 100%;
     overflow: hidden;
-    perspective: 1000px; /* Creates a 3D perspective */
-    max-width: 100%; /* Responsive width */
-}
-.flipbook-container > div{
-    width: 100% !important;
-    height: auto;
-}
-
-.page {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%; /* Full height of the FlipPage */
+    /* background-color: #f8f8f8; */
+}
+.full-screen-container > div{
+    width: 100% !important;
+    min-width: 100% !important;
 }
 
-.page img {
-    width: 100%; /* Ensures the image fills the page */
-    height: auto; /* Maintain aspect ratio */
-    border: 1px solid #ccc; /* Optional: adds a border around images */
-    border-radius: 8px; /* Optional: round corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+.page-pair {
+    display: flex !important;
+    justify-content: space-between;
+    width: 100% !important;
+    height: 100% !important;
+    left: 0 !important;
+    top: 0 !important;
+    padding: 0 1rem;
+}
+
+.left-page, .right-page {
+    width: 50% !important;
+    height: 100%;
+    text-align: center;
+    border: 1px solid #e3e3e3;
+}
+
+.left-page img, .right-page img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
 .pagination {
+    /* position: absolute;
+    bottom: 20px; */
+    margin-top: 3rem;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px; /* Space between flipbook and pagination */
+    justify-content: center;
+    gap: 20px;
 }
 
-.nav-button {
-    background-color: #007bff; /* Button color */
-    color: white; /* Text color */
+.theme-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
     border: none;
     border-radius: 4px;
-    padding: 10px 20px; /* Padding around button text */
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    transition: background-color 0.3s;
 }
 
-.nav-button:disabled {
-    background-color: #ccc; /* Disabled button color */
-    cursor: not-allowed; /* Change cursor style for disabled button */
+.theme-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
 }
 
-.nav-button:hover:not(:disabled) {
-    background-color: #0056b3; /* Darker on hover */
-}
-
-.current-page {
-    font-size: 18px; /* Font size for current page display */
-    font-weight: bold; /* Bold for emphasis */
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .flipbook-container {
-        width: 90%; /* Adjust width for smaller screens */
-    }
-
-    .nav-button {
-        padding: 8px 15px; /* Smaller button padding for smaller screens */
-        font-size: 14px; /* Smaller font size */
-    }
-
-    .current-page {
-        font-size: 16px; /* Smaller font size */
-    }
-}
-
-@media (max-width: 480px) {
-    .flipbook-container {
-        width: 100%; /* Full width on very small screens */
-    }
-
-    .nav-button {
-        padding: 6px 12px; /* Smaller button padding */
-        font-size: 12px; /* Smaller font size */
-    }
-
-    .current-page {
-        font-size: 14px; /* Smaller font size */
-    }
+.theme-btn:hover:not(:disabled) {
+    background-color: #0056b3;
 }
