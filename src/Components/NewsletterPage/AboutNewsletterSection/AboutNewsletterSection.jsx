@@ -4,7 +4,7 @@ import NoImg from "../../../assets/img/no-image.jpg";
 export default function AboutNewsletterSection() {
     return (
         <section className="section-spacing about-newsletter-section">
-            <div className="container-fluid">
+            <div className="container-fluid mt-5">
                 <div className="row">
                     <div className="col-lg-6 left-section">
                         <div className="image">
@@ -28,7 +28,7 @@ export default function AboutNewsletterSection() {
                             </div>
                             <b>Stay updated with us</b>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't</p>
-                            <Link to="">View ALL NEWS</Link>
+                            <Link to="" className="theme-btn theme-btn-bg">View ALL NEWS</Link>
                         </div>
                         <div className="image">
                             <img src={NoImg} className="img-fluid" alt="" />

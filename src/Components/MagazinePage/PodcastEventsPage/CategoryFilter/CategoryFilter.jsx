@@ -4,7 +4,7 @@ import { store } from "../../../../Helpers/Store/Store";
 export default function CategoryFilter() {
     const {setMagazineType} = useContext(store)
     return (
-        <section className="section-spacing pt-0 pb-4 category-filter">
+        <section className="section-spacing pb-4 category-filter">
             <div className="container-flid">
                 <div className="row">
                     <div className="col-12">

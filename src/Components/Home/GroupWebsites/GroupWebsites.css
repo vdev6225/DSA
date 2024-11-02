@@ -36,3 +36,9 @@
     z-index: 9;
     transform: scale(1.1);
 }
+
+@media (max-width:992px) {
+    .group-company-section .company-card img {
+        width: 27%;
+    }
+}

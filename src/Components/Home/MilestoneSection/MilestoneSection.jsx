@@ -7,89 +7,135 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { FreeMode, Pagination } from 'swiper/modules';
+import bgImg from "../../../assets/img/milestones-bg.png";
 import "./MilestoneSection.css";
 export default function MilestoneSection({HeadingText}) {
     return (
-        <section className="section-spacing px-0 pt-0 milestone-section">
-            <div className="container py-lg-4">
+        <section className="section-spacing px-0 pt-0 mt-lg-5 mb-5 milestone-section">
+            <div className="container py-lg-4 position-relative">
+                <img src={bgImg} className='img-fluid bg-img' alt="" />
                 <div className="row">
                     <div className="col-12">
-                        <h2 className="main-heading text-center">
+                        {/* <h2 className="main-heading text-center">
                             <span><i>dsa</i></span> milestones
-                        </h2>
+                        </h2> */}
                         <p className='text-center w-75 mb-5 mx-auto heading-text'>{HeadingText}</p>
                         <Swiper
-                            spaceBetween={40}
-                            slidesPerView={6}
+                            spaceBetween={20}
+                            slidesPerView={2}
                             freeMode={true}
                             loop={true}
                             pagination={{
                                 clickable:true
                             }}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 20,
+                                },
+                                768: {
+                                    slidesPerView: 4,
+                                    spaceBetween: 20,
+                                },
+                                1024: {
+                                    slidesPerView: 6,
+                                    spaceBetween: 20,
+                                },
+                            }}
                             modules={[FreeMode, Pagination]}
-                            className="mySwiper"
+                            className="mySwiper pt-5 pt-lg-0"
                         >
                             <SwiperSlide>
                                 <div className="milestone-card">
                                     <p className="count">
-                                        300+
+                                        8 yrs   
                                     </p>
                                     <span className="content">
-                                        Magazines
+                                        On IAF Intranet 
                                     </span>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="milestone-card">
                                     <p className="count">
-                                        2K+
+                                        90+
                                     </p>
                                     <span className="content">
-                                        Testimonials
+                                        High-Profile Interviews
                                     </span>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="milestone-card">
                                     <p className="count">
-                                        100+
+                                        180
                                     </p>
                                     <span className="content">
-                                        Our Client
+                                        Editions Published so far
                                     </span>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="milestone-card">
                                     <p className="count">
-                                        178
+                                        50+
                                     </p>
                                     <span className="content">
-                                        Magazines Editions
+                                        Areas covered
                                     </span>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="milestone-card">
                                     <p className="count">
-                                        178
+                                        1000+
                                     </p>
                                     <span className="content">
-                                        Authors
+                                        Contributors
                                     </span>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="milestone-card">
                                     <p className="count">
-                                        16
+                                        90+
                                     </p>
                                     <span className="content">
-                                        Interview Published
+                                        Media Partners 
                                     </span>
                                 </div>
                             </SwiperSlide>
 
+                            <SwiperSlide>
+                                <div className="milestone-card">
+                                    <p className="count">
+                                        30+
+                                    </p>
+                                    <span className="content">
+                                    High Profile Recognition 
+                                    </span>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="milestone-card">
+                                    <p className="count">
+                                        60000+
+                                    </p>
+                                    <span className="content">
+                                    Online Outreach 
+                                    </span>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="milestone-card">
+                                    <p className="count">
+                                        25000+
+                                    </p>
+                                    <span className="content">
+                                    Print Outreach 
+                                    </span>
+                                </div>
+                            </SwiperSlide>
                         </Swiper>
                     </div>
                 </div>

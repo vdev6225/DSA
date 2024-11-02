@@ -1,7 +1,12 @@
+.news-detail-page .newsletter-section{
+    margin-top: 0 !important;
+}
 .news-detail-section img {
     border-radius: 20px;
     width: 100%;
-    margin-bottom: 2rem;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 4rem;
 }
 
 .news-detail-section h2 {

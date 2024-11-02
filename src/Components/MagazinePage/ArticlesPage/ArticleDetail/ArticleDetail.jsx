@@ -6,7 +6,7 @@ import moment from "moment";
 export default function ArticleDetail({data}) {
     console.log(data)
     return (
-        <section className="section-spacing pt-0 article-detail-section">
+        <section className="section-spacing pt-0 mb-5 article-detail-section">
             <div className="container-fuid">
                 <div className="row">
                     <div className="col-lg-4 pe-lg-5">
@@ -49,9 +49,9 @@ export default function ArticleDetail({data}) {
                         </div>
                     </div>
                     <div className="col-lg-8">
-                        <b className="mb-4 d-block">
+                        {/* <b className="mb-4 d-block">
                           {data[0]?.fld_short_desc}
-                        </b>
+                        </b> */}
                         <p>
                             {data[0]?.fld_long_desc}
                         </p>

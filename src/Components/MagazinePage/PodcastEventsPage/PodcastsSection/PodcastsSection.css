@@ -5,6 +5,8 @@
 .podcast-event-page-podcast-section .main-heading {
     font-size: 3rem;
     margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+    color: var(--font-dark) !important;
 }
 
 .podcast-event-page-podcast-section .main-heading span {
@@ -25,17 +27,19 @@
 }
 
 .podcast-event-page-podcast-section .top-section a {
-    padding: 10px 30px;
+    /* padding: 10px 30px;
     background-color: var(--black-color);
     border-radius: 20px;
-    color: var(--white-color) !important;
+    color: var(--white-color) !important; */
     margin-top: 2rem;
-    display: inline-block;
+    margin-bottom: 3rem;
+    /* display: inline-block; */
 }
 
 .podcast-event-page-podcast-section .center-section img {
     border-radius: 20px;
     width: 100%;
+    filter: grayscale(1) contrast(1) brightness(1);
 }
 
 .podcast-event-page-podcast-section .center-section .left-img {

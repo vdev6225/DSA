@@ -9,9 +9,9 @@ import "./DegSecWivesSection.css";
 export default function DegSecWivesSection() {
     return (
         <section className="section-spacing deg-sec-wives-section">
-            <div className="contain-fluid mt-lg-4">
+            <div className="container-fluid mt-lg-4">
                 <div className="row">
-                    <div className="col-12 text-center mb-5">
+                    <div className="col-12 text-center mb-4 mb-lg-5">
                         <div className="main-heading">
                             <h2>
                                 Def-sec <span>wives</span>
@@ -40,7 +40,7 @@ export default function DegSecWivesSection() {
                                 </div>
                             </div>
                             <p>
-                                Enhance your knowledge with our curated educational resources, designed for students, academics, and professionals pursuing careers in the defence field.
+                            The wives of our defense and security personnel play a crucial role in enhancing our national security. As a quiet yet powerful force, they manage their families and homes while their partners serve on the front lines, ensuring a stable environment that allows their loved ones to focus on their important duties.
                             </p>
                         </div>
                         <div className="bottom-section">

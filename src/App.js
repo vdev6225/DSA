@@ -24,6 +24,7 @@ import Provider from "./Helpers/Store/Store";
 import MagazinePage from "./Components/MagazinePage/MagazinePage";
 import Services from "./Pages/Services";
 import ArticleDetails from "./Components/MagazinePage/ArticlesPage/ArticleDetails";
+import FlipBook from "./Components/FlipBook/FlipBook";
 
 function App() {
   // const location = useLocation();
@@ -66,6 +67,7 @@ function App() {
             <Route path="newsletter-alert-page" element={<AlertPage />} />
             <Route path="newsletter-def-page" element={<DefSecWivesPage />} />
             <Route path="news/:id" element={<NewsDetailSection />} />
+            <Route path="flip-book" element={<FlipBook />} />
           </Route>
           {/* Admin Panel */}
           <Route path="/admin" element={<AdminLayout />}>

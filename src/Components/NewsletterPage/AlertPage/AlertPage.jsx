@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./AlertPage.css";
 import NavigationSection from "../NavigationSection/NavigationSection";
 
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 import PostApiCall from "../../../Helpers/Api/PostApi";
 
 export default function AlertPage() {
@@ -10,23 +10,23 @@ export default function AlertPage() {
     const [newsLetterAlertData, setNewsLetterAlertData] = useState([]);
 
     const getNewsLetterAlertData = () => {
-        PostApiCall.postRequest({whereClause:""},"GetNewsAlert").then((results)=> {
-          results.json().then((obj) => {
-            if (results.status === 200 || results.status === 201) {
-                setNewsLetterAlertData(obj.data); 
-          }else {
-            // notification.error({
-            //   message: `Notification error`,
-            //   description: obj.data,
-            // });
-            }
-          })
+        PostApiCall.postRequest({ whereClause: "" }, "GetNewsAlert").then((results) => {
+            results.json().then((obj) => {
+                if (results.status === 200 || results.status === 201) {
+                    setNewsLetterAlertData(obj.data);
+                } else {
+                    // notification.error({
+                    //   message: `Notification error`,
+                    //   description: obj.data,
+                    // });
+                }
+            })
         })
-      }
+    }
 
-      useEffect(()=>{
+    useEffect(() => {
         getNewsLetterAlertData();
-      },[])
+    }, [])
 
 
     return (
@@ -56,31 +56,31 @@ export default function AlertPage() {
                     </div>
                     <div className="row">
                         <div className="col-12">
-                            {newsLetterAlertData?.map((item,id)=>{
-                                    return  <div className="alert-news-card">
+                            {newsLetterAlertData?.map((item, id) => {
+                                return <div className="alert-news-card">
                                     <div className="image">
                                         <img src={item?.fld_image} className="img-fluid" alt={item?.fld_alt} />
                                     </div>
                                     <div className="content">
                                         <div>
                                             <h3>
-                                            {item?.fld_title}
+                                                {item?.fld_title}
                                             </h3>
-                                            <p dangerouslySetInnerHTML={{ __html: item?.fld_short_desc }}/>
-                                                
+                                            <p dangerouslySetInnerHTML={{ __html: item?.fld_short_desc }} />
+
                                         </div>
                                         <div className="d-flex justify-content-between mt-4">
                                             <span>
                                                 Date -  {item?.fld_date || "Not available"}
                                             </span>
-                                            <Link to="">
+                                            <Link to="" className="theme-btn">
                                                 Full news</Link>
                                         </div>
                                     </div>
                                 </div>
-                                })
+                            })
                             }
-                           
+
                             {/* <div className="alert-news-card">
                                 <div className="image">
                                     <img src={NoImg} className="img-fluid" alt="" />

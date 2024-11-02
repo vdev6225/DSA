@@ -20,15 +20,18 @@ export default function ArticleCategories({data}) {
         }
     }
     return (
-        <section className="section-spacing py-0 article-category-section">
+        <section className="section-spacing pt-0 article-category-section">
             <div className="container-fuid">
                 <div className="row">
-                    <div className="col-12">
+                    <div className="col-12 mt-5 mb-3">
                         <div className="category-tab">
                             <p>
                                 Categories
                             </p>
                             <ul>
+                                <li onClick={() => getFilteredData('Contributors')}>
+                                    Contributors
+                                </li>
                                 <li onClick={() => getFilteredData('Defence')}>
                                     Defence
                                 </li>
@@ -70,20 +73,20 @@ export default function ArticleCategories({data}) {
                                             {item?.fld_heading}
                                             </b>
                                         </p>
-                                        <p>
+                                        <p className="des">
                                             {item?.fld_short_desc}
                                         </p>
-                                        <div className="d-flex justify-content-between align-item-end mt-3">
-                                            <ul className="d-flex justify-content-between gap-3 article-date">
+                                        <div className="d-flex justify-content-between align-item-end mt-4 pt-2">
+                                            <ul className="d-flex justify-content-between align-items-end gap-3 article-date">
                                                 <li>
                                                     By- {item?.fld_published_by}
                                                 </li>
                                                 <li>
                                                     Date- {moment(item?.fld_createdon).format('MMMM D, YYYY')}
                                                 </li>
-                                                <li>
+                                                {/* <li>
                                                     Time- {moment(item?.fld_createdon).format('HH:mm:ss')}
-                                                </li>
+                                                </li> */}
                                             </ul>
                                             <Link to={`/article/${item?.fld_id}`}>
                                                 full article

@@ -1,6 +1,11 @@
+.subscriptions-section .no,
 .subscriptions-section .top-section .main-heading h2 {
   font-family: "headingbold" !important;
   font-size: 3rem;
+}
+.subscriptions-section .no{
+  line-height: 1;
+  margin-right: 10px;
 }
 
 .subscriptions-section .main-heading h2 {
@@ -94,9 +99,10 @@
 }
 
 .subscriptions-section .proceed-btn {
-  background-color: #333;
+  background-color: var(--theme-color);
   color: #fff;
-  border: none;
+  border: 3px solid var(--theme-color) !important;
+  font-weight: bolder;
   width: 100%;
   margin-top: 1rem;
   padding: 10px 20px;
@@ -106,7 +112,8 @@
 }
 
 .subscriptions-section .proceed-btn:hover {
-  background-color: #555;
+  background: transparent;
+  color: var(--theme-color);
 }
 
 
@@ -174,10 +181,29 @@
 
 .subscriptions-section .subscription-table tr:first-child th {
   /* border-top-left-radius: 10px;
-    border-top-right-radius: 10px; */
+  border-top-right-radius: 10px; */
 }
 
 .subscriptions-section .subscription-table tr:last-child td {
   /* border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
+  border-bottom-right-radius: 10px; */
 }
+
+.subscriptions-section .contact-form-bg {
+  background: #BFBFBF;
+  border-radius: 20px;
+}
+
+.subscriptions-section .contact-form-bg .main-heading p {
+  font-family: "bodyfontbold" !important;
+  color: var(--font-dark);
+}
+  .subscriptions-section .bottom-p{
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+  .subscriptions-section .bottom-contact-form .srvice-form-box{
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px;
+  }

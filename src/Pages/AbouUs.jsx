@@ -1,3 +1,4 @@
+import AboutGallerySection from "../Components/AboutUs/AboutGallerySection/AboutGallerySection";
 import AboutPageHeader from "../Components/AboutUs/AboutPageHeader/AboutPageHeader";
 import CeoSection from "../Components/AboutUs/CeoSection/CeoSection";
 import DsaUps from "../Components/AboutUs/DsaUps/DsaUps";
@@ -19,6 +20,7 @@ export default function AboutUs() {
             <FounderSection />
             <CeoSection />
             <JourneySection />
+            <AboutGallerySection />
         </>
     )
 }

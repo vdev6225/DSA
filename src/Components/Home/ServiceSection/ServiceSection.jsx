@@ -29,7 +29,7 @@ export default function ServiceSection() {
                                     Subscription
                                     </p>
                                     <span className="des">
-                                    Stay ahead with our in-depth defence and security worldwide insights! Subscribe now for exclusive online access to expert analysis and the latest updates. access to expert analysis and the latest updates.
+                                    Stay ahead with our in-depth defence and security worldwide insights! Subscribe now for exclusive online access to expert analysis and the latest updates.
                                     </span>
                                 </div>
                                 <div className="arrow-btn">
@@ -51,7 +51,7 @@ export default function ServiceSection() {
                                     Associate with DSA
                                     </p>
                                     <span className="des">
-                                    Defence and Security Alert (DSA) is a premier publication committed to creating an intellectually stimulating platform for disseminating critical information on defence internal, external security and world affairs.
+                                    Write for us, share your unsung stories on our DSA Audit through podcast. Advertise with us , and take Sponsheorhip with us. and oraganised with us. 
                                     </span>
                                 </div>
                                 <div className="arrow-btn">

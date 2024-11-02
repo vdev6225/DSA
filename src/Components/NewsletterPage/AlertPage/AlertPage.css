@@ -2,11 +2,12 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 4rem;
 }
 
 .alert-page .category-tab p {
     font-size: 1.4rem;
+    font-weight: bolder;
 }
 
 .alert-page .category-tab ul {
@@ -42,7 +43,7 @@
 .alert-page .alert-news-card {
     display: flex;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 .alert-page .alert-news-card:nth-child(even) {
@@ -82,6 +83,7 @@
 }
 .alert-page .alert-news-card .content a{
     padding: 5px 20px;
-    border: 1px solid var(--black-color);
-    border-radius: 20px;
+    /* border: 1px solid var(--black-color);
+    border-radius: 20px; */
+    font-size: 1rem;
 }

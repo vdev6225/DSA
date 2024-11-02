@@ -96,6 +96,10 @@
 .articles-section .left-swiper-box .article-left-card .content {
   margin-top: 2rem;
 }
+.articles-section .left-swiper-box .article-left-card .content .des{
+  color: var(--theme-color);
+  font-weight: bolder;
+}
 
 .articles-section .left-swiper-box .article-left-card .content span {
   font-size: 0.9rem;
@@ -112,7 +116,7 @@
 }
 
 .articles-section .left-swiper-box .swiper-pagination-bullet-active {
-  background-color: var(--white-color) !important;
+  background-color: var(--theme-color) !important;
 }
 
 .articles-section .right-section {
@@ -138,10 +142,11 @@
 
 .articles-section .right-section .heading h2 {
   /* margin-bottom: 8rem; */
-  font-size: 3rem;
+  /* font-size: 3rem; */
+  padding-bottom: 20px;
   font-weight: bolder;
-  transform: rotate(-90deg) translateX(160px);
-  margin-bottom: 0;
+  /* transform: rotate(0deg) translateX(0px); */
+  /* margin-bottom: 0; */
 }
 
 .articles-section .right-section .cards-box {
@@ -240,4 +245,29 @@
 
 .articles-section .view-event-btn a svg {
   margin-left: 10px;
+}
+
+@media (max-width:992px) {
+  .articles-section
+  .left-swiper-box
+  .article-left-card
+  .right-content-box
+  .top-section
+  h3 {
+    font-size: 1.5rem;
+  }
+  .articles-section .left-swiper-box .article-left-card .right-content-box .top-section{
+    transform: translate(0);
+  }
+  .articles-section .right-section{
+    margin-top: 3rem;
+    height: auto;
+    aspect-ratio: 1/2.5;
+  }
+  .articles-section .right-section .cards-box .content p{
+    font-size: 1.1rem;
+  }
+  .articles-section .view-event-btn a{
+    font-size: 1.2rem;
+  }
 }

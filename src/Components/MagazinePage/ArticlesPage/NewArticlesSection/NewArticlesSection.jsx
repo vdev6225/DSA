@@ -1,6 +1,6 @@
 import moment from "moment";
 import "./NewArticlesSection.css";
-export default function NewArticlesSection({data}) {
+export default function NewArticlesSection({ data }) {
     return (
         <section className="section-spacing pt-0 new-articles-section">
             <div className="container-fuid">
@@ -12,18 +12,18 @@ export default function NewArticlesSection({data}) {
                     </div>
                     <div className="col-lg-8">
                         <p>
-                        {data[0]?.fld_short_desc}
+                            {data[0]?.fld_short_desc}
                         </p>
-                        <div className="d-flex gap-5 text-capitalize mt-3 mb-2">
+                        <div className="d-flex gap-5 text-capitalize mt-3 mb-5">
 
 
                             <b>
-                                published by - {data[0]?.fld_published_by}
+                                written by - {data[0]?.fld_published_by}
                             </b>
                             <b>
                                 Date - {moment(data[0]?.fld_createdon).format('MMMM D, YYYY')}
                             </b>
-                            <b>Time - {moment(data[0]?.fld_createdon).format('HH:mm:ss')}</b>
+                            {/* <b>Time - {moment(data[0]?.fld_createdon).format('HH:mm:ss')}</b> */}
                         </div>
                     </div>
                     <div className="col-12">

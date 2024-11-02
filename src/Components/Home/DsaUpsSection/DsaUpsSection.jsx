@@ -25,12 +25,26 @@ export default function DsaUpsSection() {
                         </h2> */}
                         <Swiper
                             spaceBetween={20}
-                            slidesPerView={4}
+                            slidesPerView={1.2}
                             freeMode={true}
                             loop={true}
                             pagination={{
                                 clickable: true
                             }}
+                            breakpoints={{
+                                640: {
+                                  slidesPerView: 2,
+                                  spaceBetween: 20,
+                                },
+                                768: {
+                                  slidesPerView: 3,
+                                  spaceBetween: 20,
+                                },
+                                1024: {
+                                  slidesPerView: 4,
+                                  spaceBetween: 20,
+                                },
+                              }}
                             modules={[FreeMode, Pagination]}
                             className="mySwiper"
                         >
@@ -43,7 +57,7 @@ export default function DsaUpsSection() {
                                         <p className="name">
                                             ISO 9001:2015 Certification:
                                         </p>
-                                        <p>DSA is the sole magazine in its sector with this prestigious certification.</p>
+                                        <p>DSA is the sole magazine in its segment with this prestigious certification.</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -56,7 +70,7 @@ export default function DsaUpsSection() {
                                         <p className="name">
                                             Exclusive IAF Intranet Availability:
                                         </p>
-                                        <p>The only defence and security magazine available on the Indian Air Force (IAF) intranet for the past 8 consecutive years.</p>
+                                        <p>The only defence and security magazine available on the Indian Air Force (IAF) intranet for the past eight consecutive years.</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -83,6 +97,19 @@ export default function DsaUpsSection() {
                                             Publication History
                                         </p>
                                         <p>The magazine has released 180 editions over a span of 15 years.</p>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="dsa-card">
+                                    <div className="image">
+                                        <img src={Four} className="img-fluid" alt="" />
+                                    </div>
+                                    <div className="content">
+                                        <p className="name">
+                                            Reliability
+                                        </p>
+                                        <p>Trusted magazine by the Indian Army, Navy and Air Force Chiefs.</p>
                                     </div>
                                 </div>
                             </SwiperSlide>

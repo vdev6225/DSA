@@ -17,19 +17,7 @@ export default function JourneySection() {
                 </div>
             </div> */}
             </section>
-            <section className="section-spacing journey-section mt-5">
-                {/* // <section> */}
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12 d-flex position-relative">
-                            {/* <h2 className="main-heading"> */}
-                            {/* Journey <span>so far</span> */}
-                            {/* </h2> */}
-                            <img src={gallery} className="img-fluid" alt="" />
-                        </div>
-                    </div>
-                </div>
-            </section>
+            
         </>
     )
 }

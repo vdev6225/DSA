@@ -89,3 +89,57 @@
 .service-section .service-card .content .arrow-btn a:hover svg {
     color: var(--white-color);
 }
+
+@media (max-width:992px) {
+    .service-section .heading-box {
+        align-items: center;
+    }
+
+    .service-section .heading-box a {
+        font-size: 1rem;
+        padding: 5px 15px;
+    }
+}
+
+@media (max-width:992px) {
+    .service-section .service-card {
+        flex-direction: column;
+    }
+    .service-section .service-card .content .des     {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        width: 100%;
+        font-size: 1rem;
+    }
+    .service-section .service-card .content .text{
+        padding: 0 10px;
+        margin-top: 1rem;
+        padding-right: 2rem;
+    }
+    .service-section .service-card .image{
+        width: 100%;
+    }
+    .service-section .service-card .image img{
+        /* height: 100%; */
+        object-fit: cover;
+    }
+    .service-section .service-card .content{
+        width: 100%;
+    }
+    .service-section .service-card {
+        padding: 1rem;
+    }
+    .service-section .service-card .content .arrow-btn{
+        align-self: flex-end;
+    }
+    .service-section .service-card .content .name{
+        /* font-size: 1.1rem; */
+    }
+    /* .service-section .service-card .content .arrow-btn a{
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    } */
+}

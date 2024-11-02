@@ -7,6 +7,7 @@
 
 .careers-page .category-tab p {
     font-size: 1.4rem;
+    font-weight: bolder;
 }
 
 .careers-page .category-tab ul {
@@ -14,6 +15,7 @@
 }
 
 .careers-page .category-tab ul li {
+    font-weight: bolder;
     cursor: pointer;
     margin-left: 1.5rem;
 }
@@ -79,7 +81,8 @@
     justify-content: space-between; */
     width: 100%;
     padding-top: 1rem;
-    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-right: 6rem;
 }
 
 
@@ -100,6 +103,7 @@
     width: 100%;
     height: 100%;
     border-radius: 15px;
+    object-fit: cover;
     /* margin-bottom: 1rem; */
 }
 
@@ -113,12 +117,13 @@
     right: 1rem;
     width: 40px;
     height: 40px !important;
-    background: var(--main-color-two);
+    background: var(--theme-color);
     border-radius: 50%;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     padding: 0 !important;
+    color: var(--white-color);
 }
 
 .careers-page .ant-collapse-expand-icon .ant-collapse-arrow {
@@ -126,10 +131,10 @@
 }
 
 .careers-page .bottom-content {
-    margin-top: -105px;
-    padding-right: 1rem;
+    margin-top: -85px;
+    padding-right: 6rem;
     /* transform: translateY(-100px); */
-    width: 83.8% !important;
+    width: 68.8% !important;
     margin-left: auto;
 }
 

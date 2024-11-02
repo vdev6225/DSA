@@ -48,13 +48,13 @@ export default function IndianArmySection({data, setDefenceForceType}) {
                     </div>
                 </div>
             </section>
-            <section className="section-spacing indian-army-section pt-0">
+            <section className="section-spacing indian-army-section pt-0 mb-5">
                 <div className="container-flid">
                     {
                         filteredData?.map((item,id)=>{
                             return( <div className="row" key={id}>
                         <div className="col-12">
-                            <div className="main-heading text-center pb-4 pb-lg-5">
+                            <div className="main-heading text-center pb-4 pb-lg-5 pt-4 mb-2">
                                 <h2>
                                     {item?.fld_category}
                                 </h2>

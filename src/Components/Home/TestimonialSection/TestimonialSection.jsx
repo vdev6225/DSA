@@ -12,29 +12,42 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { FreeMode, Pagination } from 'swiper/modules';
+import bgImg from "../../../assets/img/testimonial-bg.png";
 export default function TestimonialSection() {
     return (
-        <section className="section-spacing px-0 testimonial-section">
-            {/* <div className="animation-text">
-                testimonial
-            </div> */}
-            <div className="container-fluid py-lg-4">
+        <section className="section-spacing px-0 testimonial-section position-relative">
+            <img src={bgImg} className="img-fluid bg-img" alt="" />
+            <div className="container-fluid py-lg-4 ">
                 <div className="row">
                     <div className="col-12">
-                        <div className="d-flex section-spacing py-0 mb-5 align-items-end heading-box justify-content-between">
+                        <div className="d-flex flex-column flex-lg-row section-spacing py-0 mb-5 align-items-lg-end heading-box justify-content-lg-between">
                             <h2 className="main-heading">
-                            Our <span>Testimonials </span>
+                                Our <span>Testimonials </span>
                             </h2>
                             <Link to="">
                                 View All <FaArrowRight />
                             </Link>
                         </div>
                         <Swiper
-                            spaceBetween={40}
-                            slidesPerView={1.8}
+                            spaceBetween={20}
+                            slidesPerView={1.1}
                             freeMode={true}
                             loop={true}
                             pagination={false}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 20,
+                                },
+                                768: {
+                                    slidesPerView: 1.8,
+                                    spaceBetween: 40,
+                                },
+                                1024: {
+                                    slidesPerView: 1.8,
+                                    spaceBetween: 40,
+                                },
+                            }}
                             modules={[FreeMode, Pagination]}
                             className="mySwiper"
                         >

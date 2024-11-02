@@ -1,7 +1,19 @@
+.about-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 55px;
+    /* transform: translateY(-50%); */
+    width: 100%;
+    height: 84%;
+    background: #ECEBEB;
+    z-index: -1;
+}
+
 .about-section .left-section img {
     width: 100%;
     border-radius: 20px;
-    
 }
 
 .about-section .left-section .content {
@@ -22,7 +34,8 @@
     /* padding-bottom: 4rem; */
     text-align: center;
 }
-.about-section .left-section .content .inner-content p{
+
+.about-section .left-section .content .inner-content p {
     font-size: .8rem;
     width: 95%;
     margin: 0 auto;
@@ -70,9 +83,10 @@
 }
 
 .about-section .about-section-swiper .mySwiper .swiper-pagination-bullet-active {
-    background: var(--black-color) !important;
+    background: var(--theme-color) !important;
 }
-.about-section .about-section-swiper p{
+
+.about-section .about-section-swiper p {
     color: var(--theme-color);
     font-weight: bolder;
     text-align: center;
@@ -81,9 +95,41 @@
     line-height: 1;
     margin-top: -10px;
 }
-.about-section .about-section-swiper p span{
+
+.about-section .about-section-swiper p span {
     font-size: 3rem;
 }
-.about-section .about-section-swiper .about-swiper-top .swiper-slide{
+
+.about-section .about-section-swiper .about-swiper-top .swiper-slide {
     padding: 2rem;
+}
+@media (max-width:992px) {
+    .about-section .left-section .content{
+        width: 90%;
+    }
+    .about-section .left-section .bg-shape{
+        height: 400px;
+    }
+    .about-section .left-section .content .inner-content p{
+        /* display: none; */
+/* font-size: .5rem; */
+    }
+    .about-section .left-section .content .learn-more-btn{
+        width: 90%;
+        text-align: center;
+        font-size: .7rem;
+        bottom: 0;
+    }
+    .about-section.position-relative{
+        padding-top: 20px;
+        margin-bottom: 4rem;
+    }
+    .about-section .about-section-swiper .mySwiper2,
+    .about-section .about-section-swiper .swiper-slide, .about-section .about-section-swiper img{
+        height: auto !important;
+    }
+    .about-section::before{
+        height: 96%;
+        top: 30px;
+    }
 }

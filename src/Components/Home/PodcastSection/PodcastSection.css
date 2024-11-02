@@ -9,18 +9,19 @@
     justify-content: space-between;
     /* padding: 1rem; */
     overflow: hidden;
-    height: 450px;
+    /* height: 450px; */
     margin-bottom: calc(2.5rem* .5);
 }
 
 .podcast-section .left-section .top-section>.img {
-    /* position: absolute;
+    position: absolute;
     left: 0;
-    top: 0; */
+    top: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     background: var(--main-color-one);
+    z-index: -1;
 }
 
 .podcast-section .left-section .top-section .text img {
@@ -29,11 +30,11 @@
 }
 
 .podcast-section .left-section .top-section .content {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     height: 100%;
-    left: 0;
-    top: 0;
+    /* left: 0;
+    top: 0; */
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -149,4 +150,33 @@
     font-size: 1.2rem;
     width: 80%;
     font-weight: 500;
+}
+@media (max-width:992px) {
+    .podcast-section .left-section .top-section .content h2{
+        font-size: 1.5rem;
+    }   
+    .podcast-section .left-section .top-section{
+        margin-bottom: 3rem;
+    }
+    .podcast-section .left-section .top-section .content p{
+        width: 100%;
+    }
+    .podcast-section .left-section .top-section .text img {
+        width: 80%;
+    }
+    .podcast-section .left-section .top-section .youtube-btn a{
+        font-size: 1rem;
+    }
+    .podcast-section .left-section .bottom-two-cards {
+        flex-direction: column;
+    }
+    .podcast-section .left-section .bottom-two-cards .b-card{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .podcast-section .right-card,
+    .podcast-section .right-card img{
+        aspect-ratio: 1/1;
+        height: auto;
+    }
 }

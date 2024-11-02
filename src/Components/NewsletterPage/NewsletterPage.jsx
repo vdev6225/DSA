@@ -16,7 +16,9 @@ export default function NewsletterPage() {
             <AboutNewsletterSection />
             <NewsletterSection />
             <BrandParttern />
-            <DsaArticlesSection />
+            <div className="my-5 pt-5">
+                <DsaArticlesSection />
+            </div>
             <DsaAlertsSection />
             <DegSecWivesSection />
         </div>

@@ -9,21 +9,23 @@ import Horn from "../../../assets/img/icons/Megaphone.png";
 import { GoArrowRight } from "react-icons/go";
 export default function CurrentAffairs({ banners }) {
     return (
-        
+
         <section className="section-spacing current-affairs-section mt-lg-4">
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-12">
                         <div className="d-flex main-headin-box pb-3 justify-content-between mb-4">
                             <h2 className="main-heading">
-                                Current <span>Affairs</span>
+                                Current<span> Affairs</span>
                             </h2>
                             <p className="text-lg-end">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo iure sequi tempora aliquid sapiente nisi. Itaque obcaecati cum temporibus similique
+                                Defence and Security Alert (DSA) is committed to extend a supportive hand to
+                                Yyouth, students, professionals to stay updated and aware on the defence, security
+                                and international affairs worldwide.
                             </p>
                         </div>
                     </div>
-                    <div className="col-lg-4">
+                    <div className="col-lg-4 mb-5 mb-lg-0">
                         <div className="left-box">
                             <img src={banners[0]?.fld_image} alt={banners[0]?.fld_alt} className="img-fluid" />
                             <div className="bottom-text">
@@ -36,25 +38,25 @@ export default function CurrentAffairs({ banners }) {
                             </div>
                         </div>
                     </div>
-                    
-                    <div className="col-lg-5 ">
+
+                    <div className="col-lg-5 mb-5 mb-lg-0">
                         <div className="center-box px-lg-2">
                             <div className="top-section">
-                                    <div className="btn-box">
-                                        <div className="position-relative">
-                                            <img src={BgShape} className="img-fluid bg-shape" alt="" />
-                                            <Link to="">
-                                                <img src={Horn} className="img-fluid" alt="" />
-                                            </Link>
-                                        </div>
+                                <div className="btn-box">
+                                    <div className="position-relative">
+                                        <img src={BgShape} className="img-fluid bg-shape" alt="" />
+                                        <Link to="">
+                                            <img src={Horn} className="img-fluid" alt="" />
+                                        </Link>
                                     </div>
-                                    <img src={banners[1]?.fld_image} className="img-fluid" alt={banners[1]?.fld_alt} />
-                                    <div className="content">
-                                        <p>
-                                            {banners[1]?.fld_short_desc}
-                                        </p>
-                                        <span>On June 8, 2024</span>
-                                    </div>
+                                </div>
+                                <img src={banners[1]?.fld_image} className="img-fluid" alt={banners[1]?.fld_alt} />
+                                <div className="content">
+                                    <p>
+                                        {banners[1]?.fld_short_desc}
+                                    </p>
+                                    <span>On June 8, 2024</span>
+                                </div>
                             </div>
                             <div className="bottom-vido-section">
                                 <img src={banners[2]?.fld_image} className="img-fluid" alt={banners[2]?.fld_alt} />
@@ -63,7 +65,7 @@ export default function CurrentAffairs({ banners }) {
                         </div>
 
                     </div>
-                    <div className="col-lg-3">
+                    <div className="col-lg-3 mb-5 mb-lg-0">
                         <div className="right-box">
                             <div className="top-section">
                                 <img src={banners[3]?.fld_image} className="img-fluid" alt={banners[3]?.fld_alt} />

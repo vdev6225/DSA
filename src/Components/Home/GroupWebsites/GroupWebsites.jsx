@@ -6,7 +6,7 @@ import Img4 from "../../../assets/img/group-websites/prabhatprakashan.png";
 import Img5 from "../../../assets/img/group-websites/sahityaamtrit.png";
 export default function GroupWebsites() {
     return (
-        <section className="section-spacing mb-5 group-company-section">
+        <section className="section-spacing my-5 group-company-section">
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-12 ">

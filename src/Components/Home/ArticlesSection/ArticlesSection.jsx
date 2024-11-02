@@ -12,6 +12,7 @@ import { FreeMode, Pagination } from 'swiper/modules';
 import Image1 from "../../../assets/img/self.png";
 import Image2 from "../../../assets/img/16.jpg";
 import Image3 from "../../../assets/img/17.jpg";
+import headingImg from "../../../assets/img/Def-sec-edu.png";
 import { FaArrowRight } from "react-icons/fa";
 export default function ArticlesSection() {
     return (
@@ -24,9 +25,9 @@ export default function ArticlesSection() {
                                 Articles
                             </h2>
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                DSA’s articles are crafted by leading subject experts, providing authoritative insights and in-depth research- based analysis on defence, security and International affairs. We cover a diverse range of topics with a unique blend of global and India-specific perspectives, making them a valuable resource for informed decision-making.
                             </p>
-                            <div className="text-end mt-4">
+                            <div className="text-lg-end mt-4">
                                 <Link to="/articles">
                                     View All
                                     <FaArrowRight />
@@ -124,7 +125,7 @@ export default function ArticlesSection() {
                         <div className="right-section">
                             <div className="heading">
                                 <h2 className="main-heading">
-                                    attendance
+                                    <img src={headingImg} className="img-fluid" alt="" />
                                 </h2>
                             </div>
                             <div className="cards-box">
