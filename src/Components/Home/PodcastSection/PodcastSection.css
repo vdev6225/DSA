@@ -151,3 +151,32 @@
     width: 80%;
     font-weight: 500;
 }
+@media (max-width:992px) {
+    .podcast-section .left-section .top-section .content h2{
+        font-size: 1.5rem;
+    }   
+    .podcast-section .left-section .top-section{
+        margin-bottom: 3rem;
+    }
+    .podcast-section .left-section .top-section .content p{
+        width: 100%;
+    }
+    .podcast-section .left-section .top-section .text img {
+        width: 80%;
+    }
+    .podcast-section .left-section .top-section .youtube-btn a{
+        font-size: 1rem;
+    }
+    .podcast-section .left-section .bottom-two-cards {
+        flex-direction: column;
+    }
+    .podcast-section .left-section .bottom-two-cards .b-card{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .podcast-section .right-card,
+    .podcast-section .right-card img{
+        aspect-ratio: 1/1;
+        height: auto;
+    }
+}

@@ -83,7 +83,7 @@
 }
 
 .about-section .about-section-swiper .mySwiper .swiper-pagination-bullet-active {
-    background: var(--black-color) !important;
+    background: var(--theme-color) !important;
 }
 
 .about-section .about-section-swiper p {
@@ -102,4 +102,34 @@
 
 .about-section .about-section-swiper .about-swiper-top .swiper-slide {
     padding: 2rem;
+}
+@media (max-width:992px) {
+    .about-section .left-section .content{
+        width: 90%;
+    }
+    .about-section .left-section .bg-shape{
+        height: 400px;
+    }
+    .about-section .left-section .content .inner-content p{
+        /* display: none; */
+/* font-size: .5rem; */
+    }
+    .about-section .left-section .content .learn-more-btn{
+        width: 90%;
+        text-align: center;
+        font-size: .7rem;
+        bottom: 0;
+    }
+    .about-section.position-relative{
+        padding-top: 20px;
+        margin-bottom: 4rem;
+    }
+    .about-section .about-section-swiper .mySwiper2,
+    .about-section .about-section-swiper .swiper-slide, .about-section .about-section-swiper img{
+        height: auto !important;
+    }
+    .about-section::before{
+        height: 96%;
+        top: 30px;
+    }
 }

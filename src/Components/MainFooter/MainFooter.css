@@ -94,3 +94,12 @@
 .copyright-section a {
   color: var(--white-color) !important;
 }
+
+@media (max-width:992px) {
+  .main-footer h4{
+    margin-top: 2rem !important;
+  }
+  .main-footer .top-img {
+    transform: translateY(-15px);
+  }
+}

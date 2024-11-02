@@ -9,9 +9,9 @@ import "./DegSecWivesSection.css";
 export default function DegSecWivesSection() {
     return (
         <section className="section-spacing deg-sec-wives-section">
-            <div className="contain-fluid mt-lg-4">
+            <div className="container-fluid mt-lg-4">
                 <div className="row">
-                    <div className="col-12 text-center mb-5">
+                    <div className="col-12 text-center mb-4 mb-lg-5">
                         <div className="main-heading">
                             <h2>
                                 Def-sec <span>wives</span>

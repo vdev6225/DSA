@@ -10,7 +10,7 @@ export default function InstagramFeed() {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-12">
-                        <div className="d-flex section-spacing py-0 mb-4 align-items-end heading-box justify-content-between">
+                        <div className="d-lg-flex section-spacing py-0 mb-4 align-items-end heading-box justify-content-between">
                             <h2 className="main-heading">
                                 <span>Instagram</span> Feed
                             </h2>

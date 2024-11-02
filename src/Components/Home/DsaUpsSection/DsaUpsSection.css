@@ -2,7 +2,7 @@
     padding-bottom: 3rem;
 }
 .dsa-ups-section .mySwiper .swiper-pagination-bullet-active{
-    background-color: var(--black-color) !important;
+    background-color: var(--theme-color) !important;
 }
 .dsa-ups-section .mySwiper .swiper-slide{
     height: auto;

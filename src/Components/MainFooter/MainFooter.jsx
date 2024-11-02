@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 export default function MainFooter() {
     return (
         <>
-            <section className="section-spacing pt-0 main-footer">
+            <section className="section-spacing pt-lg-0 main-footer">
                 <img src={TopImg} className="img-fluid top-img" alt="" />
                 <div className="container-fluid position-relative">
                     <div className="row">

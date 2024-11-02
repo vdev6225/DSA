@@ -20,10 +20,24 @@ export default function NewsletterSection({ banners }) {
                 <div className="row">
                     <div className="col-12">
                         <Swiper
-                            slidesPerView={3}
+                            slidesPerView={1.3}
                             spaceBetween={30}
                             freeMode={true}
                             pagination={false}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 30,
+                                },
+                                768: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 30,
+                                },
+                                1024: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 30,
+                                },
+                            }}
                             modules={[FreeMode, Pagination]}
                             className="mySwiper"
                         >
@@ -32,14 +46,16 @@ export default function NewsletterSection({ banners }) {
                                     return (
                                         <SwiperSlide>
                                             <div className="newsletter-card">
-                                                <div className="image">
-                                                    <img src={item?.fld_image} className='img-fluid' alt={item?.fld_alt} />
-                                                </div>
-                                                <div className="content">
-                                                    <h5>{item?.fld_short_desc}</h5>
-                                                    <span className="date">
-                                                        {moment(item?.fld_createdon).format('MMMM D, YYYY')}
-                                                    </span>
+                                                <div className="d-flex h-100">
+                                                    <div className="image">
+                                                        <img src={item?.fld_image} className='img-fluid' alt={item?.fld_alt} />
+                                                    </div>
+                                                    <div className="content">
+                                                        <h5>{item?.fld_short_desc}</h5>
+                                                        <span className="date">
+                                                            {moment(item?.fld_createdon).format('MMMM D, YYYY')}
+                                                        </span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </SwiperSlide>
