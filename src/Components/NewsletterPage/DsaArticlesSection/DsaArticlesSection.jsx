@@ -3,8 +3,8 @@ import "./DsaArticlesSection.css";
 import RightImg from "../../../assets/img/self.png";
 import moment from 'moment';
 
-export default function DsaArticlesSection({data}) {
-
+export default function DsaArticlesSection({ data }) {
+    
     const article = Array.isArray(data) && data.length > 0 ? data[0] : null;
 
     return (
@@ -24,26 +24,30 @@ export default function DsaArticlesSection({data}) {
                                 <Link to="" className="theme-btn mt-4">Categories</Link>
                             </div>
                             <div className="bottom-section">
-                                {/* {Note : heading design } */}
-                                <h2>
-                                   {data[0]?.fld_heading}
-                                </h2>
-                                <span>
-                                    
-                                    {moment(data[0]?.fld_createdon).format('MMMM Do YYYY, h:mm a')}
-                                </span>
-                                <p>{data[0]?.fld_short_desc}</p>
-                                <Link to={data[0]?.fld_redirect_url} className="theme-btn mt-5">Read more</Link>
+                                {article ? (
+                                    <>
+                                        <h2>{article.fld_heading}</h2>
+                                        <span>
+                                            {moment(article.fld_createdon).format('MMMM Do YYYY, h:mm a')}
+                                        </span>
+                                        <p>{article.fld_short_desc}</p>
+                                        <Link to={article.fld_redirect_url} className="theme-btn mt-5">Read more</Link>
+                                    </>
+                                ) : (
+                                    <p>No articles available.</p>
+                                )}
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-7">
                         <div className="image">
-                            <img src={data[0]?.fld_image} className="img-fluid" alt={data[0]?.fld_alt} />
+                            {article && (
+                                <img src={article.fld_image} className="img-fluid" alt={article.fld_alt} />
+                            )}
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    )
+    );
 }
