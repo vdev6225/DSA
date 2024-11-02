@@ -9,7 +9,8 @@ import DsaAuditSection from "./PodcastEventsPage/DsaAuditSection/DsaAuditSection
 import PostApiCall from "../../Helpers/Api/PostApi";
 import { store } from "../../Helpers/Store/Store";
 
-export default function MagazinePage() {
+export default function  MagazinePage() {
+
     const [podCastData, setPodCastData] = useState([]);
     const [magazinesEditionData, setMagazinesEditionData] = useState([]);
     const [articleData, setArticleData] = useState([]);
@@ -36,7 +37,7 @@ export default function MagazinePage() {
         fetchData("GetDefSecEdu", setDefSecEduData);
     }, []);
 
-    const latestData = magazinesEditionData?.filter(item => item?.fld_status === "new" || item?.fld_status === "Upcoming");
+    const latestDataEdition = magazinesEditionData?.filter(item => item?.fld_status === "new" || item?.fld_status === "Upcoming");
     const latestArticle = articleData?.filter(item => item?.fld_status === "NEW" || item?.fld_status === "Upcoming");
     const insignia = defSecEduData?.filter(item => item?.fld_type === "Insignia");
     const awards = defSecEduData?.filter(item => item?.fld_type === "Awards");
@@ -45,7 +46,7 @@ export default function MagazinePage() {
     return (
         <div className="magazine-page">
             <NavigationSection />
-            <MagazinePageTopSection data={latestData} />
+            <MagazinePageTopSection data={latestDataEdition} />
             <MagazinePageContentSection />
             <DsaArticlesSection data={latestArticle} />
             <DsaAuditSection />

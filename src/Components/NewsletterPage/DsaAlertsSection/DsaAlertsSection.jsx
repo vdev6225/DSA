@@ -1,6 +1,9 @@
 import NoImg from "../../../assets/img/no-image.jpg";
 import "./DsaAlertsSection.css";
-export default function DsaAlertsSection() {
+export default function DsaAlertsSection({newsLetterAlertData}) {
+
+    const topAlerts = newsLetterAlertData?.slice(0, 3);
+
     return (
         <section className="section-spacing dsa-alerts-section">
             <div className="container-fluid">
@@ -13,63 +16,29 @@ export default function DsaAlertsSection() {
                         </div>
                     </div>
                     <div className="col-12">
-                        <div className="alerts-card">
-                            <div className="content">
-                                <div>
-                                    <h4>
-                                        topic one
-                                    </h4>
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                    </p>
-                                </div>
-                                <span>
-                                    Date -
-                                </span>
-                            </div>
-
-                            <div className="image">
-                                <img src={NoImg} className="img-fluid" alt="" />
-                            </div>
-                        </div>
-                        <div className="alerts-card">
-                            <div className="content">
-                                <div>
-                                    <h4>
-                                        topic one
-                                    </h4>
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                    </p>
-                                </div>
-                                <span>
-                                    Date -
-                                </span>
-                            </div>
-
-                            <div className="image">
-                                <img src={NoImg} className="img-fluid" alt="" />
-                            </div>
-                        </div>
-                        <div className="alerts-card">
-                            <div className="content">
-                                <div>
-                                    <h4>
-                                        topic one
-                                    </h4>
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                    </p>
-                                </div>
-                                <span>
-                                    Date -
-                                </span>
-                            </div>
-
-                            <div className="image">
-                                <img src={NoImg} className="img-fluid" alt="" />
-                            </div>
-                        </div>
+                        {
+                            topAlerts?.map((item, id)=> {
+                                return(<div className="alerts-card" key={id}>
+                                    <div className="content">
+                                        <div>
+                                            <h4>
+                                              {item?.fld_title}
+                                            </h4>
+                                            <p dangerouslySetInnerHTML={{ __html: item?.fld_short_desc }} /> 
+                                                
+                                        </div>
+                                        <span>
+                                        Date -  {item?.fld_date || "Not available"}
+                                        </span>
+                                    </div>
+        
+                                    <div className="image">
+                                        <img src={item?.fld_image} className="img-fluid" alt={item?.fld_alt} />
+                                    </div>
+                                </div>)
+                            })
+                        }
+                       
                     </div>
                 </div>
             </div>
