@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import "./DsaArticlesSection.css";
-import NoImg from "../../../assets/img/no-image.jpg";
 import RightImg from "../../../assets/img/self.png";
-export default function DsaArticlesSection() {
+import moment from 'moment';
+
+export default function DsaArticlesSection({data}) {
+
     return (
         <section className="section-spacing dsa-articles-section mb-4">
             <div className="container-fluid">
@@ -20,21 +22,22 @@ export default function DsaArticlesSection() {
                                 <Link to="" className="theme-btn mt-4">Categories</Link>
                             </div>
                             <div className="bottom-section">
+                                {/* {Note : heading design } */}
                                 <h2>
-                                    Self <br />
-                                    acceptance.
+                                   {data[0]?.fld_heading}
                                 </h2>
                                 <span>
-                                    on June 8, 2020
+                                    
+                                    {moment(data[0]?.fld_createdon).format('MMMM Do YYYY, h:mm a')}
                                 </span>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                                <Link to="" className="theme-btn mt-5">Read more</Link>
+                                <p>{data[0]?.fld_short_desc}</p>
+                                <Link to={data[0]?.fld_redirect_url} className="theme-btn mt-5">Read more</Link>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-7">
                         <div className="image">
-                            <img src={RightImg} className="img-fluid" alt="" />
+                            <img src={data[0]?.fld_image} className="img-fluid" alt={data[0]?.fld_alt} />
                         </div>
                     </div>
                 </div>

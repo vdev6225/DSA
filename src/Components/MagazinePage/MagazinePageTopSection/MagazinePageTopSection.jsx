@@ -2,7 +2,9 @@ import "./MagazinePageTopSection.css";
 import CenterBanner from "../../../assets/img/magazine-mockup.png";
 import LeftImg from "../../../assets/img/contact-mission.png";
 import { Link } from "react-router-dom";
-export default function MagazinePageTopSection() {
+
+export default function MagazinePageTopSection({data}) {
+    
     return (
         <section className="section-spacing py-4 magazine-page-top-section">
             <div className="container position-relative">
@@ -11,10 +13,11 @@ export default function MagazinePageTopSection() {
                         <img src={LeftImg} className="img-fluid " alt="" />
                     </div>
                     <div className="col-lg-7 mx-auto text-center">
-                        <img src={CenterBanner} alt="" className="img-fluid center-banner" />
+                        <img src={data[0]?.fld_image} alt={data[0]?.fld_alt} className="img-fluid center-banner" />
                     </div>
                     <div className="content-box">
                         <div className="main-heading">
+                            {/* heading format : check this */}
                             <h2>
                                 <i>DSA</i> <span>magazines</span>
                             </h2>
@@ -23,9 +26,10 @@ export default function MagazinePageTopSection() {
                             About our magazines
                         </b>
                         <p>
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't
+                            {data[0]?.fld_short_desc}
                         </p>
-                        <Link to="" className="theme-btn">View our collections</Link>
+                        {/* Note : points at the bottom of the page, it should be at the top */}
+                        <Link to="/editions" className="theme-btn">View our collections</Link>
                     </div>
                 </div>
             </div>

@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 import NoImg from "../../../assets/img/no-image.jpg";
 import "./MagazineDegSecWivesSection.css";
-export default function MagazineDegSecWivesSection() {
+import { LuMedal } from "react-icons/lu";
+import { FaTrophy } from "react-icons/fa";
+import { MdCastForEducation } from "react-icons/md";
+
+export default function MagazineDegSecWivesSection({insignia, awards, careers}) {
+
     return (
         <section className="section-spacing magazine-deg-sec-wives-section">
             <div className="contain-fluid mt-lg-4">
@@ -15,24 +20,20 @@ export default function MagazineDegSecWivesSection() {
                                     </h2>
                                 </div>
                                 <div className="image">
-                                    <img src={NoImg} className="img-fluid" alt="" />
-                                    {/* <h5>
-                                        creativity
-                                    </h5> */}
+                                <LuMedal />
+
+                                <h3>Insignia</h3>
                                 </div>
                                 <div className="image">
-                                    <img src={NoImg} className="img-fluid" alt="" />
-                                    {/* <h5>
-                                        creativity
-                                    </h5> */}
+                                <FaTrophy />
+                                <h3>Awards</h3>
                                 </div>
                                 <div className="image">
-                                    <img src={NoImg} className="img-fluid" alt="" />
-                                    {/* <h5>
-                                        creativity
-                                    </h5> */}
+                                <MdCastForEducation />
+                                <h3>Careers</h3>
                                 </div>
                             </div>
+                            
                             <p>
                                 Enhance your knowledge with our curated educational resources, designed for students, academics, and professionals pursuing careers in the defence field.
                             </p>
@@ -56,40 +57,40 @@ export default function MagazineDegSecWivesSection() {
                         </div>
                         <div className="personal-card">
                             <div className="image">
-                                <img src={NoImg} className="img-fluid" alt="" />
+                                <img src={insignia?.fld_image} className="img-fluid" alt={insignia?.fld_alt} />
                             </div>
                             <div className="content">
                                 <h4>
-                                    insignia
+                                    {insignia?.fld_type}
                                 </h4>
-                                <p>Enhance your knowledge with our curated educational resources, designed for students, </p>
+                                <p>{insignia?.fld_short_desc}</p>
                             </div>
                         </div>
                         <div className="personal-card">
                             <div className="image">
-                                <img src={NoImg} className="img-fluid" alt="" />
+                                <img src={awards?.fld_image} className="img-fluid" alt={awards?.fld_alt} />
                             </div>
                             <div className="content">
                                 <h4>
-                                    insignia
+                                    {awards?.fld_type}
                                 </h4>
-                                <p>Enhance your knowledge with our curated educational resources, designed for students, </p>
+                                <p>{awards?.fld_short_desc}</p>
                             </div>
                         </div>
                         <div className="personal-card">
                             <div className="image">
-                                <img src={NoImg} className="img-fluid" alt="" />
+                                <img src={careers?.fld_image} className="img-fluid" alt={careers?.fld_alt} />
                             </div>
                             <div className="content">
                                 <h4>
-                                    insignia
+                                    {careers?.fld_type}
                                 </h4>
-                                <p>Enhance your knowledge with our curated educational resources, designed for students, </p>
+                                <p>{careers?.fld_short_desc}</p>
                             </div>
                         </div>
                     </div>
                     <div className="col-12 text-center">
-                        <Link to="" className="theme-btn">Know more</Link>
+                        <Link to="/def-sec-edu" className="theme-btn">Know more</Link>
                     </div>
                 </div>
             </div>

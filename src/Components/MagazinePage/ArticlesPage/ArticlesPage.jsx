@@ -33,7 +33,6 @@ export default function ArticlesPage() {
       const latestArticle = data?.filter((item)=> item?.fld_status === "NEW" || item?.fld_status === "Upcoming")
 
 
-
     return (
         <>
             <NavigationSection />
