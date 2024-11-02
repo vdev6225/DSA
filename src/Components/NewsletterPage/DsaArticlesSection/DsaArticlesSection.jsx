@@ -5,6 +5,8 @@ import moment from 'moment';
 
 export default function DsaArticlesSection({data}) {
 
+    const article = Array.isArray(data) && data.length > 0 ? data[0] : null;
+
     return (
         <section className="section-spacing dsa-articles-section mb-4">
             <div className="container-fluid">
