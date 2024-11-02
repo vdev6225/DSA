@@ -50,7 +50,27 @@ export default function MainNavbar() {
                         {/* <VscListSelection /> */}
                         <img src={HamIcon} className='img-fluid' alt="" />
                     </div>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Brand href='/' className='d-block d-lg-none'>
+                        <img src={Logo} className="img-fluid" alt="DSA Logo" />
+                    </Navbar.Brand>
+                    <div className="d-flex align-items-center d-block d-lg-none">
+                        <div className="login-dropdown">
+                            <Dropdown
+                                menu={
+                                    {
+                                        items
+                                    }}
+                            >
+                                <a href='/' onClick={(e) => e.preventDefault()}>
+                                    <Space>
+                                        <FaUser />
+                                    </Space>
+                                </a>
+                            </Dropdown>
+
+                        </div>
+                    </div>
+                    {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" /> */}
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="d-flex align-items-center justify-content-between w-100">
                             <div className="d-flex align-items-center">
@@ -97,7 +117,7 @@ export default function MainNavbar() {
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                     <div className="row h-100">
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 mb-4 mb-lg-0">
                             <ul className='left-links h-100'>
                                 <li>
                                     <Link to="">Subscribe</Link>
@@ -122,9 +142,9 @@ export default function MainNavbar() {
                                 </li>
                             </ul>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 mb-4 mb-lg-0">
                             <div className="border-left">
-                                <ul className='mid-links mb-5'>
+                                <ul className='mid-links mb-4 mb-lg-5'>
                                     <p>SECTIONS</p>
                                     <li>
                                         <Link to="">Politics</Link>
@@ -160,8 +180,8 @@ export default function MainNavbar() {
                             </div>
                         </div>
 
-                        <div className="col-lg-4">
-                            <div className="border-left">
+                        <div className="col-lg-4 mb-4 mb-lg-0">
+                            <div className="border-left border-left-image">
                                 <p>
                                     CURRENT ISSUE
                                 </p>

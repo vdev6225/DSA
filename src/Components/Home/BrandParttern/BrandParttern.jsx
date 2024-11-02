@@ -17,10 +17,24 @@ export default function BrandParttern() {
                 <div className="row">
                     <div className="col-12">
                         <Swiper
-                            slidesPerView={4}
+                            slidesPerView={2.5}
                             spaceBetween={30}
                             freeMode={true}
                             pagination={false}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 30,
+                                },
+                                768: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 30,
+                                },
+                                1024: {
+                                    slidesPerView: 4,
+                                    spaceBetween: 30,
+                                },
+                            }}
                             modules={[FreeMode, Pagination]}
                             className="mySwiper"
                         >

@@ -29,7 +29,7 @@ export default function AbouUsSection({banners}) {
                     <div className="col-lg-7 left-section">
                         <img alt={banners[0]?.fld_alt} src={banners[0]?.fld_desktop_image} className="img-fluid" />
                         <div className="content">
-                            <img src={BgShape} className="img-fluid" alt="" />
+                            <img src={BgShape} className="img-fluid bg-shape" alt="" />
                             <div className="inner-content">
                                 <h2 className="main-heading">about <span>us</span></h2>
                                 <p>Defence and Security Alert (DSA) is India's first ISO 9001:2015 certified world-class monthly magazine established in October, 2009 focused on defence and security journalism covering the defence security &world affaire related to just not only India but globally Owned by Ocean Media Private Limited, New Delhi, DSA offers research-based insights from renowned experts and has been uniquely available on the Indian Air Force (IAF) INTRANET for the past seven years.</p>

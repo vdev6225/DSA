@@ -9,6 +9,9 @@
     margin-top: 2rem;
 }
 
+.milestone-section .mySwiper .swiper-pagination-bullet-active {
+    background: var(--theme-color) !important;
+}
 .milestone-section .mySwiper .milestone-card {
     padding: 1rem;
     padding-top: 2rem;
@@ -57,6 +60,3 @@
     color: var(--white-color);
 }
 
-.milestone-section .mySwiper .swiper-pagination-bullet-active {
-    background: var(--black-color) !important;
-}

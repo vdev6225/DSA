@@ -11,7 +11,7 @@ import bgImg from "../../../assets/img/milestones-bg.png";
 import "./MilestoneSection.css";
 export default function MilestoneSection({HeadingText}) {
     return (
-        <section className="section-spacing px-0 pt-0 milestone-section">
+        <section className="section-spacing px-0 pt-0 mt-lg-5 mb-5 milestone-section">
             <div className="container py-lg-4 position-relative">
                 <img src={bgImg} className='img-fluid bg-img' alt="" />
                 <div className="row">
@@ -22,14 +22,28 @@ export default function MilestoneSection({HeadingText}) {
                         <p className='text-center w-75 mb-5 mx-auto heading-text'>{HeadingText}</p>
                         <Swiper
                             spaceBetween={20}
-                            slidesPerView={6}
+                            slidesPerView={2}
                             freeMode={true}
                             loop={true}
                             pagination={{
                                 clickable:true
                             }}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 20,
+                                },
+                                768: {
+                                    slidesPerView: 4,
+                                    spaceBetween: 20,
+                                },
+                                1024: {
+                                    slidesPerView: 6,
+                                    spaceBetween: 20,
+                                },
+                            }}
                             modules={[FreeMode, Pagination]}
-                            className="mySwiper"
+                            className="mySwiper pt-5 pt-lg-0"
                         >
                             <SwiperSlide>
                                 <div className="milestone-card">
