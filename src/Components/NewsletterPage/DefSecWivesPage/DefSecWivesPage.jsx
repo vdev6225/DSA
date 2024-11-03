@@ -7,6 +7,9 @@ import RelatedArticleSlider from "./RelatedArticleSlider/RelatedArticleSlider";
 import TopSliderSection from "./TopSliderSection/TopSliderSection";
 
 export default function DefSecWivesPage() {
+
+    
+
     return (
         <>
             <NavigationSection />
