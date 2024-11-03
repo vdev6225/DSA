@@ -46,3 +46,20 @@
     height: 84%;
     object-fit: cover;
 }
+@media (max-width:992px) {
+    .about-event-section .main-heading{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .about-event-section .right-section{
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    .about-event-section .right-section .left-three-img{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .about-event-section .right-section .right-img{
+        width: 100%;
+    }
+}

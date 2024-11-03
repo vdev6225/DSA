@@ -66,3 +66,18 @@
 .comittesd-section {
     padding: 20px 0;
 }
+@media (max-width:992px) {
+    .founder-section .left-section h2{
+        font-size: 1.5rem;
+    }
+    .founder-section .right-section img{
+        border-radius: 20px 20px 0 0;
+        margin-top: 3rem;
+    }
+    .founder-section .right-section .main-heading{
+        left: 0;
+    }
+    .founder-section .right-section .main-heading h2{
+        font-size: 1.3rem !important;
+    }
+}

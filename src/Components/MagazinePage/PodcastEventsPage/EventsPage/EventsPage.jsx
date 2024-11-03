@@ -13,12 +13,12 @@ import { FreeMode, Grid, Pagination } from 'swiper/modules';
 export default function EventsPage({eventdata}) {
     return (
         <section className="section-spacing my-5 events-section">
-            <div className="container-flid">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="col-12">
                         <Swiper
                             spaceBetween={15}
-                            slidesPerView={3.5}
+                            slidesPerView={1.5}
                             freeMode={true}
                             loop={true}
                             pagination={{
@@ -27,6 +27,20 @@ export default function EventsPage({eventdata}) {
                             grid={{
                                 rows: 2,
                                 fill: "row",
+                            }}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 15,
+                                },
+                                768: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 15,
+                                },
+                                1024: {
+                                    slidesPerView: 3.5,
+                                    spaceBetween: 15,
+                                },
                             }}
                             modules={[FreeMode,Grid, Pagination]}
                             className="mySwiper pb-5"

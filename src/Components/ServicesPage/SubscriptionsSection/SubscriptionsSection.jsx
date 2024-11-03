@@ -12,7 +12,7 @@ export default function SubscriptionsSection() {
                         <div className="main-heading">
                             <h2>A. <i>DSA</i> <span>subscriptions</span></h2>
                         </div>
-                        <div className="d-flex gap-5 mt-5">
+                        <div className="d-flex gap-4 gap-lg-5 mt-4 mt-lg-5">
                             <div className="sub-btn">
                                 <img src={DigitalIcon} alt="" /> Digital
                             </div>
@@ -28,9 +28,9 @@ export default function SubscriptionsSection() {
                         <div className="main-heading mt-4">
                             <h2>1. Digital <span>subscription</span></h2>
                         </div>
-                        <div className="my-4 d-flex">
+                        <div className="my-4 d-flex flex-column flex-lg-row">
                             {/* Current Annual Edition Card */}
-                            <div className="subscription-card mx-2">
+                            <div className="subscription-card mb-5 mb-lg-0 mx-2">
                                 <h5 className="subscription-card-title">CURRENT ANNUAL Edition</h5>
                                 <h3 className="subscription-card-price">USD 15 <span className="subscription-card-year">Per Year</span></h3>
                                 <p className="mb-3">Subscriptions</p>
@@ -65,7 +65,7 @@ export default function SubscriptionsSection() {
 
                         </div>
                     </div>
-                    <div className="col-12 mb-5">
+                    <div className="col-12 mb-lg-5">
                         <div className="main-heading mt-4">
                             <h2>2. print <span>subscription</span></h2>
                         </div>
@@ -161,7 +161,7 @@ export default function SubscriptionsSection() {
                             <h2>B. Associate <span>with <i>DSA</i></span></h2>
                         </div>
                         <p className="bottom-p">Explore opportunities to partner with us, whether as a contributor, advertiser, or collaborator. Let's work together to advance the defense and security dialogue.</p>
-                        <div className="d-flex gap-5 mt-5">
+                        <div className="d-flex flex-column flex-lg-row gap-4 gap-lg-5 mt-5">
                             <div className="sub-btn">
                                 Partnership Opportunities
                             </div>
@@ -218,7 +218,7 @@ export default function SubscriptionsSection() {
                         </div>
                     </div>
                 </div>
-                <div className="py-5 mt-5 bottom-contact-form">
+                <div className="py-lg-5 mt-lg-5 bottom-contact-form">
                     <div className="col-lg-8 contact-form-bg mx-auto">
                         <ServiceContactForm />
                     </div>

@@ -3,7 +3,7 @@ import NoImg from "../../../../assets/img/no-image.jpg";
 export default function TopSection() {
     return (
         <section className="section-spacing top-section-section">
-            <div className="container-flid">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="col-lg-5">
                         <div className="left-box">

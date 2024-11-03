@@ -9,12 +9,13 @@ export default function PodcastAccordion({ podcastdata }) {
         return ({
             key: data.fld_id,
             label: <div className="podcast-card">
-                <div className="number">
-                    0{i + 1}
-                </div>
-                <div className="image">
-                    <img src={data.fld_image} className='img-fluid' alt={data.fld_alt} />
-
+                <div className="d-flex">
+                    <div className="number">
+                        0{i + 1}
+                    </div>
+                    <div className="image">
+                        <img src={data.fld_image} className='img-fluid' alt={data.fld_alt} />
+                    </div>
                 </div>
                 <div className="content">
                     <div className="heading">
@@ -24,7 +25,7 @@ export default function PodcastAccordion({ podcastdata }) {
                         <p>{data.fld_short_desc}</p>
 
                     </div>
-                    <div className="date d-flex gap-5">
+                    <div className="date flex-wrap d-flex gap-4 gap-lg-5">
                         <div className="box">
                             <p>
                                 Date-
@@ -53,8 +54,8 @@ export default function PodcastAccordion({ podcastdata }) {
         )
     })
     return (
-        <section className="section-spacing  mb-5 podcast-detail-section">
-            <div className="container-flid">
+        <section className="section-spacing  mb-lg-5 podcast-detail-section">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="col-12">
                         <Collapse accordion items={items} bordered={false} defaultActiveKey={['1']} />

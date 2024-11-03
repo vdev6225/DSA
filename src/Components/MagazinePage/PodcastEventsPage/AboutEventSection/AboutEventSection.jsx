@@ -5,7 +5,7 @@ import moment from "moment";
 export default function AboutEventSection({eventdata}) {
     return (
         <section className="section-spacing py-0 about-event-section">
-            <div className="container-fuid">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="col-lg-5 pe-lg-5">
                         <h2 className="main-heading">
@@ -14,7 +14,7 @@ export default function AboutEventSection({eventdata}) {
                         <p>
                         {eventdata[1]?.fld_short_desc}
                         </p>
-                        <div className="d-flex gap-5">
+                        <div className="d-flex gap-5 mt-4 mt-lg-0">
                             <div className="box d-flex">
                                 <p>
                                     Date-

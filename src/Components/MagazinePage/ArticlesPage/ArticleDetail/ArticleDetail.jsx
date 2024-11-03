@@ -7,7 +7,7 @@ export default function ArticleDetail({data}) {
     console.log(data)
     return (
         <section className="section-spacing pt-0 mb-5 article-detail-section">
-            <div className="container-fuid">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="col-lg-4 pe-lg-5">
                         <div className="article-card">

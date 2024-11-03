@@ -1,5 +1,5 @@
 .magazine-navigation h1 {
-    font-size: 5.1rem;
+    font-size: 4.8rem;
     text-align: center;
 }
 
@@ -37,4 +37,30 @@
     align-items: center;
     justify-content: center;
     margin-left: 8px;
+}
+@media (max-width:992px) {
+    .magazine-navigation h1{
+        font-size: 2rem;
+        margin-bottom: 2rem !important;
+    }
+    .magazine-navigation .navigation-bar .inner-links,
+    .magazine-navigation .navigation-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .magazine-navigation .navigation-bar{
+        padding: 1rem !important;
+    }
+    .magazine-navigation .navigation-bar .inner-links{
+        margin-left: 0 !important;
+        margin-bottom: 1.5rem !important;
+        padding-bottom: 1rem !important;
+    }
+    .magazine-navigation .navigation-bar .inner-links li{
+        margin-top: 10px;
+    }
+    .magazine-navigation .navigation-bar .sm-links ul li a{
+        margin-right: 10px;
+        margin-left: 0;
+    }
 }

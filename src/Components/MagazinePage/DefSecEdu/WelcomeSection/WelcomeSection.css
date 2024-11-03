@@ -61,3 +61,22 @@
     background: var(--theme-color);
     color: var(--white-color) !important;
 }
+
+@media (max-width:992px) {
+    .welcome-section h2{
+        font-size: 2rem;
+    }
+    .welcome-section b{
+        font-size: 1rem;
+    }
+    .welcome-section .welcome-card-box {
+        overflow-x: auto;
+        gap: 2rem;
+    }
+    .welcome-section .welcome-card-box .welcome-card{
+        width: fit-content;
+    }
+    .welcome-section .bg{
+        height: 75%;
+    }
+}

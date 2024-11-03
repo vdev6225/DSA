@@ -11,10 +11,10 @@ export default function AboutNewsletterSection() {
                             <img src={NoImg} className="img-fluid" alt="" />
                         </div>
                         <div className="row">
-                            <div className="col-lg-4">
+                            <div className="col-4">
                                 <img src={NoImg} className="img-fluid" alt="" />
                             </div>
-                            <div className="col-lg-8">
+                            <div className="col-8">
                                 <img src={NoImg} className="img-fluid" alt="" />
                             </div>
                         </div>

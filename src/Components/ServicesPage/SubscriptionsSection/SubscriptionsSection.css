@@ -3,7 +3,8 @@
   font-family: "headingbold" !important;
   font-size: 3rem;
 }
-.subscriptions-section .no{
+
+.subscriptions-section .no {
   line-height: 1;
   margin-right: 10px;
 }
@@ -198,12 +199,54 @@
   font-family: "bodyfontbold" !important;
   color: var(--font-dark);
 }
-  .subscriptions-section .bottom-p{
-    font-size: 1.2rem;
-    font-weight: bolder;
+
+.subscriptions-section .bottom-p {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.subscriptions-section .bottom-contact-form .srvice-form-box {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+@media (max-width:992px) {
+
+  .subscriptions-section .no,
+  .subscriptions-section .top-section .main-heading h2 {
+    font-size: 1.5rem;
+  }
+  .subscriptions-section .sub-btn{
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+  .subscriptions-section .sub-btn img{
+    margin-top: -5px;
+  }
+  .subscriptions-section .subscription-section{
+    overflow-x: auto;
+    margin-bottom: 3rem;
+  }
+  .subscriptions-section .subscription-table {
+    width: 200%;
+  }
+  .subscriptions-section .subscription-container{
+    padding: 0;
+    margin-top: 2rem;
+  }
+  .subscriptions-section .contact-form-bg{
+    padding: 2rem;
+  }
+  .subscriptions-section .no{
+    margin-top: 4px;
   }
   .subscriptions-section .bottom-contact-form .srvice-form-box{
-    width: 80%;
-    margin: 0 auto;
-    padding: 50px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
+  .subscriptions-section .divider{
+    margin-top: 2rem;
+  }
+}

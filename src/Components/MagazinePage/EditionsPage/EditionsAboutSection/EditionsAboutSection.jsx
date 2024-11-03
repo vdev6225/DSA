@@ -20,7 +20,7 @@ export default function EditionsAboutSection({ data }) {
                                 </p>
 
                             </div>
-                            <div className="col-lg-4 text-end ps-lg-4">
+                            <div className="col-lg-4 text-end ps-lg-4 mt-5 mt-lg-0">
                                 <img src={item?.fld_image} className="img-fluid" alt={item?.fld_alt} />
                             </div>
                         </div>

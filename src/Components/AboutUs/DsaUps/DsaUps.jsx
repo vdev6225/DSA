@@ -68,7 +68,7 @@ export default function DsaUps() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6 col-lg-3">
+                    <div className="col-md-6 col-lg-3 mb-0">
                         <div className="dsa-card last-dsa-card">
                             <div className="count">
                                 04

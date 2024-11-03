@@ -8,7 +8,7 @@ export default function MagazinePageContentSection() {
                             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words...
                         </p>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 mb-4 mb-lg-0">
                         <p className="fs-4 fw-bolder">
                             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form There are many variations of passages of  many variations of passages of
                         </p>

@@ -1,11 +1,27 @@
-.attendance-section .mySwiper img{
+.attendance-section .mySwiper img {
     border-radius: 20px;
     width: 100%;
     height: 400px;
+    object-fit: cover;
 }
-.attendance-section .mySwiper .swiper-pagination-bullet-active{
+
+.attendance-section .mySwiper .swiper-pagination-bullet-active {
     background-color: var(--white-color) !important;
 }
-.attendance-section .main-heading{
+
+.attendance-section .main-heading {
     font-size: 3rem;
+}
+
+@media (max-width:992px) {
+
+    .attendance-section .mySwiper img{
+        height: auto;
+    }
+    .attendance-section .mySwiper {
+        margin-bottom: 3rem;
+    }
+    .attendance-section .main-heading{
+        font-size: 1.5rem;
+    }
 }

@@ -3,7 +3,7 @@ import "./ContactUsForm.css";
 export default function ContactUsForm() {
     return (
         <>
-            <section className="section-spacing mb-4 mt-5 contact-us-form">
+            <section className="section-spacing mb-4 mt-lg-5 contact-us-form">
                 <div className="container">
                     <div className="row justify-content-lg-between">
                         <div className="col-12 text-center mb-5 pb-4">

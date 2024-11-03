@@ -2,3 +2,8 @@
     margin-bottom: -6rem !important;
     padding-bottom: 8rem !important;
 }
+@media (max-width:992px) {
+    .event-page .podcast-event-page-podcast-section{
+        margin-bottom: -8rem !important;
+    }
+}

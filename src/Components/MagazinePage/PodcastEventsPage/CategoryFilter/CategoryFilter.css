@@ -19,3 +19,26 @@
     cursor: pointer;
     margin-left: 1.5rem;
 }
+
+@media (max-width:992px) {
+    .category-filter .category-tab {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+
+    .category-filter .category-tab ul {
+        /* overflow-x: auto; */
+        width: 100%;
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+
+    .category-filter .category-tab ul li {
+        margin-left: 0;
+        margin-bottom: .7rem;
+        /* display: inline-block;
+        width: fit-content; */
+        /* min-width: 100px; */
+    }
+}

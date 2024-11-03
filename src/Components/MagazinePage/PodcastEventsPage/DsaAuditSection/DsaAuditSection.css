@@ -70,3 +70,16 @@
     font-size: .8rem;
     margin: 0;
 }
+
+@media (max-width:992px) {
+    .dsa-audit-section .main-heading{
+        font-size: 1.5rem;
+    }
+    .dsa-audit-section .center-heading{
+        width: 90%;
+        text-align: center;
+    }
+    .dsa-audit-section .center-heading h2{
+        font-size: 1.5rem;
+    }
+}

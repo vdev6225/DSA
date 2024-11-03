@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function ArticleSection() {
     return (
         <section className="section-spacing py-0 article-page article-section">
-            <div className="container-fuid">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="col-12 section-spacing-y pt-0">
                         <div className="category-tab">

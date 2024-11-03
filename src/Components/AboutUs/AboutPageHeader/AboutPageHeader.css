@@ -31,3 +31,20 @@
   position: absolute;
   bottom: 0;
 }
+.about-us-page .bg-img{
+  display: none;
+}
+.about-us-page .main-heading{
+  display: block !important;
+}
+@media (max-width:992px) {
+  .about-page-header{
+    height: 25vh;
+  }
+  .about-us-page .w-75{
+    width: 100% !important;
+  }
+  .about-page-header .content{
+    transform: translateY(40px);
+  }
+}

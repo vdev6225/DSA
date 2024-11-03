@@ -3,7 +3,7 @@ import "./NewArticlesSection.css";
 export default function NewArticlesSection({ data }) {
     return (
         <section className="section-spacing pt-0 new-articles-section">
-            <div className="container-fuid">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="col-lg-4">
                         <h2 className="main-heading">
@@ -14,7 +14,7 @@ export default function NewArticlesSection({ data }) {
                         <p>
                             {data[0]?.fld_short_desc}
                         </p>
-                        <div className="d-flex gap-5 text-capitalize mt-3 mb-5">
+                        <div className="d-flex flex-wrap gap-4 gap-lg-5 text-capitalize mt-3 mb-5">
 
 
                             <b>

@@ -5,11 +5,11 @@ import { LuMedal } from "react-icons/lu";
 import { FaTrophy } from "react-icons/fa";
 import { MdCastForEducation } from "react-icons/md";
 
-export default function MagazineDegSecWivesSection({insignia, awards, careers}) {
+export default function MagazineDegSecWivesSection({ insignia, awards, careers }) {
 
     return (
         <section className="section-spacing magazine-deg-sec-wives-section">
-            <div className="contain-fluid mt-lg-4">
+            <div className="container-fluid mt-lg-4">
                 <div className="row">
                     <div className="col-lg-6 pe-lg-5">
                         <div className="top-section">
@@ -20,20 +20,16 @@ export default function MagazineDegSecWivesSection({insignia, awards, careers}) 
                                     </h2>
                                 </div>
                                 <div className="image">
-                                <LuMedal />
-
-                                <h3>Insignia</h3>
+                                  <img src={NoImg} className="img-fluid" alt="" />
                                 </div>
                                 <div className="image">
-                                <FaTrophy />
-                                <h3>Awards</h3>
+                                <img src={NoImg} className="img-fluid" alt="" />
                                 </div>
                                 <div className="image">
-                                <MdCastForEducation />
-                                <h3>Careers</h3>
+                                <img src={NoImg} className="img-fluid" alt="" />
                                 </div>
                             </div>
-                            
+
                             <p>
                                 Enhance your knowledge with our curated educational resources, designed for students, academics, and professionals pursuing careers in the defence field.
                             </p>
@@ -42,7 +38,7 @@ export default function MagazineDegSecWivesSection({insignia, awards, careers}) 
                             <img src={NoImg} className="img-fluid" alt="" />
                             <div className="content">
                                 <h3>
-                                learn with us
+                                    learn with us
                                 </h3>
                                 <p>
                                     learn career opportunities with DSA learn career opportunities with DSA learn career opportunities with DSA

@@ -21,3 +21,28 @@
     object-fit: cover;
     margin-bottom: 1.5rem;
 }
+@media (max-width:992px) {
+    .about-gallery-section {
+        padding-bottom: 0;
+    }
+    .about-gallery-section .main-heading p{
+        width: 100%;
+    }
+    .about-gallery-section .main-heading h2{
+        font-size: 1.5rem;
+    }
+    .about-gallery-section .top-heading p{
+        font-size: 1.2rem;
+    }
+    .about-gallery-section .swiper-backface-hidden .swiper-slide{
+        margin: 0;
+    }
+    /* .about-gallery-section .mySwiper .col-4,
+    .about-gallery-section .mySwiper .col-8{
+        padding: 5px;
+    } */
+    .about-gallery-section .mySwiper img{
+        height: auto;
+        /* margin-bottom: 10px; */
+    }
+}

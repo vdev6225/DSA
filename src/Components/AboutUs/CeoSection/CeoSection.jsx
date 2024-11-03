@@ -22,7 +22,7 @@ export default function CeoSection() {
                         </div>
                     </div>
                     <div className="col-lg-5 ps-lg-5">
-                        <div className="ceo-card">
+                        <div className="ceo-card mb-0">
                             <img src={Right} className="img-fluid" alt="" />
                             <p className="name">
                                 Pawan <span>agarwal</span>

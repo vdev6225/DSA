@@ -29,7 +29,7 @@ export default function EditionsCategories({data}) {
 
     return (
         <section className="section-spacing py-0 editions-category-section">
-            <div className="container-fuid">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="col-12">
                         <div className="category-tab">

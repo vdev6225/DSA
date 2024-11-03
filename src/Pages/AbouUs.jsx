@@ -12,7 +12,7 @@ import MilestoneSection from "../Components/Home/MilestoneSection/MilestoneSecti
 
 export default function AboutUs() {
     return (
-        <>
+        <div className="about-us-page">
             <AboutPageHeader />
             <MilestoneSection HeadingText={"15 years Journey so far through the key milestones that have defined DSA’s growth and impact in defence journalism. From our inception to becoming a globally recognized research based publication, see how we’ve evolved over the years."} />
             <VisionSection />
@@ -21,6 +21,6 @@ export default function AboutUs() {
             <CeoSection />
             <JourneySection />
             <AboutGallerySection />
-        </>
+        </div>
     )
 }

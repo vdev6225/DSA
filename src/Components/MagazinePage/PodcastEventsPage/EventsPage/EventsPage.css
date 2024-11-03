@@ -35,3 +35,11 @@
     color: var(--font-dark);
     font-family: "headingbold" !important;
 }
+.events-section .swiper-pagination-bullet-active{
+    background: var(--theme-color) !important;
+}
+@media (max-width:992px) {
+    .events-section .event-card{
+        aspect-ratio: 1/1.5;
+    }
+}

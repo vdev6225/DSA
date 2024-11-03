@@ -1,8 +1,8 @@
-
-.contact-us-service-section{
+.contact-us-service-section {
     position: relative;
 }
-.contact-us-service-section::before{
+
+.contact-us-service-section::before {
     content: "";
     position: absolute;
     top: 0;
@@ -13,19 +13,23 @@
     z-index: -1;
     border-radius: 20px;
 }
-.contact-us-service-section .main-heading h2{
+
+.contact-us-service-section .main-heading h2 {
     font-family: "headingbold" !important;
 }
-.contact-us-service-section .top-content b{
+
+.contact-us-service-section .top-content b {
     margin-bottom: 10px;
     display: inline-block;
     text-transform: capitalize;
     font-family: "bodyfontbold" !important;
 }
-.contact-us-service-section .top-content p{
+
+.contact-us-service-section .top-content p {
     font-size: 1.3rem;
 }
-.contact-us-service-section .top-content a{
+
+.contact-us-service-section .top-content a {
     padding: 8px 25px;
     background: var(--main-color-two);
     border-radius: 20px;
@@ -33,6 +37,7 @@
     font-weight: bold;
     display: inline-block;
 }
+
 .contact-us-service-section .contact-service-card {
     display: flex;
     background: var(--main-color-two);
@@ -106,13 +111,44 @@
 .contact-us-service-section .contact-service-card .content .arrow-btn a:hover svg {
     color: var(--theme-color);
 }
-.contact-us-service-section .bottom-img{
+
+.contact-us-service-section .bottom-img {
     padding: 1rem;
     border-radius: 20px;
     border: 4px solid var(--main-color-two);
 }
-.contact-us-service-section .bottom-img img{
+
+.contact-us-service-section .bottom-img img {
     border-radius: 15px;
     width: 100%;
     height: 300px;
+    object-fit: cover;
+}
+
+@media (max-width:992px) {
+    .contact-us-service-section::before{
+        height: 90%;
+    }
+    .contact-us-service-section .contact-service-card {
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+
+    .contact-us-service-section .contact-service-card .image{
+        margin-bottom: 2rem;
+    }
+    .contact-us-service-section .contact-service-card .image,
+    .contact-us-service-section .contact-service-card .content {
+        width: 100%;
+    }
+    .contact-us-service-section .contact-service-card .content .text{
+        padding-left: 0;
+        padding-right: 2rem;
+    }
+    .contact-us-service-section .contact-service-card .content .arrow-btn{
+        align-self: flex-end;
+    }
+    .contact-us-service-section .bottom-img img {
+        height: auto;
+    }
 }
