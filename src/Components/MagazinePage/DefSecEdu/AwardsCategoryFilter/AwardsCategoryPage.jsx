@@ -22,7 +22,7 @@ export default function AwardsCategoryPage({ data }) {
 
     return (
         <section className="section-spacing pb-0 pt-0 awards-page">
-            <div className="container-flid">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="col-12 section-spacing-y">
                         <div className="category-tab">
@@ -47,7 +47,7 @@ export default function AwardsCategoryPage({ data }) {
                 </div>
                 {filteredData?.map((item) => {
                     return (
-                        <div className="row">
+                        <div className="row awad-page-card">
                             <div className="col-lg-5 image-section">
                                 <img src={item?.fld_image} className="img-fluid" alt="" />
                             </div>

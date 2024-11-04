@@ -58,3 +58,15 @@
     margin: 0;
     color: var(--dark-light);
 }
+
+@media (max-width:992px) {
+    .contact-us-page-banner{
+        height: 60vh;
+    }
+    .contact-us-page-banner .container-fluid h1{
+        font-size: 2rem;
+    }
+    .contact-us-page-banner-bottom-text h2{
+        font-size: 1.5rem;
+    }
+}

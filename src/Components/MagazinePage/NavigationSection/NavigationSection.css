@@ -1,5 +1,5 @@
 .magazine-navigation h1 {
-    font-size: 5.1rem;
+    font-size: 4.8rem;
     text-align: center;
     color: var(--font-dark);
 }
@@ -44,4 +44,10 @@
     align-items: center;
     justify-content: center;
     margin-left: 8px;
+}
+@media (max-width:992px) {
+    .magazine-navigation h1{
+        font-size: 2rem;
+    }
+    
 }

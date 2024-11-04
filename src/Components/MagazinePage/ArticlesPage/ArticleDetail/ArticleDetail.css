@@ -13,6 +13,7 @@
 .article-detail-section .article-card .image img {
     aspect-ratio: 1/1;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .article-detail-section .article-card .name {

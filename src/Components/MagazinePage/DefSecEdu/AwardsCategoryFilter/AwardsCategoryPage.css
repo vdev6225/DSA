@@ -20,7 +20,7 @@
     margin-left: 1.5rem;
 }
 
-.awards-page .main-heading h2{
+.awards-page .main-heading h2 {
     text-align: center;
     font-size: 3rem;
     font-family: "headingbold" !important;
@@ -30,12 +30,50 @@
 .awards-page .image-section img {
     width: 100%;
     border-radius: 20px;
+    object-fit: contain;
 }
-.awards-page b{
+
+.awards-page b {
     font-size: 1.3rem;
     font-family: "bodyfontbold" !important;
 }
-.awards-page p b{
+
+.awards-page p b {
     font-size: 1rem;
     font-family: "bodyfont" !important;
+}
+
+.awad-page-card {
+    margin-bottom: 3rem;
+}
+
+.awad-page-card:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+@media (max-width:992px) {
+    .awards-page .category-tab {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+
+    .awards-page .category-tab ul {
+        /* overflow-x: auto; */
+        width: 100%;
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+
+    .awards-page .category-tab ul li {
+        margin-left: 0;
+        margin-bottom: .7rem;
+        /* display: inline-block;
+        width: fit-content; */
+        /* min-width: 100px; */
+    }
+    .awards-page .main-heading h2{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
 }

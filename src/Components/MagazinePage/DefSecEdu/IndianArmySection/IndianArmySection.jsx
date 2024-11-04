@@ -27,7 +27,7 @@ export default function IndianArmySection({data, setDefenceForceType}) {
     return (
         <>
             <section className="section-spacing pt-0 pb-4 category-filter">
-                <div className="container-flid">
+                <div className="container-fluid">
                     <div className="row">
                         <div className="col-12">
                             <div className="category-tab">
@@ -49,7 +49,7 @@ export default function IndianArmySection({data, setDefenceForceType}) {
                 </div>
             </section>
             <section className="section-spacing indian-army-section pt-0 mb-5">
-                <div className="container-flid">
+                <div className="container-fluid">
                     {
                         filteredData?.map((item,id)=>{
                             return( <div className="row" key={id}>

@@ -88,3 +88,18 @@
     font-size: 2rem;
     font-style: italic;
 }
+@media (max-width:992px) {
+    .contact-us-form .contact-links{
+        border-right: 0;
+        border-bottom: 2px solid var(--black-color);
+        margin-bottom: 3rem;
+    }
+    .contact-call-section .d-flex{
+        justify-content: center;
+    }
+    .contact-call-section p{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+}

@@ -19,6 +19,7 @@
     padding-right: 4rem;
     padding-left: 1rem;
 }
+
 .dsa-alerts-section .alerts-card:nth-child(even) {
     flex-direction: row-reverse;
 }
@@ -55,4 +56,26 @@
     width: 100%;
     height: 200px;
     object-fit: cover;
+}
+
+@media (max-width:992px) {
+    .dsa-alerts-section .main-heading h2 {
+        font-size: 2rem;
+    }
+
+    .dsa-alerts-section .alerts-card:nth-child(even),
+    .dsa-alerts-section .alerts-card {
+        flex-direction: column-reverse;
+    }
+
+    .dsa-alerts-section .alerts-card .image {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .dsa-alerts-section .alerts-card:nth-child(even) .content,
+    .dsa-alerts-section .alerts-card .content {
+        width: 100%;
+        padding: 0;
+        text-align: left;
+    }
 }

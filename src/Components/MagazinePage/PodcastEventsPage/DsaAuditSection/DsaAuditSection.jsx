@@ -14,7 +14,7 @@ export default function DsaAuditSection() {
                     expert inputs
                 </h2>
             </div>
-            <div className="container-fuid">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="col-lg-6">
                         <h2 className="main-heading">
@@ -25,13 +25,13 @@ export default function DsaAuditSection() {
                             <img src={Image2} className="img-fluid bottom-img" alt="" />
                         </div>
                     </div>
-                    <div className="col-lg-6">
-                        <img src={Image1} className="img-fluid" alt="" />
+                    <div className="col-lg-6 mt-5 mt-lg-0">
+                        <img src={Image1} className="img-fluid mt-5 mt-lg-0" alt="" />
                         <div className="d-flex mt-3 flex-column align-items-end">
                             <p className="name">
                                 about events
                             </p>
-                            <div className="d-flex gap-5 bottom-date">
+                            <div className="d-flex gap-4 gap-lg-5 bottom-date flex-wrap">
                                 <div className="box">
                                     <p>
                                         By- 

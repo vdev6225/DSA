@@ -12,7 +12,7 @@ import "./AttendanceSection.css";
 export default function AttendanceSection({eventdata}) {
     return (
         <section className="section-spacing attendance-section">
-            <div className="container-fuid">
+            <div className="container-fluid">
                 <div className="row align-items-center">
                     <div className="col-lg-6">
                         <Swiper

@@ -21,7 +21,7 @@ export default function ArticleCategories({data}) {
     }
     return (
         <section className="section-spacing pt-0 article-category-section">
-            <div className="container-fuid">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="col-12 mt-5 mb-3">
                         <div className="category-tab">
@@ -76,7 +76,7 @@ export default function ArticleCategories({data}) {
                                         <p className="des">
                                             {item?.fld_short_desc}
                                         </p>
-                                        <div className="d-flex justify-content-between align-item-end mt-4 pt-2">
+                                        <div className="d-flex flex-wrap justify-content-between align-item-end mt-4 pt-2">
                                             <ul className="d-flex justify-content-between align-items-end gap-3 article-date">
                                                 <li>
                                                     By- {item?.fld_published_by}
@@ -116,7 +116,7 @@ export default function ArticleCategories({data}) {
                                             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words
                                         </p>
                                         <div className="d-flex justify-content-between mt-3">
-                                            <ul className="d-flex justify-content-between gap-5">
+                                            <ul className="d-flex flex-wrap justify-content-between gap-4 gap-lg-5">
                                                 <li>
                                                     By-
                                                 </li>
@@ -136,7 +136,7 @@ export default function ArticleCategories({data}) {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-3">
+                    <div className="col-lg-3 mt-5 mt-lg-0">
                         <div className="row">
                             <div className="col-12">
                                 <div className="magazine-card">

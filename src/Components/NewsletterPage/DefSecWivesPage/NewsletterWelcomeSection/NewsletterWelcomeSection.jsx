@@ -7,7 +7,7 @@ export default function NewsletterWelcomeSection() {
     return (
         <section className="section-spacing newsletter-welcome-section position-relative">
             <img src={NoImg} className="img-fluid" alt="" />
-            <div className="container-flid position-relative">
+            <div className="container-fluid position-relative">
                 <div className="row">
                     <div className="col-lg-8 mx-auto text-center">
                         <h2>Welcome</h2>

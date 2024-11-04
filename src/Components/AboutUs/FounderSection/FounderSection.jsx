@@ -42,10 +42,24 @@ export default function FounderSection() {
                     <div className="row">
                         <div className="col-12">
                             <Swiper
-                                slidesPerView={2.2}
-                                spaceBetween={30}
+                                slidesPerView={.6}
+                                spaceBetween={20}
                                 freeMode={true}
                                 pagination={false}
+                                breakpoints={{
+                                    640: {
+                                        slidesPerView: 2,
+                                        spaceBetween: 20,
+                                    },
+                                    768: {
+                                        slidesPerView: 2.2,
+                                        spaceBetween: 30,
+                                    },
+                                    1024: {
+                                        slidesPerView: 2.2,
+                                        spaceBetween: 30,
+                                    },
+                                }}
                                 modules={[FreeMode, Pagination]}
                                 className="mySwiper"
                             >

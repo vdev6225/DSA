@@ -29,7 +29,8 @@
     width: 60%;
     padding-right: 2rem;
 }
-.contact-us-mission-section .left-section .left-content p{
+
+.contact-us-mission-section .left-section .left-content p {
     font-size: .8rem;
 }
 
@@ -38,16 +39,47 @@
     /* height: 500px; */
 }
 
-.contact-us-mission-section .right-section{
+.contact-us-mission-section .right-section {
     font-size: 1.2rem;
 }
-.contact-us-mission-section .right-section p{
+
+.contact-us-mission-section .right-section p {
     line-height: 1.5;
 }
+
 .contact-us-mission-section a {
     padding: 10px 20px;
     background: var(--main-color-one);
     border-radius: 20px;
     text-transform: capitalize;
     font-weight: bold;
+}
+
+@media (max-width:992px) {
+    .contact-us-mission-section .left-section {
+        position: relative;
+        margin-bottom: 3rem;
+    }
+
+    .contact-us-mission-section .left-section>.d-flex {
+        flex-direction: column;
+    }
+
+    .contact-us-mission-section .left-section .right-img,
+    .contact-us-mission-section .left-section::before,
+    .contact-us-mission-section .left-section .left-content {
+        width: 100%;
+    }
+    .contact-us-mission-section .left-section .left-content {
+        padding-top: 50px;
+    }
+
+    .contact-us-mission-section .left-section::before {
+        height: 70%;
+    }
+
+    .contact-us-mission-section .left-section .right-img {
+        margin-top: 3rem;
+        width: 80%;
+    }
 }

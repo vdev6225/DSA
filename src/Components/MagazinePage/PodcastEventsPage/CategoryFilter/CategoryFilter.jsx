@@ -5,7 +5,7 @@ export default function CategoryFilter() {
     const {setMagazineType} = useContext(store)
     return (
         <section className="section-spacing pb-4 category-filter">
-            <div className="container-flid">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="col-12">
                         <div className="category-tab">

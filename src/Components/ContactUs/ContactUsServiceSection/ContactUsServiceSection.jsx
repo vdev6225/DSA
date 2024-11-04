@@ -64,7 +64,7 @@ export default function ContactUsServiceSection() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6 ps-lg-4">
+                    <div className="col-lg-6 ps-lg-4 mt-5 mt-lg-0">
                         <div className="text-center top-content">
                             <div className="main-heading mb-4">
                                 <h2>Stay <span>updated with us</span></h2>

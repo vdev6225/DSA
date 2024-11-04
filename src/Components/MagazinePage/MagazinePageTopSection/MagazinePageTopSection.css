@@ -8,11 +8,16 @@
     bottom: 2rem;
     width: 280px;
 }
-.magazine-page-top-section .left-img img{
+
+.magazine-page-top-section .left-img img {
     border-radius: 10px;
 }
 
 
+
+.magazine-page-top-section .center-banner {
+    border-radius: 20px;
+}
 
 .magazine-page-top-section .content-box {
     width: 38%;
@@ -50,4 +55,25 @@
     font-weight: bold;
     display: inline-block; */
     margin-top: 4rem;
+}
+
+@media (max-width:992px) {
+    .magazine-page-top-section .content-box {
+        position: static;
+        width: 100%;
+        margin-top: 150px;
+        padding: 1rem;
+    }
+
+    .magazine-page-top-section .content-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .magazine-page-top-section .left-img {
+        bottom: initial;
+        width: 180px;
+        top: 180px;
+        left: 0;
+    }
+
 }

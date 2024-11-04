@@ -30,19 +30,19 @@ export default function AboutGallerySection() {
                             clickable: true,
                         }} modules={[Pagination]} className="mySwiper py-5">
                             <SwiperSlide className='row'>
-                                <div className="col-lg-4">
+                                <div className="col-lg-4 col-6">
                                     <img src={NoImg} className='img-fluid' alt="" />
                                 </div>
-                                <div className="col-lg-4">
+                                <div className="col-lg-4 col-6">
                                     <img src={NoImg} className='img-fluid' alt="" />
                                 </div>
-                                <div className="col-lg-4">
+                                <div className="col-lg-4 col-6">
                                     <img src={NoImg} className='img-fluid' alt="" />
                                 </div>
-                                <div className="col-lg-8">
+                                <div className="col-lg-8 order-last order-lg-4">
                                     <img src={NoImg} className='img-fluid' alt="" />
                                 </div>
-                                <div className="col-lg-4">
+                                <div className="col-lg-4 col-6 order-lg-last">
                                     <img src={NoImg} className='img-fluid' alt="" />
                                 </div>
                             </SwiperSlide>

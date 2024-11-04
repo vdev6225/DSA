@@ -16,9 +16,9 @@ export default function MilestoneSection({HeadingText}) {
                 <img src={bgImg} className='img-fluid bg-img' alt="" />
                 <div className="row">
                     <div className="col-12">
-                        {/* <h2 className="main-heading text-center">
+                        <h2 className="main-heading d-none text-center">
                             <span><i>dsa</i></span> milestones
-                        </h2> */}
+                        </h2>
                         <p className='text-center w-75 mb-5 mx-auto heading-text'>{HeadingText}</p>
                         <Swiper
                             spaceBetween={20}

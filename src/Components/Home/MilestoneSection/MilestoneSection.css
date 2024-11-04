@@ -40,7 +40,7 @@
     text-decoration-color: var(--theme-color);
     color: var(--theme-color);
     text-underline-offset: 10px;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     text-decoration-thickness: 2px;
     font-family: "bodyfontbold" !important;
     margin-bottom: 5px !important;

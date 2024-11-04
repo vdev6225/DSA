@@ -22,13 +22,33 @@
     width: 40%;
     margin-bottom: 1rem;
 }
+
 .indian-army-section .right-section ul p {
-   padding-left: 10px; 
+    padding-left: 10px;
 }
 
 /* .indian-army-section .right-section p {
     margin-bottom: 1rem !important;
-}
+    }
 .indian-army-section .right-section ul p {
     margin-bottom: 0 !important;
-} */
+    } */
+
+    .indian-army-section .right-section p img {
+        margin-right: 1rem;
+    }
+
+@media (max-width:992px) {
+    .indian-army-section .main-heading h2 {
+        font-size: 2rem;
+    }
+
+    .indian-army-section .left-section .image {
+        margin-bottom: 3rem;
+        margin: 0;
+    }
+
+    .indian-army-section .right-section p img {
+        width: 100% !important;
+    }
+}
