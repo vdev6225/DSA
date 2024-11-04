@@ -13,8 +13,6 @@ export default function EditionsPage() {
 
     const latestData = magazinesEditionData?.filter((item) => item?.fld_status === "new" || item?.fld_status === "Upcoming")
  
-    console.log(latestData, "LATESTdATA")
-
     const getMagazinesEditionData = () => {
         PostApiCall.postRequest(
             {
@@ -35,8 +33,6 @@ export default function EditionsPage() {
         getMagazinesEditionData();
       },[])
 
-      console.log(magazinesEditionData,"magazinesEditionData")
-    
     return (
         <>
             <NavigationSection />

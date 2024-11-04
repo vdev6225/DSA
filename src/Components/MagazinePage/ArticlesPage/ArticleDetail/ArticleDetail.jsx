@@ -4,7 +4,6 @@ import "./ArticleDetail.css";
 import { FaXTwitter } from "react-icons/fa6";
 import moment from "moment";
 export default function ArticleDetail({data}) {
-    console.log(data)
     return (
         <section className="section-spacing pt-0 mb-5 article-detail-section">
             <div className="container-fluid">
@@ -52,9 +51,7 @@ export default function ArticleDetail({data}) {
                         {/* <b className="mb-4 d-block">
                           {data[0]?.fld_short_desc}
                         </b> */}
-                        <p>
-                            {data[0]?.fld_long_desc}
-                        </p>
+                        <p dangerouslySetInnerHTML={{__html :data[0]?.fld_long_desc }}/>
                     </div>
                 </div>
             </div>
