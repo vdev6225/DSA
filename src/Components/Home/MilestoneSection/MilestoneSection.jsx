@@ -11,7 +11,7 @@ import bgImg from "../../../assets/img/milestones-bg.png";
 import "./MilestoneSection.css";
 export default function MilestoneSection({HeadingText}) {
     return (
-        <section className="section-spacing px-0 pt-0 mt-lg-5 mb-5 milestone-section">
+        <section className="section-spacing px-0 pt-0 mt-lg-4 mb-5 milestone-section">
             <div className="container py-lg-4 position-relative">
                 <img src={bgImg} className='img-fluid bg-img' alt="" />
                 <div className="row">
@@ -25,9 +25,7 @@ export default function MilestoneSection({HeadingText}) {
                             slidesPerView={2}
                             freeMode={true}
                             loop={true}
-                            pagination={{
-                                clickable:true
-                            }}
+                            pagination={false}
                             breakpoints={{
                                 640: {
                                     slidesPerView: 2,

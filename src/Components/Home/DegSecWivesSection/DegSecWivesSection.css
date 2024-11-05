@@ -131,7 +131,7 @@
 .deg-sec-wives-section .theme-btn{
     padding: 8px 30px;
     border: 2px solid var(--theme-color);
-    color: var(--theme-color) !important;
+    color: var(--theme-color);
     border-radius: 30px;
     font-size: 1.2rem;
     transition: .3s all;
