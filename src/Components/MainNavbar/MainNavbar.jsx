@@ -5,6 +5,7 @@ import { IoSearch } from 'react-icons/io5';
 import { VscListSelection } from 'react-icons/vsc';
 import Logo from "../../assets/img/logo/dsa-white-logo.png";
 import HamIcon from "../../assets/img/icons/ham.png";
+import { FaSearch, FaTimes } from "react-icons/fa";
 
 import "./MainNavbar.css"
 import LoginModal from '../Login/LoginModal';
@@ -16,7 +17,19 @@ export default function MainNavbar() {
 
     const handleCloseOffcanvas = () => setShowOffcanvas(false);
     const handleShowOffcanvas = () => setShowOffcanvas(true);
-    const { setShow, setModalType } = useContext(store)
+    const { setShow, setModalType } = useContext(store);
+    const [isOpen, setIsOpen] = useState(false);
+    const [searchText, setSearchText] = useState("");
+
+    // Toggle the search bar visibility
+    const toggleSearchBar = () => {
+        setIsOpen(!isOpen);
+    };
+
+    // Handle search input change
+    const handleSearchChange = (e) => {
+        setSearchText(e.target.value);
+    };
     const items = [
         {
             key: '1',
@@ -77,7 +90,10 @@ export default function MainNavbar() {
                                 <Nav.Link href="/magazine">Magazine</Nav.Link>
                                 <Nav.Link href="/newsletter">Newsletter</Nav.Link>
                                 <Nav.Link href="/">Alerts</Nav.Link>
+
                                 {/* <div className="search-btn ms-2 mb-1">
+
+                                <div className="search-btn ms-2 mb-1" onClick={toggleSearchBar}>
                                     <IoSearch />
                                 </div> */}
                             </div>
@@ -193,6 +209,21 @@ export default function MainNavbar() {
                     </div>
                 </Offcanvas.Body>
             </Offcanvas>
+            {/* Full-width search bar overlay */}
+            {/* <div className={`search-overlay ${isOpen ? "open" : ""}`}>
+                <div className="search-bar">
+                    <input
+                        type="text"
+                        value={searchText}
+                        onChange={(e) => setSearchText(e.target.value)}
+                        placeholder="Search for flowers, gifts, and more..."
+                        className="search-input"
+                    />
+                    <button className="close-button" onClick={toggleSearchBar}>
+                        <FaTimes />
+                    </button>
+                </div>
+            </div> */}
         </div>
     )
 }

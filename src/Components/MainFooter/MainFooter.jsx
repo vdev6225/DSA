@@ -29,7 +29,7 @@ export default function MainFooter() {
                         </div>
                         <div className="col-lg-8 footer-links ps-lg-5 mt-lg-3">
                             <div className="row">
-                                <div className="col-lg-6 ps-lg-5">
+                                <div className="col-lg-5 ps-lg-4">
                                     <h4>
                                         Contact Info
                                     </h4>
@@ -65,7 +65,7 @@ export default function MainFooter() {
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-3">
+                                <div className="col-lg-4 ps-lg-4">
                                     <h4>
                                         Our Services
                                     </h4>
@@ -102,7 +102,7 @@ export default function MainFooter() {
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-3 ps-lg-5">
+                                <div className="col-lg-3">
                                     <h4>
                                         Quick Links
                                     </h4>

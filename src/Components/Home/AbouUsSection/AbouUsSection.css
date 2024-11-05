@@ -34,9 +34,12 @@
     /* padding-bottom: 4rem; */
     text-align: center;
 }
+.about-section .left-section .content .inner-content h2{
+    font-size: 2.5rem;
+}
 
 .about-section .left-section .content .inner-content p {
-    font-size: .8rem;
+    font-size: .7rem;
     width: 95%;
     margin: 0 auto;
     margin-top: 1rem;
@@ -69,6 +72,7 @@
     height: 100%;
     cursor: pointer;
     background: transparent !important;
+    object-fit: cover;
 }
 
 .about-section .about-section-swiper .mySwiper2 {
@@ -80,6 +84,9 @@
 
 .about-section .about-section-swiper .mySwiper {
     padding-bottom: 3rem;
+}
+.about-section .about-section-swiper .mySwiper{
+    margin: 0 2rem;
 }
 
 .about-section .about-section-swiper .mySwiper .swiper-pagination-bullet-active {
