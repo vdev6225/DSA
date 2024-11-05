@@ -47,11 +47,11 @@ export default function CareersPage({ data }) {
                 </div>
                 <div className="content">
                     <h2>{item?.fld_heading}</h2>
-                    <p>{item?.fld_short_desc}</p>
+                    <p dangerouslySetInnerHTML={{__html :item?.fld_short_desc }}/>
                 </div>
             </div>
         ),
-        children: <div className='bottom-content'>{item?.fld_short_desc}</div>,
+        children: <div className='bottom-content' dangerouslySetInnerHTML={{__html :item?.fld_long_desc }}/>,
     }));
 
     return (

@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.3aeadd8e.css",
-    "main.js": "/static/js/main.8313189a.js",
+    "main.css": "/static/css/main.73a2f1cf.css",
+    "main.js": "/static/js/main.5a60da7e.js",
+    "static/js/334.f2896a00.chunk.js": "/static/js/334.f2896a00.chunk.js",
     "static/js/787.db33642e.chunk.js": "/static/js/787.db33642e.chunk.js",
     "static/media/contact-news.png": "/static/media/contact-news.bcf0f2f6d434728e0a8a.png",
     "static/media/img.png": "/static/media/img.5ec4c1c283687ce6601c.png",
     "static/media/Journey so far.png": "/static/media/Journey so far.f7c7a0739eb82f25290c.png",
     "static/media/close-up-podcast-microphone.jpg": "/static/media/close-up-podcast-microphone.258245596cf66729cd3b.jpg",
     "static/media/gallery.png": "/static/media/gallery.c9537192445809d667d6.png",
-    "static/media/sub.png": "/static/media/sub.33d09e5f0aa35b0526e2.png",
+    "static/media/DSA_Edition.pdf": "/static/media/DSA_Edition.fdd08e2a83e4efaff3a9.pdf",
     "static/media/right.png": "/static/media/right.16073fa57a6804df9c67.png",
     "static/media/left.png": "/static/media/left.be0ec9883ed6fb3bea74.png",
     "static/media/professional-microphone-sound-studio-with-purple-backdrop.jpg": "/static/media/professional-microphone-sound-studio-with-purple-backdrop.083ea79e009a657443ac.jpg",
@@ -17,6 +18,7 @@
     "static/media/contact-mission.png": "/static/media/contact-mission.9c87ad9b2ae1de537313.png",
     "static/media/Rectangle.png": "/static/media/Rectangle.a1a99ae1f8a5bcddd451.png",
     "static/media/magazine-mockup.png": "/static/media/magazine-mockup.3dbdbd67a895faae5230.png",
+    "static/media/sub.png": "/static/media/sub.3dbab935e9eebc76f55a.png",
     "static/media/25.webp": "/static/media/25.f5575aaa2df9834aaa8c.webp",
     "static/media/May 2024.jpg": "/static/media/May 2024.69b54a3294708f739119.jpg",
     "static/media/April 2024.jpg": "/static/media/April 2024.aa4759fe66d57344534a.jpg",
@@ -31,6 +33,8 @@
     "static/media/indian-flag.jpg": "/static/media/indian-flag.7272562f5f2a57810d91.jpg",
     "static/media/prabhatprakashan.png": "/static/media/prabhatprakashan.445b16e9f544b34fb01b.png",
     "static/media/21.jpg": "/static/media/21.e6e78ab33fed9cda805c.jpg",
+    "static/media/testimonial-bg.png": "/static/media/testimonial-bg.705e5591b3a9c5522d5b.png",
+    "static/media/milestones-bg.png": "/static/media/milestones-bg.7f6e9cb5638e419989a0.png",
     "static/media/flag.png": "/static/media/flag.2aecc48782ef08ca930c.png",
     "static/media/18.webp": "/static/media/18.595fd43c8042ec64e069.webp",
     "static/media/17.jpg": "/static/media/17.fdebb4d4511ba658bb03.jpg",
@@ -50,12 +54,13 @@
     "static/media/BaseNeueTrial-Bold.ttf": "/static/media/BaseNeueTrial-Bold.ee6159fe7d20317d3d8d.ttf",
     "static/media/19.jpg": "/static/media/19.fb4b6c00b9de95f4fe22.jpg",
     "index.html": "/index.html",
-    "main.3aeadd8e.css.map": "/static/css/main.3aeadd8e.css.map",
-    "main.8313189a.js.map": "/static/js/main.8313189a.js.map",
+    "main.73a2f1cf.css.map": "/static/css/main.73a2f1cf.css.map",
+    "main.5a60da7e.js.map": "/static/js/main.5a60da7e.js.map",
+    "334.f2896a00.chunk.js.map": "/static/js/334.f2896a00.chunk.js.map",
     "787.db33642e.chunk.js.map": "/static/js/787.db33642e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3aeadd8e.css",
-    "static/js/main.8313189a.js"
+    "static/css/main.73a2f1cf.css",
+    "static/js/main.5a60da7e.js"
   ]
 }
