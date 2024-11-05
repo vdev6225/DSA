@@ -19,7 +19,7 @@ export default function TopSection() {
                         </div>
                     </div>
                     <div className="col-lg-7">
-                        <img src={NoImg} className="img-fluid" alt="" />
+                        <img src="https://manmeetawsbucket.s3.eu-north-1.amazonaws.com/Indian+Army.png" className="img-fluid" alt="" />
                     </div>
                 </div>
             </div>

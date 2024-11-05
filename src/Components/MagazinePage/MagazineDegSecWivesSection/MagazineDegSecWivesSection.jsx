@@ -1,9 +1,6 @@
 import { Link } from "react-router-dom";
 import NoImg from "../../../assets/img/no-image.jpg";
 import "./MagazineDegSecWivesSection.css";
-import { LuMedal } from "react-icons/lu";
-import { FaTrophy } from "react-icons/fa";
-import { MdCastForEducation } from "react-icons/md";
 
 export default function MagazineDegSecWivesSection({ insignia, awards, careers }) {
 
@@ -20,13 +17,13 @@ export default function MagazineDegSecWivesSection({ insignia, awards, careers }
                                     </h2>
                                 </div>
                                 <div className="image">
-                                  <img src={NoImg} className="img-fluid" alt="" />
+                                  <img src="https://manmeetawsbucket.s3.eu-north-1.amazonaws.com/Indian+Army+Flag.png" className="img-fluid" alt="" />
                                 </div>
                                 <div className="image">
-                                <img src={NoImg} className="img-fluid" alt="" />
+                                <img src="https://manmeetawsbucket.s3.eu-north-1.amazonaws.com/Indian+Navy+Flag.png" className="img-fluid" alt="" />
                                 </div>
                                 <div className="image">
-                                <img src={NoImg} className="img-fluid" alt="" />
+                                <img src="https://manmeetawsbucket.s3.eu-north-1.amazonaws.com/Airforce+Flag.png" className="img-fluid" alt="" />
                                 </div>
                             </div>
 
@@ -35,7 +32,7 @@ export default function MagazineDegSecWivesSection({ insignia, awards, careers }
                             </p>
                         </div>
                         <div className="bottom-section">
-                            <img src={NoImg} className="img-fluid" alt="" />
+                            {/* <img src="https://manmeetawsbucket.s3.eu-north-1.amazonaws.com/Indian+Army.png" className="img-fluid" alt="" /> */}
                             <div className="content">
                                 <h3>
                                     learn with us

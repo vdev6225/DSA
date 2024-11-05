@@ -2,6 +2,7 @@ import "./EditionsCategories.css";
 import NoImg from "../../../../assets/img/no-image.jpg";
 
 import {useState, useEffect} from 'react'
+import { Link } from "react-router-dom";
 
 export default function EditionsCategories({data}) {
 
@@ -52,7 +53,7 @@ export default function EditionsCategories({data}) {
                     {
                         filteredData?.map((item,id)=> {
                             return(<div className="col-lg-3 edition-card" key={id}>
-                                <div className="box">
+                                <Link to="/flip-book" className="box">
                                     <div className="date">
                                         <p>{item?.fld_month + " "}{item?.fld_year}</p>
                                         <p>{item?.fld_heading}</p>
@@ -60,11 +61,11 @@ export default function EditionsCategories({data}) {
                                     <div className="image">
                                         <img src={item?.fld_image} className="img-fluid" alt={item?.fld_alt} />
                                     </div>
-                                    <h2>{item?.fld_long_desc}</h2>
+                                    {/* <h2>{item?.fld_long_desc}</h2> */}
                                     <p className="des">
                                     {item?.fld_short_desc}
                                     </p>
-                                </div>
+                                </Link>
                             </div>)
                         })
                     }

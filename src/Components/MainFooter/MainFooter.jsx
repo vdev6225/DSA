@@ -67,64 +67,69 @@ export default function MainFooter() {
                                 </div>
                                 <div className="col-lg-4 ps-lg-4">
                                     <h4>
-                                        Our Services
+                                        Quick Links
                                     </h4>
                                     <ul>
                                         <li>
-                                            <Link to="">
-                                                Privacy policy
+                                            <Link to="/">
+                                                Home
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="">
-                                                Terms and conditions
+                                            <Link to="/about-us">
+                                                About Us
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="">
-                                                Journey so far
+                                            <Link to="/newsletter-alert-page">
+                                                Latest Issues
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="">
-                                                Gallery
+                                            <Link to="/newsletter-alert-page">
+                                                News & Analysis
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="">
-                                                Disclaimer
+                                            <Link to="/">
+                                                Expert Views
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="">
-                                                Credits
+                                            <Link to="/podcast-and-events">
+                                                Events
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/contact-us">
+                                                Contact Us
                                             </Link>
                                         </li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-3">
                                     <h4>
-                                        Quick Links
+                                        Resources
                                     </h4>
                                     <ul>
                                         <li>
                                             <Link to="">
-                                                Privacy policy
+                                                Write for US!
                                             </Link>
                                         </li>
                                         <li>
                                             <Link to="">
-                                                GDPR Policy
+                                                Become a Contributor
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="">
-                                                Terms Of Service
+                                            <Link to="/services">
+                                                Subscribe Now
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="">
-                                                Career With DSA
+                                            <Link to="/services">
+                                                Associate With DSA
                                             </Link>
                                         </li>
                                         <li>
@@ -134,7 +139,12 @@ export default function MainFooter() {
                                         </li>
                                         <li>
                                             <Link to="">
-                                                Subscribe
+                                                Privacy Policy
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">
+                                                User Terms
                                             </Link>
                                         </li>
                                     </ul>

@@ -2,7 +2,6 @@ import "./RelatedArticles.css";
 import NoImg from "../../../../assets/img/no-image.jpg";
 import { Link } from "react-router-dom";
 export default function RelatedArticles({ data }) {
-    console.log(data, "article")
     return (
         <section className="section-spacing pt-0 related-articles-section">
             <div className="container-fluid">
@@ -19,12 +18,12 @@ export default function RelatedArticles({ data }) {
                                     <div className="date">
                                         {/* //cannot find proper key */}
                                         <p>on{item?.date}</p>
-                                        <p>{item?.fld_heading}</p>
+                                        <p>{item?.fld_type}</p>
                                     </div>
                                     <div className="image">
                                         <img src={item?.fld_image} className="img-fluid" alt={item?.fld_alt} />
                                     </div>
-                                    <h2> {item?.fld_short_desc}</h2>
+                                    <h2> {item?.fld_heading}</h2>
                                     {/* not sure if its the correct key */}
                                     {/* <p>
                                         {item?.fld_long_desc}
@@ -34,7 +33,7 @@ export default function RelatedArticles({ data }) {
                         })
                     }
                     <div className="col-12 text-center mt-5">
-                        <Link to="" className="theme-btn">Back to Categories</Link>
+                        <Link to="/articles" className="theme-btn">Back to Categories</Link>
                     </div>
                 </div>
             </div>
