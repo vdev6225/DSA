@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import AboutGallerySection from "../Components/AboutUs/AboutGallerySection/AboutGallerySection";
 import AboutPageHeader from "../Components/AboutUs/AboutPageHeader/AboutPageHeader";
 import CeoSection from "../Components/AboutUs/CeoSection/CeoSection";
@@ -11,6 +12,9 @@ import MilestoneSection from "../Components/Home/MilestoneSection/MilestoneSecti
 
 
 export default function AboutUs() {
+    useEffect(()=>{
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    },[])
     return (
         <div className="about-us-page">
             <AboutPageHeader />

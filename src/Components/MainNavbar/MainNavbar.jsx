@@ -136,62 +136,62 @@ export default function MainNavbar() {
                         <div className="col-lg-4 mb-4 mb-lg-0">
                             <ul className='left-links h-100'>
                                 <li>
-                                    <Link to="">Subscribe</Link>
+                                    <Link onClick={handleCloseOffcanvas} to="/">Home</Link>
                                 </li>
                                 <li>
-                                    <Link to="">Donate</Link>
+                                    <Link onClick={handleCloseOffcanvas} to="/about-us">About Us</Link>
                                 </li>
                                 <li>
-                                    <Link to="">Magazine</Link>
+                                    <Link onClick={handleCloseOffcanvas} to="/">Journey So Far</Link>
                                 </li>
                                 <li>
-                                    <Link to="">Latest</Link>
+                                    <Link onClick={handleCloseOffcanvas} to="/podcast-and-events">Events</Link>
                                 </li>
                                 <li>
-                                    <Link to="">Archive</Link>
+                                    <Link onClick={handleCloseOffcanvas} to="/">Gallary</Link>
                                 </li>
                                 <li>
-                                    <Link to="">Podcast</Link>
+                                    <Link onClick={handleCloseOffcanvas} to="/services">Subscribe</Link>
                                 </li>
                                 <li>
-                                    <Link to="">Newsletters</Link>
+                                    <Link onClick={handleCloseOffcanvas} to="/services">Associate with DSA</Link>
+                                </li>
+                                <li>
+                                    <Link onClick={handleCloseOffcanvas} to="/contact-us">Contact Us</Link>
                                 </li>
                             </ul>
                         </div>
                         <div className="col-lg-4 mb-4 mb-lg-0">
                             <div className="border-left">
                                 <ul className='mid-links mb-4 mb-lg-5'>
-                                    <p>SECTIONS</p>
+                                    <p>Magazine</p>
                                     <li>
-                                        <Link to="">Politics</Link>
+                                        <Link onClick={handleCloseOffcanvas} to="/editions">Editions</Link>
                                     </li>
                                     <li>
-                                        <Link to="">World</Link>
+                                        <Link onClick={handleCloseOffcanvas} to="/articles">Articles</Link>
                                     </li>
                                     <li>
-                                        <Link to="">Economy</Link>
+                                        <Link onClick={handleCloseOffcanvas} to="/podcast-and-events">Podcasts</Link>
                                     </li>
                                     <li>
-                                        <Link to="">Culture</Link>
-                                    </li>
-                                    <li>
-                                        <Link to="">Books & the Arts</Link>
+                                        <Link onClick={handleCloseOffcanvas} to="/def-sec-edu">Def Sec Edu</Link>
                                     </li>
                                 </ul>
                                 <ul className='mid-links'>
-                                    <p>THE NATION</p>
+                                    <p>Newsletter</p>
                                     <li>
-                                        <Link to="">About</Link>
+                                        <Link onClick={handleCloseOffcanvas} to="/newsletter-news">News</Link>
                                     </li>
                                     <li>
-                                        <Link to="">Events</Link>
+                                        <Link onClick={handleCloseOffcanvas} to="/newsletter-alert-page">Alerts</Link>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <Link to="">Contact Us</Link>
                                     </li>
                                     <li>
                                         <Link to="">Advertise</Link>
-                                    </li>
+                                    </li> */}
                                 </ul>
                             </div>
                         </div>

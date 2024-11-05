@@ -43,7 +43,9 @@ export default function DefSecEduPage() {
         getDefSecEduData();
       },[])
 
-          
+      useEffect(()=>{
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    },[])
     return (
         <>
             <NavigationSection />

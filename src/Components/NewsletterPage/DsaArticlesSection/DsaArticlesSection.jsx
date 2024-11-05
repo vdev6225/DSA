@@ -20,8 +20,8 @@ export default function DsaArticlesSection({ data }) {
                                     </h2>
                                 </div>
                                 <b>About our Articles</b>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't</p>
-                                <Link to="" className="theme-btn mt-4">Categories</Link>
+                                <p>Dive into timely articles and insightful blogs penned by renowned defence and security experts, exploring a diverse array of topics from policy to technology. Categories: Navigate content organized for your convenience, including Military Affairs, Cyber Security, Geopolitics, Emerging Tech and more.</p>
+                                <Link to="/articles" className="theme-btn mt-4">Categories</Link>
                             </div>
                             <div className="bottom-section">
                                 {article ? (

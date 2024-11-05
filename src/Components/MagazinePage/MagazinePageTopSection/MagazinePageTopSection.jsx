@@ -29,7 +29,7 @@ export default function MagazinePageTopSection({data}) {
                             {data[0]?.fld_short_desc}
                         </p>
                         {/* Note : points at the bottom of the page, it should be at the top */}
-                        <Link to="/editions" className="theme-btn">View our collections</Link>
+                        <Link to="/editions" className="theme-btn">View our Editions</Link>
                     </div>
                 </div>
             </div>

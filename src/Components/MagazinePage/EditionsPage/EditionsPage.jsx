@@ -13,6 +13,9 @@ export default function EditionsPage() {
 
     const latestData = magazinesEditionData?.filter((item) => item?.fld_status === "new" || item?.fld_status === "Upcoming")
  
+    useEffect(()=>{
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+  },[])
     const getMagazinesEditionData = () => {
         PostApiCall.postRequest(
             {

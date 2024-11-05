@@ -74,6 +74,9 @@ const Flipbook = () => {
     useEffect(() => {
         loadPDF();
     }, []);
+    useEffect(()=>{
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    },[])
 
     const flipbookHeight = Math.min(window.innerWidth * pageAspectRatio, window.innerHeight * 0.9); // Limit height to 90% of viewport
 
