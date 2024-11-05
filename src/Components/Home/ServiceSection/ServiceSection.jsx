@@ -12,7 +12,7 @@ export default function ServiceSection() {
                             <h2 className="main-heading mb-0">
                                 our <span>services</span>
                             </h2>
-                            <Link to="">
+                            <Link to="/services">
                                 View All
                                 <FaArrowRight />
                             </Link>
@@ -33,7 +33,7 @@ export default function ServiceSection() {
                                     </span>
                                 </div>
                                 <div className="arrow-btn">
-                                    <Link to="">
+                                    <Link to="/services">
                                         <FaArrowRight />
                                     </Link>
                                 </div>
@@ -55,7 +55,7 @@ export default function ServiceSection() {
                                     </span>
                                 </div>
                                 <div className="arrow-btn">
-                                    <Link to="">
+                                    <Link to="/services">
                                         <FaArrowRight />
                                     </Link>
                                 </div>

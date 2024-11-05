@@ -77,7 +77,7 @@ export default function CurrentAffairs({ banners }) {
                                 </div>
                             </div>
                             <div className="view-all-btn">
-                                <Link to=""><span>View All <br /> Categories</span> <GoArrowRight /></Link>
+                                <Link to="/newsletter-news"><span>View All <br /> Categories</span> <GoArrowRight /></Link>
                             </div>
                         </div>
                     </div>

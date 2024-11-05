@@ -75,11 +75,11 @@ export default function MainNavbar() {
                         <Nav className="d-flex align-items-center justify-content-between w-100">
                             <div className="d-flex align-items-center">
                                 <Nav.Link href="/magazine">Magazine</Nav.Link>
-                                <Nav.Link href="/newsletter">Newsletters</Nav.Link>
+                                <Nav.Link href="/newsletter">Newsletter</Nav.Link>
                                 <Nav.Link href="/">Alerts</Nav.Link>
-                                <div className="search-btn ms-2 mb-1">
+                                {/* <div className="search-btn ms-2 mb-1">
                                     <IoSearch />
-                                </div>
+                                </div> */}
                             </div>
                             <Navbar.Brand href='/'>
                                 <img src={Logo} className="img-fluid" alt="DSA Logo" />

@@ -100,7 +100,7 @@ export default function Home() {
         <div className="content">
           <h2>SUBSCRIBE OUR MAGAZINE AND STAY UPDATED</h2>
           <p>There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
-          <Link to="" className="theme-btn">SUBSCRIBE</Link>
+          <Link to="/services" className="theme-btn">SUBSCRIBE</Link>
         </div>
       </section>
       <MainFooter />

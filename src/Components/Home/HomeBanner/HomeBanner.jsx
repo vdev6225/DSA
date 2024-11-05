@@ -25,26 +25,26 @@ export default function HomeBanner({banners}) {
                     <div className="col-lg-3 d-flex flex-lg-column order-2 order-lg-1 justify-content-between">
                         <div className="count-card">
                             <p className="count">
-                                100+
+                                50+
                             </p>
                             <span className="content">
-                                Our Clients
+                            Areas covered
                             </span>
                         </div>
                         <div className="count-card">
                             <p className="count">
-                                2K+
+                                1K+
                             </p>
                             <span className="content">
-                                Testimonials
+                            Contributors
                             </span>
                         </div>
                         <div className="count-card pb-2">
                             <p className="count">
-                                300+
+                                180+
                             </p>
                             <span className="content">
-                                Magazines
+                            Editions 
                             </span>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ export default function HomeBanner({banners}) {
                             <div className="banner-btn">
                                 <div className='position-relative'>
                                     <img src={BgShape} className='img-fluid' alt="" />
-                                    <Link to="">Associate with <i>DSA</i> <FaArrowRight /></Link>
+                                    <Link to="/services">Associate with <i>DSA</i> <FaArrowRight /></Link>
                                 </div>
                             </div>
                             <div className="bottom-three-circle">

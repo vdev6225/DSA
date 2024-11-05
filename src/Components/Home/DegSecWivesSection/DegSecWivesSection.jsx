@@ -96,9 +96,9 @@ export default function DegSecWivesSection() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="text-center">
+                            {/* <div className="text-center">
                                 <Link to="" className="theme-btn">Know More</Link>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
