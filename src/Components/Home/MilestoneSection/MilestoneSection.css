@@ -1,11 +1,12 @@
 .milestone-section .bg-img {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 4rem;
 }
 
 .milestone-section .mySwiper {
     padding-bottom: 3rem;
+    padding-top: 3rem !important;
     margin-top: 2rem;
 }
 
@@ -31,6 +32,7 @@
 
 .milestone-section .mySwiper .milestone-card:hover {
     background: var(--theme-color);
+    transform: scale(1.05);
 }
 
 .milestone-section .mySwiper .milestone-card .count {

@@ -28,9 +28,7 @@ export default function DsaUpsSection() {
                             slidesPerView={1.2}
                             freeMode={true}
                             loop={true}
-                            pagination={{
-                                clickable: true
-                            }}
+                            pagination={false}
                             breakpoints={{
                                 640: {
                                   slidesPerView: 2,

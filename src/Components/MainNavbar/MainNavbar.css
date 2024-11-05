@@ -24,7 +24,7 @@
 
 .main-navbar .navbar-brand {
     width: 100px;
-    margin-right: 8rem;
+    margin-right: 10rem;
 }
 
 .main-navbar .side-drawer {
@@ -131,6 +131,144 @@
     width: 80%;
     height: 93%;
     background: #58040B;
+}
+
+
+
+
+/* Fullscreen overlay */
+.main-navbar-box .search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85); /* Darker semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+/* Container for search input, close button, and other elements */
+.main-navbar-box .search-container {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  padding: 40px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+/* Close button */
+.main-navbar-box .close-search-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Search heading */
+.main-navbar-box .search-heading {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Search input styling */
+.main-navbar-box .search-input {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.main-navbar-box .search-input:focus {
+  border-color: #007bff;
+}
+
+/* Footer text with Enter key hint */
+.main-navbar-box .search-footer {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.main-navbar-box .key-highlight {
+  background-color: #eee;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+/* Search icon button */
+.main-navbar-box .icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 10;
+}
+
+/* Full-width search overlay */
+.main-navbar-box .search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: rgba(255, 255, 255, 0.95);
+  overflow: hidden;
+  transition: height 0.4s ease;
+  z-index: 9;
+}
+
+/* Open state for overlay */
+.main-navbar-box .search-overlay.open {
+  height: 100px; /* Adjust height as needed */
+}
+
+/* Search bar container */
+.main-navbar-box .search-bar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Search input */
+.main-navbar-box .search-input {
+  flex: 1;
+  padding: 12px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* Close button */
+.main-navbar-box .close-button {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 @media (max-width:992px) {
