@@ -12,7 +12,7 @@
     height: auto;
     border-radius: 50%;
     object-fit: contain;
-    border: 2px solid var(--theme-color);
+    border: 5px solid var(--theme-color);
     transition: .5s;
     cursor: pointer;
     background: var(--white-color);

@@ -1,9 +1,9 @@
-import { FaFacebookF, FaInstagramSquare , FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaInstagramSquare, FaLinkedinIn } from "react-icons/fa";
 import NoImg from "../../../../assets/img/no-image.jpg";
 import "./ArticleDetail.css";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaSquareInstagram, FaXTwitter } from "react-icons/fa6";
 import moment from "moment";
-export default function ArticleDetail({data}) {
+export default function ArticleDetail({ data }) {
     return (
         <section className="section-spacing pt-0 mb-5 article-detail-section">
             <div className="container-fluid">
@@ -23,7 +23,7 @@ export default function ArticleDetail({data}) {
                                     Date
                                 </p>
                                 <p>
-                                {moment(data[0]?.fld_createdon).format('MMMM D, YYYY')}
+                                    {moment(data[0]?.fld_createdon).format('MMMM D, YYYY')}
                                 </p>
                             </div>
                             <div className="box">
@@ -39,7 +39,7 @@ export default function ArticleDetail({data}) {
                                     Share
                                 </p>
                                 <ul>
-                                    <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaInstagramSquare  /></a></li>
+                                    <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaSquareInstagram /></a></li>
                                     <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a></li>
                                     <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a></li>
                                     <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a></li>
@@ -48,10 +48,12 @@ export default function ArticleDetail({data}) {
                         </div>
                     </div>
                     <div className="col-lg-8">
-                        {/* <b className="mb-4 d-block">
+                        <div className="scroll-section">
+                            {/* <b className="mb-4 d-block">
                           {data[0]?.fld_short_desc}
                         </b> */}
-                        <p dangerouslySetInnerHTML={{__html :data[0]?.fld_long_desc }}/>
+                            <p dangerouslySetInnerHTML={{ __html: data[0]?.fld_long_desc }} />
+                        </div>
                     </div>
                 </div>
             </div>

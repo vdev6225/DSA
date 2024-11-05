@@ -17,6 +17,11 @@
 .news-categories-section .category-tab ul li {
     cursor: pointer;
     margin-left: 1.5rem;
+    font-weight: bolder;
+    transition: .3s;
+}
+.news-categories-section .category-tab ul li:hover{
+    color: var(--theme-color);
 }
 
 .news-categories-section .main-heading h2 {

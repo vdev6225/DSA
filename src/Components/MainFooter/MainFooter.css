@@ -41,6 +41,7 @@
   background: #992b2b;
 }
 
+
 .main-footer a {
   color: var(--white-color) !important;
 }
@@ -68,14 +69,14 @@
 
 .main-footer .footer-links ul li {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 15px;
   margin-bottom: 10px;
 }
 
 .main-footer .footer-links ul li .icon {
   color: #ecd344;
-  font-size: 2.5rem;
+  width: 2.5rem;
 }
 
 .main-footer .footer-links ul li p {

@@ -1,5 +1,5 @@
 import { FaFacebookF, FaInstagramSquare , FaLinkedinIn, FaYoutube } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaSquareInstagram, FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import "./NavigationSection.css";
 export default function NavigationSection() {
@@ -29,7 +29,7 @@ export default function NavigationSection() {
                             </ul>
                             <div className="sm-links">
                                 <ul>
-                                    <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaInstagramSquare  /></a></li>
+                                    <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaSquareInstagram  /></a></li>
                                     <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a></li>
                                     <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a></li>
                                     <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a></li>

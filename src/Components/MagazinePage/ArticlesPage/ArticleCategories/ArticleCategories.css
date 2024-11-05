@@ -18,6 +18,10 @@
     font-weight: bolder;
     cursor: pointer;
     margin-left: 1.5rem;
+    transition: .3s;
+}
+.article-category-section .category-tab ul li:hover{
+    color: var(--theme-color);
 }
 
 .article-category-section .article-card {

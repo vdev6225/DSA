@@ -26,6 +26,12 @@
     display: flex;
     gap: 1rem;
 }
+.news-detail-section .box ul svg{
+    transition: .3s;
+}
+.news-detail-section .box ul svg:hover{
+    color: var(--theme-color);
+}
 
 .news-detail-section h1 {
     font-family: "headingbold" !important;

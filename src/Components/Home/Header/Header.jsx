@@ -2,7 +2,7 @@ import MainNavbar from "../../MainNavbar/MainNavbar";
 import "./Header.css";
 import Flag from "../../../assets/img/indian-flag.jpg";
 import { FaFacebookF, FaInstagramSquare, FaLinkedinIn, FaYoutube } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaSquareInstagram, FaXTwitter } from "react-icons/fa6";
 export default function Header() {
     return (
         <>
@@ -52,7 +52,7 @@ export default function Header() {
                         </div>
                         <div className="right-sm-links pb-lg-3 mb-lg-1">
                             <ul>
-                                <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaInstagramSquare /></a></li>
+                                <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaSquareInstagram /></a></li>
                                 <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a></li>
                                 <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a></li>
                                 <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a></li>

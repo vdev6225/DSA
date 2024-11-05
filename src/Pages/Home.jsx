@@ -98,7 +98,7 @@ export default function Home() {
       <section className="home-subscribe-section">
         <img src={SubImg} className="img-fluid sub-img" alt="" />
         <div className="content">
-          <h2>SUBSCRIBE OUR MAGAZINE AND STAY UPDATED</h2>
+          <h2>Subscribe <i>DSA</i> and be Alert!</h2>
           <p>There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
           <Link to="/services" className="theme-btn">SUBSCRIBE</Link>
         </div>

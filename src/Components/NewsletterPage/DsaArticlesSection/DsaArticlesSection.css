@@ -30,11 +30,14 @@ font-family: "headingbold" !important;
 }
 
 .dsa-articles-section .left-section .bottom-section h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: "headingbold" !important;
     text-transform: uppercase;
     margin-bottom: 1rem !important;
     color: var(--font-dark);
+}
+.dsa-articles-section .left-section .bottom-section p{
+    font-size: .9rem;
 }
 
 .dsa-articles-section .image {

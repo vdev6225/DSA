@@ -1,8 +1,11 @@
 import { FaFacebookF, FaInstagramSquare, FaLinkedinIn, FaYoutube } from "react-icons/fa";
-import { FaMapLocationDot, FaXTwitter } from "react-icons/fa6";
+import { FaMapLocationDot, FaSquareInstagram, FaXTwitter } from "react-icons/fa6";
 import { FaPhoneVolume } from "react-icons/fa6";
 
 import TopImg from "../../assets/img/footer-bg.png";
+import Icon1 from "../../assets/img/icons/call.png";
+import Icon2 from "../../assets/img/icons/Email.png";
+import Icon3 from "../../assets/img/icons/Address.png";
 import Logo from "../../assets/img/logo/dsa-white-logo.png";
 import "./MainFooter.css";
 import { IoMdMail } from "react-icons/io";
@@ -20,7 +23,7 @@ export default function MainFooter() {
                             <p className="mt-2 mb-4">(A Group company of Prabhat Prakashan Pvt. Ltd.) An ISO 9001:2015 Certified Company</p>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
                             <ul className="sm-links">
-                                <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaInstagramSquare /></a></li>
+                                <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaSquareInstagram /></a></li>
                                 <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a></li>
                                 <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a></li>
                                 <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a></li>
@@ -36,7 +39,7 @@ export default function MainFooter() {
                                     <ul>
                                         <li className="mb-4">
                                             <div className="icon">
-                                                <FaPhoneVolume />
+                                                <img src={Icon1} className="img-fluid" alt="" />
                                             </div>
                                             <div>
                                                 <p>Loading for communication</p>
@@ -46,7 +49,7 @@ export default function MainFooter() {
                                         </li>
                                         <li className="mb-4">
                                             <div className="icon">
-                                                <IoMdMail />
+                                                <img src={Icon2} className="img-fluid" alt="" />
                                             </div>
                                             <div>
                                                 <p>Write us Email</p>
@@ -55,7 +58,7 @@ export default function MainFooter() {
                                         </li>
                                         <li className="mb-4">
                                             <div className="icon">
-                                                <FaMapLocationDot />
+                                                <img src={Icon3} className="img-fluid" alt="" />
                                             </div>
                                             <div>
                                                 <p>Visit Our location</p>
@@ -65,7 +68,7 @@ export default function MainFooter() {
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-4 ps-lg-4">
+                                <div className="col-lg-4 ps-lg-5">
                                     <h4>
                                         Quick Links
                                     </h4>

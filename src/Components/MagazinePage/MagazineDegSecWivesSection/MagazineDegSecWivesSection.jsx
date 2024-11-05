@@ -32,7 +32,7 @@ export default function MagazineDegSecWivesSection({ insignia, awards, careers }
                             </p>
                         </div>
                         <div className="bottom-section">
-                            {/* <img src="https://manmeetawsbucket.s3.eu-north-1.amazonaws.com/Indian+Army.png" className="img-fluid" alt="" /> */}
+                            <img src="https://manmeetawsbucket.s3.eu-north-1.amazonaws.com/Indian+Army.png" className="img-fluid" alt="" />
                             <div className="content">
                                 <h3>
                                     learn with us

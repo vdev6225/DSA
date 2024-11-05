@@ -37,6 +37,13 @@
     align-items: center;
     justify-content: center;
     margin-left: 8px;
+    transition: .3s;
+}
+.magazine-navigation .navigation-bar .sm-links ul li a:hover{
+    background: var(--theme-color);
+}
+.magazine-navigation .navigation-bar .sm-links ul li a:hover svg{
+    color: var(--white-color);
 }
 @media (max-width:992px) {
     .magazine-navigation h1{

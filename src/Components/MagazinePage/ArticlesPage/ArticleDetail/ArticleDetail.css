@@ -39,7 +39,18 @@
     display: flex;
     gap: 0 10px;
 }
+.article-detail-section .date .box ul svg{
+    transition: .3s;
+}
+.article-detail-section .date .box ul svg:hover{
+    color: var(--theme-color);
+}
 
 .article-detail-section b.d-block {
     text-transform: capitalize;
+}
+.article-detail-section .scroll-section{
+    max-height: 50vh;
+    padding-right: 1rem;
+    overflow-y: auto;
 }

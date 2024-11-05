@@ -16,19 +16,19 @@ export default function GroupWebsites() {
                     </div>
                     <div className="col-12 company-card">
                         <a href="https://sahityaamrit.in/" target="_blank">
-                        <img src={Img5} className="img-fluid" alt="" />
+                            <img src={Img5} className="img-fluid" alt="" />
                         </a>
                         <a href="https://www.prabhatexam.com/" target="_blank">
-                        <img src={Img3} className="img-fluid" alt="" />
+                            <img src={Img3} className="img-fluid" alt="" />
                         </a>
                         <a href="https://www.prabhatbooks.com/" target="_blank">
-                        <img src={Img4} className="img-fluid object-fit-cover p-0" alt="" />
+                            <img src={Img4} className="img-fluid object-fit-cover p-0" alt="" />
                         </a>
                         <a href="https://www.oceanmedia.in/" target="_blank">
-                        <img src={Img2} className="img-fluid" alt="" />
+                            <img src={Img2} className="img-fluid" alt="" />
                         </a>
                         <a href="https://sahityaamrit.in/" target="_blank">
-                        <img src={Img1} className="img-fluid" alt="" />
+                            <img src={Img1} className="img-fluid" alt="" />
                         </a>
                     </div>
                 </div>

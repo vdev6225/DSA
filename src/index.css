@@ -138,57 +138,66 @@ h5.h6 {
 
 .home-subscribe-section {
   position: relative;
-  margin-bottom: -10rem;
+  margin-bottom: -17rem;
+  /* height: 70vh; */
 }
 
 .home-subscribe-section .content {
   position: absolute;
-  top: 30%;
+  top: 10%;
   left: 50%;
   width: 100%;
-  transform: translate(-50%, -30%);
+  transform: translate(-50%, -10%);
   text-align: center;
   padding: 1rem;
 }
 
 .home-subscribe-section img {
   width: 100%;
+  object-position: center -180px;
 }
 
 .home-subscribe-section .content h2 {
   font-family: "headingbold" !important;
-  margin-bottom: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 .home-subscribe-section .content p {
   margin: 0 auto;
   margin-bottom: 2rem !important;
-  width: 60%;
+  width: 50%;
 }
 
 .and-font {
   color: var(--font-dark);
   font-family: "bodyfontbold" !important;
 }
+
 @media (max-width:992px) {
-  .section-spacing{
+  .section-spacing {
     padding: 50px 0;
   }
-  .home-subscribe-section .content h2{
+
+  .home-subscribe-section .content h2 {
     font-size: 1.5rem;
   }
+
   .home-subscribe-section {
     height: 550px;
     margin-top: 2rem;
   }
-  .home-subscribe-section img{
+
+  .home-subscribe-section img {
     height: 100%;
     object-fit: cover;
   }
-  .home-subscribe-section .content p{
+
+  .home-subscribe-section .content p {
     width: 100%;
   }
-  .theme-btn{
+
+  .theme-btn {
     font-size: 1rem;
   }
 }
