@@ -32,7 +32,9 @@ export default function NewsPage() {
         getNewsLetterPageData()
     },[])
 
-
+    useEffect(()=>{
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+  },[])
 
     return (
         <div className="newsletter-news-page">

@@ -28,7 +28,9 @@ export default function AlertPage() {
         getNewsLetterAlertData();
     }, [])
 
-
+    useEffect(()=>{
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    },[])
     return (
         <>
             <NavigationSection />

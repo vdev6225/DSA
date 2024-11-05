@@ -38,7 +38,9 @@ export default function PodcastEventsPage() {
   useEffect(() => {
     getPodCastData();
   }, [])
-
+  useEffect(()=>{
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+},[])
 
   const filteredpodcast = podCastData?.filter((item) => item?.fld_type === "Podcast")
   const filteredevents = podCastData?.filter((item) => item?.fld_type === "Event")

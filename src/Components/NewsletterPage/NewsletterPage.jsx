@@ -34,7 +34,9 @@ export default function NewsletterPage() {
         getNewsLetterAlertData();
     }, [])
 
-
+    useEffect(()=>{
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    },[])
     return (
         <div className="newsletter-page">
             <NavigationSection />

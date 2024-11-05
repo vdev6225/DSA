@@ -51,7 +51,7 @@ export default function DsaAuditSection() {
                                     <p>12:00</p>
                                 </div>
                             </div>
-                                <Link to="" className="magazine-btn theme-btn d-none">categories</Link>
+                                <Link to="/podcast-and-events" className="magazine-btn theme-btn d-none">categories</Link>
                         </div>
                     </div>
                 </div>

@@ -16,6 +16,10 @@ export default function  MagazinePage() {
     const [articleData, setArticleData] = useState([]);
     const { defSecEduData, setDefSecEduData } = useContext(store);
 
+    useEffect(()=>{
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    },[])
+
     const fetchData = async (endpoint, setData) => {
         try {
             const results = await PostApiCall.postRequest({ whereClause: "" }, endpoint);

@@ -8,6 +8,9 @@ export default function ArticlesPage() {
 
     const [data, setData] = useState([]);
 
+    useEffect(()=>{
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+  },[])
     const getMagazinesArticleData = () => {
         PostApiCall.postRequest(
             {
