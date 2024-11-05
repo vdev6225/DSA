@@ -1,10 +1,12 @@
-.group-company-section .company-card{
+.group-company-section .company-card {
     display: flex;
     margin-top: 2rem;
     flex-wrap: wrap;
     justify-content: center;
 }
-.group-company-section .company-card img{
+
+.group-company-section .company-card a {
+    display: inline-block;
     width: 18%;
     aspect-ratio: 1/1;
     height: auto;
@@ -14,25 +16,39 @@
     transition: .5s;
     cursor: pointer;
     background: var(--white-color);
+    overflow: hidden;
 }
-.group-company-section .company-card img:nth-child(1),
-.group-company-section .company-card img:nth-child(2){
+
+.group-company-section .company-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: .5s;
+}
+
+.group-company-section .company-card a:nth-child(1),
+.group-company-section .company-card a:nth-child(2) {
     margin-right: -40px;
 }
-.group-company-section .company-card img:nth-child(4),
-.group-company-section .company-card img:nth-child(5){
+
+.group-company-section .company-card a:nth-child(4),
+.group-company-section .company-card a:nth-child(5) {
     margin-left: -40px;
 }
-.group-company-section .company-card img:nth-child(5){
+
+.group-company-section .company-card img:nth-child(5) {
     /* z-index: -1; */
 }
-.group-company-section .company-card img:nth-child(3){
+
+.group-company-section .company-card a:nth-child(3) {
     z-index: 2;
 }
-.group-company-section .company-card img:nth-child(4){
+
+.group-company-section .company-card a:nth-child(4) {
     z-index: 1;
 }
-.group-company-section .company-card img:hover{
+
+.group-company-section .company-card a:hover {
     z-index: 9;
     transform: scale(1.1);
 }
