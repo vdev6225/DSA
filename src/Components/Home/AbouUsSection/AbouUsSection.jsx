@@ -25,8 +25,8 @@ export default function AbouUsSection({banners}) {
     return (
         <section className="section-spacing pb-4 about-section position-relative">
             <div className="container-fluid">
-                <div className="row">
-                    <div className="col-lg-7 left-section">
+                <div className="row justify-content-between">
+                    <div className="col-lg-8 left-section">
                         <img alt={banners[0]?.fld_alt} src={banners[0]?.fld_desktop_image} className="img-fluid" />
                         <div className="content">
                             <img src={BgShape} className="img-fluid bg-shape" alt="" />
@@ -42,7 +42,7 @@ export default function AbouUsSection({banners}) {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-5 about-section-swiper">
+                    <div className="col-lg-4 about-section-swiper">
                         <h2 className="main-heading text-center mb-0 mt-4">
                             <i>dsa</i> <span>editions</span>
                         </h2>
@@ -63,7 +63,7 @@ export default function AbouUsSection({banners}) {
                             // }}
                             thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
                             modules={[FreeMode, Pagination, Thumbs]}
-                            className="mySwiper2 about-swiper-top"
+                            className="mySwiper2 about-swiper-top mt-3"
                         >
                             <SwiperSlide>
                                 <img alt="" src={Image1} />

@@ -50,7 +50,7 @@ export default function Header() {
                                 </p> */}
                             {/* </div> */}
                         </div>
-                        <div className="right-sm-links">
+                        <div className="right-sm-links pb-lg-3 mb-lg-1">
                             <ul>
                                 <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaInstagramSquare /></a></li>
                                 <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a></li>

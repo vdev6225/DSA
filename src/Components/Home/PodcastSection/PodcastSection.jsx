@@ -15,8 +15,8 @@ export default function PodcastSection({ banners }) {
                             <div className="content">
                                 <div className="text">
                                     <h2 className="main-heading">
-                                        podcasts <br />
-                                        that will inspire <br /> you to grow
+                                        podcasts
+                                        that will <br /> inspire you to grow
                                     </h2>
                                     <p>
                                     Our Podcasts deliver expert insights and stories to empower our generations, brings awareness in the society. These podcasts fuel personal and professional growth, aligning with DSA’s vision to keep you ahead in the defence, security and international affairs genre.

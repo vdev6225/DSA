@@ -22,7 +22,7 @@ export default function HomeBanner({banners}) {
         <section className="section-spacing home-banner">
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-lg-3 d-flex flex-lg-column order-2 order-lg-1 justify-content-between">
+                    <div className="col-lg-3 d-flex flex-lg-column order-2 py-3 order-lg-1 justify-content-between">
                         <div className="count-card">
                             <p className="count">
                                 50+

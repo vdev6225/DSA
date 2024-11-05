@@ -46,8 +46,12 @@
 
 .testimonial-section .testimonial-card .content .name {
     font-weight: bold;
+    font-size: 1.3rem;
     font-family: "bodyfontbold" !important;
     color: var(--theme-color);
+}
+.testimonial-section .testimonial-card .content span{
+    font-size: .9rem;
 }
 
 .testimonial-section .testimonial-card .content .review {

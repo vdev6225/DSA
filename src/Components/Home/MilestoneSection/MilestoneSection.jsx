@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import { FreeMode, Pagination } from 'swiper/modules';
 import bgImg from "../../../assets/img/milestones-bg.png";
 import "./MilestoneSection.css";
-export default function MilestoneSection({HeadingText}) {
+export default function MilestoneSection({ HeadingText }) {
     return (
         <section className="section-spacing px-0 pt-0 mt-lg-4 mb-5 milestone-section">
             <div className="container py-lg-4 position-relative">
@@ -46,10 +46,10 @@ export default function MilestoneSection({HeadingText}) {
                             <SwiperSlide>
                                 <div className="milestone-card">
                                     <p className="count">
-                                        8 yrs   
+                                        8 yrs
                                     </p>
                                     <span className="content">
-                                        On IAF Intranet 
+                                        On IAF Intranet
                                     </span>
                                 </div>
                             </SwiperSlide>
@@ -86,7 +86,7 @@ export default function MilestoneSection({HeadingText}) {
                             <SwiperSlide>
                                 <div className="milestone-card">
                                     <p className="count">
-                                        1000+
+                                        1k+
                                     </p>
                                     <span className="content">
                                         Contributors
@@ -99,7 +99,7 @@ export default function MilestoneSection({HeadingText}) {
                                         90+
                                     </p>
                                     <span className="content">
-                                        Media Partners 
+                                        Media Partners
                                     </span>
                                 </div>
                             </SwiperSlide>
@@ -110,27 +110,27 @@ export default function MilestoneSection({HeadingText}) {
                                         30+
                                     </p>
                                     <span className="content">
-                                    High Profile Recognition 
+                                        High Profile Recognition
                                     </span>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="milestone-card">
                                     <p className="count">
-                                        60000+
+                                        60k+
                                     </p>
                                     <span className="content">
-                                    Online Outreach 
+                                        Online Outreach
                                     </span>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="milestone-card">
                                     <p className="count">
-                                        25000+
+                                        25k+
                                     </p>
                                     <span className="content">
-                                    Print Outreach 
+                                        Print Outreach
                                     </span>
                                 </div>
                             </SwiperSlide>

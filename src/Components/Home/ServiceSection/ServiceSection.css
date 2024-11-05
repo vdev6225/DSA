@@ -19,6 +19,7 @@
 
 .service-section .service-card {
     display: flex;
+    align-items: center;
     background: var(--theme-color);
     border-radius: 20px;
     padding: 1rem;
@@ -29,7 +30,7 @@
     border-radius: 15px;
     overflow: hidden;
     width: 25%;
-    aspect-ratio: 1/.7;
+    aspect-ratio: 1/.6;
 }
 
 .service-section .service-card .image img {

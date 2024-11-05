@@ -9,11 +9,12 @@
 }
 
 .home-banner .count-card p {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
     font-family: "headingbold" !important;
     color: var(--theme-color);
+    line-height: 1;
 }
 
 .home-banner .count-card span {
@@ -23,7 +24,7 @@
     text-underline-offset: 10px;
     color: var(--font-dark);
     letter-spacing: 2px;
-    font-weight: bolder;
+
 }
 
 .home-banner .banner-section {

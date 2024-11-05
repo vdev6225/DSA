@@ -64,7 +64,7 @@
 .deg-sec-wives-section .bottom-section {
     margin-top: 2rem;
     position: relative;
-    height: 400px;
+    /* height: 400px; */
     overflow: hidden;
     border-radius: 20px;
     width: 85%;
@@ -77,6 +77,9 @@
     padding: 1rem;
     background: var(--theme-color-gradiant);
     color: var(--white-color);
+}
+.deg-sec-wives-section .bottom-section .content h4{
+    font-family: "headingbold" !important;
 }
 
 .deg-sec-wives-section .bottom-section img {

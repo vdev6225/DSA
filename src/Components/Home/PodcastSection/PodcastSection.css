@@ -45,12 +45,12 @@
 }
 
 .podcast-section .left-section .top-section .content h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bolder;
 }
 
 .podcast-section .left-section .top-section .content p {
-    width: 70%;
+    /* width: 70%; */
 }
 
 .podcast-section .left-section .top-section .youtube-btn a {
