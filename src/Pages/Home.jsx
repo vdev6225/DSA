@@ -20,34 +20,16 @@ import MainFooter from "../Components/MainFooter/MainFooter";
 // import MainNavbar from "../Components/MainNavbar/MainNavbar";
 import SubImg from "../assets/img/sub.png"
 import { Link } from "react-router-dom";
-import PostApiCall from "../Helpers/Api/PostApi";
 export default function Home() {
 
   const [bannersData, setBannersData] = useState([]);
   const [newsLetterData, setNewsLetterData] = useState([]);
-  const [newsLetterPageData, setNewsLetterPageData] = useState([])
 
   useEffect(() => {
     getBanners();
     getNewsLetter();
-    getNewsLetterPageData()
   }, [])
 
-
-    const getNewsLetterPageData = () => {
-        PostApiCall.postRequest({whereClause:""},"GetNews").then((results)=> {
-          results.json().then((obj) => {
-            if (results.status === 200 || results.status === 201) {
-              setNewsLetterPageData(obj.data); 
-          }else {
-            // notification.error({
-            //   message: `Notification error`,
-            //   description: obj.data,
-            // });
-            }
-          })
-        })
-      }
   const getBanners = () => {
     GetApiCall.getRequest("GetBanners"
     ).then((results) => {
@@ -101,7 +83,7 @@ export default function Home() {
       <HomeBanner banners={filteredHomeBanners} />
       <NewsletterSection banners={filteredNewsletterSectionBanners} />
       <BrandParttern />
-      <CurrentAffairs banners={newsLetterPageData} />
+      <CurrentAffairs banners={filteredCurrentAffairsBanners} />
       <AbouUsSection banners={fliteredAboutUsBanners} />
       <MilestoneSection />
       <ServiceSection />

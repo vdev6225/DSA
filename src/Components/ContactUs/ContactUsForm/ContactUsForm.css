@@ -3,7 +3,7 @@
 }
 
 .contact-us-form b {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     text-transform: capitalize;
     font-family: "bodyfontbold" !important;
 }
@@ -17,7 +17,7 @@
 }
 
 .contact-us-form .contact-links .box p {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-family: "bodyfontbold" !important;
     /* margin-bottom: 1rem !important; */
     text-transform: uppercase;
@@ -29,10 +29,13 @@
 .contact-us-form .conact-form {
     display: flex;
     flex-direction: column;
+    margin-bottom: -1rem;
+     
 }
 
 .contact-us-form .conact-form input {
-    height: 50px;
+    height: 71px;
+    
 }
 
 .contact-us-form .conact-form input,
@@ -54,6 +57,7 @@
     bottom: 10px;
     font-weight: bolder;
     letter-spacing: 2px;
+    font-size: 1.1rem;
 }
 
 .contact-us-form .conact-form button {
@@ -73,6 +77,9 @@
 .contact-call-section {
     background: var(--main-color-one);
     margin-bottom: 6rem;
+    position: relative;
+    top: 84px;
+    
 }
 
 .contact-call-section a {

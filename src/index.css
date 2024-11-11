@@ -144,10 +144,10 @@ h5.h6 {
 
 .home-subscribe-section .content {
   position: absolute;
-  top: 10%;
-  left: 50%;
+  top: 50%;
+  
   width: 100%;
-  transform: translate(-50%, -10%);
+  transform: translateY(50%);
   text-align: center;
   padding: 1rem;
 }

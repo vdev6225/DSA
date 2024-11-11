@@ -3,7 +3,7 @@ import NoImg from "../../../assets/img/no-image.jpg";
 import "./InstagramFeed.css";
 export default function InstagramFeed() {
     return (
-        <section className="section-spacing px-0 insta-feed-section">
+        <section className="section-spacing px-0 insta-feed-section px-lg-5">
             {/* <div className="animation-text">
                 testimonial
             </div> */}
@@ -20,7 +20,7 @@ export default function InstagramFeed() {
                             </Link>
                         </div>
                     </div>
-                    <div className="col-lg-3 col-6 mb-3">
+                    <div className="col-lg-3 col-6 mb-3 test ">
                         <img src={NoImg} className="img-fluid" alt="" />
                     </div>
                     <div className="col-lg-3 col-6 mb-3">

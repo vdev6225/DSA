@@ -3,12 +3,10 @@ import PageFlip from 'react-pageflip';
 import { getDocument, GlobalWorkerOptions } from 'pdfjs-dist/webpack';
 import pdfFile from '../../assets/img/DSA_Edition.pdf';
 import './FlipBook.css';
-import { useLocation } from 'react-router-dom';
 
 GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.worker.min.js`;
 
 const Flipbook = () => {
-    let location = useLocation
     const [pages, setPages] = useState([]);
     const [pageAspectRatio, setPageAspectRatio] = useState(1); // Default aspect ratio of 1:1 for safety
     const pageFlipRef = useRef(null);

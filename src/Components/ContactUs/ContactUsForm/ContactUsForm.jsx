@@ -17,20 +17,20 @@ export default function ContactUsForm() {
                                 <p>
                                     email
                                 </p>
-                                <a href="mailto:">asd@gmail.com</a>
+                                <a href="mailto:">info@dsalert.org</a>
                             </div>
                             <div className="box">
                                 <p>
                                     phone
                                 </p>
-                                <a href="tel:+">1234567890</a>
+                                <a href="tel:+">+91-11-4163499</a>
                             </div>
                             <div className="box">
                                 <p>
                                     Address
                                 </p>
                                 <a href="" target="_blank" rel="noopener noreferrer">
-                                    contact vIA form
+                                     Prabhat Prakashan Tower 4/19,Asaf Ali Road,New <br></br>Delhi, India
                                 </a>
                             </div>
                             <div className="box">
@@ -44,7 +44,7 @@ export default function ContactUsForm() {
                         </div>
                         <div className="col-lg-8 conact-form">
                             <input type="text" placeholder="Name" />
-                            <input type="text" placeholder="Phone" />
+                            <input type="text" placeholder="Mobile No" />
                             <input type="email" placeholder="Email" />
                             <textarea placeholder="TYPE YOUR CONCERN" rows="5"></textarea>
                             <div className="mt-3">

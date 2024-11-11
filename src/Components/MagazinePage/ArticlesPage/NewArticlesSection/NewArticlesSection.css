@@ -3,10 +3,12 @@
 }
 .new-articles-section img{
     border-radius: 10px;
-    height: 400px;
-    object-fit: cover;
+    height: 349px;
+    object-fit:  cover;
     width: 100%;
     margin-top: 1rem;
+    object-position: top;
+     
 }
 @media (max-width:992px) {
     .new-articles-section h2{

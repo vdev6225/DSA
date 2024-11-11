@@ -23,6 +23,7 @@
     display: inline-block;
     text-transform: capitalize;
     font-family: "bodyfontbold" !important;
+    font-size: 1.3rem;
 }
 
 .contact-us-service-section .top-content p {

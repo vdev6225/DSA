@@ -44,7 +44,11 @@ export default function MainFooter() {
                                             <div>
                                                 <p>Loading for communication</p>
                                                 <a href="tel:+91-11-41634999">+91-11-41634999</a>,<br /><a href="tel:+91-11-23268999"> 23268999, </a>
-                                                <a href="tel:+919958382999">9958382999</a>
+                                                <a href="tel:+919958382999">  
+                                                    <div className="icon">
+                                                        <img src={''} className="img-fluid" alt="" />
+                                                 </div>
+                                            9958382999</a>
                                             </div>
                                         </li>
                                         <li className="mb-4">
@@ -117,7 +121,7 @@ export default function MainFooter() {
                                     <ul>
                                         <li>
                                             <Link to="">
-                                                Write for US!
+                                                Narrate Your Thoughts
                                             </Link>
                                         </li>
                                         <li>
@@ -127,8 +131,8 @@ export default function MainFooter() {
                                         </li>
                                         <li>
                                             <Link to="/services">
-                                                Subscribe Now
-                                            </Link>
+                                                Subscribe
+                                                                                            </Link>
                                         </li>
                                         <li>
                                             <Link to="/services">

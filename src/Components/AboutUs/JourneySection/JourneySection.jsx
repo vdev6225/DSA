@@ -1,10 +1,10 @@
-import NoImg from "../../../assets/img/Journey so far.png";
+import NoImg from "../../../assets/img/journey2.png";
 import gallery from "../../../assets/img/gallery.png";
 import "./JourneySection.css";
 export default function JourneySection() {
     return (
         <>
-            <section className="p-0 journey-section">
+            <section className="p-0 section-spacing journey-section ">
                 {/* // <section> */}
                 {/* <div className="container-fluid">
                 <div className="row">

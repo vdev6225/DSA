@@ -19,7 +19,7 @@
 
 .main-navbar a:hover {
     color: var(--theme-color) !important;
-    text-decoration: underline !important;
+    /* text-decoration: underline !important; */
 }
 
 .main-navbar .navbar-brand {
@@ -102,7 +102,7 @@
 }
 
 .navbar-offcanvas .left-links a {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     letter-spacing: 2px;
     display: inline-block;
     margin-bottom: 1rem;
@@ -110,7 +110,7 @@
 }
 
 .navbar-offcanvas .mid-links p {
-    font-size: .9rem;
+    font-size: 0.9rem;
 }
 
 .navbar-offcanvas .mid-links a {
@@ -125,6 +125,16 @@
     color: var(--white-color);
     border-left: 1px solid #f3f3f396;
     height: 100%;
+}
+
+.navbar-offcanvas .border-left .mid-links p{
+  font-size: 1.5rem;
+  cursor: pointer;
+
+}
+
+ .active{
+  text-decoration: underline;
 }
 
 .navbar-offcanvas .image {

@@ -15,7 +15,7 @@ export default function ContactUsServiceSection() {
                             </div>
                             <b>Imagine if you could</b>
                             <p>
-                                There are many variations of passages of Lorem Ipsum available, but the majority
+                                There are many variations of passages <br></br> of Lorem Ipsum available, but the majority
                             </p>
                             <div className="mt-4 mb-5">
                                 <Link to="" className="theme-btn">Services</Link>
@@ -71,7 +71,7 @@ export default function ContactUsServiceSection() {
                             </div>
                             <b>Imagine if you could</b>
                             <p>
-                                There are many variations of passages of Lorem Ipsum available, but the majority
+                                There are many variations of passages <br></br>of Lorem Ipsum available, but the majority
                             </p>
                             <div className="mt-4 mb-5">
                                 <Link to="" className="theme-btn">Newsletter</Link>

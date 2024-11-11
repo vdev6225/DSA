@@ -46,7 +46,7 @@ export default function ContactUsMissionSection() {
                                     DSA <span>Mission</span>
                                 </h2>
                             </div>
-                            <b>Imagine if you could</b>
+                            <b>Defence And Security Alert Magazine</b>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
                             <div className="mt-4">
                                 <Link to="" className="theme-btn">Learn about Us</Link>

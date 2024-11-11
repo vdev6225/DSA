@@ -5,7 +5,7 @@
 
 .deg-sec-wives-section .top-section .image-section {
     position: relative;
-    gap: 1rem;
+    gap: 2.1rem;
     display: flex;
 }
 
@@ -64,7 +64,7 @@
 .deg-sec-wives-section .bottom-section {
     margin-top: 2rem;
     position: relative;
-    /* height: 400px; */
+    height: 250px;
     overflow: hidden;
     border-radius: 20px;
     width: 85%;
@@ -116,10 +116,15 @@
 
 .deg-sec-wives-section .personal-card .image {
     width: 65%;
+     
+
+    
+     
 }
 
 .deg-sec-wives-section .personal-card .image img {
     width: 100%;
+    
     border-radius: 20px;
     height: 130px;
     border: 2px solid var(--theme-color);

@@ -14,52 +14,7 @@ import Image2 from "../../../assets/img/16.jpg";
 import Image3 from "../../../assets/img/17.jpg";
 import headingImg from "../../../assets/img/Def-sec-edu.png";
 import { FaArrowRight } from "react-icons/fa";
-import { useEffect, useState } from "react";
-import PostApiCall from "../../../Helpers/Api/PostApi";
-import moment from "moment";
 export default function ArticlesSection() {
-    const [data, setData] = useState([]);
-    const [defSecEduData, setDefSecEduData] =useState([])
-    const getMagazinesArticleData = () => {
-        PostApiCall.postRequest(
-            {
-            whereClause:""
-            },
-            "GetMagazineArticles"
-          ).then((results) => {
-            results.json().then((obj) => {
-              if (results.status === 200 || results.status === 201) {
-                setData(obj.data)
-              } else {
-              }
-            });
-          });
-      }
-      const getDefSecEduData = () => {
-        PostApiCall.postRequest(
-            {
-                whereClause:""
-            },
-            "GetDefSecEdu"
-        ).then((results)=> {
-          results.json().then((obj) => {
-            if (results.status === 200 || results.status === 201) {
-                setDefSecEduData(obj.data); 
-          }else {
-            // notification.error({
-            //   message: `Notification error`,
-            //   description: obj.data,
-            // });
-            }
-          })
-        })
-      }
-      useEffect(()=>{
-        getMagazinesArticleData();
-        getDefSecEduData();
-      },[])
-      const activeArticle = data?.filter((item)=> item?.fld_status === "Active")
-      const activeDefSecEdu = defSecEduData?.filter((item)=> item?.fld_status === "Active")
     return (
         <section className="section-spacing pt-0 articles-section">
             <div className="container-fluid py-lg-5">
@@ -91,35 +46,78 @@ export default function ArticlesSection() {
                                 modules={[FreeMode, Pagination]}
                                 className="mySwiper"
                             >
-                                {activeArticle?.slice(0,3)?.map((item)=>{
-                                    const words = item?.fld_short_desc.split(' ');
-                                    const heading = item?.fld_heading.split(' ');
-                                    return(
-                                    <SwiperSlide>
+                                <SwiperSlide>
                                     <div className="article-left-card">
                                         <div className="right-content-box">
                                             <div className="top-section">
                                                 <h3>
-                                                {heading.slice(0, 2).join(' ') + '...'}
+                                                    Self
+                                                    acceptance.
                                                 </h3>
                                                 <div className="image">
-                                                    <img src={item?.fld_image} className="img-fluid" alt="" />
+                                                    <img src={Image1} className="img-fluid" alt="" />
                                                 </div>
                                             </div>
                                             <div className="content">
                                                 <span>
-                                                {moment(item?.fld_createdon).format('MMMM D, YYYY')}
+                                                    on June 8, 2020
                                                 </span>
                                                 <p className="des">
-                                                    {words.slice(0, 25).join(' ') + '...'}
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
                                                 </p>
-                                                <Link to={`/article/${item?.fld_id}`}>Read more</Link>
+                                                <Link to="">Read more</Link>
                                             </div>
                                         </div>
                                     </div>
                                 </SwiperSlide>
-                                    )
-                                })}
+                                <SwiperSlide>
+                                    <div className="article-left-card">
+                                        <div className="right-content-box">
+                                            <div className="top-section">
+                                                <h3>
+                                                    Self
+                                                    acceptance.
+                                                </h3>
+                                                <div className="image">
+                                                    <img src={Image1} className="img-fluid" alt="" />
+                                                </div>
+                                            </div>
+                                            <div className="content">
+                                                <span>
+                                                    on June 8, 2020
+                                                </span>
+                                                <p className="des">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                                </p>
+                                                <Link to="">Read more</Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="article-left-card">
+                                        <div className="right-content-box">
+                                            <div className="top-section">
+                                                <h3>
+                                                    Self
+                                                    acceptance.
+                                                </h3>
+                                                <div className="image">
+                                                    <img src={Image1} className="img-fluid" alt="" />
+                                                </div>
+                                            </div>
+                                            <div className="content">
+                                                <span>
+                                                    on June 8, 2020
+                                                </span>
+                                                <p className="des">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                                </p>
+                                                <Link to="">Read more</Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
                             </Swiper>
                         </div>
                     </div>

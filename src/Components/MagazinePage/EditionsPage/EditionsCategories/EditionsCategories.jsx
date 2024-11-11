@@ -29,7 +29,7 @@ export default function EditionsCategories({data}) {
     console.log(filteredData,"filter")
 
     return (
-        <section className="section-spacing py-0 editions-category-section">
+        <section className="section-spacing py-0  editions-category-section">
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-12">
@@ -52,7 +52,7 @@ export default function EditionsCategories({data}) {
                     </div>
                     {
                         filteredData?.map((item,id)=> {
-                            return(<div className="col-lg-3 edition-card" key={id}>
+                            return(<div className=" col-lg-3 edition-card" key={id}>
                                 <Link to="/flip-book" className="box">
                                     <div className="date">
                                         <p>{item?.fld_month + " "}{item?.fld_year}</p>
