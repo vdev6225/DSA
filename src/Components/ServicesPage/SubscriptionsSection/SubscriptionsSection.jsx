@@ -7,12 +7,24 @@ import { useState } from "react";
 export default function SubscriptionsSection() {
 
 const [showSubscription,setShowSubscription ] =useState(true);
+const [showAssociate,setShowAssociate]=useState(true);
 
-const digitalhandleClick=()=>{
+
+
+const advertisingHandleClick=()=>{
+    setShowAssociate(true)
+}
+
+const sponsorshipHandleClick=()=>{
+    setShowAssociate(false)
+}
+
+
+const digitalHandleClick=()=>{
     setShowSubscription(true);
 }
 
-const printhandleClick=()=>{
+const printHandleClick=()=>{
     setShowSubscription(false);
 }
 
@@ -25,11 +37,11 @@ const printhandleClick=()=>{
                             <h2>A. <i>DSA</i> <span>subscriptions</span></h2>
                         </div>
                         <div className="d-flex gap-4 gap-lg-5 mt-4 mt-lg-5">
-                            <div className= "sub-btn" onClick={digitalhandleClick}>
+                            <div className= "sub-btn" onClick={digitalHandleClick}>
                             
                                 <img src={DigitalIcon} alt="" /> Digital
                             </div>
-                            <div className="sub-btn" onClick={printhandleClick}>
+                            <div className="sub-btn" onClick={printHandleClick}>
                                 <img src={PrintIcon} alt="" /> print
                             </div>
                         </div>
@@ -80,7 +92,12 @@ const printhandleClick=()=>{
                         <div className="divider">
 
                         </div>
-                    </div>:
+                    </div>
+                    
+                    
+                    
+                    
+                    :
 
 
 
@@ -169,12 +186,15 @@ const printhandleClick=()=>{
                             </div>
                         </div>
                     </div>
-                                }
+                                
+                  }
 
 
 
 
                 </div>
+
+
 
 
                  <div className="py-5 my-5 contact-form-bg">
@@ -188,7 +208,7 @@ const printhandleClick=()=>{
 
 
 
-               {showSubscription?
+             {/*   {showSubscription? */}
 
                 <div className="row my-5">
                     <div className="col-12 mt-5 top-section">
@@ -200,10 +220,10 @@ const printhandleClick=()=>{
                             {/* <div className="sub-btn">
                                 Partnership Opportunities
                             </div> */}
-                            <div className="sub-btn">
+                            <div className="sub-btn" onClick={advertisingHandleClick}>
                                 Advertising 
                             </div>
-                            <div className="sub-btn">
+                            <div className="sub-btn" onClick={sponsorshipHandleClick}>
                                 Sponsorship
                             </div>
                         </div>
@@ -211,23 +231,12 @@ const printhandleClick=()=>{
                             <MdExpandCircleDown />
                         </div>
                     </div>
+
+
+
                     <div className="col-12 my-5">
 
-
-                        {/* <div className="d-flex mt-5">
-                            <div className="no">
-                                1.
-                            </div>
-                            <div>
-                                <div className="main-heading">
-                                    <h2>
-                                        Partnership <span>opportunities</span>
-                                    </h2>
-                                </div>
-                                <p className="bottom-p">Collaborate with <i>DSA</i> to amplify your brand's and products reach in the defense and security sector. Partner with us to engage with a dedicated audience and enhance your impact.</p>
-                            </div>
-                        </div> */}
-
+                       {showAssociate ? 
 
                         <div className="d-flex mt-5">
                             <div className="no">
@@ -244,20 +253,26 @@ const printhandleClick=()=>{
                         </div>
 
 
-                        {/* <div className="d-flex mt-5">
+
+
+                        :
+
+
+                        <div className="d-flex mt-5">
                             <div className="no">
-                                3.
+                                2.
                             </div>
-                            <div>
+                            <div>                                
                                 <div className="main-heading">
                                     <h2>
-                                        Sponsorship <span>Collaborations</span>
+                                        Sponsorship  with DAS
                                     </h2>
                                 </div>
                                 <p className="bottom-p">Support <i>DSA's</i> initiatives through sponsorship and gain exclusive recognition across our platforms, aligning your brand with excellence in defense journalism.</p>
                             </div>
-                        </div> */}
+                        </div>
 
+                       }
 
                     </div>
                 </div>
@@ -266,35 +281,16 @@ const printhandleClick=()=>{
 
 
                   
-                          :
+                          {/* : */}
+
 
 
  
-                <div className="row my-5">
-                    <div className="col-12 mt-5 top-section">
-                        <div className="main-heading">
-                            <h2>B. Associate <span>with <i>DSA</i></span></h2>
-                        </div>
-                        <p className="bottom-p">Explore opportunities to partner with us, whether as a contributor, advertiser, or collaborator. Let's work together to advance the defense and security dialogue.</p>
-                        <div className="d-flex flex-column flex-lg-row gap-4 gap-lg-5 mt-5">
-                             {/* <div className="sub-btn">
-                                Partnership Opportunities
-                            </div> */}
-                            <div className="sub-btn">
-                                Advertising 
-                            </div> 
-                            <div className="sub-btn">
-                                Sponsorship 
-                            </div>
-                        </div>
-                        <div className="divider">
-                            <MdExpandCircleDown />
-                        </div>
-                    </div>
+                         
 
 
 
-                    <div className="col-12 my-5">
+                    {/* <div className="col-12 my-5"> */}
                         {/* <div className="d-flex mt-5">
                             <div className="no">
                                 1.
@@ -323,11 +319,13 @@ const printhandleClick=()=>{
                         </div> */}
 
 
-                        <div className="d-flex mt-5">
+                        {/* <div className="d-flex mt-5">
                             <div className="no">
                                 1.
                             </div>
                             <div>
+
+                                
                                 <div className="main-heading">
                                     <h2>
                                         Sponsorship  with DAS
@@ -335,12 +333,16 @@ const printhandleClick=()=>{
                                 </div>
                                 <p className="bottom-p">Support <i>DSA's</i> initiatives through sponsorship and gain exclusive recognition across our platforms, aligning your brand with excellence in defense journalism.</p>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </div> */}
+                    {/* </div> */}
+                {/* </div>  */} 
+                
+                
 
 
-                      } 
+{/*  
+
+                      {/* }  */}
 
 
 

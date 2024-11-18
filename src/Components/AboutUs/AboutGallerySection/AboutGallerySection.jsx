@@ -47,14 +47,14 @@ export default function AboutGallerySection() {
                                 <div className="col-lg-4 col-6">
                                     <img src={Gallery3} className='img-fluid' alt="" />
                                 </div>
-                                <div className="col-lg-4 order-last order-lg-4">
+                                <div className="col-lg-7 order-last order-lg-4">
                                     <img src={Gallery4} className='img-fluid' alt="" />
                                 </div>
-                                <div className="col-lg-4 col-6 order-lg-last">
+                                {/* <div className="col-lg-4 col-6 order-lg-last">
                                     <img src={Gallery5} className='img-fluid' alt="" />
-                                </div>
-                                <div className="col-lg-4 col-6 order-lg-last">
-                                    <img src={NoImg} className='img-fluid' alt="" />
+                                </div> */}
+                                <div className="col-lg-5 col-6 order-lg-last">
+                                    <img src={Gallery5} className='img-fluid' alt="" />
                                 </div>
                             </SwiperSlide>
                         </Swiper>

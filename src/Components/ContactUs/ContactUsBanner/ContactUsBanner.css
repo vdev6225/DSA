@@ -24,6 +24,14 @@
     bottom: 0; */
     height: 100%;
 }
+.contact-us-page-banner .container-fluid .top-content{
+    margin-top: -2vw;
+}
+.contact-us-page-banner .container-fluid .bottom-content{
+    margin-bottom: -2vw;
+
+
+}
 
 .contact-us-page-banner .container-fluid p {
     padding: 10px 20px;
@@ -31,6 +39,7 @@
     border-radius: 20px;
     text-transform: capitalize;
     font-weight: bold;
+    
 }
 
 .contact-us-page-banner .container-fluid h1 {

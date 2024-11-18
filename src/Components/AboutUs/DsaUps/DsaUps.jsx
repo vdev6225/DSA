@@ -43,7 +43,7 @@ export default function DsaUps() {
                                 </div>
                                 <div className="content">
                                     <p className="name">
-                                        Exclusive Air Force Access:
+                                        Exclusive Air<br></br> Force Access
                                     </p>
                                     <p>The only defence and security magazine available on the .</p>
                                 </div>
