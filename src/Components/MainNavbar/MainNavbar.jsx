@@ -5,7 +5,7 @@ import { IoSearch } from 'react-icons/io5';
 import { VscListSelection } from 'react-icons/vsc';
 import Logo from "../../assets/img/logo/dsa-white-logo.png";
 import HamIcon from "../../assets/img/icons/ham.png";
-import cuurentIssueImage from "../../assets/img/home/home-banner/11 1.png";
+import cuurentIssueImage from "../../assets/img/home/home-banner/11 1 (1).png";
 import { FaSearch, FaTimes } from "react-icons/fa";
 
 import "./MainNavbar.css"
@@ -103,7 +103,7 @@ export default function MainNavbar() {
                                 <img src={Logo} className="img-fluid" alt="DSA Logo" />
                             </Navbar.Brand>
                             <div className="d-flex align-items-center">
-                                <Nav.Link href="/" className='theme-btn me-3'>Subscribe</Nav.Link>
+                                <Nav.Link href="/services" className='theme-btn me-3'>Subscribe</Nav.Link>
                                 <div className="login-dropdown">
                                     <Dropdown
                                         menu={
@@ -126,12 +126,12 @@ export default function MainNavbar() {
             </Navbar>
             <Offcanvas show={showOffcanvas} onHide={handleCloseOffcanvas} className="navbar-offcanvas">
                 <Offcanvas.Header closeButton>
-                    <div className="d-flex gap-4 align-items-center">
-                        {/* <Link to="">LOG IN</Link> */}
+                    {/* <div className="d-flex gap-4 align-items-center">
+                        <Link to="">LOG IN</Link>
                         <div className="search-btn ms-2 mb-1">
-                            {/* <IoSearch /> */}
+                            <IoSearch />
                         </div>
-                    </div>
+                    </div> */}
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                     <div className="row h-100">

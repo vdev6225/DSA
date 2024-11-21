@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./AbouUsSection.css";
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -13,15 +13,32 @@ import 'swiper/css/thumbs';
 
 // import required modules
 import { FreeMode, Pagination, Thumbs } from 'swiper/modules';
-import Image1 from "../../../assets/img/Editions/April 2024.jpg";
-import Image2 from "../../../assets/img/Editions/February 2024.jpg";
-import Image3 from "../../../assets/img/Editions/January 2024.jpg";
-import Image4 from "../../../assets/img/Editions/March 2024.jpg";
-import Image5 from "../../../assets/img/Editions/May 2024.jpg";
 import BgShape from "../../../assets/img/bg-shapes/3.png";
+import PostApiCall from "../../../Helpers/Api/PostApi";
 export default function AbouUsSection({banners}) {
+    let navigate = useNavigate()
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
+    const [magazinesEditionData, setMagazinesEditionData] = useState([]);
 
+    const getMagazinesEditionData = () => {
+        PostApiCall.postRequest(
+            {
+            whereClause:""
+            },
+            "GetEditions"
+          ).then((results) => {
+            results.json().then((obj) => {
+              if (results.status === 200 || results.status === 201) {
+                setMagazinesEditionData(obj.data)
+              } else {
+              }
+            });
+          });
+      }
+
+      useEffect(()=>{
+        getMagazinesEditionData();
+      },[])
     return (
         <section className="section-spacing pb-4 about-section position-relative ">
             <div className="container-fluid">
@@ -32,7 +49,7 @@ export default function AbouUsSection({banners}) {
                             <img src={BgShape} className="img-fluid bg-shape" alt="" />
                             <div className="inner-content">
                                 <h2 className="main-heading">about <span>us</span></h2>
-                                <p>Defence and Security Alert (DSA) is India's first ISO 9001:2015 certified world-class monthly magazine established in October, 2009 focused on defence and security journalism covering the defence security &world affaire related to just not only India but globally Owned by Ocean Media Private Limited, New Delhi, DSA offers research-based insights from renowned experts and has been uniquely available on the Indian Air Force (IAF) INTRANET for the past seven years.</p>
+                                <p>Defence and Security Alert (DSA) is India’s first ISO 9001:2015 certified world-class monthly magazine, established in October 2009. It is dedicated to defence and security journalism, covering defence, security, and international affairs not only in India but also globally. Owned by Ocean Media Private Limited, New Delhi, DSA provides research-based insights from renowned subject experts and has been uniquely available on the Indian Air Force (IAF) INTRANET for the past eight consecutive years.</p>
 
                             </div>
                             <div className="learn-more-btn">
@@ -67,22 +84,19 @@ export default function AbouUsSection({banners}) {
                             modules={[FreeMode, Pagination, Thumbs]}
                             className="mySwiper2 about-swiper-top mt-3"
                         >
-                            <SwiperSlide>
-                                <img alt="" src={Image1} />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <img alt="" src={Image2} />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <img alt="" src={Image3} />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <img alt="" src={Image4} />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <img alt="" src={Image5} />
-                            </SwiperSlide>
-                            
+                             {magazinesEditionData?.map((item)=>{
+                                return(
+                                <SwiperSlide>
+                                    <div onClick={()=>{navigate("/flip-book",{
+                                                                                state: {
+                                                                                path:item?.fld_pdf_link
+                                                                                }
+                                                                            })}}>
+                                    <img alt={item?.fld_alt} src={item?.fld_thumbnail} />
+                                    </div>
+                                </SwiperSlide>
+                                )
+                            })}
                         </Swiper>
 
 
@@ -100,24 +114,13 @@ export default function AbouUsSection({banners}) {
                             modules={[FreeMode, Pagination, Thumbs]}
                             className="mySwiper"
                         >
-                            <SwiperSlide>
-                                <img alt="" src={Image1} />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <img alt="" src={Image2} />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <img alt="" src={Image3} />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <img alt="" src={Image4} />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <img alt="" src={Image5} />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <img alt="" src={Image5} />
-                            </SwiperSlide>
+                            {magazinesEditionData?.map((item)=>{
+                                return(
+                                <SwiperSlide>
+                                    <img alt={item?.fld_alt} src={item?.fld_thumbnail} />
+                                </SwiperSlide>
+                                )
+                            })}
                         </Swiper>
                     </div>
                 </div>
