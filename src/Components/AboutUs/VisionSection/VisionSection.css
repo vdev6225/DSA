@@ -1,33 +1,121 @@
+ .vision-section{
+    /* padding-top: 1rem; */
+    /* background-color: #E6E4E3; */
+ }
+ .vision-section .left-section{
+    /* padding-left: 8vw; */
+ }
 .vision-section .left-section img {
     border-radius: 20px;
-    height: 450px;
+    height: 400px;
 }
+.vision-section .left-section p{
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+.vision-section .left-section h5{
+    margin-top: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.active{
+    text-decoration: underline;
+    color: var(--theme-color);
+}
+.vision-section .left-section .left-section-bottom{
+    display: flex;
+    align-items: center;
+    /* background-color: pink; */
+     
+     
+}
+.vision-section .left-section .left-section-bottom span{
+    margin-right: 5rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    cursor: pointer;
+    
+}
+.vision-section .left-section .left-section-bottom span:hover{
+     
+    color: var(--theme-color);
+}
+
 
 .vision-section .right-section .magazine-card {
     display: flex;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
+    height: 25%;
+    width: 100%;
+   
 }
 
 .vision-section .right-section .magazine-card .image {
     width: 40%;
     aspect-ratio: 1/1.1;
     height: auto;
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
+    margin-right: -1.3vw;
 }
 
 .vision-section .right-section .magazine-card .image img {
     border-radius: 10px;
     height: 100%;
-    width: 100%;
+    width: 90%;
+}
+
+.vision-section .right-section .magazine-card .content{
+    margin-top: 0.9rem;
+    height: 26vh;
+    background-color:#E6E4E3;
+    
+  
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+     padding-left: 1rem;
+    /* padding-right: 1rem; */
+}
+.vision-section .right-section .magazine-card .content .top{
+    /* background-color: pink; */
+    display: flex;
+    
+     gap: 3.5vw;
+     padding-top: 0.5rem;
+     
+     
+     /* padding-left: 1rem;
+     padding-right: 1rem; */
+
+}
+.vision-section .right-section .magazine-card .content .top-bottom{
+    padding-top: 0.8rem;
+}
+
+
+
+.vision-section .right-section .magazine-card .content .top-bottom h5{
+    color: var(--theme-color);
+    font-family: bodyfont; 
+    font-weight: 900;
+
+    /* sbackground-color: yellow; */
 }
 
 .vision-section .right-section .magazine-card .content span {
+     
     font-size: .9rem;
     color: #636669;
+    color: var(--theme-color-gradiant);;    
+    
+    /* color: Highlighting; */
 }
 
 .vision-section .right-section .magazine-card .content p {
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
+    font-size: .7rem;
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
 }
 @media (max-width:992px) {
     .vision-section .left-section img{

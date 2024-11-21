@@ -10,12 +10,12 @@ export default function ContactUsBanner() {
                         <div className="col-12">
                             <div className="d-flex h-100 flex-column justify-content-between">
 
-                                <div className="d-flex justify-content-between">
+                                <div className="d-flex top-content justify-content-between mb-5">
                                     <p>
-                                        Nationalism
+                                        NATIONALISM  
                                     </p>
                                     <p>
-                                        Awareness
+                                       AWARENESS  
                                     </p>
                                 </div>
                                 <div className="text-center">
@@ -23,12 +23,12 @@ export default function ContactUsBanner() {
                                         <h1>Magazine <br /><span>DSA</span></h1>
                                     </div>
                                 </div>
-                                <div className="d-flex justify-content-between">
+                                <div className="d-flex  bottom-content justify-content-between">
                                     <p>
-                                        Resilience
+                                        RESILIENCE  
                                     </p>
                                     <p>
-                                        Patriotism
+                                         PATRIOTISM     
                                     </p>
                                 </div>
                             </div>
@@ -38,9 +38,9 @@ export default function ContactUsBanner() {
             </section>
             <section className="section-spacing mb-5 contact-us-page-banner-bottom-text">
                 <div className="container-fluid">
-                    <div className="row">
+                    <div className="row " >
                         <div className="col-12">
-                            <h2>
+                            <h2> 
                                 A defence and security alert magazine
                             </h2>
                         </div>

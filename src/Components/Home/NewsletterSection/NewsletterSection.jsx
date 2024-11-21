@@ -6,9 +6,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation'; 
 
 // import required modules
-import { FreeMode, Pagination } from 'swiper/modules';
+import { FreeMode, Navigation, Pagination } from 'swiper/modules';
 import "./NewsletterSection.css";
 import moment from 'moment';
 
@@ -21,8 +22,10 @@ export default function NewsletterSection({ banners }) {
                     <div className="col-12">
                         <Swiper
                             slidesPerView={1.3}
-                            spaceBetween={30}
+                            spaceBetween={40}
                             freeMode={true}
+                            navigation
+                            // scrollbar={true}
                             pagination={false}
                             breakpoints={{
                                 640: {
@@ -34,11 +37,11 @@ export default function NewsletterSection({ banners }) {
                                     spaceBetween: 30,
                                 },
                                 1024: {
-                                    slidesPerView: 3,
+                                    slidesPerView: 3.5,
                                     spaceBetween: 30,
                                 },
                             }}
-                            modules={[FreeMode, Pagination]}
+                            modules={[FreeMode, Pagination,Navigation]}
                             className="mySwiper"
                         >
                             {

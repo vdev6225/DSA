@@ -3,13 +3,14 @@
 }
 
 .contact-us-form b {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     text-transform: capitalize;
     font-family: "bodyfontbold" !important;
 }
 
 .contact-us-form .contact-links {
     border-right: 2px solid var(--black-color);
+    height: 71vh;
 }
 
 .contact-us-form .contact-links .box {
@@ -17,7 +18,7 @@
 }
 
 .contact-us-form .contact-links .box p {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-family: "bodyfontbold" !important;
     /* margin-bottom: 1rem !important; */
     text-transform: uppercase;
@@ -29,10 +30,18 @@
 .contact-us-form .conact-form {
     display: flex;
     flex-direction: column;
+    margin-bottom: -1rem;
+     
 }
 
 .contact-us-form .conact-form input {
-    height: 50px;
+    height: 71px;
+    
+}
+.contact-us-form .conact-form textarea{
+     padding: 25rem;
+     height: 29vh;
+     
 }
 
 .contact-us-form .conact-form input,
@@ -40,7 +49,7 @@
     border: none;
     outline: none;
     margin-bottom: 2rem;
-    padding: 1rem;
+    padding: 2rem;
     /* padding: 1.5rem 1rem 10px; */
     background: var(--main-color-one);
     position: relative;
@@ -54,6 +63,7 @@
     bottom: 10px;
     font-weight: bolder;
     letter-spacing: 2px;
+    font-size: 1.1rem;
 }
 
 .contact-us-form .conact-form button {
@@ -73,9 +83,16 @@
 .contact-call-section {
     background: var(--main-color-one);
     margin-bottom: 6rem;
+    position: relative;
+    top: 12vh;
+    padding: 50px !important;
+    /* height: 15vh; */
+    
 }
 
 .contact-call-section a {
+
+
     padding: 8px 30px;
     background: var(--main-color-two);
     border-radius: 40px;
@@ -87,6 +104,11 @@
 .contact-call-section p {
     font-size: 2rem;
     font-style: italic;
+}
+.contact-links .sm-links {
+    display: flex;
+    gap: 1rem;
+    /* margin-top: 1rem; */
 }
 @media (max-width:992px) {
     .contact-us-form .contact-links{

@@ -20,14 +20,17 @@ import MainFooter from "../Components/MainFooter/MainFooter";
 // import MainNavbar from "../Components/MainNavbar/MainNavbar";
 import SubImg from "../assets/img/sub.png"
 import { Link } from "react-router-dom";
+import PostApiCall from "../Helpers/Api/PostApi";
 export default function Home() {
 
   const [bannersData, setBannersData] = useState([]);
   const [newsLetterData, setNewsLetterData] = useState([]);
+  const [newsLetterPageData, setNewsLetterPageData] = useState([])
 
   useEffect(() => {
     getBanners();
     getNewsLetter();
+    getNewsLetterPageData()
   }, [])
 
   const getBanners = () => {
@@ -61,9 +64,20 @@ export default function Home() {
     })
   }
 
-  console.log(newsLetterData, "hkhkj")
-
-
+  const getNewsLetterPageData = () => {
+    PostApiCall.postRequest({whereClause:""},"GetNews").then((results)=> {
+      results.json().then((obj) => {
+        if (results.status === 200 || results.status === 201) {
+          setNewsLetterPageData(obj.data); 
+      }else {
+        // notification.error({
+        //   message: `Notification error`,
+        //   description: obj.data,
+        // });
+        }
+      })
+    })
+  }
 
   const filteredHomeBanners = bannersData?.filter((item) => item?.fld_pagename === "Home" && item?.fld_location === "Main")
   const fliteredAboutUsBanners = bannersData?.filter((item) => item?.fld_pagename === "Home" && item?.fld_location === "AboutUs")
@@ -83,7 +97,8 @@ export default function Home() {
       <HomeBanner banners={filteredHomeBanners} />
       <NewsletterSection banners={filteredNewsletterSectionBanners} />
       <BrandParttern />
-      <CurrentAffairs banners={filteredCurrentAffairsBanners} />
+      
+      <CurrentAffairs banners={newsLetterPageData} />
       <AbouUsSection banners={fliteredAboutUsBanners} />
       <MilestoneSection />
       <ServiceSection />
@@ -99,7 +114,7 @@ export default function Home() {
         <img src={SubImg} className="img-fluid sub-img" alt="" />
         <div className="content">
           <h2>Subscribe <i>DSA</i> and be Alert!</h2>
-          <p>There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+          <p>Stay informed with the leading voice in defence and security. Empower your understanding and make informed decisions. Subscribe to DSA – where staying alert means staying ahead.</p>
           <Link to="/services" className="theme-btn">SUBSCRIBE</Link>
         </div>
       </section>

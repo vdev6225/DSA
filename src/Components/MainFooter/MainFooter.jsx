@@ -6,10 +6,13 @@ import TopImg from "../../assets/img/footer-bg.png";
 import Icon1 from "../../assets/img/icons/call.png";
 import Icon2 from "../../assets/img/icons/Email.png";
 import Icon3 from "../../assets/img/icons/Address.png";
-import Logo from "../../assets/img/logo/dsa-white-logo.png";
+// import Logo from "../../assets/img/logo/dsa-white-logo.png";
+import Logo1 from "../../assets/img/logo/DSA logo black 1.png";
+import whatsApp from  "../../assets/img/icons/WhatsApp.png";
 import "./MainFooter.css";
 import { IoMdMail } from "react-icons/io";
 import { Link } from "react-router-dom";
+import SocialIcons from "../SocialIcons/SocialIcons";
 export default function MainFooter() {
     return (
         <>
@@ -18,16 +21,12 @@ export default function MainFooter() {
                 <div className="container-fluid position-relative">
                     <div className="row">
                         <div className="col-lg-4 font-size">
-                            <img src={Logo} className="img-fluid" alt="" />
+                            <img src={Logo1} className="img-fluid" alt="" />
                             <p>From the house of <b>OCEAN MEDIA PRIVATE LIMITED</b></p>
                             <p className="mt-2 mb-4">(A Group company of Prabhat Prakashan Pvt. Ltd.) An ISO 9001:2015 Certified Company</p>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
                             <ul className="sm-links">
-                                <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaSquareInstagram /></a></li>
-                                <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a></li>
-                                <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a></li>
-                                <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a></li>
-                                <li><a href="http://" target="_blank" rel="noopener noreferrer"><FaYoutube /></a></li>
+                                <SocialIcons/>
                             </ul>
                         </div>
                         <div className="col-lg-8 footer-links ps-lg-5 mt-lg-3">
@@ -44,7 +43,9 @@ export default function MainFooter() {
                                             <div>
                                                 <p>Loading for communication</p>
                                                 <a href="tel:+91-11-41634999">+91-11-41634999</a>,<br /><a href="tel:+91-11-23268999"> 23268999, </a>
-                                                <a href="tel:+919958382999">9958382999</a>
+                                                <a href="tel:+919958382999">                                                     
+                                                        <img src={whatsApp} className="img-fluid whatsAppIcon" alt="" />
+                                                  9958382999</a>
                                             </div>
                                         </li>
                                         <li className="mb-4">
@@ -117,7 +118,7 @@ export default function MainFooter() {
                                     <ul>
                                         <li>
                                             <Link to="">
-                                                Write for US!
+                                                Narrate Your Thoughts
                                             </Link>
                                         </li>
                                         <li>
@@ -127,8 +128,8 @@ export default function MainFooter() {
                                         </li>
                                         <li>
                                             <Link to="/services">
-                                                Subscribe Now
-                                            </Link>
+                                                Subscribe
+                                                                                            </Link>
                                         </li>
                                         <li>
                                             <Link to="/services">

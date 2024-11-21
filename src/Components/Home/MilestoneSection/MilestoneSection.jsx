@@ -4,14 +4,17 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation'; 
+import 'swiper/css/scrollbar';
+
 
 // import required modules
-import { FreeMode, Pagination } from 'swiper/modules';
+import { FreeMode, Pagination,Navigation} from 'swiper/modules';
 import bgImg from "../../../assets/img/milestones-bg.png";
 import "./MilestoneSection.css";
 export default function MilestoneSection({ HeadingText }) {
     return (
-        <section className="section-spacing px-0 pt-0 mt-lg-4 mb-5 milestone-section">
+        <section className="section-spacing px-0 pt-0   milestone-section">
             <div className="container py-lg-4 position-relative">
                 <img src={bgImg} className='img-fluid bg-img' alt="" />
                 <div className="row">
@@ -19,13 +22,18 @@ export default function MilestoneSection({ HeadingText }) {
                         <h2 className="main-heading d-none text-center">
                             <span><i>dsa</i></span> milestones
                         </h2>
-                        <p className='text-center w-75 mb-5 mx-auto heading-text'>{HeadingText}</p>
+                        <p className='text-center w-75  mb-5 mx-auto heading-text'>{HeadingText}</p>
                         <Swiper
                             spaceBetween={20}
                             slidesPerView={2}
                             freeMode={true}
-                            loop={true}
-                            pagination={false}
+                            navigation
+                            loop={false}
+                             pagination={{
+                                clickable:"true"
+                                
+                            }}
+                            // scrollbar={{draggable:true}}
                             breakpoints={{
                                 640: {
                                     slidesPerView: 2,
@@ -40,7 +48,7 @@ export default function MilestoneSection({ HeadingText }) {
                                     spaceBetween: 20,
                                 },
                             }}
-                            modules={[FreeMode, Pagination]}
+                            modules={[FreeMode, Pagination,Navigation]}
                             className="mySwiper pt-5 pt-lg-0"
                         >
                             <SwiperSlide>

@@ -13,21 +13,71 @@ import Image1 from "../../../assets/img/self.png";
 import Image2 from "../../../assets/img/16.jpg";
 import Image3 from "../../../assets/img/17.jpg";
 import headingImg from "../../../assets/img/Def-sec-edu.png";
+ 
 import { FaArrowRight } from "react-icons/fa";
+import moment from "moment";
+import { useEffect, useState } from "react";
+import PostApiCall from "../../../Helpers/Api/PostApi";
 export default function ArticlesSection() {
+    const [data, setData] = useState([]);
+    const [defSecEduData, setDefSecEduData] =useState([])
+    const getMagazinesArticleData = () => {
+        PostApiCall.postRequest(
+            {
+            whereClause:""
+            },
+            "GetMagazineArticles"
+          ).then((results) => {
+            results.json().then((obj) => {
+              if (results.status === 200 || results.status === 201) {
+                setData(obj.data)
+              } else {
+              }
+            });
+          });
+      }
+      const getDefSecEduData = () => {
+        PostApiCall.postRequest(
+            {
+                whereClause:""
+            },
+            "GetDefSecEdu"
+        ).then((results)=> {
+          results.json().then((obj) => {
+            if (results.status === 200 || results.status === 201) {
+                setDefSecEduData(obj.data); 
+          }else {
+            // notification.error({
+            //   message: `Notification error`,
+            //   description: obj.data,
+            // });
+            }
+          })
+        })
+      }
+      useEffect(()=>{
+        getMagazinesArticleData();
+        getDefSecEduData();
+      },[])
+      const activeArticle = data?.filter((item)=> item?.fld_status === "Active")
+      const activeDefSecEdu = defSecEduData?.filter((item)=> item?.fld_status === "Active")
     return (
         <section className="section-spacing pt-0 articles-section">
             <div className="container-fluid py-lg-5">
                 <div className="row justify-content-between">
                     <div className="col-lg-6 pe-lg-5">
-                        <div className="section-spacing pt-0 pb-2 heading-box mb-2 pe-0">
+                        <div className=" pt-0 pb-2 heading-box mb-2 pe-0">
                             <h2 className="main-heading">
                                 Articles
                             </h2>
                             <p>
-                                DSA’s articles are crafted by leading subject experts, providing authoritative insights and in-depth research- based analysis on defence, security and International affairs. We cover a diverse range of topics with a unique blend of global and India-specific perspectives, making them a valuable resource for informed decision-making.
+                            DSA's articles, crafted by leading subject experts, provide authoritative insights and in-depth analysis on defence, security, and international affairs, backed by exclusive reviewers and research-based evaluations.
+                                 {/* International affairs. We cover a diverse range of topics with a unique 
+                                 
+                                 blend of global and India-specific perspectives, making them a valuable resource
+                                  for informed decision-making. */}
                             </p>
-                            <div className="text-lg-end mt-4">
+                            <div className="text-lg-end mt-2">
                                 <Link to="/articles">
                                     View All
                                     <FaArrowRight />
@@ -46,78 +96,35 @@ export default function ArticlesSection() {
                                 modules={[FreeMode, Pagination]}
                                 className="mySwiper"
                             >
+                                 {activeArticle?.slice(0,3)?.map((item)=>{
+                                    const words = item?.fld_short_desc.split(' ');
+                                    const heading = item?.fld_heading.split(' ');
+                                    return(
                                 <SwiperSlide>
                                     <div className="article-left-card">
                                         <div className="right-content-box">
                                             <div className="top-section">
                                                 <h3>
-                                                    Self
-                                                    acceptance.
+                                                {heading.slice(0, 2).join(' ') + '...'}
                                                 </h3>
                                                 <div className="image">
-                                                    <img src={Image1} className="img-fluid" alt="" />
+                                                <img src={item?.fld_image} className="img-fluid" alt="" />
                                                 </div>
                                             </div>
                                             <div className="content">
                                                 <span>
-                                                    on June 8, 2020
+                                                {moment(item?.fld_createdon).format('MMMM D, YYYY')}
                                                 </span>
                                                 <p className="des">
-                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                                {words.slice(0, 25).join(' ') + '...'}
                                                 </p>
-                                                <Link to="">Read more</Link>
+                                                <Link to={`/article/${item?.fld_id}`}>Read more</Link>
                                             </div>
                                         </div>
                                     </div>
                                 </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="article-left-card">
-                                        <div className="right-content-box">
-                                            <div className="top-section">
-                                                <h3>
-                                                    Self
-                                                    acceptance.
-                                                </h3>
-                                                <div className="image">
-                                                    <img src={Image1} className="img-fluid" alt="" />
-                                                </div>
-                                            </div>
-                                            <div className="content">
-                                                <span>
-                                                    on June 8, 2020
-                                                </span>
-                                                <p className="des">
-                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                                </p>
-                                                <Link to="">Read more</Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="article-left-card">
-                                        <div className="right-content-box">
-                                            <div className="top-section">
-                                                <h3>
-                                                    Self
-                                                    acceptance.
-                                                </h3>
-                                                <div className="image">
-                                                    <img src={Image1} className="img-fluid" alt="" />
-                                                </div>
-                                            </div>
-                                            <div className="content">
-                                                <span>
-                                                    on June 8, 2020
-                                                </span>
-                                                <p className="des">
-                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                                </p>
-                                                <Link to="">Read more</Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
+                                )
+                            })}
                             </Swiper>
                         </div>
                     </div>

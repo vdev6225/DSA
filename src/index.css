@@ -8,6 +8,7 @@
   --border-color: #000;
   --font-dark: #414141;
   --font-light: #A6A6A6;
+  
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
@@ -54,7 +55,8 @@ ul {
 }
 
 .section-spacing {
-  padding: 50px;
+  /* padding: 50px; */
+  padding: 80px;
 }
 
 /* .bg-section-spacing{
@@ -144,10 +146,10 @@ h5.h6 {
 
 .home-subscribe-section .content {
   position: absolute;
-  top: 10%;
-  left: 50%;
+  top: -4%;
+  
   width: 100%;
-  transform: translate(-50%, -10%);
+  transform: translateY(50%);
   text-align: center;
   padding: 1rem;
 }

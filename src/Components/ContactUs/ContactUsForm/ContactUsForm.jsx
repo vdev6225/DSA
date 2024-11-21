@@ -1,5 +1,6 @@
 import { HiOutlineChevronDoubleLeft, HiOutlineChevronDoubleRight } from "react-icons/hi";
 import "./ContactUsForm.css";
+import SocialIcons from "../../SocialIcons/SocialIcons";
 export default function ContactUsForm() {
     return (
         <>
@@ -17,36 +18,36 @@ export default function ContactUsForm() {
                                 <p>
                                     email
                                 </p>
-                                <a href="mailto:">asd@gmail.com</a>
+                                <a href="mailto:info@dsalert.org">info@dsalert.org</a>
                             </div>
                             <div className="box">
                                 <p>
-                                    phone
+                                    mobile
                                 </p>
-                                <a href="tel:+">1234567890</a>
+                                <a href="tel:+91-11-4163499">+91-11-4163499</a>
                             </div>
                             <div className="box">
                                 <p>
                                     Address
                                 </p>
-                                <a href="" target="_blank" rel="noopener noreferrer">
-                                    contact vIA form
+                                <a href="https://maps.app.goo.gl/JeUwdzSAWnrmhjjh7" target="_blank" rel="noopener noreferrer">
+                                     Prabhat Prakashan Tower 4/19,Asaf Ali Road,New <br></br>Delhi, India
                                 </a>
                             </div>
                             <div className="box">
                                 <p>
                                     Social
                                 </p>
-                                <a href="" target="_blank" rel="noopener noreferrer">
-                                    contact vIA form
-                                </a>
+                                    <ul className="sm-links">
+                                        <SocialIcons/>
+                                    </ul>
                             </div>
                         </div>
                         <div className="col-lg-8 conact-form">
                             <input type="text" placeholder="Name" />
-                            <input type="text" placeholder="Phone" />
+                            <input type="text" placeholder="Mobile No" />
                             <input type="email" placeholder="Email" />
-                            <textarea placeholder="TYPE YOUR CONCERN" rows="5"></textarea>
+                            <textarea placeholder="TYPE YOUR CONCERN" rows="6"></textarea>
                             <div className="mt-3">
                                 <button type="submit" className="theme-btn mt-4"> Submit</button>
                             </div>
@@ -60,7 +61,7 @@ export default function ContactUsForm() {
                         <div className="col-lg-6">
                             <div className="d-flex align-items-center gap-3 fs-2">
                                 <span><HiOutlineChevronDoubleLeft /> </span>
-                                <a href="tel:+">
+                                <a href="tel:+919958382999">
                                     Schedule a call
                                 </a>
                                 <span><HiOutlineChevronDoubleRight /></span>
